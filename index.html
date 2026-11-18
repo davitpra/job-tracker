@@ -74,6 +74,42 @@ textarea{width:100%;min-height:70px;resize:vertical}
 .chip{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:3px 10px;font-size:13px;cursor:pointer}
 .chip[aria-pressed="true"]{background:var(--accent-soft);border-color:var(--accent);color:var(--ink)}
 .chip b{font-variant-numeric:tabular-nums}
+/* Barra de estado: control segmentado con punto de color por estado y conteo en badge. */
+.segbar{display:flex;align-items:center;flex-wrap:wrap;gap:4px;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:5px 6px}
+.segbar .seg-label{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;font-weight:600;padding:0 8px 0 4px}
+.segbar .sep{width:1px;align-self:stretch;background:var(--line);margin:3px 5px;flex:none}
+.seg{display:inline-flex;align-items:center;gap:7px;border:1px solid transparent;background:transparent;border-radius:7px;padding:5px 9px;font-size:13px;font-weight:500;line-height:1.2;color:var(--muted);cursor:pointer;white-space:nowrap}
+.seg:hover{background:var(--accent-soft);color:var(--ink)}
+.seg .dot{width:7px;height:7px;border-radius:50%;background:var(--dot,currentColor);flex:none}
+.seg .n{font:500 12px/1 var(--mono);font-variant-numeric:tabular-nums;background:var(--bg);border-radius:999px;padding:3px 6px;color:var(--muted)}
+.seg[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:600}
+.seg[aria-pressed="true"] .dot{--dot:currentColor}
+.seg[aria-pressed="true"] .n{background:rgba(255,255,255,.22);color:inherit}
+:root[data-theme="dark"] .seg[aria-pressed="true"]{color:#0d1726}
+:root[data-theme="dark"] .seg[aria-pressed="true"] .n{background:rgba(13,23,38,.18)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .seg[aria-pressed="true"]{color:#0d1726}:root:not([data-theme="light"]) .seg[aria-pressed="true"] .n{background:rgba(13,23,38,.18)}}
+@media (max-width:640px){.segbar{flex-wrap:nowrap;overflow-x:auto}}
+.pipe{display:flex;background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.pphase{display:flex;flex-direction:column;border-left:1px solid var(--line);min-width:0}
+.pph{display:flex;justify-content:space-between;align-items:baseline;gap:8px;padding:9px 14px 0;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.07em;color:var(--muted)}
+.pph b{font:600 12px var(--mono);letter-spacing:0;color:var(--ink);background:var(--bg);border-radius:999px;padding:2px 8px}
+.pcells{display:flex;flex:1;padding:4px 6px 6px;gap:4px}
+.pcell{flex:1 1 0;min-width:96px;display:flex;flex-direction:column;align-items:stretch;gap:3px;text-align:left;border:1px solid transparent;background:transparent;border-radius:9px;padding:8px 10px 10px;cursor:pointer;color:var(--ink);font:inherit;transition:background .15s,border-color .15s}
+.pcell:hover{background:var(--bg)}
+.pcell[aria-pressed="true"]{background:color-mix(in srgb,var(--c) 12%,var(--surface));border-color:color-mix(in srgb,var(--c) 55%,transparent)}
+.pnum{font:700 26px/1 var(--display);font-variant-numeric:tabular-nums;display:flex;align-items:baseline;gap:6px}
+.pnum small{font:500 11px var(--mono);color:var(--muted)}
+.plbl{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pcell[aria-pressed="true"] .plbl{color:var(--ink);font-weight:600}
+.plbl .dot{width:7px;height:7px;border-radius:50%;background:var(--c);flex:none}
+.pmeter{display:flex;height:4px;border-radius:999px;background:var(--bg);overflow:hidden;margin-top:4px;gap:1px}
+.pmeter i{display:block;height:100%;background:var(--c);border-radius:999px}
+.pmeter.all i{border-radius:0}
+.pall{flex:0 0 150px;margin:6px;justify-content:flex-end}
+.pall .pnum{font-size:32px}
+.pnone{font-size:13px;color:var(--muted);padding:12px 10px}
+@media (max-width:760px){.pipe{flex-wrap:wrap}.pall{flex:1 1 100%;margin:6px 6px 0}.pphase{flex:1 1 100%!important;border-left:0;border-top:1px solid var(--line)}}
+
 .tablewrap{overflow-x:auto;background:var(--surface);border:1px solid var(--line);border-radius:10px}
 table{border-collapse:collapse;width:100%;font-size:14px}
 th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
@@ -100,10 +136,26 @@ td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
 .muted{color:var(--muted)}
 .small{font-size:13px}
 .mono{font-family:var(--mono);font-size:12px}
-dialog{border:1px solid var(--line);border-radius:12px;padding:0;background:var(--surface);color:var(--ink);width:min(860px,96vw);max-height:92vh}
+dialog{border:1px solid var(--line);border-radius:12px;padding:0;background:var(--bg);color:var(--ink);width:min(980px,96vw);max-height:92vh}
+.dlg-pills{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px;align-items:center}
+.dsec{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px 16px}
+.dsec>h3,.dsec>summary{font:600 13px/1.3 var(--body);text-transform:uppercase;letter-spacing:.05em;color:var(--muted);margin:0 0 10px}
+.dsec>summary{cursor:pointer;margin:0;list-style:revert}
+.dsec[open]>summary{margin-bottom:10px}
+.dsec .cnt{font:500 12px var(--mono);color:var(--muted);text-transform:none;letter-spacing:0}
+.dcols{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.dsec .form{grid-template-columns:repeat(4,minmax(0,1fr))}
+.dsec .form.c3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.dsec .form.c2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.dsec .form.c1{grid-template-columns:1fr}
+.form label.s2{grid-column:span 2}
+.dsub{margin-top:12px;padding-top:12px;border-top:1px dashed var(--line)}
+.dsub summary{cursor:pointer;font-size:13px;font-weight:600}
+@media (max-width:760px){.dcols{grid-template-columns:1fr}.dsec .form,.dsec .form.c3{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:460px){.dsec .form,.dsec .form.c3,.dsec .form.c2{grid-template-columns:1fr}.form label.s2{grid-column:auto}}
 dialog::backdrop{background:rgba(10,14,20,.5)}
 .dlg-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;padding:16px 18px;border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--surface);z-index:1}
-.dlg-body{padding:16px 18px;display:flex;flex-direction:column;gap:16px}
+.dlg-body{padding:16px 18px;display:flex;flex-direction:column;gap:14px}
 .dlg-foot{display:flex;justify-content:space-between;gap:8px;padding:12px 18px;border-top:1px solid var(--line);position:sticky;bottom:0;background:var(--surface)}
 .form{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:10px 12px}
 .form label{display:flex;flex-direction:column;gap:3px;font-size:12px;color:var(--muted);font-weight:600}
@@ -177,13 +229,14 @@ const ENCAJES=["Muy alto","Alto","Medio","Bajo"];
 const SENALES=["","Vista en LinkedIn","CV descargado","Respondió"];
 const MOTIVOS=["Senior o 5+ años","Híbrido o presencial","Modalidad no indicada","200+ solicitantes","Python como núcleo","Otro stack como núcleo","Java/Kotlin, .NET o C#","Móvil nativo","Otra brecha técnica","Rol distinto o por debajo del nivel","Salario bajo","Autorización o residencia","Francés","Duplicada o ya aplicaste en la empresa","Falta información","Oferta cerrada","Otro"];
 const APLICADAS=new Set(["Aplicado","Entrevista recruiter","Entrevista técnica","Entrevista final","Oferta","Rechazado","Sin respuesta"]);
-const S={apps:[],busq:[],runs:[],rubrica:null,loaded:false,error:null,f:{q:"",estado:"Activas",encaje:"",tipo:"",sort:"prio"},techView:"aplicadas"};
+const S={apps:[],busq:[],runs:[],rubrica:null,loaded:false,error:null,f:{q:"",estado:"Todas",encaje:"",tipo:"",sort:"prio"},techView:"aplicadas"};
 let DB=null, DL=null;
 
 const $=s=>document.querySelector(s);
 const esc=v=>String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const fmtD=d=>{if(!d)return"";const [y,m,dd]=String(d).slice(0,10).split("-");const M=["ene","feb","mar","abr","may","jun","jul","ago","sep","oct","nov","dic"];return `${+dd} ${M[+m-1]}${y!=="2026"?" "+y:""}`};
 const pct=(a,b)=>b?Math.round(a*100/b):0;
+function estadoColor(e){return {"Por aplicar":"var(--warm)","Evaluar":"var(--warn)","Aplicado":"var(--accent)","Entrevista recruiter":"var(--ok)","Entrevista técnica":"var(--ok)","Entrevista final":"var(--ok)","Oferta":"var(--ok)","Rechazado":"var(--bad)","Sin respuesta":"var(--muted)","Descartada":"var(--line)"}[e]||""}
 function estadoCls(e){return {"Por aplicar":"s-por","Evaluar":"s-eval","Aplicado":"s-apl","Rechazado":"s-rech","Sin respuesta":"s-sin","Descartada":"s-desc","Oferta":"s-of"}[e]||(String(e).startsWith("Entrevista")?"s-int":"")}
 const isSenior=a=>/\b(senior|sr\.?|staff|lead|founding|principal)\b/i.test(a.puesto||"")||a.nivel==="Senior";
 const revisada=a=>!!a.senal||/^Entrevista|Oferta/.test(a.estado||"");
@@ -206,6 +259,7 @@ async function init(){
   DB.collection("busquedas").onSnapshot(s=>{S.busq=s.docs.map(d=>({id:d.id,...d.data()})); if(S.view==="busquedas")render();},()=>{});
   DB.collection("runs").onSnapshot(s=>{S.runs=s.docs.map(d=>({id:d.id,...d.data()})); if(S.view==="busquedas")render();},()=>{});
   DB.doc("settings/rubrica").onSnapshot(d=>{S.rubrica=d.exists?d.data():null; if(S.view==="rubrica")render();},()=>{});
+  DB.doc("settings/backup").onSnapshot(d=>{S.backup=d.exists?d.data():null; renderBanner();},()=>{});
 }
 
 /* ---------- routing ---------- */
@@ -229,8 +283,10 @@ function renderBanner(){
   if(S.error&&S.loaded) parts.push(`<div class="notice">${esc(S.error)}</div>`);
   const pend=S.apps.filter(pendienteWeb);
   if(pend.length) parts.push(`<div class="notice info"><b>Falta aplicar en la web de la empresa (${pend.length}):</b><ul>${pend.map(a=>`<li><a href="#aplicaciones" data-open="${esc(a.id)}">${esc(a.empresa)}, ${esc(a.puesto)}</a></li>`).join("")}</ul></div>`);
-  const rec=S.apps.filter(a=>a.recuperada).length;
-  if(rec) parts.push(`<div class="notice"><b>Tracker reconstruido el 18 nov.</b> ${rec} ofertas se recuperaron de LinkedIn y del historial. Faltan muchas aplicaciones hechas en portales externos y casi todas las descartadas, así que las métricas cuentan menos casos que antes. Las fechas marcadas como aproximadas salen de "hace X semanas" en LinkedIn.</div>`);
+  if(S.backup&&S.backup.ultimo&&S.loaded){
+    const nb=S.apps.filter(a=>String(a.updatedAt||a.createdAt||"")>S.backup.ultimo).length;
+    parts.push(`<div class="status">Respaldo en GitHub: ${fmtD(S.backup.ultimo)}${S.backup.repo?` · <a href="https://github.com/${esc(S.backup.repo)}" target="_blank" rel="noopener">${esc(S.backup.repo)}</a>`:""}${nb?` · <b>${nb} ${nb===1?"cambio":"cambios"} sin respaldar</b>: se suben la próxima vez que trabajes el tracker con Claude`:" · todo respaldado"}</div>`);
+  }
   b.innerHTML=parts.join("");
   b.querySelectorAll("[data-open]").forEach(el=>el.addEventListener("click",e=>{e.preventDefault();openApp(el.dataset.open)}));
 }
@@ -239,8 +295,7 @@ function renderBanner(){
 function filtered(){
   const f=S.f, q=f.q.trim().toLowerCase();
   let r=S.apps.filter(a=>{
-    if(f.estado==="Activas"&&(a.estado==="Descartada"||a.estado==="Rechazado"||a.estado==="Sin respuesta"))return false;
-    if(f.estado!=="Activas"&&f.estado!=="Todas"&&a.estado!==f.estado)return false;
+    if(f.estado!=="Todas"&&a.estado!==f.estado)return false;
     if(f.encaje&&(a.encaje||"Sin dato")!==f.encaje)return false;
     if(f.tipo&&a.tipo!==f.tipo)return false;
     if(q&&!`${a.empresa} ${a.puesto} ${a.stack||""} ${a.contacto||""} ${a.notas||""}`.toLowerCase().includes(q))return false;
@@ -251,10 +306,28 @@ function filtered(){
     n:(a,b)=>(b.n||0)-(a.n||0)}[f.sort];
   return r.sort(by);
 }
+/* Barra de estado: estados agrupados por fase, siempre en el mismo orden, con una franja de proporciones debajo. */
+const FASES=[
+ {t:"Por decidir",e:["Por aplicar","Evaluar"]},
+ {t:"En proceso",e:["Aplicado","Entrevista recruiter","Entrevista técnica","Entrevista final","Oferta"]},
+ {t:"Cerradas",e:["Rechazado","Sin respuesta","Descartada"]}];
+const CORTO={"Entrevista recruiter":"Recruiter","Entrevista técnica":"Técnica","Entrevista final":"Final"};
+function segbarHtml(counts){
+  const total=S.apps.length; const pct=n=>total?Math.round(n/total*100):0;
+  const cell=(e,n,label,cls="")=>{const c=e==="Todas"?"var(--accent)":(estadoColor(e)||"var(--muted)");const on=S.f.estado===e;
+    return `<button type="button" class="pcell ${cls}" data-estado="${esc(e)}" aria-pressed="${on}" title="${esc(e)}: ${n} (${pct(n)} %)${on&&e!=="Todas"?" · clic para quitar el filtro":""}" style="--c:${c}">
+      <span class="pnum">${n}${e!=="Todas"?`<small>${pct(n)}%</small>`:""}</span>
+      <span class="plbl">${e!=="Todas"?'<i class="dot" aria-hidden="true"></i>':""}${esc(label||e)}</span>
+      ${e!=="Todas"?`<span class="pmeter" aria-hidden="true"><i style="width:${Math.max(pct(n),2)}%"></i></span>`:`<span class="pmeter all" aria-hidden="true">${ESTADOS.filter(x=>counts[x]).map(x=>`<i style="flex:${counts[x]};background:${estadoColor(x)||"var(--line)"}"></i>`).join("")}</span>`}
+    </button>`};
+  const fases=FASES.map(f=>{const vis=f.e.filter(e=>counts[e]||S.f.estado===e);const sum=f.e.reduce((a,e)=>a+(counts[e]||0),0);
+    return `<div class="pphase" style="flex:${Math.max(vis.length,1)} 1 0">
+      <div class="pph"><span>${f.t}</span><b>${sum}</b></div>
+      <div class="pcells">${vis.map(e=>cell(e,counts[e]||0,CORTO[e])).join("")||'<span class="pnone">Nada por ahora</span>'}</div></div>`}).join("");
+  return `<div class="pipe" role="group" aria-label="Filtrar por estado">${cell("Todas",total,"Todas","pall")}${fases}</div>`;
+}
 function vApps(v){
   const counts={}; S.apps.forEach(a=>counts[a.estado]=(counts[a.estado]||0)+1);
-  const activas=S.apps.filter(a=>!["Descartada","Rechazado","Sin respuesta"].includes(a.estado)).length;
-  const chipsList=[["Activas",activas],["Todas",S.apps.length],...ESTADOS.filter(e=>counts[e]).map(e=>[e,counts[e]])];
   const rows=filtered();
   v.innerHTML=`
   <div class="grid" style="gap:12px">
@@ -264,7 +337,7 @@ function vApps(v){
       <select id="ftipo" aria-label="Tipo"><option value="">Tipo: todos</option>${["Permanente","Contrato"].map(e=>`<option ${S.f.tipo===e?"selected":""}>${e}</option>`).join("")}</select>
       <select id="fsort" aria-label="Orden"><option value="prio" ${S.f.sort==="prio"?"selected":""}>Orden: estado y prioridad</option><option value="fecha" ${S.f.sort==="fecha"?"selected":""}>Orden: fecha de aplicación</option><option value="empresa" ${S.f.sort==="empresa"?"selected":""}>Orden: empresa</option><option value="n" ${S.f.sort==="n"?"selected":""}>Orden: más nuevas</option></select>
     </div>
-    <div class="chips" role="group" aria-label="Estado">${chipsList.map(([e,n])=>`<button type="button" class="chip" data-estado="${esc(e)}" aria-pressed="${S.f.estado===e}">${esc(e)} <b>${n}</b></button>`).join("")}</div>
+    ${segbarHtml(counts)}
     <div class="tablewrap"><table>
       <thead><tr><th>P</th><th>Empresa y puesto</th><th>Estado</th><th>Encaje</th><th>Tipo</th><th>Modalidad</th><th>Aplicada</th><th>Señal</th><th>Próximo paso</th></tr></thead>
       <tbody>${rows.map(a=>`<tr data-id="${esc(a.id)}" tabindex="0">
@@ -284,7 +357,7 @@ function vApps(v){
   $("#fenc").onchange=e=>{S.f.encaje=e.target.value;render()};
   $("#ftipo").onchange=e=>{S.f.tipo=e.target.value;render()};
   $("#fsort").onchange=e=>{S.f.sort=e.target.value;render()};
-  v.querySelectorAll("[data-estado]").forEach(b=>b.onclick=()=>{S.f.estado=b.dataset.estado;render()});
+  v.querySelectorAll("[data-estado]").forEach(b=>b.onclick=()=>{const e=b.dataset.estado;S.f.estado=(S.f.estado===e&&e!=="Todas")?"Todas":e;render()});
   v.querySelectorAll("tbody tr[data-id]").forEach(tr=>{tr.onclick=()=>openApp(tr.dataset.id);tr.onkeydown=e=>{if(e.key==="Enter")openApp(tr.dataset.id)}});
 }
 
@@ -301,35 +374,57 @@ let CUR=null, delArm=false;
 function fieldHtml([k,label,type,opts],a){
   const val=a[k]??""; const id="f_"+k;
   if(type==="sel") return `<label for="${id}">${label}<select id="${id}" name="${k}">${opts.map(o=>`<option value="${esc(o)}" ${String(val)===o?"selected":""}>${esc(o||"—")}</option>`).join("")}${val&&!opts.includes(String(val))?`<option selected>${esc(val)}</option>`:""}</select></label>`;
-  if(type==="area") return `<label class="wide" for="${id}">${label}<textarea id="${id}" name="${k}">${esc(val)}</textarea></label>`;
+  if(type==="area") return `<label class="wide" for="${id}">${label}<textarea id="${id}" name="${k}" rows="${Math.min(8,Math.max(2,Math.ceil(String(val).length/90)+String(val).split("\n").length-1))}">${esc(val)}</textarea></label>`;
   const it=type==="num"?"number":type==="date"?"date":type==="url"?"url":"text";
-  return `<label class="${type==="wide"?"wide":""}" for="${id}">${label}<input id="${id}" name="${k}" type="${it}" value="${esc(type==="date"?String(val).slice(0,10):val)}"></label>`;
+  return `<label class="${type==="wide"?"wide":SPAN2.includes(k)?"s2":""}" for="${id}">${label}<input id="${id}" name="${k}" type="${it}" value="${esc(type==="date"?String(val).slice(0,10):val)}"></label>`;
 }
 function clasifHtml(c){
   if(!c) return "";
   const p=c.prioridad||{};
-  return `<section><h3>Cómo se clasificó</h3>
+  const reqs=c.requisitos||[]; const ok=reqs.filter(r=>r.n===2).length;
+  return `<details class="dsub"><summary>Cómo se clasificó${c.pct!=null?` · ${c.pct} %`:""}${reqs.length?` · ${ok}/${reqs.length} requisitos cumplidos`:""}</summary><div style="margin-top:8px">
   <div class="small">${c.pct!=null?`Puntaje <b>${c.pts}/${c.max} = ${c.pct} %</b>`:""}${c.ajusteEncaje?` · ${esc(c.ajusteEncaje)}`:""}${c.filtro?` · ${esc(c.filtro)}`:""}${c.rubrica?` · rúbrica ${esc(c.rubrica)}`:""}</div>
   ${p.base!=null?`<div class="small">Prioridad: base ${p.base}${(p.ajustes||[]).map(x=>` ${x.v>0?"+":""}${x.v} (${esc(x.t)})`).join("")} → <b>${p.final}</b></div>`:""}
-  ${(c.requisitos||[]).length?`<div class="req" style="margin-top:8px">${c.requisitos.map(r=>`<span>${["❌","🟡","✅"][r.n]||""}</span><span><b>${esc(r.r)}</b> <span class="muted">${esc(r.e||"")}</span></span>`).join("")}</div>`:""}</section>`;
+  ${(c.requisitos||[]).length?`<div class="req" style="margin-top:8px">${c.requisitos.map(r=>`<span>${["❌","🟡","✅"][r.n]||""}</span><span><b>${esc(r.r)}</b> <span class="muted">${esc(r.e||"")}</span></span>`).join("")}</div>`:""}</div></details>`;
 }
 function cvHtml(list){
   if(!list||!list.length) return "";
-  return `<section><h3>Versiones del CV</h3>${list.map(cv=>`<details><summary>${esc(cv.archivo||"CV")} · ${fmtD(cv.subidoEl)}${cv.base?` · base: ${esc(cv.base)}`:""}</summary>
-  <p class="small">${esc(cv.resumen||"")}</p><div class="diff small">${(cv.cambios||[]).map(x=>`<div class="${x.t==="h"?"h":x.t==="-"?"m":"p"}">${x.t==="h"?"":x.t+" "}${esc(x.s)}</div>`).join("")}</div></details>`).join("")}</section>`;
+  return `<details class="dsec"><summary>Versiones del CV <span class="cnt">(${list.length})</span></summary>${list.map(cv=>`<details><summary>${esc(cv.archivo||"CV")} · ${fmtD(cv.subidoEl)}${cv.base?` · base: ${esc(cv.base)}`:""}</summary>
+  <p class="small">${esc(cv.resumen||"")}</p><div class="diff small">${(cv.cambios||[]).map(x=>`<div class="${x.t==="h"?"h":x.t==="-"?"m":"p"}">${x.t==="h"?"":x.t+" "}${esc(x.s)}</div>`).join("")}</div></details>`).join("")}</details>`;
 }
+const FMAP=Object.fromEntries(FIELDS.map(f=>[f[0],f]));
+const SPAN2=["empresa","puesto","link","salario","fuente"];
+/* Secciones del detalle: lo que decides arriba, el aviso, el encaje, el seguimiento y el resto. */
+const GROUPS=[
+ {t:"Estado y próximo paso",cls:"",keys:["estado","prioridad","encaje","cvAdaptada","proximoPaso"]},
+ {t:"La oferta",cls:"",keys:["empresa","puesto","link","fuente","tipo","modalidad","ubicacion","anios","publicada","solicitantes"]},
+ {t:"Encaje con tu perfil",cls:"c1",keys:["stack","porQue","brechas"],clasif:true},
+ {col:[
+   {t:"Seguimiento",cls:"c2",keys:["fechaAplicacion","fechaRespuesta","senal","fechaSenal","contacto"]},
+   {t:"Salario",cls:"c2",keys:["salario","salMin","salMax","moneda","periodo"]}]},
+];
+function secHtml(g,a){ return `<section class="dsec"><h3>${g.t}</h3><div class="form ${g.cls}">${g.keys.map(k=>fieldHtml(FMAP[k],a)).join("")}</div>${g.clasif?clasifHtml(a.clasif):""}</section>`; }
 function openApp(id){
   const a=id?S.apps.find(x=>x.id===id):{estado:"Por aplicar"};
   if(!a) return;
   CUR=id||null; delArm=false;
   $("#dlgTitle").textContent=id?`${a.empresa||""}`:"Nueva oferta";
-  $("#dlgSub").innerHTML=id?`${esc(a.puesto||"")} · ${esc(id)}${a.link?` · <a href="${esc(a.link)}" target="_blank" rel="noopener">abrir aviso</a>`:""}`:"Se guarda como una oferta nueva.";
-  $("#dlgBody").innerHTML=`<div class="form">${FIELDS.map(f=>fieldHtml(f,a)).join("")}
-    <fieldset class="wide" style="grid-column:1/-1;border:1px solid var(--line);border-radius:8px"><legend class="small muted">Motivo de descarte</legend>
-    <div class="chips">${MOTIVOS.map(m=>`<label class="chip small"><input type="checkbox" name="motivoDescarte" value="${esc(m)}" ${(a.motivoDescarte||[]).includes(m)?"checked":""}> ${esc(m)}</label>`).join("")}</div></fieldset></div>
-    ${clasifHtml(a.clasif)}${cvHtml(a.cvVersiones)}`;
+  const pills=id?`<div class="dlg-pills">${a.prioridad?`<span class="prio ${a.prioridad==1?"p1":a.prioridad==2?"p2":""}" title="Prioridad">${esc(a.prioridad)}</span>`:""}
+    ${a.estado?`<span class="pill ${estadoCls(a.estado)}">${esc(a.estado)}</span>`:""}
+    ${a.encaje?`<span class="pill">Encaje ${esc(a.encaje)}</span>`:""}
+    ${[a.tipo,a.modalidad,a.ubicacion].filter(Boolean).map(x=>`<span class="pill" style="background:var(--bg);font-weight:500">${esc(x)}</span>`).join("")}
+    ${a.link?`<a class="btn" style="padding:3px 10px;font-size:13px;text-decoration:none" href="${esc(a.link)}" target="_blank" rel="noopener">Abrir aviso ↗</a>`:""}</div>`:"";
+  $("#dlgSub").innerHTML=id?`${esc(a.puesto||"")} <span class="mono">· ${esc(id)}</span>${pills}`:"Se guarda como una oferta nueva.";
+  const mot=a.motivoDescarte||[]; const openDesc=a.estado==="Descartada"||mot.length>0;
+  $("#dlgBody").innerHTML=GROUPS.map(g=>g.col?`<div class="dcols">${g.col.map(x=>secHtml(x,a)).join("")}</div>`:secHtml(g,a)).join("")+
+    cvHtml(a.cvVersiones)+
+    `<details class="dsec" ${openDesc?"open":""}><summary>Motivo de descarte${mot.length?` <span class="cnt">(${mot.length})</span>`:""}</summary>
+      <div class="chips">${MOTIVOS.map(m=>`<label class="chip small"><input type="checkbox" name="motivoDescarte" value="${esc(m)}" ${mot.includes(m)?"checked":""}> ${esc(m)}</label>`).join("")}</div></details>
+    <section class="dsec"><h3>Notas</h3><div class="form c1">${fieldHtml(FMAP.notas,a)}</div>
+      <div class="form" style="margin-top:10px">${fieldHtml(FMAP.busqueda,a)}</div></section>`;
+  $("#dlgBody").querySelectorAll("textarea").forEach(t=>t.addEventListener("input",()=>{t.style.height="auto";t.style.height=Math.min(t.scrollHeight+2,320)+"px"}));
   $("#dlgDelete").hidden=!id; $("#dlgDelete").textContent="Eliminar"; $("#dlgStatus").textContent="";
-  $("#dlg").showModal();
+  $("#dlg").showModal(); $("#dlgBody").scrollTop=0; $("#dlg").scrollTop=0;
 }
 function collect(){
   const fd=new FormData($("#dlgForm")); const out={};

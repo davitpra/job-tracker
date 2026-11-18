@@ -20,12 +20,14 @@ Los datos vivos están en la base del artifact (capacidad `db`). Este repo guard
 Los documentos de `docs/` son copias de los del proyecto "Aplicaciones Tech" en claude.ai (carpeta `claude/` y `cv/`). Si cambian allá, hay que actualizar la copia aquí.
 
 ## Cómo se mantiene el respaldo (decisión del 2026-11-18)
-No hay tarea programada. Al terminar cada sesión de trabajo con el tracker (run diario, actualizar aplicaciones, etc.), Claude:
-1. Escribe en `data/<colección>/<id>.json` cada documento que creó o cambió en esa sesión, con su contenido final (y borra el archivo de los que eliminó).
-2. Si se cambió la rúbrica, el CV maestro u otro documento del proyecto, actualiza también su copia en `docs/` o `cv/`.
-3. Hace commit ("Respaldo AAAA-MM-DD: …") y push a `main`.
+No hay tarea programada. En toda sesión de Claude que trabaje el tracker, antes de terminar:
+1. Leer `settings/backup` en la base del artifact (`ultimo` = fecha del último respaldo).
+2. Consultar los documentos de `applications` con `updatedAt` posterior a `ultimo` (incluye los que David editó a mano en la página) y escribir cada uno en `data/applications/<id>.json`. Lo mismo con `busquedas` y `runs` creados o cambiados en la sesión. Borrar el archivo de los documentos eliminados.
+3. Si cambió la rúbrica, el CV maestro u otro documento del proyecto, actualizar su copia en `docs/` o `cv/`.
+4. Commit ("Respaldo AAAA-MM-DD: …") y push a `main`.
+5. Actualizar `settings/backup` con `ultimo` = hora del commit y `commit` = su hash.
 
-Los cambios que David hace a mano en la página no pasan por Claude: para esos, el botón "Exportar JSON" del tracker baja la base completa, y se puede pedir a Claude que la suba aquí.
+La página muestra arriba la fecha del último respaldo y cuántos cambios faltan subir.
 
 ## Capacidades que declara el artifact
 ```json
