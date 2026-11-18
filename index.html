@@ -62,6 +62,8 @@ nav.tabs a[aria-current="page"]{color:var(--ink);border-bottom-color:var(--accen
 .grid{display:grid;gap:16px}
 .g2{grid-template-columns:repeat(auto-fit,minmax(340px,1fr))}
 .g4{grid-template-columns:repeat(auto-fit,minmax(170px,1fr))}
+.g5{grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}
+h2.sect{font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:10px 0 -6px;font-family:var(--body)}
 .tile{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px 16px}
 .tile .k{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
 .tile .v{font:700 30px/1.1 var(--display);font-variant-numeric:tabular-nums;margin-top:4px}
@@ -89,6 +91,16 @@ textarea{width:100%;min-height:70px;resize:vertical}
 :root[data-theme="dark"] .seg[aria-pressed="true"] .n{background:rgba(13,23,38,.18)}
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .seg[aria-pressed="true"]{color:#0d1726}:root:not([data-theme="light"]) .seg[aria-pressed="true"] .n{background:rgba(13,23,38,.18)}}
 @media (max-width:640px){.segbar{flex-wrap:nowrap;overflow-x:auto}}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.pipe-wrap{display:flex;flex-direction:column;gap:8px}
+.pstripe{display:flex;gap:2px;height:22px;border-radius:8px;overflow:hidden}
+.pseg{border:0;padding:0 8px;min-width:6px;cursor:pointer;background:var(--c);color:#fff;font:600 11px/22px var(--body);text-align:left;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;transition:opacity .15s}
+.pseg span{text-shadow:0 1px 1px rgba(0,0,0,.25)}
+.pseg:hover{filter:brightness(1.08)}
+.pstripe.has-sel .pseg:not([aria-pressed="true"]){opacity:.35}
+:root[data-theme="dark"] .pseg{color:#0d1726}
+:root[data-theme="dark"] .pseg span{text-shadow:none}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .pseg{color:#0d1726}:root:not([data-theme="light"]) .pseg span{text-shadow:none}}
 .pipe{display:flex;background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden}
 .pphase{display:flex;flex-direction:column;border-left:1px solid var(--line);min-width:0}
 .pph{display:flex;justify-content:space-between;align-items:baseline;gap:8px;padding:9px 14px 0;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.07em;color:var(--muted)}
@@ -105,7 +117,7 @@ textarea{width:100%;min-height:70px;resize:vertical}
 .pmeter{display:flex;height:4px;border-radius:999px;background:var(--bg);overflow:hidden;margin-top:4px;gap:1px}
 .pmeter i{display:block;height:100%;background:var(--c);border-radius:999px}
 .pmeter.all i{border-radius:0}
-.pall{flex:0 0 150px;margin:6px;justify-content:flex-end}
+.pall{flex:0 0 140px;margin:6px;justify-content:center}
 .pall .pnum{font-size:32px}
 .pnone{font-size:13px;color:var(--muted);padding:12px 10px}
 @media (max-width:760px){.pipe{flex-wrap:wrap}.pall{flex:1 1 100%;margin:6px 6px 0}.pphase{flex:1 1 100%!important;border-left:0;border-top:1px solid var(--line)}}
@@ -229,7 +241,7 @@ const ENCAJES=["Muy alto","Alto","Medio","Bajo"];
 const SENALES=["","Vista en LinkedIn","CV descargado","Respondió"];
 const MOTIVOS=["Senior o 5+ años","Híbrido o presencial","Modalidad no indicada","200+ solicitantes","Python como núcleo","Otro stack como núcleo","Java/Kotlin, .NET o C#","Móvil nativo","Otra brecha técnica","Rol distinto o por debajo del nivel","Salario bajo","Autorización o residencia","Francés","Duplicada o ya aplicaste en la empresa","Falta información","Oferta cerrada","Otro"];
 const APLICADAS=new Set(["Aplicado","Entrevista recruiter","Entrevista técnica","Entrevista final","Oferta","Rechazado","Sin respuesta"]);
-const S={apps:[],busq:[],runs:[],rubrica:null,loaded:false,error:null,f:{q:"",estado:"Todas",encaje:"",tipo:"",sort:"prio"},techView:"aplicadas"};
+const S={apps:[],busq:[],runs:[],rubrica:null,loaded:false,error:null,f:{q:"",estado:"Todas",encaje:"",tipo:"",sort:"prio"},techView:"aplicadas",ritmoDias:30};
 let DB=null, DL=null;
 
 const $=s=>document.querySelector(s);
@@ -318,13 +330,16 @@ function segbarHtml(counts){
     return `<button type="button" class="pcell ${cls}" data-estado="${esc(e)}" aria-pressed="${on}" title="${esc(e)}: ${n} (${pct(n)} %)${on&&e!=="Todas"?" · clic para quitar el filtro":""}" style="--c:${c}">
       <span class="pnum">${n}${e!=="Todas"?`<small>${pct(n)}%</small>`:""}</span>
       <span class="plbl">${e!=="Todas"?'<i class="dot" aria-hidden="true"></i>':""}${esc(label||e)}</span>
-      ${e!=="Todas"?`<span class="pmeter" aria-hidden="true"><i style="width:${Math.max(pct(n),2)}%"></i></span>`:`<span class="pmeter all" aria-hidden="true">${ESTADOS.filter(x=>counts[x]).map(x=>`<i style="flex:${counts[x]};background:${estadoColor(x)||"var(--line)"}"></i>`).join("")}</span>`}
+      ${e!=="Todas"?`<span class="pmeter" aria-hidden="true"><i style="width:${Math.max(pct(n),2)}%"></i></span>`:""}
     </button>`};
   const fases=FASES.map(f=>{const vis=f.e.filter(e=>counts[e]||S.f.estado===e);const sum=f.e.reduce((a,e)=>a+(counts[e]||0),0);
     return `<div class="pphase" style="flex:${Math.max(vis.length,1)} 1 0">
       <div class="pph"><span>${f.t}</span><b>${sum}</b></div>
       <div class="pcells">${vis.map(e=>cell(e,counts[e]||0,CORTO[e])).join("")||'<span class="pnone">Nada por ahora</span>'}</div></div>`}).join("");
-  return `<div class="pipe" role="group" aria-label="Filtrar por estado">${cell("Todas",total,"Todas","pall")}${fases}</div>`;
+  const sel=S.f.estado!=="Todas";
+  const franja=total?`<div class="pstripe ${sel?"has-sel":""}" aria-label="Proporción por estado">${ESTADOS.filter(e=>counts[e]).map(e=>{const n=counts[e];
+    return `<button type="button" class="pseg" data-estado="${esc(e)}" aria-pressed="${S.f.estado===e}" title="${esc(e)}: ${n} (${pct(n)} %)" style="flex:${n};--c:${estadoColor(e)||"var(--line)"}">${pct(n)>=8?`<span>${esc(CORTO[e]||e)} · ${pct(n)}%</span>`:`<span class="sr">${esc(e)} ${n}</span>`}</button>`}).join("")}</div>`:"";
+  return `<div class="pipe-wrap">${franja}<div class="pipe" role="group" aria-label="Filtrar por estado">${cell("Todas",total,"Todas","pall")}${fases}</div></div>`;
 }
 function vApps(v){
   const counts={}; S.apps.forEach(a=>counts[a.estado]=(counts[a.estado]||0)+1);
@@ -495,12 +510,82 @@ function corte(rows,fn,orden){
   return `<table><thead><tr><th></th><th class="num">Aplicadas</th><th class="num">Revisadas</th><th class="num">%</th><th class="num">Entrevistas</th><th class="num">Rechazos</th></tr></thead><tbody>${keys.map(k=>{const r=g[k];const rv=r.filter(revisada).length;
    return `<tr style="cursor:default"><td>${esc(k)}</td><td class="num">${r.length}</td><td class="num">${rv}</td><td class="num"><b>${pct(rv,r.length)} %</b></td><td class="num">${r.filter(a=>/^Entrevista|Oferta/.test(a.estado)).length}</td><td class="num">${r.filter(a=>a.estado==="Rechazado").length}</td></tr>`}).join("")}</tbody></table>`;
 }
+/* ---------- Ritmo (por día y por semana) ---------- */
+const isoL=d=>`${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,"0")}-${String(d.getDate()).padStart(2,"0")}`;
+const addD=(iso,n)=>{const x=new Date(iso+"T12:00:00");x.setDate(x.getDate()+n);return isoL(x)};
+const dow=iso=>(new Date(iso+"T12:00:00").getDay()+6)%7; // 0 = lunes
+const DIAS=["Lun","Mar","Mié","Jue","Vie","Sáb","Dom"];
+const aprox=a=>/aplicaci[oó]n aproximada/i.test(a.notas||"");
+function dayChart(data,{h=190,avg=0}){
+  const n=data.length, pad=30, W=Math.max(1000,n*20+pad+8), step=(W-pad-8)/n, bw=Math.max(6,Math.min(26,step-6));
+  const maxV=Math.max(1,...data.map(d=>d.p+d.c)), y=v=>h-22-(v/maxV)*(h-46);
+  const lblEvery=n<=14?1:n<=31?2:7;
+  let g=[0,Math.ceil(maxV/2),maxV].filter((t,i,a)=>a.indexOf(t)===i).map(t=>`<line x1="${pad}" x2="${W-6}" y1="${y(t)}" y2="${y(t)}" stroke="var(--line)"/><text x="${pad-6}" y="${y(t)+4}" text-anchor="end">${t}</text>`).join("");
+  data.forEach((d,i)=>{const x=pad+i*step+(step-bw)/2, tot=d.p+d.c, wk=dow(d.iso)>4;
+    if(wk) g+=`<rect x="${pad+i*step}" y="16" width="${step}" height="${h-38}" fill="var(--bg)"/>`;
+    let yy=h-22;
+    [["p","var(--accent)","Permanente"],["c","var(--warm)","Contrato"]].forEach(([k,col,lb])=>{const v=d[k]; if(!v)return; const hh=(v/maxV)*(h-46); yy-=hh; g+=`<rect x="${x}" y="${yy}" width="${bw}" height="${hh}" rx="2" fill="${col}"><title>${DIAS[dow(d.iso)]} ${fmtD(d.iso)} · ${lb}: ${v}</title></rect>`;});
+    if(tot) g+=`<text x="${x+bw/2}" y="${yy-4}" text-anchor="middle" style="fill:var(--ink)">${tot}</text>`;
+    if(d.today) g+=`<rect x="${pad+i*step+1}" y="16" width="${step-2}" height="${h-38}" fill="none" stroke="var(--accent)" stroke-dasharray="3 3" rx="4"/>`;
+    if(i%lblEvery===0||d.today) g+=`<text x="${x+bw/2}" y="${h-6}" text-anchor="middle" ${d.today?'style="fill:var(--ink);font-weight:600"':""}>${d.today?"hoy":(n<=14?DIAS[dow(d.iso)].slice(0,2)+" ":"")+(+d.iso.slice(8))}</text>`;});
+  if(avg>0) g+=`<line x1="${pad}" x2="${W-6}" y1="${y(avg)}" y2="${y(avg)}" stroke="var(--ok)" stroke-dasharray="5 4" stroke-width="1.5"/>`;
+  return `<div style="overflow-x:auto"><svg viewBox="0 0 ${W} ${h}" width="100%" style="min-width:${Math.round(W*.62)}px;display:block" role="img" aria-label="Aplicaciones por día">${g}</svg></div>
+  <div class="legend"><span><i style="background:var(--accent)"></i>Permanente</span><span><i style="background:var(--warm)"></i>Contrato</span><span><i style="background:var(--bg);border:1px solid var(--line)"></i>Fin de semana</span>${avg>0?`<span><i style="background:none;border-top:2px dashed var(--ok);height:0;border-radius:0"></i>Promedio ${avg.toFixed(1)} por día hábil</span>`:""}</div>`;
+}
+function ritmo(apl){
+  const hoy=isoL(new Date()), lunes=weekKey(hoy);
+  const fe=apl.filter(a=>a.fechaAplicacion).map(a=>({a,d:String(a.fechaAplicacion).slice(0,10)}));
+  const byDay={}; fe.forEach(({a,d})=>{(byDay[d]=byDay[d]||{p:0,c:0,ap:0}); a.tipo==="Contrato"?byDay[d].c++:byDay[d].p++; if(aprox(a))byDay[d].ap++;});
+  const cnt=d=>byDay[d]?byDay[d].p+byDay[d].c:0;
+  const sumR=(from,to)=>{let s=0;for(let d=from;d<=to;d=addD(d,1))s+=cnt(d);return s};
+  // tiles
+  const ayer=addD(hoy,-1), hoyN=cnt(hoy), semN=sumR(lunes,hoy);
+  const lunPas=addD(lunes,-7), semPasN=sumR(lunPas,addD(lunes,-1)), semPasAltura=sumR(lunPas,addD(hoy,-7));
+  const desde28=addD(hoy,-27); let hab28=0,act28=0; for(let d=desde28;d<=hoy;d=addD(d,1)){if(dow(d)<5)hab28++; if(cnt(d))act28++;}
+  const tot28=sumR(desde28,hoy), avgDia=hab28?tot28/hab28:0;
+  const semanas={}; fe.forEach(({a,d})=>{const w=weekKey(d);(semanas[w]=semanas[w]||[]).push(a)});
+  const prim=Object.keys(semanas).sort()[0];
+  const wkList=[]; if(prim) for(let w=prim;w<=lunes;w=addD(w,7)) wkList.push(w);
+  const completas=wkList.filter(w=>w<lunes).slice(-4), avgSem=completas.length?completas.reduce((s,w)=>s+(semanas[w]||[]).length,0)/completas.length:0;
+  const mejor=wkList.reduce((m,w)=>(semanas[w]||[]).length>((semanas[m]||[]).length)?w:m,wkList[0]);
+  let racha=0, d=cnt(hoy)?hoy:addD(hoy,-1); for(let k=0;k<400;k++){ if(dow(d)>4){d=addD(d,-1);continue} if(!cnt(d))break; racha++; d=addD(d,-1); }
+  // daily range
+  const N=S.ritmoDias||30, desde=addD(hoy,-(N-1)), dias=[]; let habN=0,totN=0;
+  for(let x=desde;x<=hoy;x=addD(x,1)){const b=byDay[x]||{p:0,c:0}; dias.push({iso:x,p:b.p,c:b.c,today:x===hoy}); if(dow(x)<5)habN++; totN+=b.p+b.c;}
+  const apN=dias.reduce((s,x)=>s+((byDay[x.iso]||{}).ap||0),0);
+  // weekly chart + table
+  const wkData=wkList.slice(-12).map(w=>{const r=semanas[w]||[];return {x:fmtD(w),values:{p:r.filter(a=>a.tipo!=="Contrato").length,c:r.filter(a=>a.tipo==="Contrato").length}}});
+  const filas=wkList.slice().reverse().slice(0,8).map(w=>{const r=semanas[w]||[]; let act=0; for(let i=0;i<7;i++) if(cnt(addD(w,i)))act++; const rv=r.filter(revisada).length;
+    return `<tr style="cursor:default"><td style="white-space:nowrap">${fmtD(w)} – ${fmtD(addD(w,6))}${w===lunes?' <span class="pill s-por">en curso</span>':""}</td><td class="num"><b>${r.length}</b></td><td class="num">${act}</td><td class="num">${act?(r.length/act).toFixed(1):"–"}</td><td class="num">${r.length?pct(rv,r.length)+" %":"–"}</td></tr>`}).join("");
+  const porDow=DIAS.map((k,i)=>[k,fe.filter(x=>dow(x.d)===i).length]);
+  const apTot=fe.filter(x=>aprox(x.a)).length, sinFecha=apl.length-fe.length;
+  const tile=(k,v,dd)=>`<div class="tile"><div class="k">${k}</div><div class="v">${v}</div><div class="d">${dd}</div></div>`;
+  return {
+    tiles:`<div class="grid g5">
+      ${tile("Hoy",hoyN,`ayer ${cnt(ayer)}`)}
+      ${tile("Esta semana",semN,`semana pasada a esta altura: ${semPasAltura} · total ${semPasN}`)}
+      ${tile("Por día hábil",avgDia.toFixed(1),`últimas 4 semanas · ${act28} días activos de ${hab28} hábiles`)}
+      ${tile("Por semana",avgSem.toFixed(1),`promedio de las últimas ${completas.length||0} semanas cerradas${mejor?` · mejor: ${(semanas[mejor]||[]).length} (${fmtD(mejor)})`:""}`)}
+      ${tile("Racha",racha,`${racha===1?"día hábil seguido":"días hábiles seguidos"} con al menos una aplicación`)}
+    </div>`,
+    diario:`<div class="panel"><div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap"><h2>Ritmo por día</h2>
+      <div class="chips" role="group" aria-label="Rango">${[14,30,60].map(k=>`<button class="chip" data-rd="${k}" aria-pressed="${N===k}">${k} días</button>`).join("")}</div></div>
+      <p class="small muted" style="margin-top:-4px">${totN} aplicaciones en ${N} días · ${dias.filter(x=>x.p+x.c).length} días activos · ${habN?(totN/habN).toFixed(1):"0"} por día hábil.</p>
+      ${dayChart(dias,{avg:habN?totN/habN:0})}
+      ${apN?`<div class="small muted" style="margin-top:6px">${apN} de estas fechas son aproximadas (reconstruidas el 18 nov), por eso algunas se agrupan en un solo día.</div>`:""}</div>`,
+    semanal:`<div class="grid g2">
+      <div class="panel"><h2>Ritmo por semana</h2>${wkData.length?columns(wkData,{keys:["p","c"],colors:["var(--accent)","var(--warm)"],labels:["Permanente","Contrato"]}):'<div class="muted small">Sin fechas todavía.</div>'}${sinFecha?`<div class="small muted">${sinFecha} aplicadas sin fecha no aparecen.</div>`:""}</div>
+      <div class="panel"><h2>Semana a semana</h2><div class="tablewrap" style="border:0"><table><thead><tr><th>Semana</th><th class="num">Aplicadas</th><th class="num">Días activos</th><th class="num">Prom./día</th><th class="num">Revisadas</th></tr></thead><tbody>${filas||'<tr><td colspan="5" class="muted small">Sin fechas todavía.</td></tr>'}</tbody></table></div>
+      <p class="small muted">Prom./día es por día activo. Revisadas de las semanas recientes sube con el tiempo, a medida que llegan señales.</p></div>
+    </div>`,
+    dow:`<div class="panel"><h2>Qué día de la semana aplicas</h2><p class="small muted" style="margin-top:-4px">Todas las aplicadas con fecha${apTot?` (${apTot} con fecha aproximada)`:""}.</p>${bars(porDow)}</div>`
+  };
+}
+
 function vMetricas(v){
   const apl=S.apps.filter(a=>APLICADAS.has(a.estado));
   const rev=apl.filter(revisada).length, ent=apl.filter(a=>/^Entrevista/.test(a.estado)).length, of=apl.filter(a=>a.estado==="Oferta").length, rech=apl.filter(a=>a.estado==="Rechazado").length;
-  const weeks={}; apl.forEach(a=>{if(!a.fechaAplicacion)return; const w=weekKey(String(a.fechaAplicacion).slice(0,10)); (weeks[w]=weeks[w]||{c:0,p:0}); a.tipo==="Contrato"?weeks[w].c++:weeks[w].p++;});
-  const wk=Object.keys(weeks).sort().slice(-10).map(w=>({x:fmtD(w),values:{p:weeks[w].p,c:weeks[w].c}}));
-  const sinFecha=apl.filter(a=>!a.fechaAplicacion).length;
+  const R=ritmo(apl);
   v.innerHTML=`<div class="grid">
    <div class="grid g4">
     <div class="tile"><div class="k">Aplicadas</div><div class="v">${apl.length}</div><div class="d">${S.apps.filter(a=>a.estado==="Por aplicar").length} por aplicar · ${S.apps.filter(a=>a.estado==="Evaluar").length} por evaluar</div></div>
@@ -508,10 +593,15 @@ function vMetricas(v){
     <div class="tile"><div class="k">Entrevistas</div><div class="v">${ent}</div><div class="d">${of} ofertas</div></div>
     <div class="tile"><div class="k">Rechazos</div><div class="v">${rech}</div><div class="d">${apl.filter(a=>a.estado==="Sin respuesta").length} sin respuesta tras 14 días</div></div>
    </div>
+   <h2 class="sect">Ritmo</h2>
+   ${R.tiles}
+   ${R.diario}
+   ${R.semanal}
+   <h2 class="sect">Resultados</h2>
    <div class="grid g2">
     <div class="panel"><h2>¿Cuántas llegaron a ser revisadas?</h2><div style="display:flex;gap:20px;align-items:center;flex-wrap:wrap">${donut(rev,apl.length,"Revisadas")}
       <div style="flex:1;min-width:180px">${bars([["Vista en LinkedIn",apl.filter(a=>a.senal==="Vista en LinkedIn").length],["CV descargado",apl.filter(a=>a.senal==="CV descargado").length],["Respondió",apl.filter(a=>a.senal==="Respondió").length],["Entrevista u oferta",ent+of]])}</div></div></div>
-    <div class="panel"><h2>Ritmo por semana</h2>${wk.length?columns(wk,{keys:["p","c"],colors:["var(--accent)","var(--warm)"],labels:["Permanente","Contrato"]}):'<div class="muted small">Sin fechas todavía.</div>'}${sinFecha?`<div class="small muted">${sinFecha} aplicadas sin fecha no aparecen.</div>`:""}</div>
+    ${R.dow}
    </div>
    <div class="grid g2">
     <div class="panel"><h2>Por tipo</h2><div class="tablewrap" style="border:0">${corte(apl,a=>a.tipo||"Sin dato",["Contrato","Permanente","Sin dato"])}</div></div>
@@ -520,6 +610,7 @@ function vMetricas(v){
     <div class="panel"><h2>¿La rúbrica acierta?</h2><p class="small muted" style="margin-top:-4px">Si el encaje predice algo, las Muy alto y Alto deberían tener más revisadas.</p><div class="tablewrap" style="border:0">${corte(apl,a=>a.encaje||"Sin dato",[...ENCAJES,"Sin dato"])}</div></div>
     <div class="panel"><h2>Por fuente</h2><div class="tablewrap" style="border:0">${corte(apl,a=>a.fuente||"Sin dato")}</div></div>
    </div></div>`;
+  v.querySelectorAll("[data-rd]").forEach(b=>b.onclick=()=>{S.ritmoDias=+b.dataset.rd;render()});
 }
 
 /* ---------- Tecnologías y puestos ---------- */
