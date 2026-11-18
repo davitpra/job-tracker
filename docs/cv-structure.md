@@ -75,6 +75,7 @@ Cover letters and application-form answers get the full li-human process until P
 3. `./make.sh cv tailored.md "<Company>" <pages> keywords.txt`, with `1` or `2` according to "Page count". It builds, converts to PDF, checks the layout as text, runs the ATS check and runs the detector.
 4. If it flags something (single word on its own line, too many pages, slop words, ATS coverage under 80% or a text-layer flag), edit only those lines with Edit and rerun. Render a page to PNG (`pdftoppm -r 60`) only if a flag can't be judged from the text.
 5. Send only `out/Resume - David Prado - <Company>.pdf`, and in the reply give the ATS summary (coverage %, keywords not covered, gaps).
+6. **Back up the materials** (added 2026-11-18, decided by David): save the posting's full text as `oferta.md`, then from the private repo `davitpra/job-tracker` run `./respaldar.sh app-N "<Company>" --oferta oferta.md --cv tailored.md --keywords keywords.txt` (add `--cl letter.md` when there is a cover letter), and commit and push to `main`. Files land in `aplicaciones/app-N_<company>/`. Never in `cv-toolkit` (public). Steps and `oferta.md` format in the job-tracker README.
 
 ## Page count (by years asked in the posting)
 Decided by David on 2026-10-20; replaces the old rule (one page for focused or mid-level postings).

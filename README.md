@@ -15,6 +15,8 @@ Los datos vivos están en la base del artifact (capacidad `db`). Este repo guard
 | `docs/barrido-posts-linkedin.md` | Prueba del barrido de posts de reclutadores (actor `harvestapi/linkedin-post-search`). |
 | `docs/cv-structure.md` | Reglas para adaptar el CV a cada oferta y pasos de build con `cv-toolkit`. |
 | `cv/master-cv.md` | Copia del CV maestro. **La fuente de verdad sigue siendo `davitpra/cv-toolkit/master-cv.md`**: para cambiar el CV se edita allá; esta copia es solo respaldo. |
+| `aplicaciones/<app-id>_<empresa>/` | Respaldo de los materiales de cada aplicación (desde el 2026-11-18): `oferta.md` (texto completo de la oferta), `cv.md` + `keywords.txt` (fuente del CV adaptado), `Resume - David Prado - <Empresa>.pdf`, y si hubo cover letter, `cover-letter.md` + su .docx y .pdf. Se llena con `respaldar.sh`. |
+| `respaldar.sh` | Copia la oferta, el CV y la cover letter de una aplicación a `aplicaciones/`. Ver "Respaldo de materiales por aplicación". |
 | `data/<colección>/<id>.json` | Copia de la base del tracker, un archivo por documento (`applications/app-N.json`, `busquedas/<id>.json`, `runs/<fecha>_<busqueda>.json`). El historial de git guarda cada versión. |
 
 Los documentos de `docs/` son copias de los del proyecto "Aplicaciones Tech" en claude.ai (carpeta `claude/` y `cv/`). Si cambian allá, hay que actualizar la copia aquí.
@@ -28,6 +30,28 @@ No hay tarea programada. En toda sesión de Claude que trabaje el tracker, antes
 5. Actualizar `settings/backup` con `ultimo` = hora del commit y `commit` = su hash.
 
 La página muestra arriba la fecha del último respaldo y cuántos cambios faltan subir.
+
+## Respaldo de materiales por aplicación (decisión del 2026-11-18)
+Cada vez que se adapta un CV o se escribe una cover letter para una oferta, se guarda todo aquí (no en `cv-toolkit`, que es público: estos archivos llevan teléfono y correo).
+
+1. Guardar el texto completo de la oferta en `oferta.md` con este encabezado:
+   ```
+   # <Puesto> — <Empresa>
+   - App: app-N
+   - Link: <url>
+   - Publicada: AAAA-MM-DD · Guardada: AAAA-MM-DD
+   - Ubicación / modalidad / tipo / salario: …
+
+   ## Descripción (texto original)
+   <la oferta tal cual, en el idioma original>
+   ```
+2. Después de `make.sh` en `cv-toolkit`:
+   ```
+   ./respaldar.sh app-N "<Empresa>" --oferta oferta.md --cv tailored.md --keywords keywords.txt [--cl letter.md]
+   ```
+   `<Empresa>` debe ser el mismo nombre que se pasó a `make.sh` (así encuentra los PDF en `../cv-toolkit/out`).
+3. Si el CV o la carta se rehacen, se vuelve a correr: sobrescribe y el historial de git guarda la versión anterior.
+4. Va en el mismo commit del respaldo de la sesión ("Respaldo AAAA-MM-DD: …"), o en uno propio ("Materiales app-N <Empresa>") si la sesión no tocó la base.
 
 ## Capacidades que declara el artifact
 ```json
