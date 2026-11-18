@@ -43,6 +43,7 @@ La página muestra arriba la fecha del último respaldo y cuántos cambios falta
 - `busquedas/<id>`: una ficha por URL de búsqueda de LinkedIn.
 - `runs/<fecha>_<busqueda>`: resultado de cada run diario.
 - `settings/rubrica`: versión y lista de cambios de la rúbrica.
+- `settings/taxonomia`: `perfil`, las tecnologías que David ya tiene (nombres canónicos). La pestaña Tecnologías y puestos marca como brecha todo lo que no esté ahí. Copia en `data/settings/taxonomia.json`.
 
 ## Restaurar
 1. Publicar `index.html` y `docs/rubrica-clasificacion.md` (como `rubrica.md`) en un artifact nuevo.

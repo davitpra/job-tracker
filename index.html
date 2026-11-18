@@ -181,6 +181,18 @@ dialog::backdrop{background:rgba(10,14,20,.5)}
 .bar-track{height:12px;background:var(--bg);border-radius:4px;overflow:hidden}
 .bar-fill{height:100%;background:var(--accent);border-radius:4px}
 .bar-fill.alt{background:var(--warm)}
+.sbar{display:flex}
+.bar-row.wide3{grid-template-columns:minmax(150px,260px) 1fr 76px}
+.sbar .bar-fill{border-radius:0}
+.sbar .bar-fill:first-child{border-radius:4px 0 0 4px}
+.bar-fill.des{background:color-mix(in srgb,var(--accent) 35%,var(--surface))}
+.tbar{grid-template-columns:minmax(150px,240px) 1fr 52px}
+.tbar>span:first-child{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.tok,.tgap{display:inline-grid;place-items:center;width:16px;height:16px;border-radius:4px;font-size:11px;font-weight:700;margin-right:2px}
+.tok{background:var(--ok-soft);color:var(--ok)}
+.tgap{background:var(--warn-soft);color:var(--warn)}
+ol.gaps{margin:0;padding-left:22px;display:flex;flex-direction:column;gap:10px}
+.heat{display:inline-block;min-width:34px;padding:1px 6px;border-radius:5px;background:color-mix(in srgb,var(--accent) var(--h),transparent);font-variant-numeric:tabular-nums}
 .legend{display:flex;gap:14px;flex-wrap:wrap;font-size:12px;color:var(--muted)}
 .legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:5px;vertical-align:-1px}
 svg text{fill:var(--muted);font:11px var(--body)}
@@ -240,8 +252,9 @@ const ORDEN_ESTADO={"Entrevista final":0,"Entrevista técnica":1,"Entrevista rec
 const ENCAJES=["Muy alto","Alto","Medio","Bajo"];
 const SENALES=["","Vista en LinkedIn","CV descargado","Respondió"];
 const MOTIVOS=["Senior o 5+ años","Híbrido o presencial","Modalidad no indicada","200+ solicitantes","Python como núcleo","Otro stack como núcleo","Java/Kotlin, .NET o C#","Móvil nativo","Otra brecha técnica","Rol distinto o por debajo del nivel","Salario bajo","Autorización o residencia","Francés","Duplicada o ya aplicaste en la empresa","Falta información","Oferta cerrada","Otro"];
+const FAMILIAS=["Full Stack","Frontend","Backend","Mobile","IA / ML","Forward Deployed","Software Engineer genérico"];
 const APLICADAS=new Set(["Aplicado","Entrevista recruiter","Entrevista técnica","Entrevista final","Oferta","Rechazado","Sin respuesta"]);
-const S={apps:[],busq:[],runs:[],rubrica:null,loaded:false,error:null,f:{q:"",estado:"Todas",encaje:"",tipo:"",sort:"prio"},techView:"aplicadas",ritmoDias:30};
+const S={apps:[],busq:[],runs:[],rubrica:null,loaded:false,error:null,f:{q:"",estado:"Todas",encaje:"",tipo:"",sort:"prio"},techView:"mercado",techCat:"Todas",taxo:null,ritmoDias:30};
 let DB=null, DL=null;
 
 const $=s=>document.querySelector(s);
@@ -271,6 +284,7 @@ async function init(){
   DB.collection("busquedas").onSnapshot(s=>{S.busq=s.docs.map(d=>({id:d.id,...d.data()})); if(S.view==="busquedas")render();},()=>{});
   DB.collection("runs").onSnapshot(s=>{S.runs=s.docs.map(d=>({id:d.id,...d.data()})); if(S.view==="busquedas")render();},()=>{});
   DB.doc("settings/rubrica").onSnapshot(d=>{S.rubrica=d.exists?d.data():null; if(S.view==="rubrica")render();},()=>{});
+  DB.doc("settings/taxonomia").onSnapshot(d=>{S.taxo=d.exists?d.data():null; if(S.view==="tecnologias")render();},()=>{});
   DB.doc("settings/backup").onSnapshot(d=>{S.backup=d.exists?d.data():null; renderBanner();},()=>{});
 }
 
@@ -310,7 +324,7 @@ function filtered(){
     if(f.estado!=="Todas"&&a.estado!==f.estado)return false;
     if(f.encaje&&(a.encaje||"Sin dato")!==f.encaje)return false;
     if(f.tipo&&a.tipo!==f.tipo)return false;
-    if(q&&!`${a.empresa} ${a.puesto} ${a.stack||""} ${a.contacto||""} ${a.notas||""}`.toLowerCase().includes(q))return false;
+    if(q&&!`${a.empresa} ${a.puesto} ${a.stack||""} ${(a.techReq||[]).join(" ")} ${(a.techDes||[]).join(" ")} ${a.contacto||""} ${a.notas||""}`.toLowerCase().includes(q))return false;
     return true;});
   const by={prio:(a,b)=>(ORDEN_ESTADO[a.estado]??9)-(ORDEN_ESTADO[b.estado]??9)||(a.prioridad??5)-(b.prioridad??5)||encRank(a)-encRank(b)||String(b.fechaAplicacion||"").localeCompare(String(a.fechaAplicacion||"")),
     fecha:(a,b)=>String(b.fechaAplicacion||b.createdAt||"").localeCompare(String(a.fechaAplicacion||a.createdAt||"")),
@@ -384,11 +398,12 @@ const FIELDS=[
  ["senal","Señal de revisión","sel",SENALES],["fechaSenal","Fecha de la señal","date"],["fechaRespuesta","Primera respuesta","date"],["solicitantes","Solicitantes"],
  ["salario","Salario (texto del aviso)"],["salMin","Salario mín.","num"],["salMax","Salario máx.","num"],["moneda","Moneda","sel",["","CAD","USD","GBP","EUR"]],["periodo","Periodo","sel",["","año","hora","mes"]],
  ["anios","Años pedidos"],["cvAdaptada","CV adaptado","sel",["","Sí","No"]],["busqueda","Búsqueda (id)"],
- ["contacto","Contacto","wide"],["stack","Stack","area"],["porQue","Por qué encajas","area"],["brechas","Brechas o riesgos","area"],["proximoPaso","Próximo paso","area"],["notas","Notas","area"]];
+ ["contacto","Contacto","wide"],["familia","Familia del puesto (vacío = según el título)","sel",["",...FAMILIAS]],["techReq","Tecnologías requeridas (separadas por coma)","tags"],["techDes","Tecnologías deseables (separadas por coma)","tags"],["stack","Stack (texto del aviso)","area"],["porQue","Por qué encajas","area"],["brechas","Brechas o riesgos","area"],["proximoPaso","Próximo paso","area"],["notas","Notas","area"]];
 let CUR=null, delArm=false;
 function fieldHtml([k,label,type,opts],a){
   const val=a[k]??""; const id="f_"+k;
   if(type==="sel") return `<label for="${id}">${label}<select id="${id}" name="${k}">${opts.map(o=>`<option value="${esc(o)}" ${String(val)===o?"selected":""}>${esc(o||"—")}</option>`).join("")}${val&&!opts.includes(String(val))?`<option selected>${esc(val)}</option>`:""}</select></label>`;
+  if(type==="tags") return `<label class="wide" for="${id}">${label}<input id="${id}" name="${k}" type="text" value="${esc(Array.isArray(val)?val.join(", "):val)}" placeholder="React, Node.js, AWS…"></label>`;
   if(type==="area") return `<label class="wide" for="${id}">${label}<textarea id="${id}" name="${k}" rows="${Math.min(8,Math.max(2,Math.ceil(String(val).length/90)+String(val).split("\n").length-1))}">${esc(val)}</textarea></label>`;
   const it=type==="num"?"number":type==="date"?"date":type==="url"?"url":"text";
   return `<label class="${type==="wide"?"wide":SPAN2.includes(k)?"s2":""}" for="${id}">${label}<input id="${id}" name="${k}" type="${it}" value="${esc(type==="date"?String(val).slice(0,10):val)}"></label>`;
@@ -413,12 +428,17 @@ const SPAN2=["empresa","puesto","link","salario","fuente"];
 const GROUPS=[
  {t:"Estado y próximo paso",cls:"",keys:["estado","prioridad","encaje","cvAdaptada","proximoPaso"]},
  {t:"La oferta",cls:"",keys:["empresa","puesto","link","fuente","tipo","modalidad","ubicacion","anios","publicada","solicitantes"]},
- {t:"Encaje con tu perfil",cls:"c1",keys:["stack","porQue","brechas"],clasif:true},
+ {t:"Encaje con tu perfil",cls:"c1",keys:["familia","techReq","techDes","stack","porQue","brechas"],clasif:true,techs:true},
  {col:[
    {t:"Seguimiento",cls:"c2",keys:["fechaAplicacion","fechaRespuesta","senal","fechaSenal","contacto"]},
    {t:"Salario",cls:"c2",keys:["salario","salMin","salMax","moneda","periodo"]}]},
 ];
-function secHtml(g,a){ return `<section class="dsec"><h3>${g.t}</h3><div class="form ${g.cls}">${g.keys.map(k=>fieldHtml(FMAP[k],a)).join("")}</div>${g.clasif?clasifHtml(a.clasif):""}</section>`; }
+function techNoteHtml(a){
+  const t=techsOf(a); if(!t.any) return `<p class="small muted" style="margin:8px 0 0">Familia según el título: <b>${esc(familiaDe(a))}</b> · nivel: <b>${esc(nivelDe(a))}</b>. Sin tecnologías cargadas.</p>`;
+  const p=perfilSet(), falta=[...t.req,...t.des].filter(k=>!p.has(k));
+  return `<p class="small" style="margin:8px 0 0"><span class="muted">Familia: <b>${esc(familiaDe(a))}</b> · nivel: <b>${esc(nivelDe(a))}</b> · </span>${falta.length?`Brechas calculadas: <b>${falta.map(esc).join(", ")}</b>`:`<span style="color:var(--ok)">Tienes todas las tecnologías que pide.</span>`}${t.legacy?' <span class="muted">(leídas del texto de Stack)</span>':""}</p>`;
+}
+function secHtml(g,a){ return `<section class="dsec"><h3>${g.t}</h3><div class="form ${g.cls}">${g.keys.map(k=>fieldHtml(FMAP[k],a)).join("")}</div>${g.techs?techNoteHtml(a):""}${g.clasif?clasifHtml(a.clasif):""}</section>`; }
 function openApp(id){
   const a=id?S.apps.find(x=>x.id===id):{estado:"Por aplicar"};
   if(!a) return;
@@ -444,7 +464,9 @@ function openApp(id){
 function collect(){
   const fd=new FormData($("#dlgForm")); const out={};
   FIELDS.forEach(([k,,type])=>{ let v=fd.get(k); if(v==null)return; v=String(v).trim();
-    if(type==="num") out[k]=v===""?null:Number(v); else out[k]=v===""?null:v; });
+    if(type==="num") out[k]=v===""?null:Number(v);
+    else if(type==="tags"){ const l=[...new Set(v.split(",").map(canon).filter(Boolean))]; out[k]=l.length?l:null; }
+    else out[k]=v===""?null:v; });
   out.motivoDescarte=fd.getAll("motivoDescarte");
   return out;
 }
@@ -476,9 +498,9 @@ $("#dlgDelete").onclick=async()=>{
 $("#btnNew").onclick=()=>openApp(null);
 
 /* ---------- charts helpers ---------- */
-function bars(items,{alt=false,max=null,suffix=""}={}){
+function bars(items,{alt=false,max=null,suffix="",cls=""}={}){
   const m=max??Math.max(1,...items.map(i=>i[1]));
-  return items.map(([k,v,extra])=>`<div class="bar-row"><span title="${esc(k)}" style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${esc(k)}</span><div class="bar-track"><div class="bar-fill ${alt?"alt":""}" style="width:${Math.max(2,v*100/m)}%"></div></div><span class="num mono" style="text-align:right">${v}${suffix}${extra?`<span class="muted"> ${extra}</span>`:""}</span></div>`).join("")||`<div class="muted small">Sin datos todavía.</div>`;
+  return items.map(([k,v,extra])=>`<div class="bar-row ${cls}"><span title="${esc(k)}" style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${esc(k)}</span><div class="bar-track"><div class="bar-fill ${alt?"alt":""}" style="width:${Math.max(2,v*100/m)}%"></div></div><span class="num mono" style="text-align:right">${v}${suffix}${extra?`<span class="muted"> ${extra}</span>`:""}</span></div>`).join("")||`<div class="muted small">Sin datos todavía.</div>`;
 }
 function donut(part,total,label){
   const r=52,c=2*Math.PI*r,f=total?part/total:0;
@@ -533,51 +555,22 @@ function dayChart(data,{h=190,avg=0}){
   <div class="legend"><span><i style="background:var(--accent)"></i>Permanente</span><span><i style="background:var(--warm)"></i>Contrato</span><span><i style="background:var(--bg);border:1px solid var(--line)"></i>Fin de semana</span>${avg>0?`<span><i style="background:none;border-top:2px dashed var(--ok);height:0;border-radius:0"></i>Promedio ${avg.toFixed(1)} por día hábil</span>`:""}</div>`;
 }
 function ritmo(apl){
-  const hoy=isoL(new Date()), lunes=weekKey(hoy);
+  const hoy=isoL(new Date());
   const fe=apl.filter(a=>a.fechaAplicacion).map(a=>({a,d:String(a.fechaAplicacion).slice(0,10)}));
   const byDay={}; fe.forEach(({a,d})=>{(byDay[d]=byDay[d]||{p:0,c:0,ap:0}); a.tipo==="Contrato"?byDay[d].c++:byDay[d].p++; if(aprox(a))byDay[d].ap++;});
   const cnt=d=>byDay[d]?byDay[d].p+byDay[d].c:0;
-  const sumR=(from,to)=>{let s=0;for(let d=from;d<=to;d=addD(d,1))s+=cnt(d);return s};
-  // tiles
-  const ayer=addD(hoy,-1), hoyN=cnt(hoy), semN=sumR(lunes,hoy);
-  const lunPas=addD(lunes,-7), semPasN=sumR(lunPas,addD(lunes,-1)), semPasAltura=sumR(lunPas,addD(hoy,-7));
-  const desde28=addD(hoy,-27); let hab28=0,act28=0; for(let d=desde28;d<=hoy;d=addD(d,1)){if(dow(d)<5)hab28++; if(cnt(d))act28++;}
-  const tot28=sumR(desde28,hoy), avgDia=hab28?tot28/hab28:0;
-  const semanas={}; fe.forEach(({a,d})=>{const w=weekKey(d);(semanas[w]=semanas[w]||[]).push(a)});
-  const prim=Object.keys(semanas).sort()[0];
-  const wkList=[]; if(prim) for(let w=prim;w<=lunes;w=addD(w,7)) wkList.push(w);
-  const completas=wkList.filter(w=>w<lunes).slice(-4), avgSem=completas.length?completas.reduce((s,w)=>s+(semanas[w]||[]).length,0)/completas.length:0;
-  const mejor=wkList.reduce((m,w)=>(semanas[w]||[]).length>((semanas[m]||[]).length)?w:m,wkList[0]);
-  let racha=0, d=cnt(hoy)?hoy:addD(hoy,-1); for(let k=0;k<400;k++){ if(dow(d)>4){d=addD(d,-1);continue} if(!cnt(d))break; racha++; d=addD(d,-1); }
   // daily range
   const N=S.ritmoDias||30, desde=addD(hoy,-(N-1)), dias=[]; let habN=0,totN=0;
   for(let x=desde;x<=hoy;x=addD(x,1)){const b=byDay[x]||{p:0,c:0}; dias.push({iso:x,p:b.p,c:b.c,today:x===hoy}); if(dow(x)<5)habN++; totN+=b.p+b.c;}
   const apN=dias.reduce((s,x)=>s+((byDay[x.iso]||{}).ap||0),0);
-  // weekly chart + table
-  const wkData=wkList.slice(-12).map(w=>{const r=semanas[w]||[];return {x:fmtD(w),values:{p:r.filter(a=>a.tipo!=="Contrato").length,c:r.filter(a=>a.tipo==="Contrato").length}}});
-  const filas=wkList.slice().reverse().slice(0,8).map(w=>{const r=semanas[w]||[]; let act=0; for(let i=0;i<7;i++) if(cnt(addD(w,i)))act++; const rv=r.filter(revisada).length;
-    return `<tr style="cursor:default"><td style="white-space:nowrap">${fmtD(w)} – ${fmtD(addD(w,6))}${w===lunes?' <span class="pill s-por">en curso</span>':""}</td><td class="num"><b>${r.length}</b></td><td class="num">${act}</td><td class="num">${act?(r.length/act).toFixed(1):"–"}</td><td class="num">${r.length?pct(rv,r.length)+" %":"–"}</td></tr>`}).join("");
   const porDow=DIAS.map((k,i)=>[k,fe.filter(x=>dow(x.d)===i).length]);
   const apTot=fe.filter(x=>aprox(x.a)).length, sinFecha=apl.length-fe.length;
-  const tile=(k,v,dd)=>`<div class="tile"><div class="k">${k}</div><div class="v">${v}</div><div class="d">${dd}</div></div>`;
   return {
-    tiles:`<div class="grid g5">
-      ${tile("Hoy",hoyN,`ayer ${cnt(ayer)}`)}
-      ${tile("Esta semana",semN,`semana pasada a esta altura: ${semPasAltura} · total ${semPasN}`)}
-      ${tile("Por día hábil",avgDia.toFixed(1),`últimas 4 semanas · ${act28} días activos de ${hab28} hábiles`)}
-      ${tile("Por semana",avgSem.toFixed(1),`promedio de las últimas ${completas.length||0} semanas cerradas${mejor?` · mejor: ${(semanas[mejor]||[]).length} (${fmtD(mejor)})`:""}`)}
-      ${tile("Racha",racha,`${racha===1?"día hábil seguido":"días hábiles seguidos"} con al menos una aplicación`)}
-    </div>`,
     diario:`<div class="panel"><div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap"><h2>Ritmo por día</h2>
       <div class="chips" role="group" aria-label="Rango">${[14,30,60].map(k=>`<button class="chip" data-rd="${k}" aria-pressed="${N===k}">${k} días</button>`).join("")}</div></div>
-      <p class="small muted" style="margin-top:-4px">${totN} aplicaciones en ${N} días · ${dias.filter(x=>x.p+x.c).length} días activos · ${habN?(totN/habN).toFixed(1):"0"} por día hábil.</p>
+      <p class="small muted" style="margin-top:-4px">${totN} aplicaciones en ${N} días · ${dias.filter(x=>x.p+x.c).length} días activos · ${habN?(totN/habN).toFixed(1):"0"} por día hábil.${sinFecha?` ${sinFecha} aplicadas sin fecha no aparecen.`:""}</p>
       ${dayChart(dias,{avg:habN?totN/habN:0})}
       ${apN?`<div class="small muted" style="margin-top:6px">${apN} de estas fechas son aproximadas (reconstruidas el 18 nov), por eso algunas se agrupan en un solo día.</div>`:""}</div>`,
-    semanal:`<div class="grid g2">
-      <div class="panel"><h2>Ritmo por semana</h2>${wkData.length?columns(wkData,{keys:["p","c"],colors:["var(--accent)","var(--warm)"],labels:["Permanente","Contrato"]}):'<div class="muted small">Sin fechas todavía.</div>'}${sinFecha?`<div class="small muted">${sinFecha} aplicadas sin fecha no aparecen.</div>`:""}</div>
-      <div class="panel"><h2>Semana a semana</h2><div class="tablewrap" style="border:0"><table><thead><tr><th>Semana</th><th class="num">Aplicadas</th><th class="num">Días activos</th><th class="num">Prom./día</th><th class="num">Revisadas</th></tr></thead><tbody>${filas||'<tr><td colspan="5" class="muted small">Sin fechas todavía.</td></tr>'}</tbody></table></div>
-      <p class="small muted">Prom./día es por día activo. Revisadas de las semanas recientes sube con el tiempo, a medida que llegan señales.</p></div>
-    </div>`,
     dow:`<div class="panel"><h2>Qué día de la semana aplicas</h2><p class="small muted" style="margin-top:-4px">Todas las aplicadas con fecha${apTot?` (${apTot} con fecha aproximada)`:""}.</p>${bars(porDow)}</div>`
   };
 }
@@ -594,9 +587,7 @@ function vMetricas(v){
     <div class="tile"><div class="k">Rechazos</div><div class="v">${rech}</div><div class="d">${apl.filter(a=>a.estado==="Sin respuesta").length} sin respuesta tras 14 días</div></div>
    </div>
    <h2 class="sect">Ritmo</h2>
-   ${R.tiles}
    ${R.diario}
-   ${R.semanal}
    <h2 class="sect">Resultados</h2>
    <div class="grid g2">
     <div class="panel"><h2>¿Cuántas llegaron a ser revisadas?</h2><div style="display:flex;gap:20px;align-items:center;flex-wrap:wrap">${donut(rev,apl.length,"Revisadas")}
@@ -609,32 +600,174 @@ function vMetricas(v){
     <div class="panel"><h2>Por nivel del título</h2><div class="tablewrap" style="border:0">${corte(apl,a=>isSenior(a)?"Senior, Lead o Founding":"Intermedio u otro",["Intermedio u otro","Senior, Lead o Founding"])}</div></div>
     <div class="panel"><h2>¿La rúbrica acierta?</h2><p class="small muted" style="margin-top:-4px">Si el encaje predice algo, las Muy alto y Alto deberían tener más revisadas.</p><div class="tablewrap" style="border:0">${corte(apl,a=>a.encaje||"Sin dato",[...ENCAJES,"Sin dato"])}</div></div>
     <div class="panel"><h2>Por fuente</h2><div class="tablewrap" style="border:0">${corte(apl,a=>a.fuente||"Sin dato")}</div></div>
-   </div></div>`;
+   </div>
+   <h2 class="sect">Salarios</h2>
+   ${pagan()}</div>`;
   v.querySelectorAll("[data-rd]").forEach(b=>b.onclick=()=>{S.ritmoDias=+b.dataset.rd;render()});
 }
 
 /* ---------- Tecnologías y puestos ---------- */
-const TECH=[["TypeScript",/typescript|\bts\b/i],["React",/react(?!\s*native)/i],["Next.js",/next\.?js/i],["Node.js",/node/i],["NestJS",/nest/i],["PostgreSQL",/postgres/i],["GraphQL",/graphql/i],["AWS",/\baws\b|lambda|amazon web/i],["GCP",/\bgcp\b|google cloud/i],["Azure",/azure/i],["Docker",/docker/i],["Kubernetes",/kubernetes|\bk8s\b/i],["Python",/python|django|fastapi|flask/i],["Go",/\bgo\b|golang/i],["Java",/\bjava\b(?!script)/i],[".NET / C#",/\.net|c#/i],["Vue",/\bvue/i],["Angular",/angular/i],["React Native",/react\s*native|expo/i],["Shopify",/shopify|liquid/i],["IA / LLM",/\bai\b|\bia\b|llm|agentic|genai/i],["Terraform",/terraform/i],["Redis",/redis/i],["MongoDB",/mongo/i]];
-function normTitle(p){return String(p||"").toLowerCase().replace(/\(.*?\)|\[.*?\]/g,"").replace(/\b(senior|sr\.?|intermediate|mid[- ]level|junior|jr\.?|ii|iii|i)\b/g,"").replace(/[-–,|:].*$/,"").replace(/\s+/g," ").trim()}
+/* Taxonomía fija: nombre canónico + patrón que reconoce variantes ("node", "NodeJS" → Node.js). */
+const TAXO=[
+ ["Lenguajes",[["TypeScript",/typescript|\bts\b/i],["JavaScript",/javascript|\bjs\b|es6/i],["Python",/python|django|fastapi|flask/i],["Java",/\bjava\b(?!\s*script)|spring\s*boot/i],["Go",/golang|\bGo\b/],["C# / .NET",/\.net\b|c#|asp\.net/i],["PHP",/\bphp\b|laravel/i],["Ruby / Rails",/\bruby\b|\brails\b/i],["Kotlin",/kotlin/i],["Rust",/\brust\b/i],["SQL",/\bsql\b/i]]],
+ ["Frontend",[["React",/react(?!\s*native)/i],["Next.js",/next\.?js/i],["Angular",/angular/i],["Vue",/\bvue/i],["Redux",/redux/i],["Tailwind",/tailwind/i],["HTML / CSS",/\bhtml|\bcss\b|\bsass\b|\bscss\b/i],["Storybook",/storybook/i]]],
+ ["Backend",[["Node.js",/\bnode(\.?js)?\b/i],["NestJS",/nest\.?js|\bnest\b/i],["Express",/\bexpress(\.?js)?\b/i],["GraphQL",/graphql/i],["REST APIs",/\brest(ful)?\b/i],["Microservicios",/microservic/i],["Prisma",/prisma/i]]],
+ ["Datos",[["PostgreSQL",/postgres/i],["MySQL",/mysql|mariadb/i],["MongoDB",/mongo/i],["Redis",/redis/i],["DynamoDB",/dynamo/i],["Elasticsearch",/elastic/i],["Kafka / colas",/kafka|rabbitmq|\bsqs\b|bullmq|pub\s*\/?\s*sub/i]]],
+ ["Cloud y DevOps",[["AWS",/\baws\b|lambda|amazon web/i],["GCP",/\bgcp\b|google cloud/i],["Azure",/azure/i],["Docker",/docker/i],["Kubernetes",/kubernetes|\bk8s\b/i],["Terraform",/terraform/i],["CI/CD",/ci\s*\/\s*cd|github actions|jenkins|gitlab ci/i]]],
+ ["IA",[["IA / LLM",/\bllms?\b|genai|generative ai|ia generativa|openai|anthropic|langchain|\brag\b|agentic|\bai\b|\bia\b/i],["Machine learning",/machine learning|\bml\b|pytorch|tensorflow/i]]],
+ ["Testing",[["Jest",/\bjest\b/i],["Vitest",/vitest/i],["Cypress",/cypress/i],["Playwright",/playwright/i]]],
+ ["Mobile",[["React Native",/react\s*native|\bexpo\b/i],["iOS / Android nativo",/\bswift\b|\bios\b|android/i]]],
+ ["E-commerce",[["Shopify",/shopify|liquid/i],["Stripe",/stripe/i]]]];
+const TECH_CAT={}; TAXO.forEach(([c,l])=>l.forEach(([k])=>TECH_CAT[k]=c));
+const TECH_FLAT=TAXO.flatMap(([,l])=>l);
+/* Lo que David ya tiene (CV maestro + skills confirmadas). Se puede reemplazar desde settings/taxonomia.perfil. */
+const PERFIL_BASE=["TypeScript","JavaScript","React","Next.js","Angular","Tailwind","HTML / CSS","Node.js","NestJS","Express","GraphQL","REST APIs","Prisma","PostgreSQL","MySQL","MongoDB","Redis","Kafka / colas","Docker","Kubernetes","CI/CD","IA / LLM","Jest","Vitest","Cypress","Playwright","Shopify","SQL"];
+const perfilSet=()=>new Set((S.taxo&&S.taxo.perfil)||PERFIL_BASE);
+function canon(t){ const s=String(t||"").trim(); if(!s)return "";
+  const ex=TECH_FLAT.find(([k])=>k.toLowerCase()===s.toLowerCase()); if(ex)return ex[0];
+  const m=TECH_FLAT.find(([,re])=>re.test(s)); return m?m[0]:s; }
+/* Tecnologías de una oferta: primero los campos techReq/techDes; si no hay, lo que se reconozca en el texto de Stack (nunca el título). */
+function techsOf(a){
+  const req=new Set((a.techReq||[]).map(canon).filter(Boolean)), des=new Set((a.techDes||[]).map(canon).filter(Boolean));
+  let legacy=false;
+  if(!req.size&&!des.size&&a.stack){ TECH_FLAT.forEach(([k,re])=>{if(re.test(a.stack))req.add(k)}); legacy=req.size>0; }
+  req.forEach(k=>des.delete(k));
+  return {req,des,legacy,any:req.size+des.size>0};
+}
+/* Familia y nivel del puesto: salen del título, salvo que la oferta tenga familia cargada a mano. */
+function familiaDe(a){
+  if(a.familia) return a.familia;
+  const t=String(a.puesto||"").toLowerCase();
+  if(!t||/puesto sin dato|^contrato \(/.test(t)) return "Sin dato";
+  if(/forward deployed/.test(t)) return "Forward Deployed";
+  if(/react\s*native|\bmobile\b|\bios\b|android|\bexpo\b/.test(t)) return "Mobile";
+  if(/full[\s-]?stack/.test(t)) return "Full Stack";
+  if(/front[\s-]?end|user interface|\bui engineer|react(js)? developer|react\/typescript/.test(t)) return "Frontend";
+  if(/back[\s-]?end|platform|integrations?|\bapi\b|nestjs|node/.test(t)) return "Backend";
+  if(/\bai\b|\bml\b|machine learning|llm|agentic|generative/.test(t)) return "IA / ML";
+  return "Software Engineer genérico";
+}
+const NIVELES=["Junior","Intermedio","Senior","Sin nivel"];
+function nivelDe(a){
+  const t=String(a.puesto||"");
+  if(isSenior(a)) return "Senior";
+  if(/junior|\bjr\b|early career|associate|new grad/i.test(t)) return "Junior";
+  if(/intermediate|mid[\s-]?level|\bII\b|intermedio/i.test(t)) return "Intermedio";
+  return "Sin nivel";
+}
+/* Título limpio para agrupar variantes: "Sr. Full-Stack Developer – Growth" → "full stack developer";
+   "Software Engineer II, React Native" → "react native software engineer". */
+function normTitle(p){
+  const base=String(p||"").toLowerCase().replace(/\(.*?\)|\[.*?\]/g," ")
+   .replace(/full[\s-]?stack/g,"full stack").replace(/front[\s-]?end/g,"frontend").replace(/back[\s-]?end/g,"backend").replace(/reactjs/g,"react");
+  const segs=base.split(/\s[-–|]\s|[,:]/).map(x=>x.trim()).filter(Boolean);
+  const FAM=/full stack|frontend|backend|react native|mobile|platform/;
+  let r=segs.find(x=>/engineer|developer|programmer|architect|development/.test(x))||segs[0]||"";
+  if(!FAM.test(r)){ const q=segs.find(x=>x!==r&&FAM.test(x)); if(q) r=q.match(FAM)[0]+" "+r; }
+  return r.replace(/\b(senior|sr\.?|staff|lead|founding|principal|intermediate|mid[\s-]?level|junior|jr\.?|associate|ii|iii)\b/g," ").replace(/\s+/g," ").trim();
+}
+const UNIVERSOS={mercado:{t:"Mercado: todo lo visto",f:()=>true},aplicadas:{t:"Solo las aplicadas",f:a=>APLICADAS.has(a.estado)},respuesta:{t:"Las que tuvieron señal o respuesta",f:a=>revisada(a)||!!a.fechaRespuesta}};
+const MIN_N=10;
+const fechaRef=a=>String(a.publicada||a.fechaAplicacion||a.createdAt||"").slice(0,10);
+
+function stackBar(req,des,n){
+  const pr=n?req*100/n:0, pd=n?des*100/n:0;
+  return `<div class="bar-track sbar" title="Requerida en ${req} · deseable en ${des} de ${n}"><div class="bar-fill" style="width:${pr}%"></div><div class="bar-fill des" style="width:${pd}%"></div></div>`;
+}
 function vTec(v){
-  const rows=S.techView==="todas"?S.apps:S.apps.filter(a=>APLICADAS.has(a.estado));
-  const tc=TECH.map(([k,re])=>[k,rows.filter(a=>re.test(`${a.stack||""} ${a.brechas||""} ${a.puesto||""}`)).length]).filter(x=>x[1]).sort((a,b)=>b[1]-a[1]);
-  const br=TECH.map(([k,re])=>[k,rows.filter(a=>re.test(a.brechas||"")).length]).filter(x=>x[1]).sort((a,b)=>b[1]-a[1]);
-  const tt={}; rows.forEach(a=>{const t=normTitle(a.puesto); if(t&&t!=="puesto sin dato")tt[t]=(tt[t]||0)+1});
-  const titles=Object.entries(tt).sort((a,b)=>b[1]-a[1]).slice(0,14);
-  const sal=rows.filter(a=>a.salMin||a.salMax).map(a=>{const f=a.periodo==="hora"?2080:a.periodo==="mes"?12:1;return {a,lo:(a.salMin||a.salMax)*f,hi:(a.salMax||a.salMin)*f}}).filter(x=>!a_usd(x.a));
-  const conStack=rows.filter(a=>a.stack||a.brechas).length;
+  if(!UNIVERSOS[S.techView]) S.techView="mercado";
+  const U=UNIVERSOS[S.techView], rows=S.apps.filter(U.f), perfil=perfilSet();
+  const T=rows.map(a=>({a,...techsOf(a)})), withT=T.filter(x=>x.any), n=withT.length, legacyN=withT.filter(x=>x.legacy).length;
+  const enough=n>=MIN_N;
+  // demanda por tecnología
+  const dem={}; withT.forEach(x=>{x.req.forEach(k=>{(dem[k]=dem[k]||{req:0,des:0,apps:[]}).req++;dem[k].apps.push(x.a)}); x.des.forEach(k=>{(dem[k]=dem[k]||{req:0,des:0,apps:[]}).des++;dem[k].apps.push(x.a)})});
+  const ranking=Object.entries(dem).map(([k,d])=>({k,...d,tot:d.req+d.des,cat:TECH_CAT[k]||"Otras",tengo:perfil.has(k)})).sort((a,b)=>b.tot-a.tot||b.req-a.req);
+  const cats=["Todas",...TAXO.map(t=>t[0]),"Otras"].filter(c=>c==="Todas"||ranking.some(r=>r.cat===c));
+  if(!cats.includes(S.techCat)) S.techCat="Todas";
+  const rk=ranking.filter(r=>S.techCat==="Todas"||r.cat===S.techCat).slice(0,20);
+  const reqTot=withT.reduce((s,x)=>s+x.req.size,0), reqTengo=withT.reduce((s,x)=>s+[...x.req].filter(k=>perfil.has(k)).length,0);
+  // brechas
+  const gaps=ranking.filter(r=>!r.tengo).map(r=>({...r,score:r.req+r.des*.5})).sort((a,b)=>b.score-a.score).slice(0,6);
+  // cobertura del stack requerido
+  const cov=withT.filter(x=>x.req.size).map(x=>[...x.req].filter(k=>perfil.has(k)).length/x.req.size);
+  const covB=[["Cumples todo lo requerido",cov.filter(c=>c===1).length],["Te falta poco (75–99 %)",cov.filter(c=>c>=.75&&c<1).length],["Te falta la mitad (50–74 %)",cov.filter(c=>c>=.5&&c<.75).length],["Te falta más de la mitad",cov.filter(c=>c<.5).length]];
+  // combinaciones
+  const pares={}; withT.forEach(x=>{const l=[...new Set([...x.req,...x.des])].sort(); for(let i=0;i<l.length;i++)for(let j=i+1;j<l.length;j++){const p=l[i]+" + "+l[j];pares[p]=(pares[p]||0)+1}});
+  const topPares=Object.entries(pares).sort((a,b)=>b[1]-a[1]).slice(0,10).map(([k,c])=>[k,pct(c,n),`(${c})`]);
+  // familias × nivel (no necesita tecnologías)
+  const fam={}; rows.forEach(a=>{const f=familiaDe(a); if(f==="Sin dato")return; const l=nivelDe(a); (fam[f]=fam[f]||{tot:0,apps:[]}); fam[f][l]=(fam[f][l]||0)+1; fam[f].tot++; fam[f].apps.push(a)});
+  const famRows=Object.entries(fam).sort((a,b)=>b[1].tot-a[1].tot);
+  const topTechFam=apps=>{const c={}; apps.forEach(a=>{const t=techsOf(a); [...t.req,...t.des].forEach(k=>c[k]=(c[k]||0)+1)}); return Object.entries(c).sort((a,b)=>b[1]-a[1]).slice(0,3).map(x=>x[0]).join(", ")};
+  const tt={}; rows.forEach(a=>{const t=normTitle(a.puesto); if(t&&!/puesto sin dato|^contrato$/.test(t))tt[t]=(tt[t]||0)+1});
+  const titles=Object.entries(tt).sort((a,b)=>b[1]-a[1]).slice(0,10);
+  // tendencia semanal
+  const sem={}; withT.forEach(x=>{const d=fechaRef(x.a); if(!d)return; const w=weekKey(d); (sem[w]=sem[w]||[]).push(x)});
+  const semanas=Object.keys(sem).sort().slice(-6), semOk=semanas.filter(w=>sem[w].length>=5);
+  const top5=ranking.slice(0,5).map(r=>r.k);
+
+  const tile=(k,val,d)=>`<div class="tile"><div class="k">${k}</div><div class="v">${val}</div><div class="d">${d}</div></div>`;
+  const falta=m=>`<div class="muted small">${m}</div>`;
+  const pocos=`Hacen falta al menos ${MIN_N} ofertas con tecnologías cargadas en esta vista (hay ${n}).`;
   v.innerHTML=`<div class="grid">
-   <div class="filters"><label class="small" for="tv">Vista</label><select id="tv"><option value="aplicadas" ${S.techView==="aplicadas"?"selected":""}>Aplicadas</option><option value="todas" ${S.techView==="todas"?"selected":""}>Todas las vistas (incluye descartadas)</option></select><span class="small muted">${rows.length} ofertas · ${conStack} con stack o brechas cargadas</span></div>
+   <div class="filters"><label class="small" for="tv">Vista</label><select id="tv">${Object.entries(UNIVERSOS).map(([k,u])=>`<option value="${k}" ${S.techView===k?"selected":""}>${u.t}</option>`).join("")}</select>
+     <span class="small muted">${rows.length} ofertas en esta vista</span></div>
+   <div class="grid g4">
+    ${tile("Con tecnologías",`${n}<small class="muted" style="font-size:15px"> / ${rows.length}</small>`,`${pct(n,rows.length)} % de las ofertas de esta vista${legacyN?` · ${legacyN} leídas del texto de Stack`:""}`)}
+    ${tile("Tecnologías distintas",ranking.length,ranking.length?`${ranking.filter(r=>r.tengo).length} las tienes · ${ranking.filter(r=>!r.tengo).length} no`:"todavía sin datos")}
+    ${tile("De lo requerido, ya tienes",reqTot?pct(reqTengo,reqTot)+" %":"–",reqTot?`${reqTengo} de ${reqTot} menciones de tecnologías requeridas`:"todavía sin datos")}
+    ${tile("Familias de puesto",famRows.length,famRows[0]?`la más común: ${esc(famRows[0][0])} (${famRows[0][1].tot})`:"")}
+   </div>
+   ${n<MIN_N?`<div class="notice info"><b>Esta pestaña se llena con cada búsqueda diaria.</b> En cada run, Claude lee la descripción completa de cada oferta (también las que descartas) y carga sus tecnologías en <i>Tecnologías requeridas</i> y <i>deseables</i>. También puedes cargarlas a mano en el detalle de cada oferta. Las secciones de tecnologías aparecen cuando hay ${MIN_N} o más ofertas con datos; <b>Qué puestos hay</b> ya funciona porque sale del título.</div>`:""}
+
+   <h2 class="sect">¿Qué pide el mercado?</h2>
+   <div class="panel">
+     <div style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:baseline"><h2 style="margin:0">Tecnologías más pedidas</h2>
+       ${enough?`<div class="chips" role="group" aria-label="Categoría">${cats.map(c=>`<button class="chip" data-cat="${esc(c)}" aria-pressed="${S.techCat===c}">${esc(c)}</button>`).join("")}</div>`:""}</div>
+     <p class="small muted" style="margin:4px 0 8px">Porcentaje de las ${n} ofertas con tecnologías que la piden. ✓ = ya la tienes en tu perfil.</p>
+     ${enough?`<div class="legend" style="margin-bottom:6px"><span><i style="background:var(--accent)"></i>Requerida</span><span><i style="background:color-mix(in srgb,var(--accent) 35%,var(--surface))"></i>Deseable</span></div>
+       ${rk.map(r=>`<div class="bar-row tbar"><span><span class="${r.tengo?"tok":"tgap"}" aria-label="${r.tengo?"La tienes":"No la tienes"}">${r.tengo?"✓":"·"}</span> ${esc(r.k)} <span class="muted small">${esc(r.cat)}</span></span>${stackBar(r.req,r.des,n)}<span class="num mono" style="text-align:right">${pct(r.tot,n)} %</span></div>`).join("")||falta("Nada en esta categoría.")}`:falta(pocos)}
+   </div>
+
+   <h2 class="sect">¿Qué te conviene aprender?</h2>
    <div class="grid g2">
-    <div class="panel"><h2>Qué tecnologías piden</h2><p class="small muted" style="margin-top:-4px">Cuenta stack, brechas y título de cada oferta.</p>${bars(tc)}</div>
-    <div class="panel"><h2>Dónde están tus brechas</h2><p class="small muted" style="margin-top:-4px">Solo el campo Brechas: lo que más conviene aprender.</p>${bars(br,{alt:true})}</div>
-    <div class="panel"><h2>Puestos que más se repiten</h2>${bars(titles)}</div>
-    <div class="panel"><h2>Lo que pagan</h2>${sal.length?`<p class="small muted" style="margin-top:-4px">Anual en CAD (hora × 2.080, mes × 12). ${sal.length} ofertas con salario.</p>${salStrip(sal)}`:'<div class="muted small">Todavía no hay ofertas con salario normalizado (salMin, salMax).</div>'}</div>
-   </div></div>`;
+    <div class="panel"><h2>Tus brechas principales</h2><p class="small muted" style="margin-top:-4px">Lo que piden y no está en tu perfil. Pesa el doble cuando es requerida.</p>
+     ${enough?(gaps.length?`<ol class="gaps">${gaps.map(g=>`<li><div><b>${esc(g.k)}</b> <span class="muted small">${esc(g.cat)}</span></div>
+        <div class="small">${pct(g.tot,n)} % de las ofertas · requerida en ${g.req}, deseable en ${g.des}</div>
+        <div class="small muted">Ej.: ${[...new Map(g.apps.map(a=>[a.id,a])).values()].slice(0,3).map(a=>`<a href="#tecnologias" data-open="${esc(a.id)}">${esc(a.empresa)}</a>`).join(", ")}</div></li>`).join("")}</ol>`:falta("No hay brechas: todo lo que piden ya está en tu perfil.")):falta(pocos)}</div>
+    <div class="panel"><h2>¿Cuánto del stack pedido ya tienes?</h2><p class="small muted" style="margin-top:-4px">Por oferta: qué parte de sus tecnologías <b>requeridas</b> ya tienes.</p>
+     ${enough&&cov.length?bars(covB)+`<p class="small muted">${cov.length} ofertas con tecnologías requeridas.</p>`:falta(pocos)}</div>
+   </div>
+
+   <h2 class="sect">¿Qué combinaciones piden?</h2>
+   <div class="panel"><h2>Tecnologías que aparecen juntas</h2><p class="small muted" style="margin-top:-4px">Pares más frecuentes en la misma oferta (requeridas o deseables), en % de las ofertas con tecnologías.</p>
+    ${enough?bars(topPares,{suffix:" %",max:100,cls:"wide3"}):falta(pocos)}</div>
+
+   <h2 class="sect">¿Qué puestos hay?</h2>
+   <div class="grid g2" style="grid-template-columns:minmax(0,1.6fr) minmax(280px,1fr)">
+    <div class="panel"><h2>Familias de puesto por nivel</h2><p class="small muted" style="margin-top:-4px">Sale del título de cada oferta (o de la familia cargada a mano).</p>
+     <div class="tablewrap" style="border:0"><table><thead><tr><th>Familia</th>${NIVELES.map(l=>`<th class="num">${l}</th>`).join("")}<th class="num">Total</th><th>Tecnologías top</th></tr></thead><tbody>
+     ${famRows.map(([f,d])=>`<tr style="cursor:default"><td><b>${esc(f)}</b></td>${NIVELES.map(l=>`<td class="num">${d[l]?`<span class="heat" style="--h:${Math.round((d[l]/d.tot)*50)}%">${d[l]}</span>`:'<span class="muted">·</span>'}</td>`).join("")}<td class="num" style="white-space:nowrap"><b>${d.tot}</b> <span class="muted small">${pct(d.tot,rows.length)} %</span></td><td class="small">${esc(topTechFam(d.apps))||'<span class="muted">sin datos</span>'}</td></tr>`).join("")||`<tr><td colspan="7" class="muted small">Sin ofertas.</td></tr>`}</tbody></table></div></div>
+    <div class="panel"><h2>Títulos más repetidos</h2><p class="small muted" style="margin-top:-4px">Sin nivel (Senior, II…) y con variantes unificadas (full-stack = fullstack).</p>${bars(titles)}</div>
+   </div>
+
+   <h2 class="sect">¿Está cambiando?</h2>
+   <div class="panel"><h2>Peso de las 5 tecnologías principales por semana</h2><p class="small muted" style="margin-top:-4px">% de las ofertas de cada semana (por fecha de publicación) que piden cada tecnología.</p>
+    ${enough&&semOk.length>=2?`<div class="tablewrap" style="border:0"><table><thead><tr><th>Tecnología</th>${semanas.map(w=>`<th class="num">${fmtD(w)}<div class="muted" style="text-transform:none;font-weight:400">n=${sem[w].length}</div></th>`).join("")}</tr></thead><tbody>
+      ${top5.map(k=>`<tr style="cursor:default"><td>${esc(k)}</td>${semanas.map(w=>{const l=sem[w], c=l.filter(x=>x.req.has(k)||x.des.has(k)).length, p=pct(c,l.length); return `<td class="num">${l.length<5?'<span class="muted">·</span>':`<span class="heat" style="--h:${Math.round(p/2)}%">${p} %</span>`}</td>`}).join("")}</tr>`).join("")}</tbody></table></div>
+      <p class="small muted">Semanas con menos de 5 ofertas con tecnologías se muestran con un punto.</p>`
+    :falta(`Necesita al menos 2 semanas con 5 o más ofertas con tecnologías${enough?"":`, y ${MIN_N} ofertas en total`}. Se va armando sola con las búsquedas diarias.`)}
+   </div>
+  </div>`;
   $("#tv").onchange=e=>{S.techView=e.target.value;render()};
+  v.querySelectorAll("[data-cat]").forEach(b=>b.onclick=()=>{S.techCat=b.dataset.cat;render()});
+  v.querySelectorAll("[data-open]").forEach(el=>el.addEventListener("click",e=>{e.preventDefault();openApp(el.dataset.open)}));
 }
 function a_usd(a){return a.moneda&&a.moneda!=="CAD"}
+/* Lo que pagan: todas las ofertas con salario normalizado, sin importar el estado. */
+function pagan(){
+  const sal=S.apps.filter(a=>a.salMin||a.salMax).map(a=>{const f=a.periodo==="hora"?2080:a.periodo==="mes"?12:1;return {a,lo:(a.salMin||a.salMax)*f,hi:(a.salMax||a.salMin)*f}}).filter(x=>!a_usd(x.a));
+  return `<div class="panel"><h2>Lo que pagan</h2>${sal.length?`<p class="small muted" style="margin-top:-4px">Anual en CAD (hora × 2.080, mes × 12). ${sal.length} ${sal.length===1?"oferta":"ofertas"} con salario, de cualquier estado.</p>${salStrip(sal)}`:'<div class="muted small">Todavía no hay ofertas con salario normalizado (salMin, salMax).</div>'}</div>`;
+}
 function salStrip(sal){
   const lo=Math.min(...sal.map(s=>s.lo)), hi=Math.max(...sal.map(s=>s.hi)), W=520, H=26*sal.length+30, x=v=>40+(v-lo)/(Math.max(1,hi-lo))*(W-80);
   const sorted=sal.sort((a,b)=>a.lo-b.lo);
@@ -705,7 +838,7 @@ async function save(filename,data){
 $("#btnJson").onclick=()=>{ const d=new Date().toISOString().slice(0,10);
   save(`tracker-aplicaciones-${d}.json`,JSON.stringify({exportado:new Date().toISOString(),applications:exportRows(),busquedas:S.busq,runs:S.runs,rubrica:S.rubrica},null,1)); };
 $("#btnCsv").onclick=()=>{ const d=new Date().toISOString().slice(0,10);
-  const cols=["id","n","empresa","puesto","estado","prioridad","encaje","tipo","modalidad","ubicacion","fuente","link","publicada","fechaAplicacion","senal","fechaSenal","fechaRespuesta","contacto","salario","salMin","salMax","moneda","periodo","stack","brechas","porQue","proximoPaso","motivoDescarte","notas"];
+  const cols=["id","n","empresa","puesto","estado","prioridad","encaje","tipo","modalidad","ubicacion","fuente","link","publicada","fechaAplicacion","senal","fechaSenal","fechaRespuesta","contacto","salario","salMin","salMax","moneda","periodo","familia","techReq","techDes","stack","brechas","porQue","proximoPaso","motivoDescarte","notas"];
   const cell=v=>{v=Array.isArray(v)?v.join("; "):v??"";v=String(v);return /[",\n]/.test(v)?'"'+v.replace(/"/g,'""')+'"':v};
   save(`tracker-aplicaciones-${d}.csv`,"﻿"+[cols.join(","),...exportRows().map(a=>cols.map(c=>cell(a[c])).join(","))].join("\n")); };
 
