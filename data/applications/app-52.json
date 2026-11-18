@@ -1,0 +1,19 @@
+{
+ "empresa": "Super.com",
+ "puesto": "Intermediate Full Stack Software Engineer",
+ "fuente": "Web de la empresa",
+ "modalidad": "Remoto",
+ "tipo": "Permanente",
+ "estado": "Sin respuesta",
+ "fechaAplicacion": "2026-10-08",
+ "salario": "CA$100K–125K (rango elegido en el formulario)",
+ "salMin": 100000,
+ "salMax": 125000,
+ "moneda": "CAD",
+ "periodo": "año",
+ "recuperada": true,
+ "notas": "2026-11-18: reconstruida tras perder el tracker original.",
+ "n": 52,
+ "createdAt": "2026-11-18T15:00:00Z",
+ "updatedAt": "2026-11-18T15:00:00Z"
+}

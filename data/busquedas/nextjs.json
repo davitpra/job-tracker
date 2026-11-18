@@ -1,0 +1,15 @@
+{
+ "nombre": "next.js",
+ "estado": "Descartada",
+ "fechaEstado": "2026-10-31",
+ "desde": "2026-10-12",
+ "keywords": "next.js",
+ "ubicacion": "Canada",
+ "modalidad": "f_WT=2",
+ "ventana": "24 h",
+ "limite": 60,
+ "url": "https://www.linkedin.com/jobs/search/?keywords=next.js&location=Canada&f_WT=2&f_TPR=r86400",
+ "proposito": "Next.js como única keyword.",
+ "vigilar": "~1,5 útiles nuevas por día; casi todo marketing y diseño.",
+ "orden": 4
+}

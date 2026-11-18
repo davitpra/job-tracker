@@ -1,0 +1,15 @@
+{
+ "nombre": "Barrido de posts de reclutadores",
+ "estado": "En prueba",
+ "fechaEstado": "2026-11-13",
+ "desde": "2026-11-13",
+ "keywords": "(varias consultas de posts 'we're hiring')",
+ "ubicacion": "—",
+ "modalidad": "—",
+ "ventana": "24 h",
+ "limite": 50,
+ "url": "",
+ "proposito": "Encontrar a quien publica el puesto y escribirle en la primera hora (claude/barrido-posts-linkedin.md).",
+ "vigilar": "Criterio: 2 contactos útiles nuevos por día durante 3 días.",
+ "orden": 5
+}

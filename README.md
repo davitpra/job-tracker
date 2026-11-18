@@ -15,9 +15,17 @@ Los datos vivos están en la base del artifact (capacidad `db`). Este repo guard
 | `docs/barrido-posts-linkedin.md` | Prueba del barrido de posts de reclutadores (actor `harvestapi/linkedin-post-search`). |
 | `docs/cv-structure.md` | Reglas para adaptar el CV a cada oferta y pasos de build con `cv-toolkit`. |
 | `cv/master-cv.md` | Copia del CV maestro. **La fuente de verdad sigue siendo `davitpra/cv-toolkit/master-cv.md`**: para cambiar el CV se edita allá; esta copia es solo respaldo. |
-| `data/` | Respaldos de la base del tracker en JSON (`respaldo-AAAA-MM-DD.json`: `applications`, `busquedas`, `runs`). |
+| `data/<colección>/<id>.json` | Copia de la base del tracker, un archivo por documento (`applications/app-N.json`, `busquedas/<id>.json`, `runs/<fecha>_<busqueda>.json`). El historial de git guarda cada versión. |
 
 Los documentos de `docs/` son copias de los del proyecto "Aplicaciones Tech" en claude.ai (carpeta `claude/` y `cv/`). Si cambian allá, hay que actualizar la copia aquí.
+
+## Cómo se mantiene el respaldo (decisión del 2026-11-18)
+No hay tarea programada. Al terminar cada sesión de trabajo con el tracker (run diario, actualizar aplicaciones, etc.), Claude:
+1. Escribe en `data/<colección>/<id>.json` cada documento que creó o cambió en esa sesión, con su contenido final (y borra el archivo de los que eliminó).
+2. Si se cambió la rúbrica, el CV maestro u otro documento del proyecto, actualiza también su copia en `docs/` o `cv/`.
+3. Hace commit ("Respaldo AAAA-MM-DD: …") y push a `main`.
+
+Los cambios que David hace a mano en la página no pasan por Claude: para esos, el botón "Exportar JSON" del tracker baja la base completa, y se puede pedir a Claude que la suba aquí.
 
 ## Capacidades que declara el artifact
 ```json
@@ -37,5 +45,5 @@ Los documentos de `docs/` son copias de los del proyecto "Aplicaciones Tech" en 
 ## Restaurar
 1. Publicar `index.html` y `docs/rubrica-clasificacion.md` (como `rubrica.md`) en un artifact nuevo.
 2. Declarar las capacidades de arriba.
-3. Cargar los documentos del respaldo más reciente de `data/` con `db_write` (50 operaciones por llamada).
+3. Cargar los documentos de `data/` con `db_write` (50 operaciones por llamada; la ruta del archivo es la ruta del documento). `settings/rubrica` se rehace con la versión y los cambios de `docs/rubrica-clasificacion.md`.
 4. Actualizar el link del tracker en las instrucciones del proyecto y en `docs/`.
