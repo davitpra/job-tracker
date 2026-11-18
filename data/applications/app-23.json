@@ -1,0 +1,42 @@
+{
+ "empresa": "TD",
+ "puesto": "Software Engineer II (EDMO Data Catalog)",
+ "linkedinId": "4484278056",
+ "busqueda": "backend",
+ "estado": "Descartada",
+ "motivoDescarte": [
+  "Python como núcleo"
+ ],
+ "modalidad": "",
+ "ubicacion": "Toronto, ON",
+ "tipo": "Permanente",
+ "anios": "3–5+",
+ "solicitantes": "117",
+ "stack": "PostgreSQL, Python, Kafka, knowledge graphs, data lake",
+ "notas": "2026-11-18: run diario. Ingeniería de datos con Python como núcleo.",
+ "techReq": [
+  "PostgreSQL",
+  "SQL",
+  "Python",
+  "Kafka / colas",
+  "REST APIs",
+  "CI/CD"
+ ],
+ "techDes": [
+  "Azure",
+  "Databricks",
+  "Elasticsearch"
+ ],
+ "salario": "CA$81,600–115,200/año",
+ "salMin": 81600,
+ "salMax": 115200,
+ "moneda": "CAD",
+ "periodo": "año",
+ "fuente": "LinkedIn (Apify)",
+ "publicada": "2026-11-18",
+ "cvAdaptada": "No",
+ "link": "https://www.linkedin.com/jobs/view/4484278056",
+ "createdAt": "2026-11-18T20:30:00Z",
+ "updatedAt": "2026-11-18T20:30:00Z",
+ "n": 23
+}

@@ -1,0 +1,129 @@
+{
+ "empresa": "isgSearch (cliente financiero no revelado)",
+ "puesto": "Senior Full Stack Developer (React, Python, Node.js, AWS)",
+ "linkedinId": "4491311957",
+ "busqueda": "backend",
+ "estado": "Por aplicar",
+ "encaje": "Medio",
+ "tipo": "Contrato",
+ "modalidad": "Híbrido",
+ "ubicacion": "Toronto, ON (2 días, downtown)",
+ "anios": "3+",
+ "solicitantes": "43",
+ "stack": "React, TypeScript, Python, Node.js, AWS Lambda, ECS, Docker",
+ "porQue": "React/TS + Node.js, AWS Lambda (SAM en Claw & Soul) y EC2/S3 en Kruger, Docker y CI/CD; usa IA para programar a diario. Pide solo 3+ años.",
+ "brechas": "Título Senior → tope Medio y prioridad −1 (aunque pide 3+ años); Python 🟡 (uno de los lenguajes exigidos, no el núcleo); Entra ID/OIDC no figura.",
+ "proximoPaso": "Aplicar por LinkedIn y escribir al reclutador de isgSearch.",
+ "notas": "2026-11-18: run diario. Contrato 12 meses con posible extensión; apps para portfolio managers.",
+ "techReq": [
+  "React",
+  "TypeScript",
+  "Python",
+  "Node.js",
+  "AWS",
+  "REST APIs",
+  "SQL",
+  "Docker",
+  "CI/CD"
+ ],
+ "techDes": [
+  "Snowflake",
+  "Streamlit"
+ ],
+ "clasif": {
+  "pts": 23,
+  "max": 24,
+  "pct": 96,
+  "requisitos": [
+   {
+    "r": "Años de experiencia",
+    "n": 2,
+    "e": "3+ años; ~3,8"
+   },
+   {
+    "r": "React, TypeScript, Python y Node.js",
+    "n": 1,
+    "e": "Sin Python"
+   },
+   {
+    "r": "Apps en AWS",
+    "n": 2,
+    "e": "Kruger (EC2, S3, CloudWatch)"
+   },
+   {
+    "r": "AWS Lambda",
+    "n": 2,
+    "e": "SAM en Claw & Soul"
+   },
+   {
+    "r": "Diseño de APIs REST",
+    "n": 2,
+    "e": "NestJS"
+   },
+   {
+    "r": "SQL y apps de datos",
+    "n": 2,
+    "e": "PostgreSQL"
+   },
+   {
+    "r": "Docker",
+    "n": 2,
+    "e": "Greenhouse H&S"
+   },
+   {
+    "r": "CI/CD",
+    "n": 2,
+    "e": "GitHub Actions, Jenkins"
+   },
+   {
+    "r": "Git",
+    "n": 2,
+    "e": "GitHub"
+   },
+   {
+    "r": "Código limpio y testeado",
+    "n": 2,
+    "e": "Jest, SonarQube"
+   },
+   {
+    "r": "Herramientas de IA (Copilot)",
+    "n": 2,
+    "e": "Claude Code, Codex"
+   },
+   {
+    "r": "Comunicación",
+    "n": 2,
+    "e": "Equipos y clientes"
+   }
+  ],
+  "prioridad": {
+   "base": 2,
+   "ajustes": [
+    {
+     "t": "contrato",
+     "v": 1
+    },
+    {
+     "t": "<3 días y <50 solicitantes",
+     "v": 1
+    },
+    {
+     "t": "Senior",
+     "v": -1
+    }
+   ],
+   "final": 1
+  },
+  "rubrica": "2026-11-04",
+  "ajusteEncaje": "Tope Medio por título Senior"
+ },
+ "salario": "",
+ "fuente": "LinkedIn (Apify)",
+ "publicada": "2026-11-18",
+ "cvAdaptada": "No",
+ "link": "https://www.linkedin.com/jobs/view/4491311957",
+ "createdAt": "2026-11-18T20:30:00Z",
+ "updatedAt": "2026-11-18T20:30:00Z",
+ "prioridad": 1,
+ "n": 7
+}

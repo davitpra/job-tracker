@@ -1,0 +1,41 @@
+{
+ "empresa": "Akkodis",
+ "puesto": "Senior Software Engineer (contrato)",
+ "linkedinId": "4481606733",
+ "busqueda": "nucleo",
+ "estado": "Descartada",
+ "motivoDescarte": [
+  "Java/Kotlin, .NET o C#",
+  "Python como núcleo",
+  "Senior o 5+ años"
+ ],
+ "modalidad": "Remoto",
+ "ubicacion": "Toronto, ON",
+ "tipo": "Contrato",
+ "anios": "No indica",
+ "solicitantes": "108",
+ "stack": ".NET MVC, SQL Server, Python/Django, Celery, Azure, AWS",
+ "notas": "2026-11-18: run diario. B2B solo para empresas incorporadas; requiere habilitación de seguridad.",
+ "techReq": [
+  "C# / .NET",
+  "SQL",
+  "Python",
+  "Django",
+  "PostgreSQL",
+  "GraphQL",
+  "REST APIs",
+  "Azure",
+  "AWS"
+ ],
+ "techDes": [
+  "CI/CD"
+ ],
+ "salario": "",
+ "fuente": "LinkedIn (Apify)",
+ "publicada": "2026-11-18",
+ "cvAdaptada": "No",
+ "link": "https://www.linkedin.com/jobs/view/4481606733",
+ "createdAt": "2026-11-18T20:30:00Z",
+ "updatedAt": "2026-11-18T20:30:00Z",
+ "n": 24
+}

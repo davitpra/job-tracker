@@ -1,0 +1,111 @@
+{
+ "empresa": "Knak",
+ "puesto": "Intermediate Software Developer, Editor",
+ "linkedinId": "4486398054",
+ "busqueda": "backend",
+ "estado": "Evaluar",
+ "encaje": "Alto",
+ "tipo": "Permanente",
+ "modalidad": "",
+ "ubicacion": "Toronto, Waterloo u Ottawa (modalidad no indicada)",
+ "anios": "3+",
+ "solicitantes": "200+",
+ "stack": "Vue 3, TypeScript, Laravel/PHP, MySQL, CRDTs, Cloudflare Workers",
+ "porQue": "3+ años full stack con TypeScript; apps complejas con estado; IA a diario; MySQL y backend comparable (NestJS); Jest/Vitest, Playwright y GitHub Actions.",
+ "brechas": "Vue 🟡 (usa React/Angular); Laravel/PHP no (NestJS cuenta como comparable); modalidad no indicada; 200+ solicitantes (pasa la excepción).",
+ "proximoPaso": "Confirmar la modalidad en la web de Knak; si es remoto o híbrido en Toronto, aplicar y escribir a alguien del equipo.",
+ "notas": "2026-11-18: run diario. El mismo aviso salió en Toronto, Waterloo y Ottawa.",
+ "techReq": [
+  "TypeScript",
+  "Vue",
+  "JavaScript",
+  "HTML / CSS",
+  "PHP",
+  "MySQL",
+  "Vitest",
+  "Playwright",
+  "CI/CD"
+ ],
+ "techDes": [
+  "WebSockets",
+  "CRDT",
+  "Cloudflare Workers"
+ ],
+ "clasif": {
+  "pts": 16,
+  "max": 18,
+  "pct": 89,
+  "requisitos": [
+   {
+    "r": "Años de experiencia",
+    "n": 2,
+    "e": "3+ años; ~3,8"
+   },
+   {
+    "r": "TS + framework moderno (Vue 3)",
+    "n": 1,
+    "e": "TS sí; Vue no"
+   },
+   {
+    "r": "Apps complejas con estado",
+    "n": 1,
+    "e": "Claw Puzzle; no editores"
+   },
+   {
+    "r": "Mentalidad de producto",
+    "n": 2,
+    "e": "Proyectos propios"
+   },
+   {
+    "r": "IA a diario",
+    "n": 2,
+    "e": "Claude Code, Codex"
+   },
+   {
+    "r": "Fundamentos web",
+    "n": 2,
+    "e": "Núcleo del CV"
+   },
+   {
+    "r": "PHP/Laravel o comparable + MySQL",
+    "n": 2,
+    "e": "NestJS, MySQL"
+   },
+   {
+    "r": "Tests y CI/CD",
+    "n": 2,
+    "e": "Vitest, Jest, Playwright, GitHub Actions"
+   },
+   {
+    "r": "Comunicación escrita y code review",
+    "n": 2,
+    "e": "Kruger, Delphi"
+   }
+  ],
+  "prioridad": {
+   "base": 1,
+   "ajustes": [
+    {
+     "t": "200+ solicitantes",
+     "v": -1
+    }
+   ],
+   "final": 2
+  },
+  "rubrica": "2026-11-04",
+  "filtro": "Dudoso: modalidad no indicada"
+ },
+ "salario": "$100,000–125,000/año",
+ "salMin": 100000,
+ "salMax": 125000,
+ "moneda": "CAD",
+ "periodo": "año",
+ "fuente": "LinkedIn (Apify)",
+ "publicada": "2026-11-18",
+ "cvAdaptada": "No",
+ "link": "https://www.linkedin.com/jobs/view/4486398054",
+ "createdAt": "2026-11-18T20:30:00Z",
+ "updatedAt": "2026-11-18T20:30:00Z",
+ "prioridad": 2,
+ "n": 16
+}

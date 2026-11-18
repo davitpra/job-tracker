@@ -1,0 +1,90 @@
+{
+ "empresa": "TRUE AI LABS",
+ "puesto": "SDE1 (Entry-Level Software Engineer)",
+ "linkedinId": "4491493990",
+ "busqueda": "nucleo",
+ "estado": "Por aplicar",
+ "encaje": "Muy alto",
+ "tipo": "Permanente",
+ "modalidad": "Remoto",
+ "ubicacion": "Canadá",
+ "anios": "2+",
+ "solicitantes": "198",
+ "stack": "TypeScript/JavaScript, React, Kotlin, Swift, Firebase, IA on-device",
+ "porQue": "2+ años y TS/React (uno de los lenguajes pedidos); dashboards web en React; integraciones de backend y APIs.",
+ "brechas": "Buena parte del trabajo es Android (Kotlin) e iOS (Swift), que no tiene; empresa pequeña y salario alto para un puesto de entrada (CAD 150K): verificar la empresa antes de aplicar; se aplica por email.",
+ "proximoPaso": "Verificar la empresa y enviar CV + nota de 3–5 líneas a hiring@trueailabs.io (asunto: Entry-Level Software Engineer – Canada (Remote)).",
+ "notas": "2026-11-18: run diario. Buscan 3 ingenieros.",
+ "techReq": [
+  "TypeScript",
+  "React",
+  "REST APIs"
+ ],
+ "techDes": [
+  "Kotlin",
+  "iOS / Android nativo",
+  "IA / LLM",
+  "Firebase"
+ ],
+ "clasif": {
+  "pts": 14,
+  "max": 14,
+  "pct": 100,
+  "requisitos": [
+   {
+    "r": "Años de experiencia",
+    "n": 2,
+    "e": "2+ años"
+   },
+   {
+    "r": "Kotlin, Swift, TS/JS o Python",
+    "n": 2,
+    "e": "TypeScript"
+   },
+   {
+    "r": "Apps móviles o web modernas (React)",
+    "n": 2,
+    "e": "React"
+   },
+   {
+    "r": "REST, Git y prácticas básicas",
+    "n": 2,
+    "e": "NestJS, Git"
+   },
+   {
+    "r": "Resolver problemas",
+    "n": 2,
+    "e": "Proyectos propios"
+   },
+   {
+    "r": "Inglés",
+    "n": 2,
+    "e": "Profesional"
+   },
+   {
+    "r": "Trabajo remoto independiente",
+    "n": 2,
+    "e": "Proyectos propios"
+   }
+  ],
+  "prioridad": {
+   "base": 1,
+   "ajustes": [],
+   "final": 1
+  },
+  "rubrica": "2026-11-04"
+ },
+ "salario": "CAD 150,000/año",
+ "salMin": 150000,
+ "salMax": 150000,
+ "moneda": "CAD",
+ "periodo": "año",
+ "fuente": "LinkedIn (Apify)",
+ "publicada": "2026-11-18",
+ "cvAdaptada": "No",
+ "link": "https://www.linkedin.com/jobs/view/4491493990",
+ "createdAt": "2026-11-18T20:30:00Z",
+ "updatedAt": "2026-11-18T20:30:00Z",
+ "prioridad": 1,
+ "n": 6
+}

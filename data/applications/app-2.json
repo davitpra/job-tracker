@@ -1,0 +1,111 @@
+{
+ "empresa": "Motion Recruitment (cliente SaaS no revelado)",
+ "puesto": "Front End Engineer (React)",
+ "linkedinId": "4492085753",
+ "busqueda": "contratos",
+ "estado": "Por aplicar",
+ "encaje": "Muy alto",
+ "tipo": "Contrato",
+ "modalidad": "Remoto",
+ "ubicacion": "Canadá",
+ "anios": "3–5",
+ "solicitantes": "<25",
+ "stack": "React, JavaScript, TypeScript",
+ "porQue": "3+ años de UI en empresa (Idukay, Kruger, Delphi) con React/TS; apps muy interactivas y responsive; contrato remoto de 6+ meses.",
+ "brechas": "Cliente no revelado; patrones MVC/MVP/MVVM no figuran tal cual en el CV.",
+ "proximoPaso": "Aplicar por LinkedIn y escribir al reclutador de Motion Recruitment.",
+ "notas": "2026-11-18: run diario. SaaS de precios y promociones para marcas globales; contrato 6 meses+.",
+ "techReq": [
+  "JavaScript",
+  "React"
+ ],
+ "techDes": [
+  "TypeScript"
+ ],
+ "clasif": {
+  "pts": 22,
+  "max": 22,
+  "pct": 100,
+  "requisitos": [
+   {
+    "r": "3–5 años de UI",
+    "n": 2,
+    "e": "~3,8 años en empresa"
+   },
+   {
+    "r": "JavaScript fuerte",
+    "n": 2,
+    "e": "Núcleo del CV"
+   },
+   {
+    "r": "Librerías JS modernas",
+    "n": 2,
+    "e": "React, Next.js, Angular"
+   },
+   {
+    "r": "Patrones MVC/MVP/MVVM",
+    "n": 2,
+    "e": "Arquitectura de componentes en Kruger/Delphi"
+   },
+   {
+    "r": "Diseño orientado a objetos",
+    "n": 2,
+    "e": "NestJS, TypeScript"
+   },
+   {
+    "r": "Apps muy interactivas",
+    "n": 2,
+    "e": "Claw Puzzle, Claw & Soul"
+   },
+   {
+    "r": "Usabilidad y diseño web",
+    "n": 2,
+    "e": "WCAG en Delphi"
+   },
+   {
+    "r": "Problemas cross-browser",
+    "n": 2,
+    "e": "Migración WordPress→Next.js en Delphi"
+   },
+   {
+    "r": "Control de versiones",
+    "n": 2,
+    "e": "Git/GitHub Actions"
+   },
+   {
+    "r": "Comunicación negocio/técnica",
+    "n": 2,
+    "e": "Trato con clientes"
+   },
+   {
+    "r": "Entorno rápido",
+    "n": 2,
+    "e": "Startups y proyectos propios"
+   }
+  ],
+  "prioridad": {
+   "base": 1,
+   "ajustes": [
+    {
+     "t": "contrato",
+     "v": 1
+    },
+    {
+     "t": "<3 días y <50 solicitantes",
+     "v": 1
+    }
+   ],
+   "final": 1
+  },
+  "rubrica": "2026-11-04"
+ },
+ "salario": "",
+ "fuente": "LinkedIn (Apify)",
+ "publicada": "2026-11-18",
+ "cvAdaptada": "No",
+ "link": "https://www.linkedin.com/jobs/view/4492085753",
+ "createdAt": "2026-11-18T20:30:00Z",
+ "updatedAt": "2026-11-18T20:30:00Z",
+ "prioridad": 1,
+ "n": 2
+}

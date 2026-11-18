@@ -1,0 +1,91 @@
+{
+ "empresa": "SalesJack (vía EngRadar)",
+ "puesto": "Software Engineer (Full Stack)",
+ "linkedinId": "4491483948",
+ "busqueda": "backend",
+ "estado": "Por aplicar",
+ "encaje": "Muy alto",
+ "tipo": "Permanente",
+ "modalidad": "Híbrido",
+ "ubicacion": "Toronto, ON (días no indicados)",
+ "anios": "2–5",
+ "solicitantes": "153",
+ "stack": "Next.js, Node.js, BullMQ, PostgreSQL, LLMs",
+ "porQue": "Next.js + Node + PostgreSQL + BullMQ es su stack exacto (BullMQ en sus proyectos). Trabajo AI-first con Claude Code/Codex a diario y producto end to end hablando con usuarios (Claw & Soul, Greenhouse H&S).",
+ "brechas": "Híbrido en Toronto sin días indicados; el ejercicio técnico puede ser presencial.",
+ "proximoPaso": "Aplicar en la página de empleos de SalesJack (EngRadar es solo un radar y redirige allí).",
+ "notas": "2026-11-18: run diario. Startup de CRM para el sector de materiales de construcción; ingenieros hablan directo con clientes.",
+ "techReq": [
+  "React",
+  "Next.js",
+  "Node.js",
+  "PostgreSQL"
+ ],
+ "techDes": [
+  "Kafka / colas",
+  "IA / LLM"
+ ],
+ "clasif": {
+  "pts": 16,
+  "max": 16,
+  "pct": 100,
+  "requisitos": [
+   {
+    "r": "2–5 años full stack",
+    "n": 2,
+    "e": "~3,8 años en empresa"
+   },
+   {
+    "r": "Producto o feature grande end to end",
+    "n": 2,
+    "e": "Claw & Soul, Greenhouse H&S, Claw Puzzle"
+   },
+   {
+    "r": "React y Next.js",
+    "n": 2,
+    "e": "Next.js en Delphi y proyectos propios"
+   },
+   {
+    "r": "Node.js y PostgreSQL",
+    "n": 2,
+    "e": "NestJS + PostgreSQL en el núcleo del CV"
+   },
+   {
+    "r": "Agentes de IA en el flujo diario",
+    "n": 2,
+    "e": "Claude Code, Codex y OpenCode a diario; spec-driven development"
+   },
+   {
+    "r": "Criterio al revisar código de agentes",
+    "n": 2,
+    "e": "Revisión de código en Idukay, Kruger y Delphi"
+   },
+   {
+    "r": "Product brain: de problema difuso a plan",
+    "n": 2,
+    "e": "Proyectos propios desde el problema del cliente"
+   },
+   {
+    "r": "Hablar con usuarios",
+    "n": 2,
+    "e": "Trato directo con clientes en sus proyectos"
+   }
+  ],
+  "prioridad": {
+   "base": 1,
+   "ajustes": [],
+   "final": 1
+  },
+  "rubrica": "2026-11-04",
+  "ajusteEncaje": "Stack núcleo (Next/Node/Postgres)"
+ },
+ "salario": "",
+ "fuente": "LinkedIn (Apify)",
+ "publicada": "2026-11-18",
+ "cvAdaptada": "No",
+ "link": "https://www.linkedin.com/jobs/view/4491483948",
+ "createdAt": "2026-11-18T20:30:00Z",
+ "updatedAt": "2026-11-18T20:30:00Z",
+ "prioridad": 1,
+ "n": 1
+}

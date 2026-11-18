@@ -1,0 +1,33 @@
+{
+ "empresa": "OpenLoop",
+ "puesto": "Forward Deployed Engineer",
+ "linkedinId": "4474607581",
+ "busqueda": "backend",
+ "estado": "Descartada",
+ "motivoDescarte": [
+  "Autorización o residencia",
+  "Senior o 5+ años"
+ ],
+ "modalidad": "Remoto",
+ "ubicacion": "Solo EE.UU.",
+ "tipo": "Permanente",
+ "anios": "5–15+",
+ "solicitantes": "176",
+ "stack": "Integraciones de API, agentes de IA, salud",
+ "notas": "2026-11-18: run diario. Remoto solo dentro de EE.UU.; niveles Senior a Senior Staff.",
+ "techReq": [
+  "REST APIs",
+  "IA / LLM"
+ ],
+ "techDes": [
+  "FHIR"
+ ],
+ "salario": "",
+ "fuente": "LinkedIn (Apify)",
+ "publicada": "2026-11-18",
+ "cvAdaptada": "No",
+ "link": "https://www.linkedin.com/jobs/view/4474607581",
+ "createdAt": "2026-11-18T20:30:00Z",
+ "updatedAt": "2026-11-18T20:30:00Z",
+ "n": 35
+}

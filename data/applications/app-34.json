@@ -1,0 +1,39 @@
+{
+ "empresa": "AlayaCare",
+ "puesto": "Fullstack Developer - AI Workflows",
+ "linkedinId": "4490830118",
+ "busqueda": "backend",
+ "estado": "Descartada",
+ "motivoDescarte": [
+  "Python como núcleo",
+  "Híbrido o presencial",
+  "Francés"
+ ],
+ "modalidad": "Híbrido",
+ "ubicacion": "Montreal, QC (2 días)",
+ "tipo": "Permanente",
+ "anios": "3–5+",
+ "solicitantes": "41",
+ "stack": "Python, PHP, Vue",
+ "notas": "2026-11-18: run diario. Python como núcleo, híbrido en Montreal y francés obligatorio.",
+ "techReq": [
+  "Python",
+  "PHP",
+  "JavaScript",
+  "SQL",
+  "Docker",
+  "CI/CD"
+ ],
+ "techDes": [
+  "Vue",
+  "AWS"
+ ],
+ "salario": "",
+ "fuente": "LinkedIn (Apify)",
+ "publicada": "2026-11-18",
+ "cvAdaptada": "No",
+ "link": "https://www.linkedin.com/jobs/view/4490830118",
+ "createdAt": "2026-11-18T20:30:00Z",
+ "updatedAt": "2026-11-18T20:30:00Z",
+ "n": 34
+}

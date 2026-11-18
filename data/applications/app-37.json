@@ -1,0 +1,31 @@
+{
+ "empresa": "Dominion Dynamics",
+ "puesto": "Senior Software Engineer - Frontend",
+ "linkedinId": "4491457468",
+ "busqueda": "contratos",
+ "estado": "Descartada",
+ "motivoDescarte": [
+  "Híbrido o presencial",
+  "Senior o 5+ años"
+ ],
+ "modalidad": "Presencial",
+ "ubicacion": "Ottawa o Toronto, ON",
+ "tipo": "Permanente",
+ "anios": "No indica",
+ "solicitantes": "85",
+ "stack": "TypeScript, React, mapas 3D en tiempo real (defensa)",
+ "notas": "2026-11-18: run diario. Presencial y Senior.",
+ "techReq": [
+  "TypeScript",
+  "React"
+ ],
+ "techDes": [],
+ "salario": "",
+ "fuente": "LinkedIn (Apify)",
+ "publicada": "2026-11-18",
+ "cvAdaptada": "No",
+ "link": "https://www.linkedin.com/jobs/view/4491457468",
+ "createdAt": "2026-11-18T20:30:00Z",
+ "updatedAt": "2026-11-18T20:30:00Z",
+ "n": 37
+}

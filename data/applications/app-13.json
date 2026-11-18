@@ -1,0 +1,126 @@
+{
+ "empresa": "Workplace Safety & Prevention Services (WSPS)",
+ "puesto": "Web Systems Developer",
+ "linkedinId": "4492085959",
+ "busqueda": "nucleo",
+ "estado": "Por aplicar",
+ "encaje": "Medio",
+ "tipo": "Permanente",
+ "modalidad": "Remoto",
+ "ubicacion": "Ontario (reuniones presenciales trimestrales)",
+ "anios": "5+",
+ "solicitantes": "<25",
+ "stack": "Azure SQL, Azure DevOps, Shopify, Craft CMS, Coveo, PathFactory",
+ "porQue": "Integraciones Shopify; migración web WordPress→Next.js en Delphi; accesibilidad y rendimiento; plataforma H&S (Greenhouse) cercana al dominio de WSPS.",
+ "brechas": "Piden 5+ años; en empresa 3,8 → ❌ y tope Medio; Azure SQL y Azure DevOps 🟡; mucho rol de backlog, roadmap y proveedores.",
+ "proximoPaso": "Aplicar en el portal de empleos de WSPS antes del 2 de diciembre.",
+ "notas": "2026-11-18: run diario. Cierre: 2026-12-02 16:00 ET. Empresa sin fines de lucro, remote-first, pensión de beneficio definido.",
+ "techReq": [
+  "SQL",
+  "Azure",
+  "CI/CD",
+  "REST APIs"
+ ],
+ "techDes": [
+  "Shopify",
+  "JavaScript",
+  "Craft CMS",
+  "Coveo"
+ ],
+ "clasif": {
+  "pts": 16,
+  "max": 24,
+  "pct": 67,
+  "requisitos": [
+   {
+    "r": "5+ años",
+    "n": 0,
+    "e": "~3,8 en empresa"
+   },
+   {
+    "r": "Liderar proyectos técnicos",
+    "n": 1,
+    "e": "Proyectos propios"
+   },
+   {
+    "r": "Sitios, CMS y e-commerce",
+    "n": 2,
+    "e": "Shopify, Delphi"
+   },
+   {
+    "r": "Azure SQL",
+    "n": 1,
+    "e": "SQL sí; Azure SQL no"
+   },
+   {
+    "r": "Azure DevOps",
+    "n": 0,
+    "e": "No figura"
+   },
+   {
+    "r": "Front, back, APIs, nube y CI/CD",
+    "n": 2,
+    "e": "Núcleo del CV"
+   },
+   {
+    "r": "Coordinar proveedores",
+    "n": 1,
+    "e": "Poco"
+   },
+   {
+    "r": "Google Analytics",
+    "n": 1,
+    "e": "Tracking de conversiones en Delphi"
+   },
+   {
+    "r": "Accesibilidad, seguridad y rendimiento",
+    "n": 2,
+    "e": "WCAG en Delphi"
+   },
+   {
+    "r": "Análisis y troubleshooting",
+    "n": 2,
+    "e": "Kruger"
+   },
+   {
+    "r": "Comunicación",
+    "n": 2,
+    "e": "Clientes"
+   },
+   {
+    "r": "Varios proyectos a la vez",
+    "n": 2,
+    "e": "Proyectos propios"
+   }
+  ],
+  "prioridad": {
+   "base": 2,
+   "ajustes": [
+    {
+     "t": "<3 días y <50 solicitantes",
+     "v": 1
+    },
+    {
+     "t": "5+ años",
+     "v": -1
+    }
+   ],
+   "final": 2
+  },
+  "rubrica": "2026-11-04",
+  "ajusteEncaje": "Tope Medio por 5+ años"
+ },
+ "salario": "CA$87,778–104,237/año",
+ "salMin": 87778,
+ "salMax": 104237,
+ "moneda": "CAD",
+ "periodo": "año",
+ "fuente": "LinkedIn (Apify)",
+ "publicada": "2026-11-18",
+ "cvAdaptada": "No",
+ "link": "https://www.linkedin.com/jobs/view/4492085959",
+ "createdAt": "2026-11-18T20:30:00Z",
+ "updatedAt": "2026-11-18T20:30:00Z",
+ "prioridad": 2,
+ "n": 13
+}

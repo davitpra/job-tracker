@@ -1,0 +1,39 @@
+{
+ "empresa": "Blanc Labs",
+ "puesto": "Full Stack Software Engineer (y '- AI Agents')",
+ "linkedinId": "4483814031",
+ "busqueda": "backend",
+ "estado": "Descartada",
+ "motivoDescarte": [
+  "Python como núcleo",
+  "200+ solicitantes"
+ ],
+ "modalidad": "Híbrido",
+ "ubicacion": "Toronto, ON (2–3 días)",
+ "tipo": "Permanente",
+ "anios": "2–5",
+ "solicitantes": "200+",
+ "stack": "Python (asyncio/FastAPI), React, TypeScript, PostgreSQL, LLMs",
+ "notas": "2026-11-18: run diario. Python async obligatorio. El mismo aviso salió dos veces (IDs 4483814031 y 4483804313).",
+ "techReq": [
+  "Python",
+  "React",
+  "TypeScript",
+  "PostgreSQL",
+  "SQL",
+  "IA / LLM",
+  "Docker",
+  "Azure"
+ ],
+ "techDes": [
+  "Next.js"
+ ],
+ "salario": "",
+ "fuente": "LinkedIn (Apify)",
+ "publicada": "2026-11-18",
+ "cvAdaptada": "No",
+ "link": "https://www.linkedin.com/jobs/view/4483814031",
+ "createdAt": "2026-11-18T20:30:00Z",
+ "updatedAt": "2026-11-18T20:30:00Z",
+ "n": 36
+}

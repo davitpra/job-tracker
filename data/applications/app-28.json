@@ -1,0 +1,36 @@
+{
+ "empresa": "Klick",
+ "puesto": "Senior Full-Stack Product Engineer, Genome",
+ "linkedinId": "4491852619",
+ "busqueda": "nucleo",
+ "estado": "Descartada",
+ "motivoDescarte": [
+  "Senior o 5+ años",
+  "Python como núcleo"
+ ],
+ "modalidad": "",
+ "ubicacion": "Toronto, ON",
+ "tipo": "Permanente",
+ "anios": "8+",
+ "solicitantes": "30",
+ "stack": "Python (FastAPI), TypeScript, PostgreSQL, agentes de IA",
+ "notas": "2026-11-18: run diario. Pide 8+ años y Python fuerte.",
+ "techReq": [
+  "Python",
+  "TypeScript",
+  "SQL",
+  "PostgreSQL",
+  "IA / LLM"
+ ],
+ "techDes": [
+  "GCP"
+ ],
+ "salario": "",
+ "fuente": "LinkedIn (Apify)",
+ "publicada": "2026-11-18",
+ "cvAdaptada": "No",
+ "link": "https://www.linkedin.com/jobs/view/4491852619",
+ "createdAt": "2026-11-18T20:30:00Z",
+ "updatedAt": "2026-11-18T20:30:00Z",
+ "n": 28
+}

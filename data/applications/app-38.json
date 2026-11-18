@@ -1,0 +1,41 @@
+{
+ "empresa": "TD",
+ "puesto": "Software Engineer I (Full Stack, Credit Decisions)",
+ "linkedinId": "4491765695",
+ "busqueda": "contratos",
+ "estado": "Descartada",
+ "motivoDescarte": [
+  "Java/Kotlin, .NET o C#"
+ ],
+ "modalidad": "",
+ "ubicacion": "Toronto, ON",
+ "tipo": "Permanente",
+ "anios": "3+",
+ "solicitantes": "145",
+ "stack": "Java/Spring Boot, Angular/TypeScript",
+ "notas": "2026-11-18: run diario. Backend Java/Spring obligatorio.",
+ "techReq": [
+  "Java",
+  "Angular",
+  "TypeScript",
+  "SQL",
+  "REST APIs",
+  "Microservicios",
+  "CI/CD"
+ ],
+ "techDes": [
+  "MongoDB"
+ ],
+ "salario": "CA$69,700–98,400/año",
+ "salMin": 69700,
+ "salMax": 98400,
+ "moneda": "CAD",
+ "periodo": "año",
+ "fuente": "LinkedIn (Apify)",
+ "publicada": "2026-11-18",
+ "cvAdaptada": "No",
+ "link": "https://www.linkedin.com/jobs/view/4491765695",
+ "createdAt": "2026-11-18T20:30:00Z",
+ "updatedAt": "2026-11-18T20:30:00Z",
+ "n": 38
+}

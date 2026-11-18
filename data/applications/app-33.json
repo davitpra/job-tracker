@@ -1,0 +1,45 @@
+{
+ "empresa": "Superworq (Total Life)",
+ "puesto": "Full-Stack Developer",
+ "linkedinId": "4491823734",
+ "busqueda": "backend",
+ "estado": "Descartada",
+ "motivoDescarte": [
+  "Python como núcleo",
+  "Híbrido o presencial"
+ ],
+ "modalidad": "Híbrido",
+ "ubicacion": "Edmonton, AB (remoto solo viernes)",
+ "tipo": "Permanente",
+ "anios": "3+",
+ "solicitantes": "97",
+ "stack": "Python/Django, React, Next.js, GCP",
+ "notas": "2026-11-18: run diario. Backend Python/Django y oficina en Edmonton.",
+ "techReq": [
+  "Python",
+  "Django",
+  "SQL",
+  "Docker",
+  "GCP",
+  "React",
+  "Tailwind",
+  "Jest",
+  "Playwright",
+  "Redux"
+ ],
+ "techDes": [
+  "Next.js"
+ ],
+ "salario": "CA$50,000–75,000/año",
+ "salMin": 50000,
+ "salMax": 75000,
+ "moneda": "CAD",
+ "periodo": "año",
+ "fuente": "LinkedIn (Apify)",
+ "publicada": "2026-11-18",
+ "cvAdaptada": "No",
+ "link": "https://www.linkedin.com/jobs/view/4491823734",
+ "createdAt": "2026-11-18T20:30:00Z",
+ "updatedAt": "2026-11-18T20:30:00Z",
+ "n": 33
+}

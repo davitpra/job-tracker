@@ -1,0 +1,60 @@
+{
+ "empresa": "Quantum World Technologies",
+ "puesto": "Full Stack Engineer",
+ "linkedinId": "4491736702",
+ "busqueda": "nucleo",
+ "estado": "Evaluar",
+ "encaje": "Medio",
+ "tipo": "Permanente",
+ "modalidad": "Remoto",
+ "ubicacion": "Canadá",
+ "anios": "No indica",
+ "solicitantes": "122",
+ "stack": "Angular (70 %), Python (30 %)",
+ "porQue": "Angular en Kruger.",
+ "brechas": "Python ❌ (30 % del rol; posible backend principal); el aviso casi no tiene información.",
+ "proximoPaso": "Averiguar si el backend es solo Python antes de aplicar.",
+ "notas": "2026-11-18: run diario. Aviso de una línea.",
+ "techReq": [
+  "Angular",
+  "Python"
+ ],
+ "techDes": [],
+ "clasif": {
+  "pts": 2,
+  "max": 4,
+  "pct": 50,
+  "requisitos": [
+   {
+    "r": "Angular fuerte",
+    "n": 2,
+    "e": "Kruger"
+   },
+   {
+    "r": "Python",
+    "n": 0,
+    "e": "No figura"
+   }
+  ],
+  "prioridad": {
+   "base": 2,
+   "ajustes": [],
+   "final": 2
+  },
+  "rubrica": "2026-11-04",
+  "filtro": "Dudoso: Python 30 %, puede ser el backend principal"
+ },
+ "salario": "CA$100,000–115,000/año",
+ "salMin": 100000,
+ "salMax": 115000,
+ "moneda": "CAD",
+ "periodo": "año",
+ "fuente": "LinkedIn (Apify)",
+ "publicada": "2026-11-18",
+ "cvAdaptada": "No",
+ "link": "https://www.linkedin.com/jobs/view/4491736702",
+ "createdAt": "2026-11-18T20:30:00Z",
+ "updatedAt": "2026-11-18T20:30:00Z",
+ "prioridad": 2,
+ "n": 21
+}

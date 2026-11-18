@@ -1,0 +1,42 @@
+{
+ "empresa": "The Glove",
+ "puesto": "AI Engineer (contrato)",
+ "linkedinId": "4492039372",
+ "busqueda": "backend",
+ "estado": "Descartada",
+ "motivoDescarte": [
+  "Python como núcleo",
+  "Senior o 5+ años"
+ ],
+ "modalidad": "",
+ "ubicacion": "Toronto, ON",
+ "tipo": "Contrato",
+ "anios": "6+",
+ "solicitantes": "29",
+ "stack": "Python, Gen AI, React/Next.js, AWS",
+ "notas": "2026-11-18: run diario. Python y Gen AI como núcleo, 6+ años.",
+ "techReq": [
+  "Python",
+  "IA / LLM",
+  "React",
+  "Next.js",
+  "TypeScript",
+  "AWS",
+  "Terraform",
+  "Docker",
+  "Playwright"
+ ],
+ "techDes": [],
+ "salario": "CA$65–70/hora",
+ "salMin": 65,
+ "salMax": 70,
+ "moneda": "CAD",
+ "periodo": "hora",
+ "fuente": "LinkedIn (Apify)",
+ "publicada": "2026-11-18",
+ "cvAdaptada": "No",
+ "link": "https://www.linkedin.com/jobs/view/4492039372",
+ "createdAt": "2026-11-18T20:30:00Z",
+ "updatedAt": "2026-11-18T20:30:00Z",
+ "n": 32
+}

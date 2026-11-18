@@ -1,0 +1,84 @@
+{
+ "empresa": "Bree",
+ "puesto": "Software Engineer, Frontend and Mobile",
+ "linkedinId": "4345929585",
+ "busqueda": "backend",
+ "estado": "Por aplicar",
+ "encaje": "Muy alto",
+ "tipo": "Permanente",
+ "modalidad": "Híbrido",
+ "ubicacion": "Toronto, ON (remoto en invierno)",
+ "anios": "No indica",
+ "solicitantes": "200+",
+ "stack": "TypeScript, React Native, Node.js serverless (Lambda, API Gateway, SQS)",
+ "porQue": "TypeScript + React profundo (aceptan React con paso rápido a React Native); stack Node/TS serverless en AWS como Lambda en Claw & Soul; enfoque AI-native.",
+ "brechas": "Rol sobre todo de React Native, que no está en el CV 🟡; 200+ solicitantes (pasa la excepción) → escribir hoy a alguien del equipo; aviso republicado (en octubre salió con 200+: revisar si ya aplicó).",
+ "proximoPaso": "Aplicar en la web de Bree y escribir hoy a alguien de Engineering.",
+ "notas": "2026-11-18: run diario. Fintech de préstamos sin interés.",
+ "techReq": [
+  "TypeScript",
+  "React Native",
+  "React"
+ ],
+ "techDes": [
+  "Node.js",
+  "AWS"
+ ],
+ "clasif": {
+  "pts": 12,
+  "max": 12,
+  "pct": 100,
+  "requisitos": [
+   {
+    "r": "Productos web o móviles para clientes",
+    "n": 2,
+    "e": "Claw & Soul, Claw Puzzle"
+   },
+   {
+    "r": "TS + React Native o React profundo",
+    "n": 2,
+    "e": "React profundo"
+   },
+   {
+    "r": "Componentes, estado y arquitectura frontend",
+    "n": 2,
+    "e": "Redux, styled-components"
+   },
+   {
+    "r": "Desarrollo AI-native",
+    "n": 2,
+    "e": "Claude Code, Codex"
+   },
+   {
+    "r": "Criterio de producto",
+    "n": 2,
+    "e": "Proyectos propios"
+   },
+   {
+    "r": "Comunicación y ownership",
+    "n": 2,
+    "e": "Trabajo con clientes"
+   }
+  ],
+  "prioridad": {
+   "base": 1,
+   "ajustes": [
+    {
+     "t": "200+ solicitantes",
+     "v": -1
+    }
+   ],
+   "final": 2
+  },
+  "rubrica": "2026-11-04"
+ },
+ "salario": "",
+ "fuente": "LinkedIn (Apify)",
+ "publicada": "2026-11-18",
+ "cvAdaptada": "No",
+ "link": "https://www.linkedin.com/jobs/view/4345929585",
+ "createdAt": "2026-11-18T20:30:00Z",
+ "updatedAt": "2026-11-18T20:30:00Z",
+ "prioridad": 2,
+ "n": 8
+}

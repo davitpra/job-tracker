@@ -1,0 +1,125 @@
+{
+ "empresa": "McAfee",
+ "puesto": "Full-stack Software Engineer - Canada",
+ "linkedinId": "4491844981",
+ "busqueda": "backend",
+ "estado": "Evaluar",
+ "encaje": "Medio",
+ "tipo": "Permanente",
+ "modalidad": "Híbrido",
+ "ubicacion": "Waterloo, ON (oficina según necesidad)",
+ "anios": "5–8",
+ "solicitantes": "41",
+ "stack": "Dart/Flutter, React, TypeScript, Go, Node.js",
+ "porQue": "React/TS + Node, Redux, Jest/Cypress, WCAG y design systems; híbrido con poca presencia.",
+ "brechas": "Piden 5–8 años; en empresa 3,8 → ❌ y tope Medio; Dart/Flutter y Go ❌; exigen vivir a distancia de viaje de Waterloo (London ~1 h).",
+ "proximoPaso": "Decidir si London cuenta como distancia de viaje a Waterloo; si sí, aplicar en la web de McAfee.",
+ "notas": "2026-11-18: run diario. Sin ayuda de reubicación.",
+ "techReq": [
+  "Dart",
+  "Flutter",
+  "JavaScript",
+  "TypeScript",
+  "React",
+  "Go",
+  "Node.js",
+  "Redux",
+  "REST APIs",
+  "Jest",
+  "Cypress",
+  "CI/CD"
+ ],
+ "techDes": [],
+ "clasif": {
+  "pts": 17,
+  "max": 22,
+  "pct": 77,
+  "requisitos": [
+   {
+    "r": "5–8 años",
+    "n": 0,
+    "e": "~3,8 en empresa"
+   },
+   {
+    "r": "Dart, JS/TS, HTML/CSS",
+    "n": 1,
+    "e": "Sin Dart"
+   },
+   {
+    "r": "Flutter/React + Go/Node",
+    "n": 1,
+    "e": "React y Node; sin Flutter ni Go"
+   },
+   {
+    "r": "Manejo de estado",
+    "n": 2,
+    "e": "Redux"
+   },
+   {
+    "r": "REST y WebSockets",
+    "n": 2,
+    "e": "NestJS"
+   },
+   {
+    "r": "Herramientas de rendimiento",
+    "n": 2,
+    "e": "Lighthouse, DevTools"
+   },
+   {
+    "r": "CI/CD y tests (Jest, Cypress)",
+    "n": 2,
+    "e": "Jest, Cypress, GitHub Actions"
+   },
+   {
+    "r": "WCAG e i18n",
+    "n": 1,
+    "e": "WCAG sí; i18n poco"
+   },
+   {
+    "r": "Nube",
+    "n": 2,
+    "e": "AWS, Azure"
+   },
+   {
+    "r": "Design systems",
+    "n": 2,
+    "e": "Bootstrap/Material UI"
+   },
+   {
+    "r": "Agile/Scrum",
+    "n": 2,
+    "e": "Kanban, Scrum"
+   }
+  ],
+  "prioridad": {
+   "base": 2,
+   "ajustes": [
+    {
+     "t": "<3 días y <50 solicitantes",
+     "v": 1
+    },
+    {
+     "t": "5+ años",
+     "v": -1
+    }
+   ],
+   "final": 2
+  },
+  "rubrica": "2026-11-04",
+  "ajusteEncaje": "Tope Medio por 5+ años",
+  "filtro": "Dudoso: Waterloo híbrido; exigen distancia de viaje"
+ },
+ "salario": "CA$85,580–115,780/año",
+ "salMin": 85580,
+ "salMax": 115780,
+ "moneda": "CAD",
+ "periodo": "año",
+ "fuente": "LinkedIn (Apify)",
+ "publicada": "2026-11-18",
+ "cvAdaptada": "No",
+ "link": "https://www.linkedin.com/jobs/view/4491844981",
+ "createdAt": "2026-11-18T20:30:00Z",
+ "updatedAt": "2026-11-18T20:30:00Z",
+ "prioridad": 2,
+ "n": 20
+}

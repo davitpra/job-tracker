@@ -1,0 +1,43 @@
+{
+ "empresa": "Fitch Ratings",
+ "puesto": "Software Engineer, Full-Stack Applications (Associate Director) - AI Fluent",
+ "linkedinId": "4483688019",
+ "busqueda": "contratos",
+ "estado": "Descartada",
+ "motivoDescarte": [
+  "Senior o 5+ años",
+  "Java/Kotlin, .NET o C#"
+ ],
+ "modalidad": "Híbrido",
+ "ubicacion": "Toronto, ON",
+ "tipo": "Permanente",
+ "anios": "13+",
+ "solicitantes": "33",
+ "stack": "Java, Spring Boot, React",
+ "notas": "2026-11-18: run diario. Rol de liderazgo con 13+ años.",
+ "techReq": [
+  "Java",
+  "React"
+ ],
+ "techDes": [
+  "Docker",
+  "Kubernetes",
+  "AWS",
+  "Azure",
+  "CI/CD",
+  "Microservicios",
+  "IA / LLM"
+ ],
+ "salario": "CA$180,000–220,000/año",
+ "salMin": 180000,
+ "salMax": 220000,
+ "moneda": "CAD",
+ "periodo": "año",
+ "fuente": "LinkedIn (Apify)",
+ "publicada": "2026-11-18",
+ "cvAdaptada": "No",
+ "link": "https://www.linkedin.com/jobs/view/4483688019",
+ "createdAt": "2026-11-18T20:30:00Z",
+ "updatedAt": "2026-11-18T20:30:00Z",
+ "n": 26
+}

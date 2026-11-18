@@ -1,0 +1,100 @@
+{
+ "empresa": "Spait Infotech",
+ "puesto": "Full Stack Developer",
+ "linkedinId": "4491431583",
+ "busqueda": "backend",
+ "estado": "Evaluar",
+ "encaje": "Muy alto",
+ "tipo": "Permanente",
+ "modalidad": "",
+ "ubicacion": "Canadá (modalidad no indicada)",
+ "anios": "No indica",
+ "solicitantes": "200+",
+ "stack": "React/Angular/Vue, Node.js/Java/Python/PHP/.NET, SQL, MongoDB",
+ "porQue": "Aviso genérico que acepta React + Node.js + PostgreSQL/MongoDB: todo en el CV.",
+ "brechas": "Sin datos de la empresa ni de la modalidad; aviso genérico (también publicó 'Web Developer' con 158 solicitantes): puede ser una agencia de volumen; 200+.",
+ "proximoPaso": "Revisar la empresa en LinkedIn antes de aplicar.",
+ "notas": "2026-11-18: run diario.",
+ "techReq": [
+  "HTML / CSS",
+  "JavaScript",
+  "React",
+  "Node.js",
+  "REST APIs",
+  "SQL",
+  "MongoDB"
+ ],
+ "techDes": [
+  "Microservicios",
+  "Docker",
+  "Kubernetes"
+ ],
+ "clasif": {
+  "pts": 16,
+  "max": 16,
+  "pct": 100,
+  "requisitos": [
+   {
+    "r": "HTML, CSS y JS",
+    "n": 2,
+    "e": "Núcleo"
+   },
+   {
+    "r": "React, Angular o Vue",
+    "n": 2,
+    "e": "React, Angular"
+   },
+   {
+    "r": "Responsive + Tailwind/Bootstrap",
+    "n": 2,
+    "e": "Tailwind, Bootstrap"
+   },
+   {
+    "r": "Node.js u otro backend",
+    "n": 2,
+    "e": "NestJS"
+   },
+   {
+    "r": "APIs REST y auth",
+    "n": 2,
+    "e": "NestJS"
+   },
+   {
+    "r": "SQL y NoSQL",
+    "n": 2,
+    "e": "PostgreSQL, MongoDB"
+   },
+   {
+    "r": "Git y nube",
+    "n": 2,
+    "e": "GitHub, AWS"
+   },
+   {
+    "r": "CI/CD",
+    "n": 2,
+    "e": "GitHub Actions"
+   }
+  ],
+  "prioridad": {
+   "base": 1,
+   "ajustes": [
+    {
+     "t": "200+ solicitantes",
+     "v": -1
+    }
+   ],
+   "final": 2
+  },
+  "rubrica": "2026-11-04",
+  "filtro": "Dudoso: sin modalidad ni datos de la empresa"
+ },
+ "salario": "",
+ "fuente": "LinkedIn (Apify)",
+ "publicada": "2026-11-18",
+ "cvAdaptada": "No",
+ "link": "https://www.linkedin.com/jobs/view/4491431583",
+ "createdAt": "2026-11-18T20:30:00Z",
+ "updatedAt": "2026-11-18T20:30:00Z",
+ "prioridad": 2,
+ "n": 22
+}

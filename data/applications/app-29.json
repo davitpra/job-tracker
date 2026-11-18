@@ -1,0 +1,37 @@
+{
+ "empresa": "Tekgence",
+ "puesto": "Frontend UI Developer (contrato)",
+ "linkedinId": "4491842840",
+ "busqueda": "nucleo",
+ "estado": "Descartada",
+ "motivoDescarte": [
+  "Java/Kotlin, .NET o C#"
+ ],
+ "modalidad": "Híbrido",
+ "ubicacion": "Toronto, ON (4 días)",
+ "tipo": "Contrato",
+ "anios": "No indica",
+ "solicitantes": "61",
+ "stack": "React/Angular + C#/.NET, SQL Server",
+ "notas": "2026-11-18: run diario. Backend C#/.NET obligatorio.",
+ "techReq": [
+  "HTML / CSS",
+  "JavaScript",
+  "React",
+  "Angular",
+  "C# / .NET",
+  "SQL",
+  "REST APIs"
+ ],
+ "techDes": [
+  "Vue"
+ ],
+ "salario": "",
+ "fuente": "LinkedIn (Apify)",
+ "publicada": "2026-11-18",
+ "cvAdaptada": "No",
+ "link": "https://www.linkedin.com/jobs/view/4491842840",
+ "createdAt": "2026-11-18T20:30:00Z",
+ "updatedAt": "2026-11-18T20:30:00Z",
+ "n": 29
+}

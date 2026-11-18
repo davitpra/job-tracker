@@ -1,0 +1,102 @@
+{
+ "empresa": "Kake",
+ "puesto": "Senior Full Stack Engineer (Node/React) - Remote",
+ "linkedinId": "4490891651",
+ "busqueda": "backend",
+ "estado": "Por aplicar",
+ "encaje": "Medio",
+ "tipo": "Contrato",
+ "modalidad": "Remoto",
+ "ubicacion": "Canadá",
+ "anios": "5+",
+ "solicitantes": "80",
+ "stack": "Node.js, React, REST/GraphQL, SQL + NoSQL, nube",
+ "porQue": "Node.js + React end to end, APIs REST/GraphQL (NestJS), SQL y MongoDB, CI/CD y nube; usa Claude Code a diario (deseable).",
+ "brechas": "Piden 5+ años; en empresa 3,8 → ❌, título Senior → tope Medio y prioridad −1; sistemas distribuidos 🟡.",
+ "proximoPaso": "Aplicar por LinkedIn o en la web de Kake.",
+ "notas": "2026-11-18: run diario. Pago en USD. En octubre había un Kake Node/React en el tracker anterior: revisar si ya aplicó.",
+ "techReq": [
+  "Node.js",
+  "React",
+  "REST APIs",
+  "GraphQL",
+  "CI/CD",
+  "SQL",
+  "MongoDB"
+ ],
+ "techDes": [
+  "IA / LLM"
+ ],
+ "clasif": {
+  "pts": 12,
+  "max": 16,
+  "pct": 75,
+  "requisitos": [
+   {
+    "r": "5+ años",
+    "n": 0,
+    "e": "~3,8 en empresa"
+   },
+   {
+    "r": "APIs REST o GraphQL",
+    "n": 2,
+    "e": "NestJS, GraphQL"
+   },
+   {
+    "r": "Git, CI/CD y nube",
+    "n": 2,
+    "e": "GitHub Actions, AWS"
+   },
+   {
+    "r": "Diseño de sistemas",
+    "n": 2,
+    "e": "Arquitectura de Claw & Soul"
+   },
+   {
+    "r": "SQL + NoSQL",
+    "n": 1,
+    "e": "PostgreSQL; MongoDB menos"
+   },
+   {
+    "r": "Debugging en sistemas distribuidos",
+    "n": 1,
+    "e": "Kruger (Datadog)"
+   },
+   {
+    "r": "Inglés",
+    "n": 2,
+    "e": "Profesional"
+   },
+   {
+    "r": "Remoto independiente",
+    "n": 2,
+    "e": "Proyectos propios"
+   }
+  ],
+  "prioridad": {
+   "base": 2,
+   "ajustes": [
+    {
+     "t": "contrato",
+     "v": 1
+    },
+    {
+     "t": "Senior",
+     "v": -1
+    }
+   ],
+   "final": 2
+  },
+  "rubrica": "2026-11-04",
+  "ajusteEncaje": "Tope Medio por título Senior"
+ },
+ "salario": "",
+ "fuente": "LinkedIn (Apify)",
+ "publicada": "2026-11-18",
+ "cvAdaptada": "No",
+ "link": "https://www.linkedin.com/jobs/view/4490891651",
+ "createdAt": "2026-11-18T20:30:00Z",
+ "updatedAt": "2026-11-18T20:30:00Z",
+ "prioridad": 2,
+ "n": 11
+}

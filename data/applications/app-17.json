@@ -1,0 +1,104 @@
+{
+ "empresa": "IBM (Confluent)",
+ "puesto": "Software Engineer (Full-Stack, UX-Focused) — Observability",
+ "linkedinId": "4490866976",
+ "busqueda": "contratos",
+ "estado": "Evaluar",
+ "encaje": "Alto",
+ "tipo": "Permanente",
+ "modalidad": "",
+ "ubicacion": "Toronto, Ottawa, Vancouver, Calgary, Edmonton, Bedford (modalidad no indicada)",
+ "anios": "1–2+",
+ "solicitantes": "47",
+ "stack": "Herramientas internas de observabilidad e incidentes; APIs, pipelines de datos",
+ "porQue": "Puesto early-career (1–2+ años) centrado en UX de herramientas internas; Datadog, Sentry, Kibana y alertas en Kruger y Greenhouse.",
+ "brechas": "Métodos de UX research 🟡; experiencia en on-call e incidentes 🟡; sistemas distribuidos 🟡; maestría preferida; modalidad no indicada.",
+ "proximoPaso": "Confirmar la modalidad en la web de IBM y aplicar a la versión de Toronto.",
+ "notas": "2026-11-18: run diario. El mismo aviso salió en 7 ciudades.",
+ "techReq": [
+  "REST APIs"
+ ],
+ "techDes": [
+  "Prometheus",
+  "Grafana",
+  "OpenTelemetry",
+  "Kubernetes"
+ ],
+ "clasif": {
+  "pts": 15,
+  "max": 18,
+  "pct": 83,
+  "requisitos": [
+   {
+    "r": "Años de experiencia",
+    "n": 2,
+    "e": "1–2+ años"
+   },
+   {
+    "r": "Interés en on-call, SRE o herramientas internas",
+    "n": 1,
+    "e": "Monitoreo en Kruger"
+   },
+   {
+    "r": "Instinto de UX",
+    "n": 2,
+    "e": "Interfaces de sus productos"
+   },
+   {
+    "r": "Métodos de UX research",
+    "n": 1,
+    "e": "Poco formal"
+   },
+   {
+    "r": "Reducir carga cognitiva",
+    "n": 2,
+    "e": "UI de Greenhouse H&S"
+   },
+   {
+    "r": "Fundamentos y sistemas distribuidos",
+    "n": 1,
+    "e": "Parcial"
+   },
+   {
+    "r": "Aprender el stack del equipo",
+    "n": 2,
+    "e": "Angular, React, NestJS"
+   },
+   {
+    "r": "Ganas de aprender",
+    "n": 2,
+    "e": "Aprendizaje continuo"
+   },
+   {
+    "r": "Comunicación y ownership",
+    "n": 2,
+    "e": "Clientes"
+   }
+  ],
+  "prioridad": {
+   "base": 1,
+   "ajustes": [
+    {
+     "t": "<3 días y <50 solicitantes",
+     "v": 1
+    }
+   ],
+   "final": 1
+  },
+  "rubrica": "2026-11-04",
+  "filtro": "Dudoso: modalidad no indicada"
+ },
+ "salario": "CA$107,000–150,000/año",
+ "salMin": 107000,
+ "salMax": 150000,
+ "moneda": "CAD",
+ "periodo": "año",
+ "fuente": "LinkedIn (Apify)",
+ "publicada": "2026-11-18",
+ "cvAdaptada": "No",
+ "link": "https://www.linkedin.com/jobs/view/4490866976",
+ "createdAt": "2026-11-18T20:30:00Z",
+ "updatedAt": "2026-11-18T20:30:00Z",
+ "prioridad": 1,
+ "n": 17
+}

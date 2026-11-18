@@ -1,0 +1,47 @@
+{
+ "empresa": "Aarorn Technologies",
+ "puesto": "Senior Full Stack Developer (contrato)",
+ "linkedinId": "4490857408",
+ "busqueda": "nucleo",
+ "estado": "Descartada",
+ "motivoDescarte": [
+  "Híbrido o presencial",
+  "Java/Kotlin, .NET o C#",
+  "Senior o 5+ años"
+ ],
+ "modalidad": "Híbrido",
+ "ubicacion": "Montreal, QC (3 días)",
+ "tipo": "Contrato",
+ "anios": "5–7+",
+ "solicitantes": "<25",
+ "stack": "Angular, Java/Spring Boot, MySQL, MongoDB",
+ "notas": "2026-11-18: run diario. Híbrido fuera de Ontario.",
+ "techReq": [
+  "Angular",
+  "TypeScript",
+  "HTML / CSS",
+  "Java",
+  "MySQL",
+  "MongoDB",
+  "Microservicios"
+ ],
+ "techDes": [
+  "Python",
+  "Docker",
+  "Kubernetes",
+  "CI/CD",
+  "Cypress"
+ ],
+ "salario": "CA$60/hora",
+ "salMin": 60,
+ "salMax": 60,
+ "moneda": "CAD",
+ "periodo": "hora",
+ "fuente": "LinkedIn (Apify)",
+ "publicada": "2026-11-18",
+ "cvAdaptada": "No",
+ "link": "https://www.linkedin.com/jobs/view/4490857408",
+ "createdAt": "2026-11-18T20:30:00Z",
+ "updatedAt": "2026-11-18T20:30:00Z",
+ "n": 25
+}

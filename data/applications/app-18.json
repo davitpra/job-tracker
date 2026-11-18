@@ -1,0 +1,82 @@
+{
+ "empresa": "Tekgence (cliente no revelado)",
+ "puesto": "AI-Native Software Developer",
+ "linkedinId": "4491846704",
+ "busqueda": "contratos",
+ "estado": "Evaluar",
+ "encaje": "Alto",
+ "tipo": "Contrato",
+ "modalidad": "",
+ "ubicacion": "Toronto, ON (modalidad no indicada)",
+ "anios": "No indica",
+ "solicitantes": "30",
+ "stack": "AI-DLC, Spec-Driven Development, GitHub Copilot, GitHub Spec Kit; Java/.NET/Python/TS/React",
+ "porQue": "Spec-driven development y desarrollo asistido por IA son su forma de trabajo diaria (Claude Code, Codex, OpenCode); TypeScript/React está entre los lenguajes aceptados.",
+ "brechas": "GitHub Copilot y Spec Kit no figuran en el CV 🟡 (usa Claude Code/Codex); agencia sin modalidad.",
+ "proximoPaso": "Escribir al reclutador de Tekgence y preguntar la modalidad y el cliente.",
+ "notas": "2026-11-18: run diario.",
+ "techReq": [
+  "GitHub Copilot",
+  "GitHub Spec Kit",
+  "IA / LLM"
+ ],
+ "techDes": [
+  "TypeScript",
+  "React",
+  "Java",
+  "C# / .NET",
+  "Python"
+ ],
+ "clasif": {
+  "pts": 7,
+  "max": 8,
+  "pct": 88,
+  "requisitos": [
+   {
+    "r": "Desarrollo de software sólido",
+    "n": 2,
+    "e": "~3,8 años"
+   },
+   {
+    "r": "AI-DLC y Spec-Driven Development",
+    "n": 2,
+    "e": "Spec-driven en su flujo diario"
+   },
+   {
+    "r": "GitHub Copilot y Spec Kit",
+    "n": 1,
+    "e": "Otras herramientas de IA"
+   },
+   {
+    "r": "Uno de Java/.NET/Python/TS/React",
+    "n": 2,
+    "e": "TypeScript, React"
+   }
+  ],
+  "prioridad": {
+   "base": 1,
+   "ajustes": [
+    {
+     "t": "contrato",
+     "v": 1
+    },
+    {
+     "t": "<3 días y <50 solicitantes",
+     "v": 1
+    }
+   ],
+   "final": 1
+  },
+  "rubrica": "2026-11-04",
+  "filtro": "Agencia sin modalidad: preguntar al reclutador"
+ },
+ "salario": "",
+ "fuente": "LinkedIn (Apify)",
+ "publicada": "2026-11-18",
+ "cvAdaptada": "No",
+ "link": "https://www.linkedin.com/jobs/view/4491846704",
+ "createdAt": "2026-11-18T20:30:00Z",
+ "updatedAt": "2026-11-18T20:30:00Z",
+ "prioridad": 1,
+ "n": 18
+}

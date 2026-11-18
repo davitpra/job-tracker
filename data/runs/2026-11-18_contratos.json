@@ -1,0 +1,13 @@
+{
+ "fecha": "2026-11-18",
+ "busqueda": "contratos",
+ "total": 57,
+ "limite": 60,
+ "utiles": 5,
+ "nota": "Mucho ruido: unos 10 gigs de Hired y varios de Joblet-AI (entrenamiento de IA), más Java/.NET de agencias. Útiles: Motion Recruitment, Tekgence AI-Native, BeachHead, Intuit, IBM.",
+ "utilesFuente": "tracker",
+ "dataset": "w8IfRVWGJ31dwtoSq",
+ "run": "6B1Pm4Zn0dNl2KgHV",
+ "costoUsd": 0.114,
+ "createdAt": "2026-11-18T20:30:00Z"
+}

@@ -1,0 +1,108 @@
+{
+ "empresa": "Banyan Software",
+ "puesto": "Forward Deployed Engineer",
+ "linkedinId": "4491851538",
+ "busqueda": "backend",
+ "estado": "Por aplicar",
+ "encaje": "Medio",
+ "tipo": "Permanente",
+ "modalidad": "Remoto",
+ "ubicacion": "EE.UU. y Canadá",
+ "anios": "5+",
+ "solicitantes": "39",
+ "stack": "TypeScript (o Python/C#/Java), AWS, Terraform, CI/CD, Claude Code/Cursor",
+ "porQue": "Full stack con TypeScript; desarrollo con Claude Code a diario (lo que el rol enseña a otros equipos); GitHub Actions y Docker.",
+ "brechas": "Piden 5+ años; en empresa 3,8 → ❌ y tope Medio; Terraform ❌; AWS a fondo 🟡; consultoría y gestión del cambio 🟡.",
+ "proximoPaso": "Aplicar solo en la web de Banyan (no aceptan postulaciones por LinkedIn).",
+ "notas": "2026-11-18: run diario. FDE para modernizar apps de su portafolio con IA.",
+ "techReq": [
+  "TypeScript",
+  "AWS",
+  "Terraform",
+  "CI/CD",
+  "Microservicios"
+ ],
+ "techDes": [
+  "React",
+  "Next.js",
+  "Docker",
+  "Kubernetes",
+  "IA / LLM"
+ ],
+ "clasif": {
+  "pts": 9,
+  "max": 16,
+  "pct": 56,
+  "requisitos": [
+   {
+    "r": "5+ años",
+    "n": 0,
+    "e": "~3,8 en empresa"
+   },
+   {
+    "r": "Full stack con un lenguaje moderno (TS)",
+    "n": 2,
+    "e": "TypeScript"
+   },
+   {
+    "r": "AWS cloud-native",
+    "n": 1,
+    "e": "EC2/S3/Lambda; no a fondo"
+   },
+   {
+    "r": "Terraform",
+    "n": 0,
+    "e": "No figura"
+   },
+   {
+    "r": "Consultoría y gestión del cambio",
+    "n": 1,
+    "e": "Trato con clientes en proyectos propios"
+   },
+   {
+    "r": "CI/CD y DevSecOps",
+    "n": 2,
+    "e": "GitHub Actions, SonarQube, Dependabot"
+   },
+   {
+    "r": "Microservicios, serverless, DDD",
+    "n": 1,
+    "e": "Serverless en Claw & Soul"
+   },
+   {
+    "r": "Comunicación",
+    "n": 2,
+    "e": "Clientes y equipos"
+   }
+  ],
+  "prioridad": {
+   "base": 2,
+   "ajustes": [
+    {
+     "t": "<3 días y <50 solicitantes",
+     "v": 1
+    },
+    {
+     "t": "5+ años",
+     "v": -1
+    }
+   ],
+   "final": 2
+  },
+  "rubrica": "2026-11-04",
+  "ajusteEncaje": "Tope Medio por 5+ años"
+ },
+ "salario": "CAD 145,000/año",
+ "salMin": 145000,
+ "salMax": 145000,
+ "moneda": "CAD",
+ "periodo": "año",
+ "fuente": "LinkedIn (Apify)",
+ "publicada": "2026-11-18",
+ "cvAdaptada": "No",
+ "link": "https://www.linkedin.com/jobs/view/4491851538",
+ "createdAt": "2026-11-18T20:30:00Z",
+ "updatedAt": "2026-11-18T20:30:00Z",
+ "prioridad": 2,
+ "n": 10
+}

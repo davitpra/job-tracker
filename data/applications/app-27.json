@@ -1,0 +1,38 @@
+{
+ "empresa": "8090 Solutions",
+ "puesto": "Full Stack Engineer",
+ "linkedinId": "4492080701",
+ "busqueda": "contratos",
+ "estado": "Descartada",
+ "motivoDescarte": [
+  "Híbrido o presencial",
+  "Autorización o residencia"
+ ],
+ "modalidad": "Presencial",
+ "ubicacion": "Toronto, ON o Redwood City, CA",
+ "tipo": "Permanente",
+ "anios": "No indica",
+ "solicitantes": "33",
+ "stack": "Python, TypeScript, React, AWS",
+ "notas": "2026-11-18: run diario. Presencial y el aviso exige autorización de trabajo en EE.UU.",
+ "techReq": [
+  "Python",
+  "TypeScript",
+  "React",
+  "AWS"
+ ],
+ "techDes": [
+  "Docker",
+  "CI/CD",
+  "IA / LLM",
+  "Machine learning"
+ ],
+ "salario": "",
+ "fuente": "LinkedIn (Apify)",
+ "publicada": "2026-11-18",
+ "cvAdaptada": "No",
+ "link": "https://www.linkedin.com/jobs/view/4492080701",
+ "createdAt": "2026-11-18T20:30:00Z",
+ "updatedAt": "2026-11-18T20:30:00Z",
+ "n": 27
+}

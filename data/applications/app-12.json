@@ -1,0 +1,128 @@
+{
+ "empresa": "Design Shopp / Spilled Milk",
+ "puesto": "Full-Stack AI Developer | Claude, n8n & AI Agents",
+ "linkedinId": "4492089353",
+ "busqueda": "backend",
+ "estado": "Por aplicar",
+ "encaje": "Medio",
+ "tipo": "Permanente",
+ "modalidad": "Remoto",
+ "ubicacion": "Canadá (horario ET)",
+ "anios": "5+",
+ "solicitantes": "38",
+ "stack": "Python, TypeScript, Node.js, Claude, n8n, agentes de IA",
+ "porQue": "Pipelines de IA con fal.ai e integraciones (Shopify, webhooks) en Claw & Soul; usa Claude Code a diario; TS/Node y React/Next.js/PostgreSQL (deseables).",
+ "brechas": "Piden 5+ años; en empresa 3,8 → ❌ y tope Medio; Python 🟡; n8n ❌; agentes y evaluación de modelos 🟡.",
+ "proximoPaso": "Aplicar por LinkedIn.",
+ "notas": "2026-11-18: run diario. Agencia digital canadiense con empresa hermana de IA.",
+ "techReq": [
+  "Python",
+  "TypeScript",
+  "Node.js",
+  "IA / LLM",
+  "REST APIs",
+  "n8n"
+ ],
+ "techDes": [
+  "React",
+  "Next.js",
+  "PostgreSQL",
+  "Playwright",
+  "Docker",
+  "CI/CD",
+  "Shopify",
+  "PHP"
+ ],
+ "clasif": {
+  "pts": 18,
+  "max": 24,
+  "pct": 75,
+  "requisitos": [
+   {
+    "r": "5+ años",
+    "n": 0,
+    "e": "~3,8 en empresa"
+   },
+   {
+    "r": "Python, JS/TS y Node.js",
+    "n": 1,
+    "e": "Sin Python"
+   },
+   {
+    "r": "Apps con IA y agentes",
+    "n": 1,
+    "e": "Pipelines fal.ai; agentes menos"
+   },
+   {
+    "r": "n8n, Claude, OpenAI",
+    "n": 1,
+    "e": "Claude sí; n8n no"
+   },
+   {
+    "r": "REST, webhooks, auth e integraciones",
+    "n": 2,
+    "e": "Shopify, webhooks"
+   },
+   {
+    "r": "Producción: monitoreo y logs",
+    "n": 2,
+    "e": "Sentry, Datadog"
+   },
+   {
+    "r": "Confiabilidad de IA y prompts",
+    "n": 1,
+    "e": "Prompts en sus pipelines"
+   },
+   {
+    "r": "Git, testing y deploy",
+    "n": 2,
+    "e": "GitHub Actions"
+   },
+   {
+    "r": "Arquitectura independiente",
+    "n": 2,
+    "e": "Proyectos propios"
+   },
+   {
+    "r": "Análisis de requisitos de negocio",
+    "n": 2,
+    "e": "Greenhouse H&S"
+   },
+   {
+    "r": "Inglés",
+    "n": 2,
+    "e": "Profesional"
+   },
+   {
+    "r": "Horario ET",
+    "n": 2,
+    "e": "Vive en Ontario"
+   }
+  ],
+  "prioridad": {
+   "base": 2,
+   "ajustes": [
+    {
+     "t": "<3 días y <50 solicitantes",
+     "v": 1
+    },
+    {
+     "t": "5+ años",
+     "v": -1
+    }
+   ],
+   "final": 2
+  },
+  "rubrica": "2026-11-04",
+  "ajusteEncaje": "Tope Medio por 5+ años"
+ },
+ "salario": "",
+ "fuente": "LinkedIn (Apify)",
+ "publicada": "2026-11-18",
+ "cvAdaptada": "No",
+ "link": "https://www.linkedin.com/jobs/view/4492089353",
+ "createdAt": "2026-11-18T20:30:00Z",
+ "updatedAt": "2026-11-18T20:30:00Z",
+ "prioridad": 2,
+ "n": 12
+}

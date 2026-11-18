@@ -1,0 +1,35 @@
+{
+ "empresa": "nesto",
+ "puesto": "Senior Frontend Developer",
+ "linkedinId": "4491769612",
+ "busqueda": "nucleo",
+ "estado": "Descartada",
+ "motivoDescarte": [
+  "Senior o 5+ años",
+  "Híbrido o presencial"
+ ],
+ "modalidad": "Híbrido",
+ "ubicacion": "Montreal, QC",
+ "tipo": "Permanente",
+ "anios": "7+",
+ "solicitantes": "141",
+ "stack": "TypeScript, React, Next.js, CSS/SASS",
+ "notas": "2026-11-18: run diario. 7+ años e híbrido fuera de Ontario.",
+ "techReq": [
+  "TypeScript",
+  "React",
+  "HTML / CSS",
+  "Microservicios"
+ ],
+ "techDes": [
+  "Next.js"
+ ],
+ "salario": "",
+ "fuente": "LinkedIn (Apify)",
+ "publicada": "2026-11-18",
+ "cvAdaptada": "No",
+ "link": "https://www.linkedin.com/jobs/view/4491769612",
+ "createdAt": "2026-11-18T20:30:00Z",
+ "updatedAt": "2026-11-18T20:30:00Z",
+ "n": 31
+}

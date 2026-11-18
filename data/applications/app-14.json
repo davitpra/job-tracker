@@ -1,0 +1,87 @@
+{
+ "empresa": "ClickHouse",
+ "puesto": "Full Stack Software Engineer - Postgres",
+ "linkedinId": "4491825447",
+ "busqueda": "nucleo",
+ "estado": "Evaluar",
+ "encaje": "Muy alto",
+ "tipo": "Permanente",
+ "modalidad": "Remoto",
+ "ubicacion": "Toronto, ON (remote-friendly)",
+ "anios": "1–4",
+ "solicitantes": "191",
+ "stack": "React, TypeScript, APIs REST, Node.js/Go",
+ "porQue": "1–4 años de React/TS; features end to end con APIs; UIs con datos y métricas; WCAG (Delphi) y PostgreSQL (deseables).",
+ "brechas": "El rango salarial del aviso está en rupias (₹45L–50L): puede ser un puesto para India publicado en Toronto.",
+ "proximoPaso": "Confirmar en la web de ClickHouse que la vacante es para Canadá y aplicar.",
+ "notas": "2026-11-18: run diario. Equipo Managed Postgres.",
+ "techReq": [
+  "React",
+  "TypeScript",
+  "REST APIs"
+ ],
+ "techDes": [
+  "Node.js",
+  "Go",
+  "PostgreSQL",
+  "SQL"
+ ],
+ "clasif": {
+  "pts": 14,
+  "max": 14,
+  "pct": 100,
+  "requisitos": [
+   {
+    "r": "Años de experiencia",
+    "n": 2,
+    "e": "1–4 años"
+   },
+   {
+    "r": "React, TS y fundamentos frontend",
+    "n": 2,
+    "e": "Núcleo del CV"
+   },
+   {
+    "r": "APIs REST (Node/Go suma)",
+    "n": 2,
+    "e": "NestJS"
+   },
+   {
+    "r": "Colaboración con diseño y backend",
+    "n": 2,
+    "e": "Kruger, Delphi"
+   },
+   {
+    "r": "Empatía con desarrolladores",
+    "n": 2,
+    "e": "Herramientas internas"
+   },
+   {
+    "r": "Ownership",
+    "n": 2,
+    "e": "Proyectos propios"
+   },
+   {
+    "r": "Mentalidad de crecimiento",
+    "n": 2,
+    "e": "Aprendizaje continuo"
+   }
+  ],
+  "prioridad": {
+   "base": 1,
+   "ajustes": [],
+   "final": 1
+  },
+  "rubrica": "2026-11-04",
+  "filtro": "Dudoso: salario en rupias; confirmar que el puesto es para Canadá"
+ },
+ "salario": "₹45L–50L/año (aviso en rupias)",
+ "fuente": "LinkedIn (Apify)",
+ "publicada": "2026-11-18",
+ "cvAdaptada": "No",
+ "link": "https://www.linkedin.com/jobs/view/4491825447",
+ "createdAt": "2026-11-18T20:30:00Z",
+ "updatedAt": "2026-11-18T20:30:00Z",
+ "prioridad": 1,
+ "n": 14
+}

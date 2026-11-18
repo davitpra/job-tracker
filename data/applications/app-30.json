@@ -1,0 +1,41 @@
+{
+ "empresa": "Robertson & Company (cliente financiero)",
+ "puesto": "Senior Full Stack Software Developer (contrato)",
+ "linkedinId": "4461917442",
+ "busqueda": "nucleo",
+ "estado": "Descartada",
+ "motivoDescarte": [
+  "Java/Kotlin, .NET o C#",
+  "Senior o 5+ años"
+ ],
+ "modalidad": "Híbrido",
+ "ubicacion": "Toronto, ON",
+ "tipo": "Contrato",
+ "anios": "8–10",
+ "solicitantes": "<25",
+ "stack": ".NET 8, React, Azure APIM, Azure Service Bus",
+ "notas": "2026-11-18: run diario. Pide 8+ años de .NET.",
+ "techReq": [
+  "C# / .NET",
+  "React",
+  "TypeScript",
+  "Azure",
+  "Microservicios",
+  "REST APIs",
+  "CI/CD"
+ ],
+ "techDes": [
+  "FHIR"
+ ],
+ "salario": "Desde CA$82/hora",
+ "salMin": 82,
+ "moneda": "CAD",
+ "periodo": "hora",
+ "fuente": "LinkedIn (Apify)",
+ "publicada": "2026-11-18",
+ "cvAdaptada": "No",
+ "link": "https://www.linkedin.com/jobs/view/4461917442",
+ "createdAt": "2026-11-18T20:30:00Z",
+ "updatedAt": "2026-11-18T20:30:00Z",
+ "n": 30
+}
