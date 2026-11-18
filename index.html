@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tracker de aplicaciones</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Public+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* Layout: header with actions, tab bar, one working view at a time; tables and charts read top-down, summary first. */
+:root{
+  --bg:#f4f5f7; --surface:#ffffff; --ink:#18202b; --muted:#5d6878; --line:#dfe3ea;
+  --accent:#1f5fbf; --accent-soft:#e3ecfa; --warm:#c46a12;
+  --ok:#1d7a4f; --ok-soft:#dff2e8; --warn:#9a6a00; --warn-soft:#fbf0d4; --bad:#b3342d; --bad-soft:#f8e1df;
+  --display:"Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --body:"Public Sans", "Segoe UI", system-ui, sans-serif;
+  --mono:"JetBrains Mono", ui-monospace, Consolas, monospace;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#11151b; --surface:#191f27; --ink:#e7ebf1; --muted:#9aa5b4; --line:#2b333e;
+    --accent:#7aa8ef; --accent-soft:#1d2a3e; --warm:#e59a4a;
+    --ok:#5cc495; --ok-soft:#173226; --warn:#e2b551; --warn-soft:#352b12; --bad:#ef8079; --bad-soft:#3a1e1c;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#11151b; --surface:#191f27; --ink:#e7ebf1; --muted:#9aa5b4; --line:#2b333e;
+  --accent:#7aa8ef; --accent-soft:#1d2a3e; --warm:#e59a4a;
+  --ok:#5cc495; --ok-soft:#173226; --warn:#e2b551; --warn-soft:#352b12; --bad:#ef8079; --bad-soft:#3a1e1c;
+  color-scheme: dark;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font:15px/1.5 var(--body);}
+a{color:var(--accent)}
+button,input,select,textarea{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.wrap{max-width:1240px;margin:0 auto;padding:20px 20px 60px;display:flex;flex-direction:column;gap:16px}
+header.top{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:12px}
+h1{font:700 30px/1.1 var(--display);margin:0;letter-spacing:-.01em;text-wrap:balance}
+h2{font:600 20px/1.2 var(--display);margin:0 0 10px;text-wrap:balance}
+h3{font:600 15px/1.3 var(--body);margin:0 0 8px}
+.sub{color:var(--muted);font-size:13px;margin-top:4px}
+.actions{display:flex;flex-wrap:wrap;gap:8px}
+.btn{border:1px solid var(--line);background:var(--surface);border-radius:8px;padding:7px 12px;cursor:pointer;font-weight:500}
+.btn:hover{border-color:var(--accent)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+:root[data-theme="dark"] .btn.primary{color:#0d1726}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .btn.primary{color:#0d1726}}
+.btn.danger{color:var(--bad);border-color:var(--bad)}
+.btn[disabled]{opacity:.5;cursor:not-allowed}
+.notice{border:1px solid var(--line);border-left:4px solid var(--warn);background:var(--surface);border-radius:8px;padding:10px 14px;font-size:14px}
+.notice.info{border-left-color:var(--accent)}
+.notice ul{margin:6px 0 0;padding-left:18px}
+nav.tabs{display:flex;gap:4px;border-bottom:1px solid var(--line);overflow-x:auto}
+nav.tabs a{padding:9px 14px;text-decoration:none;color:var(--muted);font-weight:500;border-bottom:2px solid transparent;white-space:nowrap}
+nav.tabs a[aria-current="page"]{color:var(--ink);border-bottom-color:var(--accent)}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:16px}
+.grid{display:grid;gap:16px}
+.g2{grid-template-columns:repeat(auto-fit,minmax(340px,1fr))}
+.g4{grid-template-columns:repeat(auto-fit,minmax(170px,1fr))}
+.tile{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px 16px}
+.tile .k{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
+.tile .v{font:700 30px/1.1 var(--display);font-variant-numeric:tabular-nums;margin-top:4px}
+.tile .d{font-size:13px;color:var(--muted)}
+.filters{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.filters input[type=search]{flex:1 1 220px;min-width:180px}
+input,select,textarea{background:var(--surface);border:1px solid var(--line);border-radius:7px;padding:7px 9px}
+textarea{width:100%;min-height:70px;resize:vertical}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:3px 10px;font-size:13px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--accent-soft);border-color:var(--accent);color:var(--ink)}
+.chip b{font-variant-numeric:tabular-nums}
+.tablewrap{overflow-x:auto;background:var(--surface);border:1px solid var(--line);border-radius:10px}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:12px;color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:.04em;background:var(--surface);position:sticky;top:0}
+tbody tr{cursor:pointer}
+tbody tr:hover{background:var(--accent-soft)}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
+.co{font-weight:600}
+.role{color:var(--muted);font-size:13px}
+.pill{display:inline-block;border-radius:999px;padding:1px 9px;font-size:12px;font-weight:600;white-space:nowrap;background:var(--line);color:var(--ink)}
+.s-por{background:var(--accent-soft);color:var(--accent)}
+.s-eval{background:var(--warn-soft);color:var(--warn)}
+.s-apl{background:var(--accent-soft);color:var(--ink)}
+.s-int{background:var(--ok-soft);color:var(--ok)}
+.s-of{background:var(--ok);color:#fff}
+.s-rech{background:var(--bad-soft);color:var(--bad)}
+.s-sin{background:var(--line);color:var(--muted)}
+.s-desc{background:transparent;color:var(--muted);border:1px dashed var(--line)}
+.prio{display:inline-grid;place-items:center;width:22px;height:22px;border-radius:6px;font:600 12px var(--mono);border:1px solid var(--line)}
+.prio.p1{background:var(--warm);color:#fff;border-color:var(--warm)}
+.prio.p2{border-color:var(--warm);color:var(--warm)}
+.sig{font-size:12px;color:var(--ok);font-weight:600}
+.next{font-size:13px;max-width:280px}
+.muted{color:var(--muted)}
+.small{font-size:13px}
+.mono{font-family:var(--mono);font-size:12px}
+dialog{border:1px solid var(--line);border-radius:12px;padding:0;background:var(--surface);color:var(--ink);width:min(860px,96vw);max-height:92vh}
+dialog::backdrop{background:rgba(10,14,20,.5)}
+.dlg-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;padding:16px 18px;border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--surface);z-index:1}
+.dlg-body{padding:16px 18px;display:flex;flex-direction:column;gap:16px}
+.dlg-foot{display:flex;justify-content:space-between;gap:8px;padding:12px 18px;border-top:1px solid var(--line);position:sticky;bottom:0;background:var(--surface)}
+.form{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:10px 12px}
+.form label{display:flex;flex-direction:column;gap:3px;font-size:12px;color:var(--muted);font-weight:600}
+.form label.wide{grid-column:1/-1}
+.form input,.form select,.form textarea{font-size:14px;color:var(--ink);font-weight:400}
+.req{display:grid;grid-template-columns:28px 1fr;gap:4px 8px;font-size:14px}
+.diff .h{font-weight:600;margin-top:8px}
+.diff .m{color:var(--bad);text-decoration:line-through}
+.diff .p{color:var(--ok)}
+.bar-row{display:grid;grid-template-columns:minmax(120px,210px) 1fr 44px;gap:8px;align-items:center;font-size:13px;margin:5px 0}
+.bar-track{height:12px;background:var(--bg);border-radius:4px;overflow:hidden}
+.bar-fill{height:100%;background:var(--accent);border-radius:4px}
+.bar-fill.alt{background:var(--warm)}
+.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:12px;color:var(--muted)}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:5px;vertical-align:-1px}
+svg text{fill:var(--muted);font:11px var(--body)}
+.md h1,.md h2{font-family:var(--display)}
+.md h1{font-size:22px}.md h2{font-size:17px;margin-top:18px}
+.md p,.md li{max-width:78ch}
+.status{font-size:13px;color:var(--muted)}
+.empty{padding:30px;text-align:center;color:var(--muted)}
+@media (max-width:640px){ h1{font-size:24px} .next{max-width:none} }
+@media (prefers-reduced-motion: reduce){ *{transition:none!important;animation:none!important} }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div>
+      <h1>Tracker de aplicaciones</h1>
+      <div class="sub" id="subline">Búsqueda tech de David Prado · cargando datos…</div>
+    </div>
+    <div class="actions">
+      <button class="btn primary" id="btnNew" type="button">Nueva oferta</button>
+      <button class="btn" id="btnJson" type="button">Exportar JSON</button>
+      <button class="btn" id="btnCsv" type="button">Exportar CSV</button>
+    </div>
+  </header>
+  <div id="banner"></div>
+  <nav class="tabs" aria-label="Secciones">
+    <a href="#aplicaciones" data-view="aplicaciones">Aplicaciones</a>
+    <a href="#metricas" data-view="metricas">Métricas</a>
+    <a href="#tecnologias" data-view="tecnologias">Tecnologías y puestos</a>
+    <a href="#descartes" data-view="descartes">Descartes</a>
+    <a href="#busquedas" data-view="busquedas">Búsquedas</a>
+    <a href="#rubrica" data-view="rubrica">Rúbrica</a>
+  </nav>
+  <main id="view"><div class="empty">Cargando el tracker…</div></main>
+</div>
+
+<dialog id="dlg" aria-labelledby="dlgTitle">
+  <form method="dialog" id="dlgForm">
+    <div class="dlg-head">
+      <div><h2 id="dlgTitle" style="margin:0">Oferta</h2><div class="sub" id="dlgSub"></div></div>
+      <button class="btn" type="button" id="dlgClose">Cerrar</button>
+    </div>
+    <div class="dlg-body" id="dlgBody"></div>
+    <div class="dlg-foot">
+      <div><button class="btn danger" type="button" id="dlgDelete">Eliminar</button></div>
+      <div class="actions"><span class="status" id="dlgStatus"></span><button class="btn primary" type="submit" id="dlgSave">Guardar</button></div>
+    </div>
+  </form>
+</dialog>
+
+<script>
+"use strict";
+const ESTADOS=["Por aplicar","Evaluar","Aplicado","Entrevista recruiter","Entrevista técnica","Entrevista final","Oferta","Rechazado","Sin respuesta","Descartada"];
+const ORDEN_ESTADO={"Entrevista final":0,"Entrevista técnica":1,"Entrevista recruiter":2,"Oferta":0,"Por aplicar":3,"Evaluar":4,"Aplicado":5,"Sin respuesta":6,"Rechazado":7,"Descartada":8};
+const ENCAJES=["Muy alto","Alto","Medio","Bajo"];
+const SENALES=["","Vista en LinkedIn","CV descargado","Respondió"];
+const MOTIVOS=["Senior o 5+ años","Híbrido o presencial","Modalidad no indicada","200+ solicitantes","Python como núcleo","Otro stack como núcleo","Java/Kotlin, .NET o C#","Móvil nativo","Otra brecha técnica","Rol distinto o por debajo del nivel","Salario bajo","Autorización o residencia","Francés","Duplicada o ya aplicaste en la empresa","Falta información","Oferta cerrada","Otro"];
+const APLICADAS=new Set(["Aplicado","Entrevista recruiter","Entrevista técnica","Entrevista final","Oferta","Rechazado","Sin respuesta"]);
+const S={apps:[],busq:[],runs:[],rubrica:null,loaded:false,error:null,f:{q:"",estado:"Activas",encaje:"",tipo:"",sort:"prio"},techView:"aplicadas"};
+let DB=null, DL=null;
+
+const $=s=>document.querySelector(s);
+const esc=v=>String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const fmtD=d=>{if(!d)return"";const [y,m,dd]=String(d).slice(0,10).split("-");const M=["ene","feb","mar","abr","may","jun","jul","ago","sep","oct","nov","dic"];return `${+dd} ${M[+m-1]}${y!=="2026"?" "+y:""}`};
+const pct=(a,b)=>b?Math.round(a*100/b):0;
+function estadoCls(e){return {"Por aplicar":"s-por","Evaluar":"s-eval","Aplicado":"s-apl","Rechazado":"s-rech","Sin respuesta":"s-sin","Descartada":"s-desc","Oferta":"s-of"}[e]||(String(e).startsWith("Entrevista")?"s-int":"")}
+const isSenior=a=>/\b(senior|sr\.?|staff|lead|founding|principal)\b/i.test(a.puesto||"")||a.nivel==="Senior";
+const revisada=a=>!!a.senal||/^Entrevista|Oferta/.test(a.estado||"");
+const encRank=a=>{const i=ENCAJES.indexOf(a.encaje);return i<0?9:i};
+const conContacto=a=>!!(a.contacto&&String(a.contacto).trim());
+const pendienteWeb=a=>a.estado==="Aplicado"&&/^Aplicar en la web de la empresa/i.test(a.proximoPaso||"")&&["Alto","Muy alto"].includes(a.encaje);
+
+/* ---------- data ---------- */
+async function init(){
+  try{ DL=await claude.use("downloads"); }catch(e){ DL=null; }
+  if(!DL){ $("#btnJson").hidden=true; $("#btnCsv").hidden=true; }
+  try{ DB=await claude.use("db"); }catch(e){ DB=null; }
+  if(!DB){ S.error="No se pudo abrir la base de datos en esta vista. Abre el tracker desde claude.ai con tu cuenta."; render(); return; }
+  const timer=setTimeout(()=>{ if(!S.loaded){ S.error="La base todavía no responde. Puede ser la conexión; los datos aparecerán solos cuando llegue."; render(); } },10000);
+  const onErr=e=>{ clearTimeout(timer); S.error="Error al leer la base ("+(e&&e.code)+")."; render(); };
+  DB.collection("applications").onSnapshot(snap=>{
+    if(!snap.metadata.fromCache){ clearTimeout(timer); S.error=null; }
+    S.apps=snap.docs.map(d=>({id:d.id,...d.data()})); S.loaded=true; render();
+  },onErr);
+  DB.collection("busquedas").onSnapshot(s=>{S.busq=s.docs.map(d=>({id:d.id,...d.data()})); if(S.view==="busquedas")render();},()=>{});
+  DB.collection("runs").onSnapshot(s=>{S.runs=s.docs.map(d=>({id:d.id,...d.data()})); if(S.view==="busquedas")render();},()=>{});
+  DB.doc("settings/rubrica").onSnapshot(d=>{S.rubrica=d.exists?d.data():null; if(S.view==="rubrica")render();},()=>{});
+}
+
+/* ---------- routing ---------- */
+const VIEWS=["aplicaciones","metricas","tecnologias","descartes","busquedas","rubrica"];
+function route(){ const h=location.hash.replace("#",""); S.view=VIEWS.includes(h)?h:"aplicaciones";
+  document.querySelectorAll("nav.tabs a").forEach(a=>a.setAttribute("aria-current",a.dataset.view===S.view?"page":"false")); render(); }
+window.addEventListener("hashchange",route);
+
+/* ---------- render ---------- */
+function render(){
+  const apl=S.apps.filter(a=>APLICADAS.has(a.estado));
+  $("#subline").textContent=S.loaded?`${S.apps.length} ofertas · ${apl.length} aplicadas · ${S.apps.filter(a=>a.estado==="Por aplicar").length} por aplicar`:"Búsqueda tech de David Prado · cargando datos…";
+  renderBanner();
+  const v=$("#view");
+  if(S.error&&!S.loaded){ v.innerHTML=`<div class="notice">${esc(S.error)}</div>`; return; }
+  if(!S.loaded){ v.innerHTML=`<div class="empty">Cargando el tracker…</div>`; return; }
+  ({aplicaciones:vApps,metricas:vMetricas,tecnologias:vTec,descartes:vDesc,busquedas:vBusq,rubrica:vRub})[S.view](v);
+}
+function renderBanner(){
+  const b=$("#banner"); const parts=[];
+  if(S.error&&S.loaded) parts.push(`<div class="notice">${esc(S.error)}</div>`);
+  const pend=S.apps.filter(pendienteWeb);
+  if(pend.length) parts.push(`<div class="notice info"><b>Falta aplicar en la web de la empresa (${pend.length}):</b><ul>${pend.map(a=>`<li><a href="#aplicaciones" data-open="${esc(a.id)}">${esc(a.empresa)}, ${esc(a.puesto)}</a></li>`).join("")}</ul></div>`);
+  const rec=S.apps.filter(a=>a.recuperada).length;
+  if(rec) parts.push(`<div class="notice"><b>Tracker reconstruido el 18 nov.</b> ${rec} ofertas se recuperaron de LinkedIn y del historial. Faltan muchas aplicaciones hechas en portales externos y casi todas las descartadas, así que las métricas cuentan menos casos que antes. Las fechas marcadas como aproximadas salen de "hace X semanas" en LinkedIn.</div>`);
+  b.innerHTML=parts.join("");
+  b.querySelectorAll("[data-open]").forEach(el=>el.addEventListener("click",e=>{e.preventDefault();openApp(el.dataset.open)}));
+}
+
+/* ---------- Aplicaciones ---------- */
+function filtered(){
+  const f=S.f, q=f.q.trim().toLowerCase();
+  let r=S.apps.filter(a=>{
+    if(f.estado==="Activas"&&(a.estado==="Descartada"||a.estado==="Rechazado"||a.estado==="Sin respuesta"))return false;
+    if(f.estado!=="Activas"&&f.estado!=="Todas"&&a.estado!==f.estado)return false;
+    if(f.encaje&&(a.encaje||"Sin dato")!==f.encaje)return false;
+    if(f.tipo&&a.tipo!==f.tipo)return false;
+    if(q&&!`${a.empresa} ${a.puesto} ${a.stack||""} ${a.contacto||""} ${a.notas||""}`.toLowerCase().includes(q))return false;
+    return true;});
+  const by={prio:(a,b)=>(ORDEN_ESTADO[a.estado]??9)-(ORDEN_ESTADO[b.estado]??9)||(a.prioridad??5)-(b.prioridad??5)||encRank(a)-encRank(b)||String(b.fechaAplicacion||"").localeCompare(String(a.fechaAplicacion||"")),
+    fecha:(a,b)=>String(b.fechaAplicacion||b.createdAt||"").localeCompare(String(a.fechaAplicacion||a.createdAt||"")),
+    empresa:(a,b)=>String(a.empresa).localeCompare(String(b.empresa)),
+    n:(a,b)=>(b.n||0)-(a.n||0)}[f.sort];
+  return r.sort(by);
+}
+function vApps(v){
+  const counts={}; S.apps.forEach(a=>counts[a.estado]=(counts[a.estado]||0)+1);
+  const activas=S.apps.filter(a=>!["Descartada","Rechazado","Sin respuesta"].includes(a.estado)).length;
+  const chipsList=[["Activas",activas],["Todas",S.apps.length],...ESTADOS.filter(e=>counts[e]).map(e=>[e,counts[e]])];
+  const rows=filtered();
+  v.innerHTML=`
+  <div class="grid" style="gap:12px">
+    <div class="filters">
+      <input type="search" id="fq" placeholder="Buscar empresa, puesto, stack, contacto…" value="${esc(S.f.q)}" aria-label="Buscar">
+      <select id="fenc" aria-label="Encaje"><option value="">Encaje: todos</option>${[...ENCAJES,"Sin dato"].map(e=>`<option ${S.f.encaje===e?"selected":""}>${e}</option>`).join("")}</select>
+      <select id="ftipo" aria-label="Tipo"><option value="">Tipo: todos</option>${["Permanente","Contrato"].map(e=>`<option ${S.f.tipo===e?"selected":""}>${e}</option>`).join("")}</select>
+      <select id="fsort" aria-label="Orden"><option value="prio" ${S.f.sort==="prio"?"selected":""}>Orden: estado y prioridad</option><option value="fecha" ${S.f.sort==="fecha"?"selected":""}>Orden: fecha de aplicación</option><option value="empresa" ${S.f.sort==="empresa"?"selected":""}>Orden: empresa</option><option value="n" ${S.f.sort==="n"?"selected":""}>Orden: más nuevas</option></select>
+    </div>
+    <div class="chips" role="group" aria-label="Estado">${chipsList.map(([e,n])=>`<button type="button" class="chip" data-estado="${esc(e)}" aria-pressed="${S.f.estado===e}">${esc(e)} <b>${n}</b></button>`).join("")}</div>
+    <div class="tablewrap"><table>
+      <thead><tr><th>P</th><th>Empresa y puesto</th><th>Estado</th><th>Encaje</th><th>Tipo</th><th>Modalidad</th><th>Aplicada</th><th>Señal</th><th>Próximo paso</th></tr></thead>
+      <tbody>${rows.map(a=>`<tr data-id="${esc(a.id)}" tabindex="0">
+        <td>${a.prioridad?`<span class="prio p${a.prioridad}">${a.prioridad}</span>`:""}</td>
+        <td><div class="co">${esc(a.empresa)}</div><div class="role">${esc(a.puesto)}</div></td>
+        <td><span class="pill ${estadoCls(a.estado)}">${esc(a.estado)}</span></td>
+        <td class="small">${esc(a.encaje||"")}</td>
+        <td class="small">${esc(a.tipo||"")}</td>
+        <td class="small">${esc(a.modalidad||"")}${a.ubicacion?`<div class="muted">${esc(a.ubicacion)}</div>`:""}</td>
+        <td class="small" style="white-space:nowrap">${fmtD(a.fechaAplicacion)}</td>
+        <td>${a.senal?`<span class="sig">${esc(a.senal)}</span>`:""}</td>
+        <td class="next">${esc(a.proximoPaso||"")}</td></tr>`).join("")||`<tr><td colspan="9" class="empty">No hay ofertas con estos filtros.</td></tr>`}</tbody>
+    </table></div>
+    <div class="status">${rows.length} de ${S.apps.length} ofertas</div>
+  </div>`;
+  const fq=$("#fq"); let t; fq.addEventListener("input",()=>{clearTimeout(t);t=setTimeout(()=>{S.f.q=fq.value;const pos=fq.selectionStart;render();const n=$("#fq");n.focus();n.setSelectionRange(pos,pos);},200)});
+  $("#fenc").onchange=e=>{S.f.encaje=e.target.value;render()};
+  $("#ftipo").onchange=e=>{S.f.tipo=e.target.value;render()};
+  $("#fsort").onchange=e=>{S.f.sort=e.target.value;render()};
+  v.querySelectorAll("[data-estado]").forEach(b=>b.onclick=()=>{S.f.estado=b.dataset.estado;render()});
+  v.querySelectorAll("tbody tr[data-id]").forEach(tr=>{tr.onclick=()=>openApp(tr.dataset.id);tr.onkeydown=e=>{if(e.key==="Enter")openApp(tr.dataset.id)}});
+}
+
+/* ---------- dialog ---------- */
+const FIELDS=[
+ ["empresa","Empresa"],["puesto","Puesto"],["estado","Estado","sel",ESTADOS],["prioridad","Prioridad (1–4)","num"],
+ ["encaje","Encaje","sel",["",...ENCAJES]],["tipo","Tipo","sel",["","Permanente","Contrato"]],["modalidad","Modalidad","sel",["","Remoto","Híbrido","Presencial"]],["ubicacion","Ubicación"],
+ ["fuente","Fuente"],["link","Link","url"],["publicada","Publicada","date"],["fechaAplicacion","Fecha de aplicación","date"],
+ ["senal","Señal de revisión","sel",SENALES],["fechaSenal","Fecha de la señal","date"],["fechaRespuesta","Primera respuesta","date"],["solicitantes","Solicitantes"],
+ ["salario","Salario (texto del aviso)"],["salMin","Salario mín.","num"],["salMax","Salario máx.","num"],["moneda","Moneda","sel",["","CAD","USD","GBP","EUR"]],["periodo","Periodo","sel",["","año","hora","mes"]],
+ ["anios","Años pedidos"],["cvAdaptada","CV adaptado","sel",["","Sí","No"]],["busqueda","Búsqueda (id)"],
+ ["contacto","Contacto","wide"],["stack","Stack","area"],["porQue","Por qué encajas","area"],["brechas","Brechas o riesgos","area"],["proximoPaso","Próximo paso","area"],["notas","Notas","area"]];
+let CUR=null, delArm=false;
+function fieldHtml([k,label,type,opts],a){
+  const val=a[k]??""; const id="f_"+k;
+  if(type==="sel") return `<label for="${id}">${label}<select id="${id}" name="${k}">${opts.map(o=>`<option value="${esc(o)}" ${String(val)===o?"selected":""}>${esc(o||"—")}</option>`).join("")}${val&&!opts.includes(String(val))?`<option selected>${esc(val)}</option>`:""}</select></label>`;
+  if(type==="area") return `<label class="wide" for="${id}">${label}<textarea id="${id}" name="${k}">${esc(val)}</textarea></label>`;
+  const it=type==="num"?"number":type==="date"?"date":type==="url"?"url":"text";
+  return `<label class="${type==="wide"?"wide":""}" for="${id}">${label}<input id="${id}" name="${k}" type="${it}" value="${esc(type==="date"?String(val).slice(0,10):val)}"></label>`;
+}
+function clasifHtml(c){
+  if(!c) return "";
+  const p=c.prioridad||{};
+  return `<section><h3>Cómo se clasificó</h3>
+  <div class="small">${c.pct!=null?`Puntaje <b>${c.pts}/${c.max} = ${c.pct} %</b>`:""}${c.ajusteEncaje?` · ${esc(c.ajusteEncaje)}`:""}${c.filtro?` · ${esc(c.filtro)}`:""}${c.rubrica?` · rúbrica ${esc(c.rubrica)}`:""}</div>
+  ${p.base!=null?`<div class="small">Prioridad: base ${p.base}${(p.ajustes||[]).map(x=>` ${x.v>0?"+":""}${x.v} (${esc(x.t)})`).join("")} → <b>${p.final}</b></div>`:""}
+  ${(c.requisitos||[]).length?`<div class="req" style="margin-top:8px">${c.requisitos.map(r=>`<span>${["❌","🟡","✅"][r.n]||""}</span><span><b>${esc(r.r)}</b> <span class="muted">${esc(r.e||"")}</span></span>`).join("")}</div>`:""}</section>`;
+}
+function cvHtml(list){
+  if(!list||!list.length) return "";
+  return `<section><h3>Versiones del CV</h3>${list.map(cv=>`<details><summary>${esc(cv.archivo||"CV")} · ${fmtD(cv.subidoEl)}${cv.base?` · base: ${esc(cv.base)}`:""}</summary>
+  <p class="small">${esc(cv.resumen||"")}</p><div class="diff small">${(cv.cambios||[]).map(x=>`<div class="${x.t==="h"?"h":x.t==="-"?"m":"p"}">${x.t==="h"?"":x.t+" "}${esc(x.s)}</div>`).join("")}</div></details>`).join("")}</section>`;
+}
+function openApp(id){
+  const a=id?S.apps.find(x=>x.id===id):{estado:"Por aplicar"};
+  if(!a) return;
+  CUR=id||null; delArm=false;
+  $("#dlgTitle").textContent=id?`${a.empresa||""}`:"Nueva oferta";
+  $("#dlgSub").innerHTML=id?`${esc(a.puesto||"")} · ${esc(id)}${a.link?` · <a href="${esc(a.link)}" target="_blank" rel="noopener">abrir aviso</a>`:""}`:"Se guarda como una oferta nueva.";
+  $("#dlgBody").innerHTML=`<div class="form">${FIELDS.map(f=>fieldHtml(f,a)).join("")}
+    <fieldset class="wide" style="grid-column:1/-1;border:1px solid var(--line);border-radius:8px"><legend class="small muted">Motivo de descarte</legend>
+    <div class="chips">${MOTIVOS.map(m=>`<label class="chip small"><input type="checkbox" name="motivoDescarte" value="${esc(m)}" ${(a.motivoDescarte||[]).includes(m)?"checked":""}> ${esc(m)}</label>`).join("")}</div></fieldset></div>
+    ${clasifHtml(a.clasif)}${cvHtml(a.cvVersiones)}`;
+  $("#dlgDelete").hidden=!id; $("#dlgDelete").textContent="Eliminar"; $("#dlgStatus").textContent="";
+  $("#dlg").showModal();
+}
+function collect(){
+  const fd=new FormData($("#dlgForm")); const out={};
+  FIELDS.forEach(([k,,type])=>{ let v=fd.get(k); if(v==null)return; v=String(v).trim();
+    if(type==="num") out[k]=v===""?null:Number(v); else out[k]=v===""?null:v; });
+  out.motivoDescarte=fd.getAll("motivoDescarte");
+  return out;
+}
+$("#dlgClose").onclick=()=>$("#dlg").close();
+$("#dlgForm").addEventListener("submit",async e=>{
+  e.preventDefault(); if(!DB) return;
+  const data=collect(), st=$("#dlgStatus"), now=new Date().toISOString();
+  if(!data.empresa){ st.textContent="Falta la empresa."; return; }
+  $("#dlgSave").disabled=true; st.textContent="Guardando…";
+  try{
+    if(CUR){
+      const patch={updatedAt:now}; const old=S.apps.find(x=>x.id===CUR)||{};
+      for(const [k,v] of Object.entries(data)){ const o=old[k]??null; if(JSON.stringify(o)!==JSON.stringify(v)&&!(Array.isArray(v)&&!v.length&&o==null)) patch[k]=v; }
+      await DB.doc("applications/"+CUR).update(patch);
+    }else{
+      const max=S.apps.reduce((m,a)=>Math.max(m,a.n||0),0)+1;
+      const body={...data,n:max,createdAt:now,updatedAt:now}; Object.keys(body).forEach(k=>{if(body[k]===null||(Array.isArray(body[k])&&!body[k].length))delete body[k]});
+      await DB.doc("applications/app-"+max).set(body);
+    }
+    st.textContent="Guardado."; $("#dlg").close();
+  }catch(err){ st.textContent="No se pudo guardar: "+(err&&err.code||"error")+(err&&err.code==="invalid_argument"?" (¿tienes permiso de edición?)":""); }
+  finally{ $("#dlgSave").disabled=false; }
+});
+$("#dlgDelete").onclick=async()=>{
+  if(!CUR||!DB) return;
+  if(!delArm){ delArm=true; $("#dlgDelete").textContent="Confirmar: eliminar para siempre"; return; }
+  try{ await DB.doc("applications/"+CUR).delete(); $("#dlg").close(); }catch(e){ $("#dlgStatus").textContent="No se pudo eliminar."; }
+};
+$("#btnNew").onclick=()=>openApp(null);
+
+/* ---------- charts helpers ---------- */
+function bars(items,{alt=false,max=null,suffix=""}={}){
+  const m=max??Math.max(1,...items.map(i=>i[1]));
+  return items.map(([k,v,extra])=>`<div class="bar-row"><span title="${esc(k)}" style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${esc(k)}</span><div class="bar-track"><div class="bar-fill ${alt?"alt":""}" style="width:${Math.max(2,v*100/m)}%"></div></div><span class="num mono" style="text-align:right">${v}${suffix}${extra?`<span class="muted"> ${extra}</span>`:""}</span></div>`).join("")||`<div class="muted small">Sin datos todavía.</div>`;
+}
+function donut(part,total,label){
+  const r=52,c=2*Math.PI*r,f=total?part/total:0;
+  return `<svg viewBox="0 0 140 140" width="140" height="140" role="img" aria-label="${esc(label)}: ${part} de ${total}">
+   <circle cx="70" cy="70" r="${r}" fill="none" stroke="var(--line)" stroke-width="16"/>
+   <circle cx="70" cy="70" r="${r}" fill="none" stroke="var(--ok)" stroke-width="16" stroke-dasharray="${c*f} ${c}" transform="rotate(-90 70 70)" stroke-linecap="butt"/>
+   <text x="70" y="68" text-anchor="middle" style="font:700 24px var(--display);fill:var(--ink)">${pct(part,total)}%</text>
+   <text x="70" y="88" text-anchor="middle">${part} de ${total}</text></svg>`;
+}
+function weekKey(d){const x=new Date(d+"T12:00:00");const day=(x.getDay()+6)%7;x.setDate(x.getDate()-day);return x.toISOString().slice(0,10)}
+function columns(data,{h=170,keys,colors,labels}){
+  // data: [{x, values:{k:n}}]
+  const W=Math.max(320,data.length*58), pad=28, maxV=Math.max(1,...data.map(d=>keys.reduce((s,k)=>s+(d.values[k]||0),0)));
+  const bw=Math.min(36,(W-pad*2)/data.length-10), step=(W-pad*2)/Math.max(1,data.length);
+  const ticks=[0,Math.ceil(maxV/2),maxV];
+  let g=ticks.map(t=>{const y=h-20-(t/maxV)*(h-40);return `<line x1="${pad}" x2="${W-6}" y1="${y}" y2="${y}" stroke="var(--line)"/><text x="${pad-6}" y="${y+4}" text-anchor="end">${t}</text>`}).join("");
+  data.forEach((d,i)=>{let y=h-20; const x=pad+i*step+(step-bw)/2; let tot=0;
+    keys.forEach((k,ki)=>{const v=d.values[k]||0; if(!v)return; tot+=v; const hh=(v/maxV)*(h-40); y-=hh; g+=`<rect x="${x}" y="${y}" width="${bw}" height="${hh}" rx="3" fill="${colors[ki]}"><title>${esc(labels[ki])}: ${v}</title></rect>`;});
+    if(tot) g+=`<text x="${x+bw/2}" y="${y-4}" text-anchor="middle" style="fill:var(--ink)">${tot}</text>`;
+    g+=`<text x="${x+bw/2}" y="${h-5}" text-anchor="middle">${esc(d.x)}</text>`;});
+  return `<div style="overflow-x:auto"><svg viewBox="0 0 ${W} ${h}" width="${W}" height="${h}" role="img">${g}</svg></div>
+  <div class="legend">${keys.map((k,i)=>`<span><i style="background:${colors[i]}"></i>${esc(labels[i])}</span>`).join("")}</div>`;
+}
+
+/* ---------- Métricas ---------- */
+function corte(rows,fn,orden){
+  const g={}; rows.forEach(a=>{const k=fn(a); (g[k]=g[k]||[]).push(a)});
+  const keys=orden?orden.filter(k=>g[k]):Object.keys(g).sort((a,b)=>g[b].length-g[a].length);
+  return `<table><thead><tr><th></th><th class="num">Aplicadas</th><th class="num">Revisadas</th><th class="num">%</th><th class="num">Entrevistas</th><th class="num">Rechazos</th></tr></thead><tbody>${keys.map(k=>{const r=g[k];const rv=r.filter(revisada).length;
+   return `<tr style="cursor:default"><td>${esc(k)}</td><td class="num">${r.length}</td><td class="num">${rv}</td><td class="num"><b>${pct(rv,r.length)} %</b></td><td class="num">${r.filter(a=>/^Entrevista|Oferta/.test(a.estado)).length}</td><td class="num">${r.filter(a=>a.estado==="Rechazado").length}</td></tr>`}).join("")}</tbody></table>`;
+}
+function vMetricas(v){
+  const apl=S.apps.filter(a=>APLICADAS.has(a.estado));
+  const rev=apl.filter(revisada).length, ent=apl.filter(a=>/^Entrevista/.test(a.estado)).length, of=apl.filter(a=>a.estado==="Oferta").length, rech=apl.filter(a=>a.estado==="Rechazado").length;
+  const weeks={}; apl.forEach(a=>{if(!a.fechaAplicacion)return; const w=weekKey(String(a.fechaAplicacion).slice(0,10)); (weeks[w]=weeks[w]||{c:0,p:0}); a.tipo==="Contrato"?weeks[w].c++:weeks[w].p++;});
+  const wk=Object.keys(weeks).sort().slice(-10).map(w=>({x:fmtD(w),values:{p:weeks[w].p,c:weeks[w].c}}));
+  const sinFecha=apl.filter(a=>!a.fechaAplicacion).length;
+  v.innerHTML=`<div class="grid">
+   <div class="grid g4">
+    <div class="tile"><div class="k">Aplicadas</div><div class="v">${apl.length}</div><div class="d">${S.apps.filter(a=>a.estado==="Por aplicar").length} por aplicar · ${S.apps.filter(a=>a.estado==="Evaluar").length} por evaluar</div></div>
+    <div class="tile"><div class="k">Revisadas</div><div class="v">${pct(rev,apl.length)} %</div><div class="d">${rev} con señal (vista, CV descargado o respuesta)</div></div>
+    <div class="tile"><div class="k">Entrevistas</div><div class="v">${ent}</div><div class="d">${of} ofertas</div></div>
+    <div class="tile"><div class="k">Rechazos</div><div class="v">${rech}</div><div class="d">${apl.filter(a=>a.estado==="Sin respuesta").length} sin respuesta tras 14 días</div></div>
+   </div>
+   <div class="grid g2">
+    <div class="panel"><h2>¿Cuántas llegaron a ser revisadas?</h2><div style="display:flex;gap:20px;align-items:center;flex-wrap:wrap">${donut(rev,apl.length,"Revisadas")}
+      <div style="flex:1;min-width:180px">${bars([["Vista en LinkedIn",apl.filter(a=>a.senal==="Vista en LinkedIn").length],["CV descargado",apl.filter(a=>a.senal==="CV descargado").length],["Respondió",apl.filter(a=>a.senal==="Respondió").length],["Entrevista u oferta",ent+of]])}</div></div></div>
+    <div class="panel"><h2>Ritmo por semana</h2>${wk.length?columns(wk,{keys:["p","c"],colors:["var(--accent)","var(--warm)"],labels:["Permanente","Contrato"]}):'<div class="muted small">Sin fechas todavía.</div>'}${sinFecha?`<div class="small muted">${sinFecha} aplicadas sin fecha no aparecen.</div>`:""}</div>
+   </div>
+   <div class="grid g2">
+    <div class="panel"><h2>Por tipo</h2><div class="tablewrap" style="border:0">${corte(apl,a=>a.tipo||"Sin dato",["Contrato","Permanente","Sin dato"])}</div></div>
+    <div class="panel"><h2>Por contacto</h2><div class="tablewrap" style="border:0">${corte(apl,a=>conContacto(a)?"Con contacto":"Sin contacto",["Con contacto","Sin contacto"])}</div></div>
+    <div class="panel"><h2>Por nivel del título</h2><div class="tablewrap" style="border:0">${corte(apl,a=>isSenior(a)?"Senior, Lead o Founding":"Intermedio u otro",["Intermedio u otro","Senior, Lead o Founding"])}</div></div>
+    <div class="panel"><h2>¿La rúbrica acierta?</h2><p class="small muted" style="margin-top:-4px">Si el encaje predice algo, las Muy alto y Alto deberían tener más revisadas.</p><div class="tablewrap" style="border:0">${corte(apl,a=>a.encaje||"Sin dato",[...ENCAJES,"Sin dato"])}</div></div>
+    <div class="panel"><h2>Por fuente</h2><div class="tablewrap" style="border:0">${corte(apl,a=>a.fuente||"Sin dato")}</div></div>
+   </div></div>`;
+}
+
+/* ---------- Tecnologías y puestos ---------- */
+const TECH=[["TypeScript",/typescript|\bts\b/i],["React",/react(?!\s*native)/i],["Next.js",/next\.?js/i],["Node.js",/node/i],["NestJS",/nest/i],["PostgreSQL",/postgres/i],["GraphQL",/graphql/i],["AWS",/\baws\b|lambda|amazon web/i],["GCP",/\bgcp\b|google cloud/i],["Azure",/azure/i],["Docker",/docker/i],["Kubernetes",/kubernetes|\bk8s\b/i],["Python",/python|django|fastapi|flask/i],["Go",/\bgo\b|golang/i],["Java",/\bjava\b(?!script)/i],[".NET / C#",/\.net|c#/i],["Vue",/\bvue/i],["Angular",/angular/i],["React Native",/react\s*native|expo/i],["Shopify",/shopify|liquid/i],["IA / LLM",/\bai\b|\bia\b|llm|agentic|genai/i],["Terraform",/terraform/i],["Redis",/redis/i],["MongoDB",/mongo/i]];
+function normTitle(p){return String(p||"").toLowerCase().replace(/\(.*?\)|\[.*?\]/g,"").replace(/\b(senior|sr\.?|intermediate|mid[- ]level|junior|jr\.?|ii|iii|i)\b/g,"").replace(/[-–,|:].*$/,"").replace(/\s+/g," ").trim()}
+function vTec(v){
+  const rows=S.techView==="todas"?S.apps:S.apps.filter(a=>APLICADAS.has(a.estado));
+  const tc=TECH.map(([k,re])=>[k,rows.filter(a=>re.test(`${a.stack||""} ${a.brechas||""} ${a.puesto||""}`)).length]).filter(x=>x[1]).sort((a,b)=>b[1]-a[1]);
+  const br=TECH.map(([k,re])=>[k,rows.filter(a=>re.test(a.brechas||"")).length]).filter(x=>x[1]).sort((a,b)=>b[1]-a[1]);
+  const tt={}; rows.forEach(a=>{const t=normTitle(a.puesto); if(t&&t!=="puesto sin dato")tt[t]=(tt[t]||0)+1});
+  const titles=Object.entries(tt).sort((a,b)=>b[1]-a[1]).slice(0,14);
+  const sal=rows.filter(a=>a.salMin||a.salMax).map(a=>{const f=a.periodo==="hora"?2080:a.periodo==="mes"?12:1;return {a,lo:(a.salMin||a.salMax)*f,hi:(a.salMax||a.salMin)*f}}).filter(x=>!a_usd(x.a));
+  const conStack=rows.filter(a=>a.stack||a.brechas).length;
+  v.innerHTML=`<div class="grid">
+   <div class="filters"><label class="small" for="tv">Vista</label><select id="tv"><option value="aplicadas" ${S.techView==="aplicadas"?"selected":""}>Aplicadas</option><option value="todas" ${S.techView==="todas"?"selected":""}>Todas las vistas (incluye descartadas)</option></select><span class="small muted">${rows.length} ofertas · ${conStack} con stack o brechas cargadas</span></div>
+   <div class="grid g2">
+    <div class="panel"><h2>Qué tecnologías piden</h2><p class="small muted" style="margin-top:-4px">Cuenta stack, brechas y título de cada oferta.</p>${bars(tc)}</div>
+    <div class="panel"><h2>Dónde están tus brechas</h2><p class="small muted" style="margin-top:-4px">Solo el campo Brechas: lo que más conviene aprender.</p>${bars(br,{alt:true})}</div>
+    <div class="panel"><h2>Puestos que más se repiten</h2>${bars(titles)}</div>
+    <div class="panel"><h2>Lo que pagan</h2>${sal.length?`<p class="small muted" style="margin-top:-4px">Anual en CAD (hora × 2.080, mes × 12). ${sal.length} ofertas con salario.</p>${salStrip(sal)}`:'<div class="muted small">Todavía no hay ofertas con salario normalizado (salMin, salMax).</div>'}</div>
+   </div></div>`;
+  $("#tv").onchange=e=>{S.techView=e.target.value;render()};
+}
+function a_usd(a){return a.moneda&&a.moneda!=="CAD"}
+function salStrip(sal){
+  const lo=Math.min(...sal.map(s=>s.lo)), hi=Math.max(...sal.map(s=>s.hi)), W=520, H=26*sal.length+30, x=v=>40+(v-lo)/(Math.max(1,hi-lo))*(W-80);
+  const sorted=sal.sort((a,b)=>a.lo-b.lo);
+  return `<div style="overflow-x:auto"><svg viewBox="0 0 ${W} ${H}" width="${W}" height="${H}">${sorted.map((s,i)=>{const y=20+i*26;return `<line x1="${x(s.lo)}" x2="${x(s.hi)}" y1="${y}" y2="${y}" stroke="var(--accent)" stroke-width="6" stroke-linecap="round"/><text x="${x(s.hi)+8}" y="${y+4}">${esc(s.a.empresa)} · ${Math.round(s.lo/1000)}–${Math.round(s.hi/1000)}K</text>`}).join("")}</svg></div>`;
+}
+
+/* ---------- Descartes ---------- */
+function vDesc(v){
+  const d=S.apps.filter(a=>a.estado==="Descartada");
+  const m={}; d.forEach(a=>(a.motivoDescarte&&a.motivoDescarte.length?a.motivoDescarte:["Sin motivo cargado"]).forEach(x=>m[x]=(m[x]||0)+1));
+  const items=Object.entries(m).sort((a,b)=>b[1]-a[1]);
+  v.innerHTML=`<div class="grid g2">
+   <div class="panel"><h2>Por qué descartas</h2><p class="small muted" style="margin-top:-4px">${d.length} descartadas. Una oferta puede tener varios motivos.</p>${bars(items,{alt:true})}</div>
+   <div class="panel"><h2>Últimas descartadas</h2>${d.length?`<div class="tablewrap" style="border:0"><table><tbody>${d.sort((a,b)=>(b.n||0)-(a.n||0)).slice(0,25).map(a=>`<tr data-id="${esc(a.id)}"><td><div class="co">${esc(a.empresa)}</div><div class="role">${esc(a.puesto)}</div></td><td class="small muted">${esc((a.motivoDescarte||[]).join(", "))}</td></tr>`).join("")}</tbody></table></div>`:'<div class="muted small">No hay descartadas cargadas. Las del tracker anterior no se pudieron recuperar; las nuevas aparecerán aquí desde el próximo run diario.</div>'}</div></div>`;
+  v.querySelectorAll("tr[data-id]").forEach(tr=>tr.onclick=()=>openApp(tr.dataset.id));
+}
+
+/* ---------- Búsquedas ---------- */
+function vBusq(v){
+  const b=[...S.busq].sort((x,y)=>(x.orden||99)-(y.orden||99));
+  const valid=new Set(b.filter(x=>x.estado==="Validada").map(x=>x.id)); valid.add("todas");
+  const runs=S.runs.filter(r=>valid.has(r.busqueda));
+  const fechas=[...new Set(runs.map(r=>r.fecha))].sort().slice(-14);
+  const keys=[...valid].filter(k=>runs.some(r=>r.busqueda===k));
+  const pal=["var(--accent)","var(--warm)","var(--ok)","var(--muted)","var(--bad)"];
+  const nombre=k=>k==="todas"?"Las 3 juntas (sin reparto)":(b.find(x=>x.id===k)||{}).nombre||k;
+  const data=fechas.map(f=>({x:fmtD(f),values:Object.fromEntries(keys.map(k=>[k,runs.filter(r=>r.fecha===f&&r.busqueda===k).reduce((s,r)=>s+(r.utiles||0),0)]))}));
+  const cnt={}; S.apps.forEach(a=>{if(a.busqueda)cnt[a.busqueda]=(cnt[a.busqueda]||0)+1});
+  v.innerHTML=`<div class="grid">
+   <div class="panel"><h2>Ofertas útiles por run</h2><p class="small muted" style="margin-top:-4px">Solo las URLs validadas. Útiles = Por aplicar + Evaluar.</p>${data.length?columns(data,{keys,colors:keys.map((_,i)=>pal[i%pal.length]),labels:keys.map(nombre)}):'<div class="muted small">Sin runs cargados.</div>'}</div>
+   <div class="grid g2">${b.map(x=>`<div class="panel"><div style="display:flex;justify-content:space-between;gap:8px;align-items:baseline"><h3 style="margin:0">${esc(x.nombre)}</h3><span class="pill ${x.estado==="Validada"?"s-int":x.estado==="Descartada"?"s-desc":"s-eval"}">${esc(x.estado)}</span></div>
+     <div class="small muted">desde ${fmtD(x.desde)} · ${esc(x.estado.toLowerCase())} el ${fmtD(x.fechaEstado)} · ventana ${esc(x.ventana||"")} · límite ${esc(x.limite||"")}${cnt[x.id]?` · ${cnt[x.id]} ofertas en el tracker`:""}</div>
+     <p class="small" style="margin:8px 0 4px">${esc(x.proposito||"")}</p>${x.vigilar?`<p class="small muted" style="margin:0 0 6px">Vigilar: ${esc(x.vigilar)}</p>`:""}
+     ${x.url?`<div class="mono" style="word-break:break-all"><a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.keywords)}</a></div>`:`<div class="mono">${esc(x.keywords||"")}</div>`}</div>`).join("")||'<div class="muted small">Sin búsquedas cargadas.</div>'}</div></div>`;
+}
+
+/* ---------- Rúbrica ---------- */
+function md(src){
+  const lines=String(src||"").split("\n"); let out="",list=0;
+  const inl=s=>esc(s).replace(/\*\*(.+?)\*\*/g,"<b>$1</b>").replace(/`([^`]+)`/g,'<code class="mono">$1</code>').replace(/\*(.+?)\*/g,"<i>$1</i>");
+  for(const l of lines){
+    const m=l.match(/^(\s*)- (.*)/);
+    if(m){ const d=m[1].length>=2?2:1; while(list<d){out+="<ul>";list++} while(list>d){out+="</ul>";list--} out+=`<li>${inl(m[2])}</li>`; continue; }
+    while(list>0){out+="</ul>";list--}
+    if(/^### /.test(l)) out+=`<h3>${inl(l.slice(4))}</h3>`; else if(/^## /.test(l)) out+=`<h2>${inl(l.slice(3))}</h2>`; else if(/^# /.test(l)) out+=`<h1>${inl(l.slice(2))}</h1>`; else if(l.trim()) out+=`<p>${inl(l)}</p>`;
+  }
+  while(list>0){out+="</ul>";list--}
+  return out;
+}
+let RUB_FILE=null;
+function vRub(v){
+  const r=S.rubrica||{};
+  const texto=r.texto||RUB_FILE;
+  if(!texto&&RUB_FILE===null){ RUB_FILE=""; fetch("rubrica.md").then(x=>x.ok?x.text():"").then(t=>{RUB_FILE=t; if(S.view==="rubrica")render();}).catch(()=>{}); }
+  if(!texto){ v.innerHTML='<div class="empty">Cargando la rúbrica…</div>'; return; }
+  v.innerHTML=`<div class="grid g2" style="grid-template-columns:minmax(0,2.2fr) minmax(240px,1fr)">
+   <div class="panel md">${md(texto)}</div>
+   <div class="panel"><h2>Versión ${esc(r.version||"")}</h2><p class="small muted">Fuente: documento del proyecto <span class="mono">claude/rubrica-clasificacion.md</span>.</p>
+    <h3>Cambios</h3><ul class="small">${(r.cambios||[]).slice().reverse().map(c=>`<li><b>${fmtD(c.fecha)}</b> ${esc(c.texto)}</li>`).join("")}</ul></div></div>`;
+}
+
+/* ---------- export ---------- */
+function exportRows(){ return [...S.apps].sort((a,b)=>(a.n||0)-(b.n||0)); }
+async function save(filename,data){
+  if(!DL) return;
+  try{ await DL.save({filename,data}); }catch(e){ if(e&&e.code!=="declined"){ const s=$("#subline"); s.textContent="No se pudo exportar ("+(e.code||"error")+")."; } }
+}
+$("#btnJson").onclick=()=>{ const d=new Date().toISOString().slice(0,10);
+  save(`tracker-aplicaciones-${d}.json`,JSON.stringify({exportado:new Date().toISOString(),applications:exportRows(),busquedas:S.busq,runs:S.runs,rubrica:S.rubrica},null,1)); };
+$("#btnCsv").onclick=()=>{ const d=new Date().toISOString().slice(0,10);
+  const cols=["id","n","empresa","puesto","estado","prioridad","encaje","tipo","modalidad","ubicacion","fuente","link","publicada","fechaAplicacion","senal","fechaSenal","fechaRespuesta","contacto","salario","salMin","salMax","moneda","periodo","stack","brechas","porQue","proximoPaso","motivoDescarte","notas"];
+  const cell=v=>{v=Array.isArray(v)?v.join("; "):v??"";v=String(v);return /[",\n]/.test(v)?'"'+v.replace(/"/g,'""')+'"':v};
+  save(`tracker-aplicaciones-${d}.csv`,"﻿"+[cols.join(","),...exportRows().map(a=>cols.map(c=>cell(a[c])).join(","))].join("\n")); };
+
+route(); init();
+</script>
+</body>
+</html>
