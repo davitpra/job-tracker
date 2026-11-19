@@ -1,0 +1,106 @@
+{
+ "anios": "3+",
+ "brechas": "Agentes, retrieval y evaluación de modelos en producción 🟡; capacidades de plataforma de IA 🟡. Mismo aviso con 5 IDs (Ottawa, Waterloo, Toronto, Calgary, Halifax).",
+ "busqueda": "backend",
+ "clasif": {
+  "max": 22,
+  "pct": 91,
+  "prioridad": {
+   "ajustes": [
+    {
+     "t": "<3 días y <50 solicitantes",
+     "v": 1
+    }
+   ],
+   "base": 1,
+   "final": 1
+  },
+  "pts": 20,
+  "requisitos": [
+   {
+    "e": "~3,8 en empresa",
+    "n": 2,
+    "r": "3+ años"
+   },
+   {
+    "e": "Idukay, Kruger, Delphi",
+    "n": 2,
+    "r": "Features de calidad entregadas"
+   },
+   {
+    "e": "Kruger",
+    "n": 2,
+    "r": "Sistemas escalables empresariales"
+   },
+   {
+    "e": "Núcleo del CV",
+    "n": 2,
+    "r": "Full stack y arquitectura de servicios"
+   },
+   {
+    "e": "Pipelines fal.ai; agentes y evaluación menos",
+    "n": 1,
+    "r": "Sistemas con LLMs, agentes, retrieval o evaluación"
+   },
+   {
+    "e": "Parcial",
+    "n": 1,
+    "r": "Capacidades de sistemas con IA"
+   },
+   {
+    "e": "Proyectos propios",
+    "n": 2,
+    "r": "Ownership de features"
+   },
+   {
+    "e": "Spec-driven y agentes a diario",
+    "n": 2,
+    "r": "Área en crecimiento (agentes, datos, IAM…)"
+   },
+   {
+    "e": "Kruger (Datadog, Sentry)",
+    "n": 2,
+    "r": "Troubleshooting"
+   },
+   {
+    "e": "SonarQube, tests en CI",
+    "n": 2,
+    "r": "Calidad, seguridad y escalabilidad"
+   },
+   {
+    "e": "Equipos y clientes",
+    "n": 2,
+    "r": "Colaboración y comunicación"
+   }
+  ],
+  "rubrica": "2026-11-04"
+ },
+ "createdAt": "2026-11-19T12:45:00Z",
+ "cvAdaptada": "Sí",
+ "empresa": "Kinaxis",
+ "encaje": "Muy alto",
+ "estado": "Aplicado",
+ "fechaAplicacion": "2026-11-19",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4492097735",
+ "linkedinId": "4492097735",
+ "modalidad": "Remoto",
+ "n": 39,
+ "notas": "2026-11-19: run diario. Varios puestos (#Associate #Intermediate) en el equipo AI Innovation.\n2026-11-19: aplicado con CV adaptado (1 página, título \"Full-Stack Developer, AI Systems\", ATS 100%; brechas: tool use, retrieval, evaluation). Formulario: uso de agentes de IA (spec-first con OpenSpec/ADRs, tests en CI, historia del endpoint sin auth en Claw & Soul); marcó todos los retos técnicos menos Other (evaluación de IA declarada como área por aprender); modalidad: remoto preferido, híbrido en Toronto OK.",
+ "porQue": "Full stack con 3+ años en empresa; usa agentes de IA (Claude Code, Codex) a diario y revisa lo que generan; pipelines de IA con fal.ai y agentes en Claw & Soul; sistemas empresariales en Kruger.",
+ "prioridad": 1,
+ "proximoPaso": "Revisar respuesta a los 7 y 14 días (26 nov y 3 dic).",
+ "publicada": "2026-11-18",
+ "puesto": "Software Developer, AI Innovation",
+ "salario": "",
+ "solicitantes": "32",
+ "stack": "Plataforma agéntica: LLMs, agentes y tool use, evaluación, pipelines de datos, IAM, integraciones",
+ "techDes": [],
+ "techReq": [
+  "IA / LLM",
+  "Microservicios"
+ ],
+ "tipo": "Permanente",
+ "ubicacion": "Remoto fuera de Ottawa/Toronto (híbrido si vive en esas ciudades)",
+ "updatedAt": "2026-11-19T14:27:00Z"
+}

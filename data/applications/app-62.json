@@ -1,0 +1,38 @@
+{
+ "anios": "5–8",
+ "busqueda": "nucleo",
+ "createdAt": "2026-11-19T12:50:00Z",
+ "cvAdaptada": "No",
+ "empresa": "Pacer Group (cliente BFSI)",
+ "estado": "Descartada",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4491325832",
+ "linkedinId": "4491325832",
+ "modalidad": "Híbrido",
+ "moneda": "CAD",
+ "motivoDescarte": [
+  "Java/Kotlin, .NET o C#",
+  "Senior o 5+ años"
+ ],
+ "n": 62,
+ "notas": "2026-11-19: run diario.",
+ "periodo": "año",
+ "publicada": "2026-11-18",
+ "puesto": "Full Stack Developer",
+ "salMax": 125000,
+ "salMin": 115000,
+ "salario": "CA$115,000–125,000/año",
+ "solicitantes": "35",
+ "stack": "Java, Spring Boot, Angular o React, Kafka",
+ "techDes": [],
+ "techReq": [
+  "Java",
+  "Angular",
+  "React",
+  "Microservicios",
+  "Kafka / colas"
+ ],
+ "tipo": "Permanente",
+ "ubicacion": "Mississauga, ON (3 días)",
+ "updatedAt": "2026-11-19T12:50:00Z"
+}

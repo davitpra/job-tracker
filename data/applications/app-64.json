@@ -1,0 +1,44 @@
+{
+ "anios": "10+",
+ "busqueda": "nucleo",
+ "createdAt": "2026-11-19T12:50:00Z",
+ "cvAdaptada": "No",
+ "empresa": "Affinity",
+ "estado": "Descartada",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4491899855",
+ "linkedinId": "4491899855",
+ "modalidad": "Híbrido",
+ "moneda": "CAD",
+ "motivoDescarte": [
+  "Híbrido o presencial",
+  "Senior o 5+ años"
+ ],
+ "n": 64,
+ "notas": "2026-11-19: run diario. 10+ años y trabajo en sitio en Vancouver.",
+ "periodo": "año",
+ "publicada": "2026-11-19",
+ "puesto": "Forward Deployed Engineer (TypeScript / Node.js / React)",
+ "salMax": 150000,
+ "salMin": 140000,
+ "salario": "CA$140,000–150,000/año",
+ "solicitantes": "<25",
+ "stack": "TypeScript, Node.js, React, React Native, AWS/Azure",
+ "techDes": [
+  "Terraform",
+  "IA / LLM"
+ ],
+ "techReq": [
+  "TypeScript",
+  "Node.js",
+  "React",
+  "React Native",
+  "AWS",
+  "Azure",
+  "CI/CD",
+  "Docker"
+ ],
+ "tipo": "Permanente",
+ "ubicacion": "Vancouver, BC (en sitio del cliente)",
+ "updatedAt": "2026-11-19T12:50:00Z"
+}

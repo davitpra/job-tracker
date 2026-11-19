@@ -1,0 +1,39 @@
+{
+ "anios": "5+",
+ "busqueda": "backend",
+ "createdAt": "2026-11-19T12:50:00Z",
+ "cvAdaptada": "No",
+ "empresa": "TD",
+ "estado": "Descartada",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4492218522",
+ "linkedinId": "4492218522",
+ "modalidad": "Híbrido",
+ "moneda": "CAD",
+ "motivoDescarte": [
+  "Java/Kotlin, .NET o C#",
+  "Senior o 5+ años"
+ ],
+ "n": 58,
+ "notas": "2026-11-19: run diario. Java full stack y 5+ años.",
+ "periodo": "año",
+ "publicada": "2026-11-18",
+ "puesto": "Software Engineer II (Pricing)",
+ "salMax": 115200,
+ "salMin": 81600,
+ "salario": "CA$81,600–115,200/año",
+ "solicitantes": "<25",
+ "stack": "Java full stack, Node.js, Oracle",
+ "techDes": [
+  "REST APIs"
+ ],
+ "techReq": [
+  "Java",
+  "Node.js",
+  "SQL",
+  "CI/CD"
+ ],
+ "tipo": "Permanente",
+ "ubicacion": "Toronto, ON (downtown)",
+ "updatedAt": "2026-11-19T12:50:00Z"
+}

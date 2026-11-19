@@ -1,0 +1,39 @@
+{
+ "anios": "5+",
+ "busqueda": "backend",
+ "createdAt": "2026-11-19T12:50:00Z",
+ "cvAdaptada": "No",
+ "empresa": "Cloudbeds",
+ "estado": "Descartada",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4492412902",
+ "linkedinId": "4492412902",
+ "modalidad": "Remoto",
+ "motivoDescarte": [
+  "Python como núcleo",
+  "Senior o 5+ años"
+ ],
+ "n": 77,
+ "notas": "2026-11-19: run diario. También salió en Vancouver (4492415704).",
+ "publicada": "2026-11-19",
+ "puesto": "Senior Software Engineer (Core AI)",
+ "salario": "",
+ "solicitantes": "<25",
+ "stack": "Python, agentes, LangGraph, PostgreSQL, SQS, PHP y Java",
+ "techDes": [
+  "PHP",
+  "Java"
+ ],
+ "techReq": [
+  "Python",
+  "IA / LLM",
+  "PostgreSQL",
+  "REST APIs",
+  "Docker",
+  "Kubernetes",
+  "AWS"
+ ],
+ "tipo": "Permanente",
+ "ubicacion": "Canadá",
+ "updatedAt": "2026-11-19T12:50:00Z"
+}

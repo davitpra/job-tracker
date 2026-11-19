@@ -3,7 +3,7 @@
  "puesto": "Full-stack Software Engineer - Canada",
  "linkedinId": "4491844981",
  "busqueda": "backend",
- "estado": "Evaluar",
+ "estado": "Descartada",
  "encaje": "Medio",
  "tipo": "Permanente",
  "modalidad": "Híbrido",
@@ -14,7 +14,7 @@
  "porQue": "React/TS + Node, Redux, Jest/Cypress, WCAG y design systems; híbrido con poca presencia.",
  "brechas": "Piden 5–8 años; en empresa 3,8 → ❌ y tope Medio; Dart/Flutter y Go ❌; exigen vivir a distancia de viaje de Waterloo (London ~1 h).",
  "proximoPaso": "Decidir si London cuenta como distancia de viaje a Waterloo; si sí, aplicar en la web de McAfee.",
- "notas": "2026-11-18: run diario. Sin ayuda de reubicación.",
+ "notas": "2026-11-18: run diario. Sin ayuda de reubicación.\n2026-11-19: descartada al revisar las pendientes: Dart/Flutter y Go como núcleo, 5–8 años.",
  "techReq": [
   "Dart",
   "Flutter",
@@ -119,7 +119,11 @@
  "cvAdaptada": "No",
  "link": "https://www.linkedin.com/jobs/view/4491844981",
  "createdAt": "2026-11-18T20:30:00Z",
- "updatedAt": "2026-11-18T20:30:00Z",
+ "updatedAt": "2026-11-19T15:01:00Z",
  "prioridad": 2,
- "n": 20
+ "n": 20,
+ "motivoDescarte": [
+  "Otro stack como núcleo",
+  "Senior o 5+ años"
+ ]
 }

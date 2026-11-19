@@ -1,0 +1,40 @@
+{
+ "anios": "4+",
+ "busqueda": "nucleo",
+ "createdAt": "2026-11-19T12:50:00Z",
+ "cvAdaptada": "No",
+ "empresa": "Okta",
+ "estado": "Descartada",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4491352064",
+ "linkedinId": "4491352064",
+ "modalidad": "",
+ "moneda": "CAD",
+ "motivoDescarte": [
+  "Java/Kotlin, .NET o C#",
+  "Otro stack como núcleo"
+ ],
+ "n": 66,
+ "notas": "2026-11-19: run diario. Backend en Java/Go obligatorio. También salió vía Rolejob (4492142049).",
+ "periodo": "año",
+ "publicada": "2026-11-18",
+ "puesto": "Senior FullStack Software Engineer, Agent Gateway",
+ "salMax": 192500,
+ "salMin": 140000,
+ "salario": "CA$140,000–192,500/año",
+ "solicitantes": "<25",
+ "stack": "Java/Go en el backend, React/Node/TS, OAuth/OIDC, MCP",
+ "techDes": [
+  "IA / LLM"
+ ],
+ "techReq": [
+  "Java",
+  "Go",
+  "React",
+  "Node.js",
+  "TypeScript"
+ ],
+ "tipo": "Permanente",
+ "ubicacion": "Toronto, ON",
+ "updatedAt": "2026-11-19T12:50:00Z"
+}

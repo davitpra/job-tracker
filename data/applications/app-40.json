@@ -1,0 +1,105 @@
+{
+ "anios": "No indica",
+ "brechas": "Título Lead → tope Medio y prioridad −1; sistemas enterprise de e-commerce (ERP, OMS, PIM, POS) 🟡; experiencia en agencia no explícita.",
+ "busqueda": "backend",
+ "clasif": {
+  "ajusteEncaje": "Tope Medio por título Lead",
+  "max": 16,
+  "pct": 94,
+  "prioridad": {
+   "ajustes": [
+    {
+     "t": "<3 días y <50 solicitantes",
+     "v": 1
+    },
+    {
+     "t": "Lead",
+     "v": -1
+    }
+   ],
+   "base": 2,
+   "final": 2
+  },
+  "pts": 15,
+  "requisitos": [
+   {
+    "e": "NestJS, PostgreSQL, AWS",
+    "n": 2,
+    "r": "PHP/Laravel o JS/Node + PostgreSQL + AWS"
+   },
+   {
+    "e": "VPS con Nginx",
+    "n": 2,
+    "r": "Linux y línea de comandos"
+   },
+   {
+    "e": "Delphi, Claw & Soul",
+    "n": 2,
+    "r": "Modelado y migración de datos"
+   },
+   {
+    "e": "Claw & Soul headless Shopify",
+    "n": 2,
+    "r": "Modelo de datos y APIs de Shopify"
+   },
+   {
+    "e": "Poco",
+    "n": 1,
+    "r": "ERP, OMS, PIM, POS"
+   },
+   {
+    "e": "BullMQ, pg-boss",
+    "n": 2,
+    "r": "Colas y throughput"
+   },
+   {
+    "e": "Mentoría a juniors",
+    "n": 2,
+    "r": "Mentoría y colaboración"
+   },
+   {
+    "e": "Proyectos propios",
+    "n": 2,
+    "r": "Trato con clientes"
+   }
+  ],
+  "rubrica": "2026-11-04"
+ },
+ "createdAt": "2026-11-19T12:45:00Z",
+ "cvAdaptada": "No",
+ "empresa": "Domaine",
+ "encaje": "Medio",
+ "estado": "Descartada",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4492430486",
+ "linkedinId": "4492430486",
+ "modalidad": "Remoto",
+ "motivoDescarte": [
+  "Senior o 5+ años"
+ ],
+ "n": 40,
+ "notas": "2026-11-19: run diario. Partner independiente de Shopify más grande del mundo (Half Helix + Tomorrow). Rol client-facing con mucho código.\n2026-11-19: descartada al revisar las pendientes: título Lead.",
+ "porQue": "Integraciones Shopify (Claw & Soul headless, APIs y webhooks); Node + PostgreSQL + AWS; colas con BullMQ/pg-boss; migración de datos WordPress→Next.js en Delphi; trato con clientes y mentoría a juniors.",
+ "prioridad": 2,
+ "proximoPaso": "Aplicar por LinkedIn o en la web de Domaine; destacar Shopify en el CV.",
+ "publicada": "2026-11-19",
+ "puesto": "Backend Technical Lead",
+ "salario": "",
+ "solicitantes": "<25",
+ "stack": "PHP/Laravel o JS/Node, PostgreSQL, AWS, APIs de Shopify, integraciones ERP/OMS/PIM",
+ "techDes": [
+  "React"
+ ],
+ "techReq": [
+  "Node.js",
+  "PHP",
+  "PostgreSQL",
+  "AWS",
+  "Shopify",
+  "Kafka / colas",
+  "CI/CD"
+ ],
+ "tipo": "Permanente",
+ "ubicacion": "Remote-first (horario ET)",
+ "updatedAt": "2026-11-19T15:01:00Z"
+}

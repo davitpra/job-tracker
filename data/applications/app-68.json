@@ -1,0 +1,34 @@
+{
+ "anios": "No indica",
+ "busqueda": "nucleo",
+ "createdAt": "2026-11-19T12:50:00Z",
+ "cvAdaptada": "No",
+ "empresa": "TekStaff IT Solutions",
+ "estado": "Descartada",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4492095627",
+ "linkedinId": "4492095627",
+ "modalidad": "Híbrido",
+ "motivoDescarte": [
+  "Duplicada o ya aplicaste en la empresa"
+ ],
+ "n": 68,
+ "notas": "2026-11-19: run diario. Texto casi idéntico al de app-42 (TalentWorld): probablemente el mismo contrato; se decide la agencia allí.",
+ "publicada": "2026-11-18",
+ "puesto": "Full Stack Developer (contrato)",
+ "salario": "",
+ "solicitantes": "27",
+ "stack": "React, Next.js, Node.js, PostgreSQL",
+ "techDes": [],
+ "techReq": [
+  "React",
+  "Next.js",
+  "Node.js",
+  "PostgreSQL",
+  "SQL",
+  "REST APIs"
+ ],
+ "tipo": "Contrato",
+ "ubicacion": "Toronto, ON (4 días)",
+ "updatedAt": "2026-11-19T12:50:00Z"
+}

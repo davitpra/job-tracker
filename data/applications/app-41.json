@@ -1,0 +1,114 @@
+{
+ "anios": "3+",
+ "brechas": "Swift/iOS y App Store ❌; PostHog ❌; Linear 🟡 (usa Jira/Kanban). Uno de los primeros ingenieros, trabajo directo con el founder.",
+ "busqueda": "nucleo",
+ "clasif": {
+  "ajusteEncaje": "Sube a Alto por stack (Node/React/TS/Postgres es el núcleo)",
+  "max": 18,
+  "pct": 72,
+  "prioridad": {
+   "ajustes": [
+    {
+     "t": "contrato",
+     "v": 1
+    },
+    {
+     "t": "<3 días y <50 solicitantes",
+     "v": 1
+    }
+   ],
+   "base": 1,
+   "final": 1
+  },
+  "pts": 13,
+  "requisitos": [
+   {
+    "e": "~3,8 años",
+    "n": 2,
+    "r": "3+ años con Node y React"
+   },
+   {
+    "e": "No figura",
+    "n": 0,
+    "r": "App Store o codebase Swift"
+   },
+   {
+    "e": "No figura",
+    "n": 0,
+    "r": "PostHog"
+   },
+   {
+    "e": "Claude Code, Codex",
+    "n": 2,
+    "r": "IA para programar a diario"
+   },
+   {
+    "e": "Jira, Kanban",
+    "n": 1,
+    "r": "Backlog en Linear"
+   },
+   {
+    "e": "GitHub Actions, AWS, Docker",
+    "n": 2,
+    "r": "Diseño de sistemas y DevOps"
+   },
+   {
+    "e": "Afiliados y conversion tracking en Claw & Soul",
+    "n": 2,
+    "r": "Features de growth (referidos, atribución, email)"
+   },
+   {
+    "e": "Kruger",
+    "n": 2,
+    "r": "Leer código y arreglar la causa"
+   },
+   {
+    "e": "PRs y code review",
+    "n": 2,
+    "r": "Comunicación escrita"
+   }
+  ],
+  "rubrica": "2026-11-04"
+ },
+ "contacto": "careers@spadegroup.io",
+ "createdAt": "2026-11-19T12:45:00Z",
+ "cvAdaptada": "Sí",
+ "empresa": "Spade Group",
+ "encaje": "Alto",
+ "estado": "Aplicado",
+ "fechaAplicacion": "2026-11-19",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4491892383",
+ "linkedinId": "4491892383",
+ "modalidad": "Remoto",
+ "moneda": "CAD",
+ "n": 41,
+ "notas": "2026-11-19: run diario. Agencia de influencer marketing; productos propios con 60.000 usuarios. Contrato full time.\n2026-11-19: aplicado por email a careers@spadegroup.io (canal de la empresa, así que no aplica el Paso 6). CV adaptado de 1 página (Product Engineer) con ClawPuzzle y Greenhouses; el email enlaza clawpuzzle.com y davitprado.com. ATS 20/20; brechas: Swift/iOS, PostHog, Linear, feature flags, email de ciclo de vida.",
+ "periodo": "año",
+ "plataforma": "Email",
+ "porQue": "Node + React con TypeScript y Postgres es su stack; programa con Claude Code a diario; programa de afiliados y conversion tracking en Claw & Soul y Claw Puzzle (features de growth).",
+ "prioridad": 1,
+ "proximoPaso": "Esperar respuesta al email; si no hay noticias, hacer seguimiento a careers@spadegroup.io a los 7 días (2026-11-26).",
+ "publicada": "2026-11-18",
+ "puesto": "Product Engineer",
+ "salMax": 85000,
+ "salMin": 75000,
+ "salario": "CA$75,000–85,000/año",
+ "solicitantes": "29",
+ "stack": "Node, React (TS/JS), Postgres, colas, Swift/SwiftUI, PostHog, Linear, Railway, Claude Code",
+ "techDes": [
+  "SQL",
+  "Kafka / colas"
+ ],
+ "techReq": [
+  "Node.js",
+  "React",
+  "TypeScript",
+  "iOS / Android nativo",
+  "PostHog",
+  "CI/CD"
+ ],
+ "tipo": "Contrato",
+ "ubicacion": "Canadá (husos de Norteamérica)",
+ "updatedAt": "2026-11-19T14:59:00Z"
+}

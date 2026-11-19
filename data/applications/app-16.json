@@ -3,7 +3,7 @@
  "puesto": "Intermediate Software Developer, Editor",
  "linkedinId": "4486398054",
  "busqueda": "backend",
- "estado": "Evaluar",
+ "estado": "Descartada",
  "encaje": "Alto",
  "tipo": "Permanente",
  "modalidad": "",
@@ -14,7 +14,7 @@
  "porQue": "3+ años full stack con TypeScript; apps complejas con estado; IA a diario; MySQL y backend comparable (NestJS); Jest/Vitest, Playwright y GitHub Actions.",
  "brechas": "Vue 🟡 (usa React/Angular); Laravel/PHP no (NestJS cuenta como comparable); modalidad no indicada; 200+ solicitantes (pasa la excepción).",
  "proximoPaso": "Confirmar la modalidad en la web de Knak; si es remoto o híbrido en Toronto, aplicar y escribir a alguien del equipo.",
- "notas": "2026-11-18: run diario. El mismo aviso salió en Toronto, Waterloo y Ottawa.",
+ "notas": "2026-11-18: run diario. El mismo aviso salió en Toronto, Waterloo y Ottawa.\n2026-11-19: descartada al revisar las pendientes: Vue 3 + Laravel/PHP, 200+ y modalidad no indicada.",
  "techReq": [
   "TypeScript",
   "Vue",
@@ -105,7 +105,12 @@
  "cvAdaptada": "No",
  "link": "https://www.linkedin.com/jobs/view/4486398054",
  "createdAt": "2026-11-18T20:30:00Z",
- "updatedAt": "2026-11-18T20:30:00Z",
+ "updatedAt": "2026-11-19T15:01:00Z",
  "prioridad": 2,
- "n": 16
+ "n": 16,
+ "motivoDescarte": [
+  "Otro stack como núcleo",
+  "200+ solicitantes",
+  "Modalidad no indicada"
+ ]
 }

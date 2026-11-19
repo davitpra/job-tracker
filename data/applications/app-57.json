@@ -1,0 +1,38 @@
+{
+ "anios": "4+",
+ "busqueda": "backend",
+ "createdAt": "2026-11-19T12:50:00Z",
+ "cvAdaptada": "No",
+ "empresa": "Emburse",
+ "estado": "Descartada",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4475441634",
+ "linkedinId": "4475441634",
+ "modalidad": "Presencial",
+ "motivoDescarte": [
+  "Java/Kotlin, .NET o C#",
+  "Híbrido o presencial"
+ ],
+ "n": 57,
+ "notas": "2026-11-19: run diario. C#/.NET obligatorio y presencial.",
+ "publicada": "2026-11-19",
+ "puesto": "Software Engineer II",
+ "salario": "",
+ "solicitantes": "163",
+ "stack": "C#/.NET, Azure, APIs REST",
+ "techDes": [
+  "Docker",
+  "Kubernetes",
+  "IA / LLM"
+ ],
+ "techReq": [
+  "C# / .NET",
+  "Azure",
+  "REST APIs",
+  "CI/CD",
+  "Microservicios"
+ ],
+ "tipo": "Permanente",
+ "ubicacion": "Toronto, ON",
+ "updatedAt": "2026-11-19T12:50:00Z"
+}

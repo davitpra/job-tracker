@@ -1,0 +1,30 @@
+{
+ "anios": "3+",
+ "busqueda": "nucleo",
+ "createdAt": "2026-11-19T12:50:00Z",
+ "cvAdaptada": "No",
+ "empresa": "Joblet-AI (micro1)",
+ "estado": "Descartada",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4492144803",
+ "linkedinId": "4492144803",
+ "modalidad": "Remoto",
+ "motivoDescarte": [
+  "Rol distinto o por debajo del nivel"
+ ],
+ "n": 74,
+ "notas": "2026-11-19: run diario. Gig de entrenamiento de IA; Joblet-AI publicó otros 4 parecidos.",
+ "publicada": "2026-11-19",
+ "puesto": "Frontend Engineer (Remote)",
+ "salario": "",
+ "solicitantes": "<25",
+ "stack": "Escritura técnica sobre React/TS para entrenar IA",
+ "techDes": [
+  "React",
+  "TypeScript"
+ ],
+ "techReq": [],
+ "tipo": "Contrato",
+ "ubicacion": "Remoto",
+ "updatedAt": "2026-11-19T12:50:00Z"
+}

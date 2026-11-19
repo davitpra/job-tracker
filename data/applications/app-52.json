@@ -1,0 +1,80 @@
+{
+ "anios": "No indica",
+ "brechas": "200+ solicitantes (pasa la excepción por Alto y publicada hoy) → escribir hoy a alguien del equipo DocGen; ID de aviso viejo: posible republicación; sistemas distribuidos a escala 🟡.",
+ "busqueda": "backend",
+ "clasif": {
+  "filtro": "Dudoso: aviso con ID viejo, puede ser republicación",
+  "max": 6,
+  "pct": 83,
+  "prioridad": {
+   "ajustes": [
+    {
+     "t": "200+ solicitantes",
+     "v": -1
+    }
+   ],
+   "base": 1,
+   "final": 2
+  },
+  "pts": 5,
+  "requisitos": [
+   {
+    "e": "NestJS",
+    "n": 2,
+    "r": "Desarrollo fuerte en Python, Go, Java o Node.js"
+   },
+   {
+    "e": "APIs sí; distribuidos menos",
+    "n": 1,
+    "r": "Sistemas escalables, APIs y distribuidos"
+   },
+   {
+    "e": "Proyectos propios",
+    "n": 2,
+    "r": "Proyectos end to end en startups"
+   }
+  ],
+  "rubrica": "2026-11-04"
+ },
+ "createdAt": "2026-11-19T12:45:00Z",
+ "cvAdaptada": "No",
+ "empresa": "EvenUp",
+ "encaje": "Alto",
+ "estado": "Descartada",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4350846612",
+ "linkedinId": "4350846612",
+ "modalidad": "Híbrido",
+ "moneda": "CAD",
+ "motivoDescarte": [
+  "Duplicada o ya aplicaste en la empresa",
+  "200+ solicitantes"
+ ],
+ "n": 52,
+ "notas": "2026-11-19: run diario. También salió Backend Engineer, Growth & Agents (4439463349, 200+, CA$160–230K), no clasificada. En octubre aplicó a EvenUp Backend Engineer, Client Portal.\n2026-11-19: descartada al revisar las pendientes: ya aplicó a EvenUp en octubre, aviso posiblemente republicado y 200+.",
+ "periodo": "año",
+ "porQue": "Aceptan Node.js como lenguaje; proyectos end to end en entornos rápidos (Claw & Soul, Greenhouse H&S); apps con IA (bonus).",
+ "prioridad": 2,
+ "proximoPaso": "Ver en la web de EvenUp si el aviso es reciente; si sí, aplicar allí (no aceptan CV por email) y escribir a alguien de DocGen.",
+ "publicada": "2026-11-19",
+ "puesto": "Software Engineer, AI Document Generation",
+ "salMax": 265000,
+ "salMin": 130000,
+ "salario": "CA$130K–265K/año",
+ "solicitantes": "200+",
+ "stack": "Backend en Python o Go/Java/Node.js; APIs y sistemas distribuidos; IA en generación de documentos legales",
+ "techDes": [
+  "Python",
+  "Node.js",
+  "Go",
+  "Java",
+  "IA / LLM"
+ ],
+ "techReq": [
+  "REST APIs",
+  "Microservicios"
+ ],
+ "tipo": "Permanente",
+ "ubicacion": "Toronto, ON (3 días)",
+ "updatedAt": "2026-11-19T15:01:00Z"
+}

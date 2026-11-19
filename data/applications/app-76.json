@@ -1,0 +1,40 @@
+{
+ "anios": "1–3",
+ "busqueda": "contratos",
+ "createdAt": "2026-11-19T12:50:00Z",
+ "cvAdaptada": "No",
+ "empresa": "HUB International",
+ "estado": "Descartada",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4491374290",
+ "linkedinId": "4491374290",
+ "modalidad": "",
+ "motivoDescarte": [
+  "Java/Kotlin, .NET o C#",
+  "Python como núcleo"
+ ],
+ "n": 76,
+ "notas": "2026-11-19: run diario. Backend en C#/.NET o Python obligatorio. Salió en 4 ciudades.",
+ "publicada": "2026-11-19",
+ "puesto": "Software Developer (EB&R)",
+ "salario": "",
+ "solicitantes": "42",
+ "stack": "C#/.NET 8, Python, React/Node, Vue, Azure SQL, Snowflake",
+ "techDes": [
+  "Snowflake",
+  "Power BI",
+  "AWS",
+  "Docker",
+  "Kubernetes"
+ ],
+ "techReq": [
+  "C# / .NET",
+  "Python",
+  "React",
+  "Vue",
+  "SQL"
+ ],
+ "tipo": "Permanente",
+ "ubicacion": "Toronto, Vancouver, Calgary o Montreal",
+ "updatedAt": "2026-11-19T12:50:00Z"
+}

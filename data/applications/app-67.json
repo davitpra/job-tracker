@@ -1,0 +1,42 @@
+{
+ "anios": "3–6",
+ "busqueda": "nucleo",
+ "createdAt": "2026-11-19T12:50:00Z",
+ "cvAdaptada": "No",
+ "empresa": "Raise (cliente retail en Brampton)",
+ "estado": "Descartada",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4492205773",
+ "linkedinId": "4492205773",
+ "modalidad": "Híbrido",
+ "moneda": "CAD",
+ "motivoDescarte": [
+  "Duplicada o ya aplicaste en la empresa"
+ ],
+ "n": 67,
+ "notas": "2026-11-19: run diario. Mismo contrato que app-42 (TalentWorld); se decide la agencia allí.",
+ "periodo": "hora",
+ "publicada": "2026-11-18",
+ "puesto": "Full Stack Developer",
+ "salMax": 56.56,
+ "salMin": 56.56,
+ "salario": "CA$56.56/hora (T4)",
+ "solicitantes": "75",
+ "stack": "React, Next.js, Node.js, PostgreSQL",
+ "techDes": [
+  "AWS",
+  "Azure"
+ ],
+ "techReq": [
+  "React",
+  "Next.js",
+  "Node.js",
+  "PostgreSQL",
+  "SQL",
+  "REST APIs",
+  "CI/CD"
+ ],
+ "tipo": "Contrato",
+ "ubicacion": "Brampton, ON (4 días)",
+ "updatedAt": "2026-11-19T12:50:00Z"
+}

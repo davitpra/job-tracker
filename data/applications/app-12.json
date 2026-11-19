@@ -3,7 +3,7 @@
  "puesto": "Full-Stack AI Developer | Claude, n8n & AI Agents",
  "linkedinId": "4492089353",
  "busqueda": "backend",
- "estado": "Por aplicar",
+ "estado": "Descartada",
  "encaje": "Medio",
  "tipo": "Permanente",
  "modalidad": "Remoto",
@@ -14,7 +14,7 @@
  "porQue": "Pipelines de IA con fal.ai e integraciones (Shopify, webhooks) en Claw & Soul; usa Claude Code a diario; TS/Node y React/Next.js/PostgreSQL (deseables).",
  "brechas": "Piden 5+ años; en empresa 3,8 → ❌ y tope Medio; Python 🟡; n8n ❌; agentes y evaluación de modelos 🟡.",
  "proximoPaso": "Aplicar por LinkedIn.",
- "notas": "2026-11-18: run diario. Agencia digital canadiense con empresa hermana de IA.",
+ "notas": "2026-11-18: run diario. Agencia digital canadiense con empresa hermana de IA.\n2026-11-19: descartada al revisar las pendientes: Python exigido, n8n y 5+ años.",
  "techReq": [
   "Python",
   "TypeScript",
@@ -122,7 +122,12 @@
  "cvAdaptada": "No",
  "link": "https://www.linkedin.com/jobs/view/4492089353",
  "createdAt": "2026-11-18T20:30:00Z",
- "updatedAt": "2026-11-18T20:30:00Z",
+ "updatedAt": "2026-11-19T15:01:00Z",
  "prioridad": 2,
- "n": 12
+ "n": 12,
+ "motivoDescarte": [
+  "Python como núcleo",
+  "Senior o 5+ años",
+  "Otra brecha técnica"
+ ]
 }

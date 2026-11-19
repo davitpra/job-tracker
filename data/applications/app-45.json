@@ -1,0 +1,89 @@
+{
+ "anios": "5+",
+ "brechas": "Piden 5+ años; en empresa 3,8 → ❌, título Senior → tope Medio y prioridad −1. El aviso no dice modalidad y la sede es Montreal (fuera de Ontario solo vale remoto).",
+ "busqueda": "backend",
+ "clasif": {
+  "ajusteEncaje": "Tope Medio por título Senior",
+  "filtro": "Dudoso: modalidad no indicada; sede en Montreal",
+  "max": 10,
+  "pct": 80,
+  "prioridad": {
+   "ajustes": [
+    {
+     "t": "<3 días y <50 solicitantes",
+     "v": 1
+    },
+    {
+     "t": "Senior",
+     "v": -1
+    }
+   ],
+   "base": 2,
+   "final": 2
+  },
+  "pts": 8,
+  "requisitos": [
+   {
+    "e": "~3,8 en empresa",
+    "n": 0,
+    "r": "5+ años backend con TS/Node"
+   },
+   {
+    "e": "NestJS, PostgreSQL",
+    "n": 2,
+    "r": "APIs REST y servicios con datos"
+   },
+   {
+    "e": "Claw & Soul, Greenhouse H&S",
+    "n": 2,
+    "r": "Proyectos end to end, 0-to-1"
+   },
+   {
+    "e": "Jest, Vitest, Playwright",
+    "n": 2,
+    "r": "Testing unitario y e2e"
+   },
+   {
+    "e": "Clientes",
+    "n": 2,
+    "r": "Comunicación con no técnicos"
+   }
+  ],
+  "rubrica": "2026-11-04"
+ },
+ "createdAt": "2026-11-19T12:45:00Z",
+ "cvAdaptada": "No",
+ "empresa": "Cozey",
+ "encaje": "Medio",
+ "estado": "Descartada",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4492429361",
+ "linkedinId": "4492429361",
+ "modalidad": "",
+ "motivoDescarte": [
+  "Senior o 5+ años",
+  "Modalidad no indicada"
+ ],
+ "n": 45,
+ "notas": "2026-11-19: run diario. E-commerce de muebles; equipo de WMS y post-compra.\n2026-11-19: descartada al revisar las pendientes: Senior con 5+ años y sin confirmar remoto (sede en Montreal).",
+ "porQue": "Backend en TypeScript/Node con APIs REST; proyectos 0-to-1 end to end (Claw & Soul, Greenhouse H&S); integraciones externas; Claude Code a diario.",
+ "prioridad": 2,
+ "proximoPaso": "Confirmar en la web de Cozey si el puesto es remoto en Canadá; si sí, aplicar.",
+ "publicada": "2026-11-19",
+ "puesto": "Senior Software Engineer (WMS)",
+ "salario": "",
+ "solicitantes": "<25",
+ "stack": "TypeScript/Node.js en AWS, APIs REST, integraciones con carriers, agentes de IA",
+ "techDes": [
+  "AWS",
+  "IA / LLM"
+ ],
+ "techReq": [
+  "TypeScript",
+  "Node.js",
+  "REST APIs"
+ ],
+ "tipo": "Permanente",
+ "ubicacion": "Canadá (modalidad no indicada; sede en Montreal)",
+ "updatedAt": "2026-11-19T15:01:00Z"
+}

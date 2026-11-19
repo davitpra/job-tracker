@@ -1,0 +1,103 @@
+{
+ "anios": "4+",
+ "brechas": "Título Senior → tope Medio y prioridad −1; piden 4 años; en empresa 3,8 → 🟡. Exigen vivir en Toronto o cerca, sin reubicación: confirmar que London cuenta.",
+ "busqueda": "nucleo",
+ "clasif": {
+  "ajusteEncaje": "Tope Medio por título Senior",
+  "max": 16,
+  "pct": 94,
+  "prioridad": {
+   "ajustes": [
+    {
+     "t": "<3 días y <50 solicitantes",
+     "v": 1
+    },
+    {
+     "t": "empresa suma al CV",
+     "v": 1
+    },
+    {
+     "t": "Senior",
+     "v": -1
+    }
+   ],
+   "base": 2,
+   "final": 1
+  },
+  "pts": 15,
+  "requisitos": [
+   {
+    "e": "~3,8 en empresa",
+    "n": 1,
+    "r": "4+ años"
+   },
+   {
+    "e": "Kruger, Delphi, proyectos propios",
+    "n": 2,
+    "r": "Software en producción para clientes"
+   },
+   {
+    "e": "TypeScript",
+    "n": 2,
+    "r": "Fundamentos en un lenguaje moderno"
+   },
+   {
+    "e": "Núcleo del CV",
+    "n": 2,
+    "r": "Sistemas backend o full stack"
+   },
+   {
+    "e": "Greenhouse H&S",
+    "n": 2,
+    "r": "De problema ambiguo a resultado medido"
+   },
+   {
+    "e": "Claude Code, Codex, spec-driven",
+    "n": 2,
+    "r": "IA en todo el ciclo"
+   },
+   {
+    "e": "Conversion tracking",
+    "n": 2,
+    "r": "Decisiones ligadas a resultados"
+   },
+   {
+    "e": "Clientes y equipos",
+    "n": 2,
+    "r": "Comunicación"
+   }
+  ],
+  "rubrica": "2026-11-04"
+ },
+ "createdAt": "2026-11-19T12:45:00Z",
+ "cvAdaptada": "No",
+ "empresa": "Samsara",
+ "encaje": "Medio",
+ "estado": "Por aplicar",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4492249044",
+ "linkedinId": "4492249044",
+ "modalidad": "Híbrido",
+ "moneda": "CAD",
+ "n": 43,
+ "notas": "2026-11-19: run diario.",
+ "periodo": "año",
+ "porQue": "Productos end to end desde el problema del cliente con métricas (Greenhouse H&S, Claw & Soul con conversion tracking); IA en todo el ciclo de desarrollo; full stack en producción.",
+ "prioridad": 1,
+ "proximoPaso": "Aplicar en la web de Samsara y escribir a alguien de Safety Core.",
+ "publicada": "2026-11-19",
+ "puesto": "Senior Software Engineer I (Safety Core)",
+ "salMax": 163350,
+ "salMin": 126225,
+ "salario": "CA$126,225–163,350/año",
+ "solicitantes": "40",
+ "stack": "Cualquier lenguaje moderno; backend, distribuido o full stack; IoT y seguridad",
+ "techDes": [
+  "Kafka / colas",
+  "Microservicios"
+ ],
+ "techReq": [],
+ "tipo": "Permanente",
+ "ubicacion": "Toronto o cerca (modelo flexible)",
+ "updatedAt": "2026-11-19T12:45:00Z"
+}

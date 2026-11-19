@@ -1,0 +1,45 @@
+{
+ "anios": "5+",
+ "busqueda": "nucleo",
+ "createdAt": "2026-11-19T12:50:00Z",
+ "cvAdaptada": "No",
+ "empresa": "Blue J",
+ "estado": "Descartada",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4464659858",
+ "linkedinId": "4464659858",
+ "modalidad": "Remoto",
+ "moneda": "CAD",
+ "motivoDescarte": [
+  "Senior o 5+ años",
+  "200+ solicitantes"
+ ],
+ "n": 70,
+ "notas": "2026-11-19: run diario. 5+ años de backend (tope Medio) y 200+: no pasa la excepción. ID viejo, aviso republicado.",
+ "periodo": "año",
+ "publicada": "2026-11-19",
+ "puesto": "Software Developer II (backend)",
+ "salMax": 150000,
+ "salMin": 120000,
+ "salario": "CA$120,000–150,000/año",
+ "solicitantes": "200+",
+ "stack": "Node.js/TypeScript, Python, Kafka, Postgres, LLMs",
+ "techDes": [
+  "Python",
+  "Kafka / colas",
+  "PostgreSQL",
+  "Elasticsearch",
+  "IA / LLM",
+  "Kubernetes",
+  "AWS",
+  "Docker",
+  "React"
+ ],
+ "techReq": [
+  "TypeScript",
+  "Node.js"
+ ],
+ "tipo": "Permanente",
+ "ubicacion": "A distancia de manejo de Toronto",
+ "updatedAt": "2026-11-19T12:50:00Z"
+}

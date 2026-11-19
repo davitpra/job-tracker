@@ -3,7 +3,7 @@
  "puesto": "Full Stack Developer",
  "linkedinId": "4491431583",
  "busqueda": "backend",
- "estado": "Evaluar",
+ "estado": "Descartada",
  "encaje": "Muy alto",
  "tipo": "Permanente",
  "modalidad": "",
@@ -14,7 +14,7 @@
  "porQue": "Aviso genérico que acepta React + Node.js + PostgreSQL/MongoDB: todo en el CV.",
  "brechas": "Sin datos de la empresa ni de la modalidad; aviso genérico (también publicó 'Web Developer' con 158 solicitantes): puede ser una agencia de volumen; 200+.",
  "proximoPaso": "Revisar la empresa en LinkedIn antes de aplicar.",
- "notas": "2026-11-18: run diario.",
+ "notas": "2026-11-18: run diario.\n2026-11-19: descartada al revisar las pendientes: aviso genérico, empresa dudosa, sin modalidad y 200+.",
  "techReq": [
   "HTML / CSS",
   "JavaScript",
@@ -94,7 +94,12 @@
  "cvAdaptada": "No",
  "link": "https://www.linkedin.com/jobs/view/4491431583",
  "createdAt": "2026-11-18T20:30:00Z",
- "updatedAt": "2026-11-18T20:30:00Z",
+ "updatedAt": "2026-11-19T15:01:00Z",
  "prioridad": 2,
- "n": 22
+ "n": 22,
+ "motivoDescarte": [
+  "Falta información",
+  "Modalidad no indicada",
+  "200+ solicitantes"
+ ]
 }

@@ -1,0 +1,39 @@
+{
+ "anios": "No indica",
+ "busqueda": "contratos",
+ "createdAt": "2026-11-19T12:50:00Z",
+ "cvAdaptada": "No",
+ "empresa": "Spait Infotech",
+ "estado": "Descartada",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4491899339",
+ "linkedinId": "4491899339",
+ "modalidad": "",
+ "motivoDescarte": [
+  "Duplicada o ya aplicaste en la empresa",
+  "Falta información"
+ ],
+ "n": 78,
+ "notas": "2026-11-19: run diario. Otro aviso genérico de la misma agencia que app-22; se decide allí. También publicó Java Full Stack (4492106047).",
+ "publicada": "2026-11-18",
+ "puesto": "Software Developer",
+ "salario": "",
+ "solicitantes": "96",
+ "stack": "Genérico: Java, Python, C/C++ o JavaScript",
+ "techDes": [
+  "Java",
+  "Python",
+  "React",
+  "Angular",
+  "Node.js"
+ ],
+ "techReq": [
+  "JavaScript",
+  "HTML / CSS",
+  "SQL",
+  "REST APIs"
+ ],
+ "tipo": "Permanente",
+ "ubicacion": "Canadá",
+ "updatedAt": "2026-11-19T12:50:00Z"
+}

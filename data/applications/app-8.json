@@ -3,7 +3,7 @@
  "puesto": "Software Engineer, Frontend and Mobile",
  "linkedinId": "4345929585",
  "busqueda": "backend",
- "estado": "Por aplicar",
+ "estado": "Descartada",
  "encaje": "Muy alto",
  "tipo": "Permanente",
  "modalidad": "Híbrido",
@@ -14,7 +14,7 @@
  "porQue": "TypeScript + React profundo (aceptan React con paso rápido a React Native); stack Node/TS serverless en AWS como Lambda en Claw & Soul; enfoque AI-native.",
  "brechas": "Rol sobre todo de React Native, que no está en el CV 🟡; 200+ solicitantes (pasa la excepción) → escribir hoy a alguien del equipo; aviso republicado (en octubre salió con 200+: revisar si ya aplicó).",
  "proximoPaso": "Aplicar en la web de Bree y escribir hoy a alguien de Engineering.",
- "notas": "2026-11-18: run diario. Fintech de préstamos sin interés.",
+ "notas": "2026-11-18: run diario. Fintech de préstamos sin interés.\n2026-11-19: descartada al revisar las pendientes: sobre todo React Native, aviso republicado y 200+.",
  "techReq": [
   "TypeScript",
   "React Native",
@@ -78,7 +78,11 @@
  "cvAdaptada": "No",
  "link": "https://www.linkedin.com/jobs/view/4345929585",
  "createdAt": "2026-11-18T20:30:00Z",
- "updatedAt": "2026-11-18T20:30:00Z",
+ "updatedAt": "2026-11-19T15:01:00Z",
  "prioridad": 2,
- "n": 8
+ "n": 8,
+ "motivoDescarte": [
+  "Otra brecha técnica",
+  "200+ solicitantes"
+ ]
 }

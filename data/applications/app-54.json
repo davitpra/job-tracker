@@ -1,0 +1,43 @@
+{
+ "anios": "8+",
+ "busqueda": "contratos",
+ "createdAt": "2026-11-19T12:50:00Z",
+ "cvAdaptada": "No",
+ "empresa": "Adecco (cliente en Calgary)",
+ "estado": "Descartada",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4491855666",
+ "linkedinId": "4491855666",
+ "modalidad": "Presencial",
+ "moneda": "CAD",
+ "motivoDescarte": [
+  "Híbrido o presencial",
+  "Senior o 5+ años",
+  "Python como núcleo"
+ ],
+ "n": 54,
+ "notas": "2026-11-19: run diario. Presencial en Calgary. El mismo puesto salió por InSync Systems (4491853402).",
+ "periodo": "hora",
+ "publicada": "2026-11-18",
+ "puesto": "Senior Software & AI Developer (contrato)",
+ "salMax": 120,
+ "salMin": 98,
+ "salario": "CA$98–120/hora",
+ "solicitantes": "41",
+ "stack": "Python, SQL, FastAPI/Django, LLMs, RAG, agentes",
+ "techDes": [
+  "PostgreSQL",
+  "Azure",
+  "AWS",
+  "Snowflake"
+ ],
+ "techReq": [
+  "Python",
+  "SQL",
+  "IA / LLM",
+  "CI/CD"
+ ],
+ "tipo": "Contrato",
+ "ubicacion": "Calgary, AB",
+ "updatedAt": "2026-11-19T12:50:00Z"
+}

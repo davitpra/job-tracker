@@ -1,0 +1,45 @@
+{
+ "anios": "No indica",
+ "busqueda": "nucleo",
+ "createdAt": "2026-11-19T12:50:00Z",
+ "cvAdaptada": "No",
+ "empresa": "Eclipse Foundation",
+ "estado": "Descartada",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4492099721",
+ "linkedinId": "4492099721",
+ "modalidad": "Remoto",
+ "moneda": "CAD",
+ "motivoDescarte": [
+  "Otro stack como núcleo"
+ ],
+ "n": 63,
+ "notas": "2026-11-19: run diario. PHP/Symfony/Drupal como núcleo.",
+ "periodo": "año",
+ "publicada": "2026-11-19",
+ "puesto": "Web Developer (PHP & JavaScript)",
+ "salMax": 95000,
+ "salMin": 75000,
+ "salario": "CA$75,000–95,000/año",
+ "solicitantes": "<25",
+ "stack": "PHP, Symfony, Drupal 11, MariaDB, Solr, Redis",
+ "techDes": [
+  "React",
+  "Vue",
+  "Redis"
+ ],
+ "techReq": [
+  "PHP",
+  "Symfony",
+  "Drupal",
+  "JavaScript",
+  "HTML / CSS",
+  "MySQL",
+  "REST APIs",
+  "Docker",
+  "CI/CD"
+ ],
+ "tipo": "Permanente",
+ "ubicacion": "Canadá o Europa",
+ "updatedAt": "2026-11-19T12:50:00Z"
+}

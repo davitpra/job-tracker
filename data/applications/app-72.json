@@ -1,0 +1,39 @@
+{
+ "anios": "4+",
+ "busqueda": "backend",
+ "createdAt": "2026-11-19T12:50:00Z",
+ "cvAdaptada": "No",
+ "empresa": "Techedin (localización)",
+ "estado": "Descartada",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4492086630",
+ "linkedinId": "4492086630",
+ "modalidad": "Híbrido",
+ "moneda": "CAD",
+ "motivoDescarte": [
+  "Híbrido o presencial",
+  "Python como núcleo"
+ ],
+ "n": 72,
+ "notas": "2026-11-19: run diario. El mismo contrato salió como AI/ML SE (4492097324) y por Applicantz (4492044573).",
+ "periodo": "hora",
+ "publicada": "2026-11-18",
+ "puesto": "Software Localization Engineer (contrato)",
+ "salMax": 75,
+ "salMin": 65,
+ "salario": "CA$65–75/hora",
+ "solicitantes": "<25",
+ "stack": "Python, Hugging Face, SageMaker, Bedrock, TMS",
+ "techDes": [],
+ "techReq": [
+  "Python",
+  "Machine learning",
+  "IA / LLM",
+  "AWS",
+  "Microservicios",
+  "SQL"
+ ],
+ "tipo": "Contrato",
+ "ubicacion": "British Columbia (miércoles en oficina)",
+ "updatedAt": "2026-11-19T12:50:00Z"
+}

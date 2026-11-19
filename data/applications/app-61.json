@@ -1,0 +1,36 @@
+{
+ "anios": "2–5",
+ "busqueda": "nucleo",
+ "createdAt": "2026-11-19T12:50:00Z",
+ "cvAdaptada": "No",
+ "empresa": "Insight Global (aduanas)",
+ "estado": "Descartada",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4491891472",
+ "linkedinId": "4491891472",
+ "modalidad": "Híbrido",
+ "moneda": "CAD",
+ "motivoDescarte": [
+  "Java/Kotlin, .NET o C#"
+ ],
+ "n": 61,
+ "notas": "2026-11-19: run diario. El mismo cliente publicó Application Developer (4491899041, CA$95–105K).",
+ "periodo": "año",
+ "publicada": "2026-11-18",
+ "puesto": "Full Stack Engineer",
+ "salMax": 105000,
+ "salMin": 90000,
+ "salario": "CA$90,000–105,000/año",
+ "solicitantes": "63",
+ "stack": "C#/.NET, Angular, TypeScript, SQL",
+ "techDes": [],
+ "techReq": [
+  "C# / .NET",
+  "Angular",
+  "TypeScript",
+  "SQL"
+ ],
+ "tipo": "Permanente",
+ "ubicacion": "Etobicoke, ON (2 días)",
+ "updatedAt": "2026-11-19T12:50:00Z"
+}

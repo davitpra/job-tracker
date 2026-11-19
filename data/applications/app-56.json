@@ -1,0 +1,37 @@
+{
+ "anios": "2–4",
+ "busqueda": "backend",
+ "createdAt": "2026-11-19T12:50:00Z",
+ "cvAdaptada": "No",
+ "empresa": "Resmed",
+ "estado": "Descartada",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4492233653",
+ "linkedinId": "4492233653",
+ "modalidad": "Híbrido",
+ "motivoDescarte": [
+  "Java/Kotlin, .NET o C#"
+ ],
+ "n": 56,
+ "notas": "2026-11-19: run diario. Backend Java/Spring obligatorio.",
+ "publicada": "2026-11-19",
+ "puesto": "Software Engineer (Hydra)",
+ "salario": "",
+ "solicitantes": "33",
+ "stack": "Java, Spring Boot, AWS, HL7",
+ "techDes": [
+  "Docker",
+  "Kubernetes",
+  "Terraform"
+ ],
+ "techReq": [
+  "Java",
+  "REST APIs",
+  "AWS",
+  "SQL",
+  "CI/CD"
+ ],
+ "tipo": "Permanente",
+ "ubicacion": "Halifax, NS (sin días fijos)",
+ "updatedAt": "2026-11-19T12:50:00Z"
+}

@@ -1,0 +1,41 @@
+{
+ "anios": "7+",
+ "busqueda": "nucleo",
+ "createdAt": "2026-11-19T12:50:00Z",
+ "cvAdaptada": "No",
+ "empresa": "Supplier.io",
+ "estado": "Descartada",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4492424616",
+ "linkedinId": "4492424616",
+ "modalidad": "Remoto",
+ "motivoDescarte": [
+  "Senior o 5+ años",
+  "Python como núcleo"
+ ],
+ "n": 65,
+ "notas": "2026-11-19: run diario. También salió por Jobgether (4491394032).",
+ "publicada": "2026-11-19",
+ "puesto": "Senior Full Stack Software Engineer (Atlas)",
+ "salario": "US$150,000/año (EE.UU.)",
+ "solicitantes": "<25",
+ "stack": "React, Python, MongoDB, GraphQL, GCP",
+ "techDes": [
+  "Terraform"
+ ],
+ "techReq": [
+  "React",
+  "Python",
+  "REST APIs",
+  "GraphQL",
+  "MongoDB",
+  "Redis",
+  "Elasticsearch",
+  "GCP",
+  "CI/CD",
+  "IA / LLM"
+ ],
+ "tipo": "Permanente",
+ "ubicacion": "Canadá / EE.UU.",
+ "updatedAt": "2026-11-19T12:50:00Z"
+}

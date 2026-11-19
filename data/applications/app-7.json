@@ -3,7 +3,7 @@
  "puesto": "Senior Full Stack Developer (React, Python, Node.js, AWS)",
  "linkedinId": "4491311957",
  "busqueda": "backend",
- "estado": "Por aplicar",
+ "estado": "Aplicado",
  "encaje": "Medio",
  "tipo": "Contrato",
  "modalidad": "Híbrido",
@@ -13,7 +13,7 @@
  "stack": "React, TypeScript, Python, Node.js, AWS Lambda, ECS, Docker",
  "porQue": "React/TS + Node.js, AWS Lambda (SAM en Claw & Soul) y EC2/S3 en Kruger, Docker y CI/CD; usa IA para programar a diario. Pide solo 3+ años.",
  "brechas": "Título Senior → tope Medio y prioridad −1 (aunque pide 3+ años); Python 🟡 (uno de los lenguajes exigidos, no el núcleo); Entra ID/OIDC no figura.",
- "proximoPaso": "Aplicar por LinkedIn y escribir al reclutador de isgSearch.",
+ "proximoPaso": "Escribir al reclutador de isgSearch.",
  "notas": "2026-11-18: run diario. Contrato 12 meses con posible extensión; apps para portfolio managers.",
  "techReq": [
   "React",
@@ -120,10 +120,257 @@
  "salario": "",
  "fuente": "LinkedIn (Apify)",
  "publicada": "2026-11-18",
- "cvAdaptada": "No",
+ "cvAdaptada": "Sí",
  "link": "https://www.linkedin.com/jobs/view/4491311957",
  "createdAt": "2026-11-18T20:30:00Z",
- "updatedAt": "2026-11-18T20:30:00Z",
+ "updatedAt": "2026-11-19T14:45:00Z",
  "prioridad": 1,
- "n": 7
+ "n": 7,
+ "cvVersiones": [
+  {
+   "archivo": "Resume - David Prado - isgSearch.pdf",
+   "base": "Resume - David Prado Master EN NUEVO",
+   "cambios": [
+    {
+     "s": "Encabezado",
+     "t": "h"
+    },
+    {
+     "s": "Title: Senior Full-Stack Developer",
+     "t": "-"
+    },
+    {
+     "s": "Title: Senior Full Stack Developer",
+     "t": "+"
+    },
+    {
+     "s": "PROFESSIONAL SUMMARY",
+     "t": "h"
+    },
+    {
+     "s": "Senior Full-Stack Developer with 6+ years of experience, almost 4 of them on company teams. For the last 2, I’ve worked independently: I talk to the users, make the technical decisions and ship to production myself. That covers the architecture, data model, APIs and branded interfaces; I document why each solution is chosen, define specs before writing code, and ensure quality with automated tests. I work with TypeScript, React, Next.js, NestJS and PostgreSQL, plus generative AI pipelines. I’ve digitized manual processes across different domains: health and safety inspections with auditable offline records, meal management at a care residence, and automated image generation for e-commerce. Technical lead for the order module of a logistics platform processing 5,000+ shipments per day.",
+     "t": "-"
+    },
+    {
+     "s": "Senior Full Stack Developer with 6+ years of experience, almost 4 of them on company teams. For the last 2, I’ve worked independently: I talk to the users, make the technical decisions and ship to production myself. I build React and TypeScript front ends and Node.js services with REST APIs on PostgreSQL, deployed to AWS with Lambda, API Gateway and Docker through CI/CD. I use Claude Code and Codex daily, with specs and tests keeping the output reviewable.",
+     "t": "+"
+    },
+    {
+     "s": "TECHNICAL SKILLS",
+     "t": "h"
+    },
+    {
+     "s": "Core stack: TypeScript, JavaScript, React, Next.js (SSR/SSG), Node.js, NestJS, PostgreSQL",
+     "t": "-"
+    },
+    {
+     "s": "Frontend: Vite, React Query / TanStack, PWA, Service Workers (Serwist), IndexedDB (Dexie), Tailwind, HTML5, CSS, Sass, Axios, webpack",
+     "t": "-"
+    },
+    {
+     "s": "Backend & data: REST APIs, GraphQL, Express, Prisma, Drizzle, MongoDB, Strapi, Socket.IO, Redis, BullMQ, pg-boss, Row-Level Security",
+     "t": "-"
+    },
+    {
+     "s": "Architecture: Offline-first (outbox pattern), modular monolith, monorepos (pnpm), immutable audit trails, Strategy pattern",
+     "t": "-"
+    },
+    {
+     "s": "AI & e-commerce: Generative AI integration, fal.ai, vision models, dynamic prompting, Shopify (GraphQL APIs, headless, metaobjects and metafields)",
+     "t": "-"
+    },
+    {
+     "s": "Core stack: React, TypeScript, JavaScript, Node.js, NestJS, Next.js, Python (basic)",
+     "t": "+"
+    },
+    {
+     "s": "Backend & data: REST APIs, SQL, PostgreSQL, GraphQL, Express, Prisma, Drizzle, Redis, BullMQ",
+     "t": "+"
+    },
+    {
+     "s": "AWS & DevOps: AWS Lambda, API Gateway, AWS SAM, S3, CloudWatch, Docker, CI/CD, GitHub Actions, Git",
+     "t": "+"
+    },
+    {
+     "s": "Auth & testing: OAuth/OIDC, role-based permissions, code reviews, Jest, Vitest, Playwright, Cypress",
+     "t": "+"
+    },
+    {
+     "s": "Testing: Jest, Cypress, integration testing",
+     "t": "-"
+    },
+    {
+     "s": "DevOps & cloud: Docker, Kubernetes, CI/CD, Git, GitHub, Bitbucket, Vercel, Railway, Render, Linux VPS",
+     "t": "-"
+    },
+    {
+     "s": "Quality & practices: WCAG, technical SEO, web performance (Lighthouse), Agile/Scrum, ADRs, Jira",
+     "t": "-"
+    },
+    {
+     "s": "Frontend: React Query / TanStack, Vite, Tailwind, Material UI, design systems, PWA",
+     "t": "+"
+    },
+    {
+     "s": "Full-Stack Developer (Independent) | Mar 2024 – Present",
+     "t": "h"
+    },
+    {
+     "s": "Custom web systems and AI-powered products for small businesses and my own ventures, mostly replacing paper-based or manual workflows. Spec-driven delivery with AI coding agents (Claude Code, Codex) used daily: architecture decisions recorded as ADRs, specs before code, and integration tests in CI.",
+     "t": "-"
+    },
+    {
+     "s": "ClawPuzzle · AI personalization platform for Puzzle Salvaje, Ecuador | Aug 2026 – Oct 2026 (proyecto completo quitado)",
+     "t": "-"
+    },
+    {
+     "s": "AI products and web systems for small businesses, built spec-first with Claude Code, Codex and tests in CI.",
+     "t": "+"
+    },
+    {
+     "s": "Claw & Soul · AI Pet Art E-commerce, Technical Co-Founder | Apr 2025 – Present (movido arriba, 2 bullets)",
+     "t": "+"
+    },
+    {
+     "s": "Built an e-commerce platform turning pet photos into AI art, with an async BullMQ/Redis pipeline on fal.ai.",
+     "t": "+"
+    },
+    {
+     "s": "Deployed AWS Lambda functions behind API Gateway (AWS SAM) for Shopify webhooks and S3 presigned uploads.",
+     "t": "+"
+    },
+    {
+     "s": "Stack: React · TypeScript · Next.js · NestJS · PostgreSQL · AWS Lambda · API Gateway · S3",
+     "t": "+"
+    },
+    {
+     "s": "Offline Inspection System · Ontario Greenhouses, London, ON | Aug 2026 – Oct 2026",
+     "t": "h"
+    },
+    {
+     "s": "Gathered requirements with Health & Safety and Human Resources to digitize inspections across two sites. Identified the lack of connectivity in the greenhouse as the reason the previous tool was abandoned.",
+     "t": "-"
+    },
+    {
+     "s": "Designed and built, as the sole developer, an offline-first PWA for health & safety, maintenance, and electrical inspections, piloted with ~30 users. It organizes work areas, assigns owners, and tracks each finding through to corrective action.",
+     "t": "-"
+    },
+    {
+     "s": "Solved offline sync with the outbox pattern on IndexedDB and Service Workers. Implemented database-level immutability, per-site Row-Level Security, and hash-chained audit logs aligned with OHSA requirements.",
+     "t": "-"
+    },
+    {
+     "s": "Documented the architecture in 12 ADRs and applied spec-driven development (OpenSpec) with integration tests in CI.",
+     "t": "-"
+    },
+    {
+     "s": "Stack: TypeScript · React · Vite · TanStack · NestJS · PostgreSQL · Drizzle · pg-boss · Dexie · Serwist · Docker",
+     "t": "-"
+    },
+    {
+     "s": "Sole developer of an offline-first inspection PWA used across two sites, piloted with ~30 users.",
+     "t": "+"
+    },
+    {
+     "s": "Implemented per-site Row-Level Security and hash-chained audit logs in PostgreSQL, with 12 ADRs.",
+     "t": "+"
+    },
+    {
+     "s": "Stack: TypeScript · React · NestJS · PostgreSQL · Drizzle · Docker",
+     "t": "+"
+    },
+    {
+     "s": "Claw & Soul (versión del maestro) y Meal Ordering System",
+     "t": "h"
+    },
+    {
+     "s": "Claw & Soul: 4 bullets del maestro reemplazados por los 2 de arriba (sin paint-by-numbers, metaobjects ni Strategy pattern).",
+     "t": "-"
+    },
+    {
+     "s": "Meal Ordering System · Horizon Place care residence | Mar 2024 – Aug 2024 (proyecto completo quitado)",
+     "t": "-"
+    },
+    {
+     "s": "Frontend Software Engineer (Contract) | Nov 2024 – Feb 2025",
+     "t": "h"
+    },
+    {
+     "s": "Migrated pages and components from WordPress to Next.js with SSR and SSG, as part of a migration that raised Lighthouse Performance from 45 to 90, along with technical SEO and accessibility improvements.",
+     "t": "-"
+    },
+    {
+     "s": "Integrated REST APIs with Axios and React Query for the vehicle parts catalog and store locator, optimizing caching and reducing redundant requests.",
+     "t": "-"
+    },
+    {
+     "s": "Wrote unit tests with Jest and E2E tests with Cypress to ensure migration stability within a distributed Agile/Scrum team.",
+     "t": "-"
+    },
+    {
+     "s": "Migrated WordPress pages to Next.js (SSR/SSG), part of a migration taking Lighthouse from 45 to 90.",
+     "t": "+"
+    },
+    {
+     "s": "Integrated REST APIs with React Query and wrote Jest and Cypress tests in a Git and CI/CD workflow.",
+     "t": "+"
+    },
+    {
+     "s": "Senior Software Developer | Jan 2022 – Aug 2023",
+     "t": "h"
+    },
+    {
+     "s": "Technical lead for the order tracking module of Urbano, a logistics platform processing 5,000+ daily shipments: the full lifecycle from customer creation to routing, delivery, and payment collection, within a three-developer team.",
+     "t": "-"
+    },
+    {
+     "s": "Developed order, payment collection, and cash-on-delivery reconciliation services with NestJS and PostgreSQL, plus React and Vite views for customers and internal operations: collections, delivery retries, and per-order success rate.",
+     "t": "-"
+    },
+    {
+     "s": "Made architecture decisions and designed the data model for the order and payment flow. Ensured delivery quality through unit testing and production deployment support.",
+     "t": "-"
+    },
+    {
+     "s": "Technical lead and code reviewer for the order module of Urbano, a platform with 5,000+ daily shipments.",
+     "t": "+"
+    },
+    {
+     "s": "Built payment and reconciliation services and the SQL data model with Node.js, NestJS and PostgreSQL, on AWS with Jenkins CI/CD and production deployment support.",
+     "t": "+"
+    },
+    {
+     "s": "Software Developer | Jan 2020 – Oct 2021",
+     "t": "h"
+    },
+    {
+     "s": "Integrated a professional training platform (MERN) with the web services of the SRI, Ecuador's tax authority, for electronic invoicing: XML invoice generation, status and error handling, and automatic delivery to users, processing 60–70 invoices per month.",
+     "t": "-"
+    },
+    {
+     "s": "Built the reporting module end to end, with backend and React frontend, for ~50 students and 8 courses: progress, grades, and pass rates per course for instructors and administrators, plus a progress map for students. Tested critical logic with Jest.",
+     "t": "-"
+    },
+    {
+     "s": "Integrated a MERN platform with Ecuador's tax authority for e-invoicing: 60–70 invoices per month.",
+     "t": "+"
+    },
+    {
+     "s": "EDUCATION",
+     "t": "h"
+    },
+    {
+     "s": "Fanshawe Entrepreneurship & Innovation Program: bullet quitado",
+     "t": "-"
+    },
+    {
+     "s": "Full Stack Developer with JavaScript · React Front-end Developer | Platzi | 2019 – 2023 (quitado)",
+     "t": "-"
+    }
+   ],
+   "resumen": "1 página (piden 3+ años). Título Senior Full Stack Developer; AWS al frente (Lambda, API Gateway, SAM, Docker, CI/CD); Python (basic); skills reducidas a 6 líneas; se quitan ClawPuzzle, Meal Ordering, Platzi y bullet del programa Fanshawe. ATS 100% (18/18). Brechas: GitHub Copilot, ECS/Fargate, Entra ID, JWT, UAT, Streamlit, Snowflake, servicios financieros, certificación AWS.",
+   "subidoEl": "2026-11-19T14:45:00Z"
+  }
+ ],
+ "fechaAplicacion": "2026-11-19"
 }

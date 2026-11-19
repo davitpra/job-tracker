@@ -1,0 +1,27 @@
+{
+ "anios": "No indica",
+ "busqueda": "contratos",
+ "createdAt": "2026-11-19T12:50:00Z",
+ "cvAdaptada": "No",
+ "empresa": "Hired",
+ "estado": "Descartada",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4491841759",
+ "linkedinId": "4491841759",
+ "modalidad": "Remoto",
+ "motivoDescarte": [
+  "Rol distinto o por debajo del nivel"
+ ],
+ "n": 73,
+ "notas": "2026-11-19: run diario. Gig de entrenamiento de IA. Hired publicó 4 iguales (4491838935, 4491157100, 4491851306).",
+ "publicada": "2026-11-18",
+ "puesto": "Application Engineer (Remote)",
+ "salario": "",
+ "solicitantes": "<25",
+ "stack": "Tareas para entrenar modelos de IA",
+ "techDes": [],
+ "techReq": [],
+ "tipo": "Contrato",
+ "ubicacion": "EE.UU. y Canadá",
+ "updatedAt": "2026-11-19T12:50:00Z"
+}

@@ -1,0 +1,40 @@
+{
+ "anios": "5+",
+ "busqueda": "nucleo",
+ "createdAt": "2026-11-19T12:50:00Z",
+ "cvAdaptada": "No",
+ "empresa": "GC AI",
+ "estado": "Descartada",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4421854888",
+ "linkedinId": "4421854888",
+ "modalidad": "Remoto",
+ "moneda": "",
+ "motivoDescarte": [
+  "Senior o 5+ años",
+  "200+ solicitantes"
+ ],
+ "n": 71,
+ "notas": "2026-11-19: run diario. ID viejo, aviso republicado.",
+ "periodo": "año",
+ "publicada": "2026-11-19",
+ "puesto": "Member of Technical Staff, Growth Engineering",
+ "salMax": 350000,
+ "salMin": 165000,
+ "salario": "$165K–350K/año",
+ "solicitantes": "200+",
+ "stack": "React, TypeScript, SQL, analítica y experimentación",
+ "techDes": [
+  "PostHog",
+  "IA / LLM"
+ ],
+ "techReq": [
+  "React",
+  "TypeScript",
+  "SQL",
+  "Google Analytics"
+ ],
+ "tipo": "Permanente",
+ "ubicacion": "EE.UU. y Canadá",
+ "updatedAt": "2026-11-19T12:50:00Z"
+}

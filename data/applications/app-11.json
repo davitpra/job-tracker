@@ -3,7 +3,7 @@
  "puesto": "Senior Full Stack Engineer (Node/React) - Remote",
  "linkedinId": "4490891651",
  "busqueda": "backend",
- "estado": "Por aplicar",
+ "estado": "Descartada",
  "encaje": "Medio",
  "tipo": "Contrato",
  "modalidad": "Remoto",
@@ -14,7 +14,7 @@
  "porQue": "Node.js + React end to end, APIs REST/GraphQL (NestJS), SQL y MongoDB, CI/CD y nube; usa Claude Code a diario (deseable).",
  "brechas": "Piden 5+ años; en empresa 3,8 → ❌, título Senior → tope Medio y prioridad −1; sistemas distribuidos 🟡.",
  "proximoPaso": "Aplicar por LinkedIn o en la web de Kake.",
- "notas": "2026-11-18: run diario. Pago en USD. En octubre había un Kake Node/React en el tracker anterior: revisar si ya aplicó.",
+ "notas": "2026-11-18: run diario. Pago en USD. En octubre había un Kake Node/React en el tracker anterior: revisar si ya aplicó.\n2026-11-19: descartada al revisar las pendientes: título Senior y 5+ años; posible duplicada de octubre.",
  "techReq": [
   "Node.js",
   "React",
@@ -96,7 +96,10 @@
  "cvAdaptada": "No",
  "link": "https://www.linkedin.com/jobs/view/4490891651",
  "createdAt": "2026-11-18T20:30:00Z",
- "updatedAt": "2026-11-18T20:30:00Z",
+ "updatedAt": "2026-11-19T15:01:00Z",
  "prioridad": 2,
- "n": 11
+ "n": 11,
+ "motivoDescarte": [
+  "Senior o 5+ años"
+ ]
 }

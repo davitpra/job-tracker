@@ -15,7 +15,7 @@
  "brechas": "200+ solicitantes (pasa la excepción: Muy alto y publicada hoy) → escribir hoy a alguien del equipo; proceso de entrevistas exigente; sistemas financieros a gran escala (deseable) no los tiene.",
  "proximoPaso": "Aplicar en la web de Stripe y escribir hoy a un recruiter o ingeniero de Link.",
  "notas": "2026-11-18: run diario.",
- "techReq": [],
+ "techReq": null,
  "techDes": [
   "GraphQL",
   "Docker",
@@ -79,7 +79,10 @@
  "cvAdaptada": "No",
  "link": "https://www.linkedin.com/jobs/view/4481790006",
  "createdAt": "2026-11-18T20:30:00Z",
- "updatedAt": "2026-11-18T20:30:00Z",
+ "updatedAt": "2026-11-19T14:29:08.639Z",
  "prioridad": 1,
- "n": 3
+ "n": 3,
+ "motivoDescarte": [
+  "Senior o 5+ años"
+ ]
 }

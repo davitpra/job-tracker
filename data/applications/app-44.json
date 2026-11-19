@@ -1,0 +1,91 @@
+{
+ "anios": "4+ (1+ como FDE)",
+ "brechas": "El aviso lo describe como Senior Solutions Engineer → prioridad −1; piden 4+ años con 1+ como FDE: FDE ❌; años 🟡. Rol de cara al cliente (workshops, migraciones de observabilidad).",
+ "busqueda": "nucleo",
+ "clasif": {
+  "max": 10,
+  "pct": 70,
+  "prioridad": {
+   "ajustes": [
+    {
+     "t": "<3 días y <50 solicitantes",
+     "v": 1
+    },
+    {
+     "t": "empresa suma al CV",
+     "v": 1
+    },
+    {
+     "t": "Senior",
+     "v": -1
+    }
+   ],
+   "base": 2,
+   "final": 1
+  },
+  "pts": 7,
+  "requisitos": [
+   {
+    "e": "~3,8 en empresa",
+    "n": 1,
+    "r": "4+ años entre software y solutions"
+   },
+   {
+    "e": "No figura",
+    "n": 0,
+    "r": "1+ año como FDE"
+   },
+   {
+    "e": "Núcleo del CV",
+    "n": 2,
+    "r": "Lenguajes y frameworks (JS, Node, React…)"
+   },
+   {
+    "e": "Clientes",
+    "n": 2,
+    "r": "Comunicación y presentaciones"
+   },
+   {
+    "e": "Proyectos propios",
+    "n": 2,
+    "r": "Resolver problemas"
+   }
+  ],
+  "rubrica": "2026-11-04"
+ },
+ "createdAt": "2026-11-19T12:45:00Z",
+ "cvAdaptada": "No",
+ "empresa": "Sentry",
+ "encaje": "Medio",
+ "estado": "Por aplicar",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4492407172",
+ "linkedinId": "4492407172",
+ "modalidad": "",
+ "moneda": "CAD",
+ "n": 44,
+ "notas": "2026-11-19: run diario. Bonus: experiencia con herramientas de observabilidad y error monitoring (cumple).",
+ "periodo": "año",
+ "porQue": "Usa Sentry en Kruger, Idukay, Greenhouse y sus proyectos (alertas, monitoreo); JS/Node/React en producción; trabajo directo con clientes.",
+ "prioridad": 1,
+ "proximoPaso": "Aplicar en la web de Sentry; en la carta, contar cómo usa Sentry en producción.",
+ "publicada": "2026-11-19",
+ "puesto": "Forward Deployed Engineer",
+ "salMax": 250000,
+ "salMin": 210000,
+ "salario": "CA$210,000–250,000 (compensación total)",
+ "solicitantes": "<25",
+ "stack": "SDKs de Sentry en JS, Node, React, Python, Java, PHP, .NET, móvil; instrumentación, dashboards y alertas",
+ "techDes": [
+  "Python",
+  "React Native"
+ ],
+ "techReq": [
+  "JavaScript",
+  "Node.js",
+  "React"
+ ],
+ "tipo": "Permanente",
+ "ubicacion": "Toronto, ON (modalidad no indicada; puede incluir trabajo en sitio del cliente)",
+ "updatedAt": "2026-11-19T12:45:00Z"
+}

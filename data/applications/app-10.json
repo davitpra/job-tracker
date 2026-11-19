@@ -3,7 +3,7 @@
  "puesto": "Forward Deployed Engineer",
  "linkedinId": "4491851538",
  "busqueda": "backend",
- "estado": "Por aplicar",
+ "estado": "Descartada",
  "encaje": "Medio",
  "tipo": "Permanente",
  "modalidad": "Remoto",
@@ -14,7 +14,7 @@
  "porQue": "Full stack con TypeScript; desarrollo con Claude Code a diario (lo que el rol enseña a otros equipos); GitHub Actions y Docker.",
  "brechas": "Piden 5+ años; en empresa 3,8 → ❌ y tope Medio; Terraform ❌; AWS a fondo 🟡; consultoría y gestión del cambio 🟡.",
  "proximoPaso": "Aplicar solo en la web de Banyan (no aceptan postulaciones por LinkedIn).",
- "notas": "2026-11-18: run diario. FDE para modernizar apps de su portafolio con IA.",
+ "notas": "2026-11-18: run diario. FDE para modernizar apps de su portafolio con IA.\n2026-11-19: descartada al revisar las pendientes: 5+ años y Terraform.",
  "techReq": [
   "TypeScript",
   "AWS",
@@ -102,7 +102,11 @@
  "cvAdaptada": "No",
  "link": "https://www.linkedin.com/jobs/view/4491851538",
  "createdAt": "2026-11-18T20:30:00Z",
- "updatedAt": "2026-11-18T20:30:00Z",
+ "updatedAt": "2026-11-19T15:01:00Z",
  "prioridad": 2,
- "n": 10
+ "n": 10,
+ "motivoDescarte": [
+  "Senior o 5+ años",
+  "Otra brecha técnica"
+ ]
 }

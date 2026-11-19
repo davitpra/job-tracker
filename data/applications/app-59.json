@@ -1,0 +1,41 @@
+{
+ "anios": "5+",
+ "busqueda": "nucleo",
+ "createdAt": "2026-11-19T12:50:00Z",
+ "cvAdaptada": "No",
+ "empresa": "Capco",
+ "estado": "Descartada",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4492248476",
+ "linkedinId": "4492248476",
+ "modalidad": "",
+ "moneda": "CAD",
+ "motivoDescarte": [
+  "Java/Kotlin, .NET o C#",
+  "Senior o 5+ años"
+ ],
+ "n": 59,
+ "notas": "2026-11-19: run diario.",
+ "periodo": "año",
+ "publicada": "2026-11-19",
+ "puesto": "Engineer (Senior Backend)",
+ "salMax": 152000,
+ "salMin": 118000,
+ "salario": "CA$118,000–152,000/año",
+ "solicitantes": "<25",
+ "stack": "Java 17/21, Spring Boot, Oracle PL/SQL, AWS",
+ "techDes": [
+  "IA / LLM",
+  "Python"
+ ],
+ "techReq": [
+  "Java",
+  "SQL",
+  "REST APIs",
+  "Microservicios",
+  "AWS"
+ ],
+ "tipo": "Permanente",
+ "ubicacion": "Toronto, ON",
+ "updatedAt": "2026-11-19T12:50:00Z"
+}

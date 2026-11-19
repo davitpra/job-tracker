@@ -3,7 +3,7 @@
  "puesto": "Front End Engineer (React)",
  "linkedinId": "4492085753",
  "busqueda": "contratos",
- "estado": "Por aplicar",
+ "estado": "Aplicado",
  "encaje": "Muy alto",
  "tipo": "Contrato",
  "modalidad": "Remoto",
@@ -13,8 +13,8 @@
  "stack": "React, JavaScript, TypeScript",
  "porQue": "3+ años de UI en empresa (Idukay, Kruger, Delphi) con React/TS; apps muy interactivas y responsive; contrato remoto de 6+ meses.",
  "brechas": "Cliente no revelado; patrones MVC/MVP/MVVM no figuran tal cual en el CV.",
- "proximoPaso": "Aplicar por LinkedIn y escribir al reclutador de Motion Recruitment.",
- "notas": "2026-11-18: run diario. SaaS de precios y promociones para marcas globales; contrato 6 meses+.",
+ "proximoPaso": "Escribir hoy a Kelly Jiang en LinkedIn. Revisar respuesta el día 7 (26 nov) y el 14 (3 dic).",
+ "notas": "2026-11-18: run diario. SaaS de precios y promociones para marcas globales; contrato 6 meses+.\n2026-11-19: aplicado con CV adaptado 'Resume - David Prado - Motion Recruitment.pdf' (Front End Engineer (React), 2 páginas, ATS 100%). Brechas: MVC/MVP/MVVM, cross-browser, título en CS, rollouts internacionales.",
  "techReq": [
   "JavaScript",
   "React"
@@ -102,10 +102,13 @@
  "salario": "",
  "fuente": "LinkedIn (Apify)",
  "publicada": "2026-11-18",
- "cvAdaptada": "No",
+ "cvAdaptada": "Sí",
  "link": "https://www.linkedin.com/jobs/view/4492085753",
  "createdAt": "2026-11-18T20:30:00Z",
- "updatedAt": "2026-11-18T20:30:00Z",
+ "updatedAt": "2026-11-19T13:37:00Z",
  "prioridad": 1,
- "n": 2
+ "n": 2,
+ "contacto": "Kelly Jiang (reclutadora, linkedin.com/in/kkbarrett)",
+ "fechaAplicacion": "2026-11-19",
+ "plataforma": "LinkedIn"
 }

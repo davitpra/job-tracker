@@ -1,0 +1,102 @@
+{
+ "anios": "No indica",
+ "brechas": "Título Senior → tope Medio y prioridad −1; Elasticsearch solo con Kibana para logs 🟡; event-driven a escala 🟡. Ottawa sin modalidad: lejos de London.",
+ "busqueda": "nucleo",
+ "clasif": {
+  "ajusteEncaje": "Tope Medio por título Senior",
+  "filtro": "Dudoso: Ottawa, modalidad no indicada",
+  "max": 14,
+  "pct": 86,
+  "prioridad": {
+   "ajustes": [
+    {
+     "t": "Senior",
+     "v": -1
+    }
+   ],
+   "base": 2,
+   "final": 3
+  },
+  "pts": 12,
+  "requisitos": [
+   {
+    "e": "NestJS",
+    "n": 2,
+    "r": "Backend fuerte"
+   },
+   {
+    "e": "MySQL, Redis; Elasticsearch no",
+    "n": 1,
+    "r": "SQL + NoSQL (MySQL, Elasticsearch, Redis)"
+   },
+   {
+    "e": "Webhooks, BullMQ",
+    "n": 1,
+    "r": "Microservicios y event-driven"
+   },
+   {
+    "e": "Kruger, Claw & Soul",
+    "n": 2,
+    "r": "AWS, Docker, CI/CD"
+   },
+   {
+    "e": "Claw & Soul",
+    "n": 2,
+    "r": "Arquitectura de sistemas complejos"
+   },
+   {
+    "e": "Proyectos propios",
+    "n": 2,
+    "r": "Ownership y curiosidad"
+   },
+   {
+    "e": "Equipos",
+    "n": 2,
+    "r": "Comunicación"
+   }
+  ],
+  "rubrica": "2026-11-04"
+ },
+ "createdAt": "2026-11-19T12:45:00Z",
+ "cvAdaptada": "No",
+ "empresa": "QNX (BlackBerry Radar)",
+ "encaje": "Medio",
+ "estado": "Descartada",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4484284253",
+ "linkedinId": "4484284253",
+ "modalidad": null,
+ "moneda": "CAD",
+ "n": 48,
+ "notas": "2026-11-19: run diario. Plataforma IoT de rastreo de tráilers.",
+ "periodo": "año",
+ "porQue": "Backend Node con MySQL y Redis (BullMQ), AWS, Docker y GitHub Actions; React como deseable.",
+ "prioridad": 3,
+ "proximoPaso": "Ver en la web de BlackBerry los días de oficina en Ottawa; si es remoto o casi remoto, aplicar.",
+ "publicada": "2026-11-18",
+ "puesto": "BlackBerry Radar - Senior Full Stack Developer",
+ "salMax": 152250,
+ "salMin": 108750,
+ "salario": "CA$108,750–152,250/año",
+ "solicitantes": "120",
+ "stack": "Node.js, Express, NATS, MySQL, Redis, Elasticsearch, React, AWS, Docker, Kubernetes, GitHub Actions",
+ "techDes": [
+  "JavaScript",
+  "React",
+  "Kubernetes"
+ ],
+ "techReq": [
+  "Node.js",
+  "Express",
+  "MySQL",
+  "Redis",
+  "Elasticsearch",
+  "Microservicios",
+  "AWS",
+  "Docker",
+  "CI/CD"
+ ],
+ "tipo": "Permanente",
+ "ubicacion": "Ottawa, ON (modalidad no indicada)",
+ "updatedAt": "2026-11-19T14:33:23.375Z"
+}

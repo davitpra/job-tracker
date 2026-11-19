@@ -1,0 +1,39 @@
+{
+ "anios": "6+",
+ "busqueda": "backend",
+ "createdAt": "2026-11-19T12:50:00Z",
+ "cvAdaptada": "No",
+ "empresa": "Dialogue",
+ "estado": "Descartada",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4491434760",
+ "linkedinId": "4491434760",
+ "modalidad": "Híbrido",
+ "moneda": "CAD",
+ "motivoDescarte": [
+  "Híbrido o presencial",
+  "Senior o 5+ años",
+  "Python como núcleo"
+ ],
+ "n": 55,
+ "notas": "2026-11-19: run diario. También salieron la versión en francés (4491404261) y una Staff (4492102434).",
+ "periodo": "año",
+ "publicada": "2026-11-18",
+ "puesto": "Senior Software Developer, Full Stack (Backend & AI)",
+ "salMax": 138285,
+ "salMin": 118530,
+ "salario": "CA$118,530–138,285/año",
+ "solicitantes": "34",
+ "stack": "Python, APIs, workflows con LLMs, React",
+ "techDes": [
+  "React"
+ ],
+ "techReq": [
+  "Python",
+  "REST APIs",
+  "IA / LLM"
+ ],
+ "tipo": "Permanente",
+ "ubicacion": "Montreal, QC (3 días)",
+ "updatedAt": "2026-11-19T12:50:00Z"
+}

@@ -1,0 +1,46 @@
+{
+ "anios": "0–2",
+ "busqueda": "nucleo",
+ "createdAt": "2026-11-19T12:50:00Z",
+ "cvAdaptada": "No",
+ "empresa": "DaoAI (Wemio)",
+ "estado": "Descartada",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4491887680",
+ "linkedinId": "4491887680",
+ "modalidad": "Híbrido",
+ "moneda": "CAD",
+ "motivoDescarte": [
+  "Híbrido o presencial",
+  "Rol distinto o por debajo del nivel",
+  "Otro"
+ ],
+ "n": 53,
+ "notas": "2026-11-19: run diario. Híbrido en Vancouver y mandarín obligatorio.",
+ "periodo": "año",
+ "publicada": "2026-11-18",
+ "puesto": "Junior Full Stack Engineer - Wemio",
+ "salMax": 60000,
+ "salMin": 60000,
+ "salario": "CA$60,000/año",
+ "solicitantes": "94",
+ "stack": "React/TS/Next.js, Electron, Python/Node.js, agentes de video con IA",
+ "techDes": [
+  "AWS",
+  "PostgreSQL",
+  "Redis",
+  "Docker"
+ ],
+ "techReq": [
+  "TypeScript",
+  "React",
+  "Next.js",
+  "Electron",
+  "Python",
+  "Node.js",
+  "IA / LLM"
+ ],
+ "tipo": "Permanente",
+ "ubicacion": "Vancouver, BC",
+ "updatedAt": "2026-11-19T12:50:00Z"
+}

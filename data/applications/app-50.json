@@ -1,0 +1,97 @@
+{
+ "anios": "6+",
+ "brechas": "Piden 6+ años; en empresa 3,8 → ❌, título Senior → tope Medio y prioridad −1; Kafka/Pub/Sub 🟡 (usa BullMQ); Kubernetes y on-call 🟡; datos a gran escala 🟡.",
+ "busqueda": "nucleo",
+ "clasif": {
+  "ajusteEncaje": "Tope Medio por 6+ años y título Senior",
+  "max": 14,
+  "pct": 64,
+  "prioridad": {
+   "ajustes": [
+    {
+     "t": "Senior",
+     "v": -1
+    }
+   ],
+   "base": 2,
+   "final": 3
+  },
+  "pts": 9,
+  "requisitos": [
+   {
+    "e": "~3,8 en empresa",
+    "n": 0,
+    "r": "6+ años"
+   },
+   {
+    "e": "Núcleo del CV",
+    "n": 2,
+    "r": "TypeScript avanzado y NestJS"
+   },
+   {
+    "e": "PostgreSQL; no a gran escala",
+    "n": 1,
+    "r": "Modelado de datos y SQL a escala"
+   },
+   {
+    "e": "BullMQ, pg-boss",
+    "n": 1,
+    "r": "Event-driven (Kafka, Pub/Sub)"
+   },
+   {
+    "e": "Núcleo del CV",
+    "n": 2,
+    "r": "React avanzado"
+   },
+   {
+    "e": "AKS en Kruger",
+    "n": 1,
+    "r": "Kubernetes y operación en producción"
+   },
+   {
+    "e": "Jest, WCAG",
+    "n": 2,
+    "r": "Ownership, tests y accesibilidad"
+   }
+  ],
+  "rubrica": "2026-11-04"
+ },
+ "createdAt": "2026-11-19T12:45:00Z",
+ "cvAdaptada": "No",
+ "empresa": "Unity",
+ "encaje": "Medio",
+ "estado": "Descartada",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4484519983",
+ "linkedinId": "4484519983",
+ "modalidad": null,
+ "moneda": "CAD",
+ "n": 50,
+ "notas": "2026-11-19: run diario. También salió la versión de Montreal (4484528641). En octubre aplicó a un Unity Sr Full Stack (NestJS) en el tracker anterior: revisar si es el mismo.",
+ "periodo": "año",
+ "porQue": "TypeScript avanzado con NestJS (su backend principal); React avanzado; modelado de datos y migraciones en PostgreSQL.",
+ "prioridad": 3,
+ "proximoPaso": "Aplicar en la web de Unity solo si hay contacto en el equipo.",
+ "publicada": "2026-11-18",
+ "puesto": "Sr. Full Stack Engineer, Unified Ads Platform",
+ "salMax": 175900,
+ "salMin": 135400,
+ "salario": "CA$135,400–175,900/año (zona A)",
+ "solicitantes": "51",
+ "stack": "TypeScript (NestJS), React, SQL, Kafka, Google Pub/Sub, Kubernetes",
+ "techDes": [
+  "Go",
+  "Terraform"
+ ],
+ "techReq": [
+  "TypeScript",
+  "NestJS",
+  "React",
+  "SQL",
+  "Kafka / colas",
+  "Kubernetes"
+ ],
+ "tipo": "Permanente",
+ "ubicacion": "Toronto, ON (modalidad no indicada; también Montreal)",
+ "updatedAt": "2026-11-19T14:32:53.186Z"
+}

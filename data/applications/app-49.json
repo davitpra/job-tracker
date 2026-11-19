@@ -1,0 +1,147 @@
+{
+ "anios": "2–5",
+ "brechas": "Los lenguajes de ejemplo son Go, Java, C# y Python (TypeScript no figura) y Java fuerte es bonus: riesgo de que el núcleo sea Java 🟡; Zero Trust e IaC 🟡; diagramas en Lucidchart 🟡. Híbrido en Nepean sin frecuencia.",
+ "busqueda": "backend",
+ "clasif": {
+  "filtro": "Dudoso: híbrido en Nepean sin frecuencia; posible núcleo Java",
+  "max": 32,
+  "pct": 88,
+  "prioridad": {
+   "ajustes": [
+    {
+     "t": "<3 días y <50 solicitantes",
+     "v": 1
+    }
+   ],
+   "base": 1,
+   "final": 1
+  },
+  "pts": 28,
+  "requisitos": [
+   {
+    "e": "~3,8 años",
+    "n": 2,
+    "r": "2–5 años con cloud-native"
+   },
+   {
+    "e": "Kruger, Delphi",
+    "n": 2,
+    "r": "SDLC"
+   },
+   {
+    "e": "AWS, Azure",
+    "n": 2,
+    "r": "Cloud y SaaS"
+   },
+   {
+    "e": "Datadog, Sentry",
+    "n": 2,
+    "r": "Auth, observabilidad, servicio a servicio"
+   },
+   {
+    "e": "Poco formal",
+    "n": 1,
+    "r": "Documentar arquitecturas"
+   },
+   {
+    "e": "Python básico; usa TypeScript",
+    "n": 1,
+    "r": "Go, Java, C# o Python"
+   },
+   {
+    "e": "NestJS",
+    "n": 2,
+    "r": "OOD y patrones"
+   },
+   {
+    "e": "Kruger, Claw & Soul",
+    "n": 2,
+    "r": "AWS"
+   },
+   {
+    "e": "Kruger",
+    "n": 2,
+    "r": "Debugging y rendimiento"
+   },
+   {
+    "e": "CI/CD sí; IaC con SAM",
+    "n": 1,
+    "r": "CI/CD, IaC, DevOps"
+   },
+   {
+    "e": "Jenkins, GitHub",
+    "n": 2,
+    "r": "Git, GitLab o Jenkins"
+   },
+   {
+    "e": "Prácticas seguras básicas",
+    "n": 1,
+    "r": "Zero Trust"
+   },
+   {
+    "e": "VPS",
+    "n": 2,
+    "r": "Linux"
+   },
+   {
+    "e": "PostgreSQL, MySQL",
+    "n": 2,
+    "r": "SQL"
+   },
+   {
+    "e": "NestJS",
+    "n": 2,
+    "r": "APIs web"
+   },
+   {
+    "e": "Equipos",
+    "n": 2,
+    "r": "Comunicación"
+   }
+  ],
+  "rubrica": "2026-11-04"
+ },
+ "createdAt": "2026-11-19T12:45:00Z",
+ "cvAdaptada": "No",
+ "empresa": "Ross Video",
+ "encaje": "Alto",
+ "estado": "Descartada",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4491899244",
+ "linkedinId": "4491899244",
+ "modalidad": "Híbrido",
+ "moneda": "CAD",
+ "motivoDescarte": [
+  "Híbrido o presencial",
+  "Otro stack como núcleo"
+ ],
+ "n": 49,
+ "notas": "2026-11-19: run diario. Plataforma cloud para producción de TV en vivo.\n2026-11-19: descartada al revisar las pendientes: híbrido en Nepean (Ottawa) sin frecuencia y posible núcleo Java/Go/C#.",
+ "periodo": "año",
+ "porQue": "2–5 años; servicios cloud en AWS (Kruger, Claw & Soul); auth y observabilidad (Datadog, Sentry); APIs web y SQL; CI/CD con Jenkins y GitHub Actions.",
+ "prioridad": 1,
+ "proximoPaso": "Preguntar días de oficina y lenguaje principal; si es poca presencia y no es solo Java, aplicar en la web de Ross.",
+ "publicada": "2026-11-18",
+ "puesto": "Software Developer",
+ "salMax": 120000,
+ "salMin": 83500,
+ "salario": "CA$83,500–120,000/año",
+ "solicitantes": "38",
+ "stack": "Servicios cloud-native (IAM, observabilidad, mensajería), AWS, CI/CD, SQL; lenguajes de ejemplo Go, Java, C#, Python",
+ "techDes": [
+  "Java",
+  "Go",
+  "C# / .NET",
+  "Python"
+ ],
+ "techReq": [
+  "AWS",
+  "SQL",
+  "REST APIs",
+  "Microservicios",
+  "CI/CD"
+ ],
+ "tipo": "Permanente",
+ "ubicacion": "Nepean (Ottawa), ON (frecuencia no indicada)",
+ "updatedAt": "2026-11-19T15:01:00Z"
+}

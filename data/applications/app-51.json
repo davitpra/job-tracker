@@ -1,0 +1,105 @@
+{
+ "anios": "5+",
+ "brechas": "Piden 5+ años; en empresa 3,8 → ❌, título Senior → tope Medio y prioridad −1; Electron ❌; Python 🟡 (básico).",
+ "busqueda": "nucleo",
+ "clasif": {
+  "ajusteEncaje": "Tope Medio por título Senior",
+  "max": 18,
+  "pct": 72,
+  "prioridad": {
+   "ajustes": [
+    {
+     "t": "Senior",
+     "v": -1
+    }
+   ],
+   "base": 2,
+   "final": 3
+  },
+  "pts": 13,
+  "requisitos": [
+   {
+    "e": "Kruger, Claw & Soul",
+    "n": 2,
+    "r": "AWS o nube similar"
+   },
+   {
+    "e": "~3,8 en empresa",
+    "n": 0,
+    "r": "5+ años en apps grandes y longevas"
+   },
+   {
+    "e": "Núcleo del CV",
+    "n": 2,
+    "r": "TypeScript fuerte"
+   },
+   {
+    "e": "Kruger, Claw & Soul",
+    "n": 2,
+    "r": "Apps complejas, APIs o distribuidos"
+   },
+   {
+    "e": "No figura",
+    "n": 0,
+    "r": "Electron o desktop"
+   },
+   {
+    "e": "Básico",
+    "n": 1,
+    "r": "Python integrado a una app"
+   },
+   {
+    "e": "NestJS, APIs",
+    "n": 2,
+    "r": "Diseño de software y contratos"
+   },
+   {
+    "e": "Jest, GitHub Actions",
+    "n": 2,
+    "r": "Tests y automatización"
+   },
+   {
+    "e": "Specs",
+    "n": 2,
+    "r": "Comunicación escrita (ADRs, propuestas)"
+   }
+  ],
+  "rubrica": "2026-11-04"
+ },
+ "createdAt": "2026-11-19T12:45:00Z",
+ "cvAdaptada": "No",
+ "empresa": "Autodesk",
+ "encaje": "Medio",
+ "estado": "Descartada",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4484790904",
+ "linkedinId": "4484790904",
+ "modalidad": null,
+ "moneda": "CAD",
+ "n": 51,
+ "notas": "2026-11-19: run diario. También salió en Vancouver (4484798557).",
+ "periodo": "año",
+ "porQue": "TypeScript fuerte con buen diseño de software y contratos de API; tests y CI; trabaja con agentes de IA a diario.",
+ "prioridad": 3,
+ "proximoPaso": "Aplicar en la web de Autodesk solo si sobra tiempo o hay contacto.",
+ "publicada": "2026-11-19",
+ "puesto": "Senior Full Stack Engineer, Applied AI",
+ "salMax": 180400,
+ "salMin": 123000,
+ "salario": "CA$123,000–180,400/año",
+ "solicitantes": "82",
+ "stack": "TypeScript, Electron, Python, AWS; Autodesk Assistant con LLMs y agentes",
+ "techDes": [
+  "IA / LLM",
+  "LangGraph"
+ ],
+ "techReq": [
+  "TypeScript",
+  "Electron",
+  "Python",
+  "AWS"
+ ],
+ "tipo": "Permanente",
+ "ubicacion": "Toronto, ON (modalidad no indicada; también Vancouver)",
+ "updatedAt": "2026-11-19T14:32:45.837Z"
+}

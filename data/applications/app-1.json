@@ -3,7 +3,7 @@
  "puesto": "Software Engineer (Full Stack)",
  "linkedinId": "4491483948",
  "busqueda": "backend",
- "estado": "Por aplicar",
+ "estado": "Descartada",
  "encaje": "Muy alto",
  "tipo": "Permanente",
  "modalidad": "Híbrido",
@@ -13,8 +13,8 @@
  "stack": "Next.js, Node.js, BullMQ, PostgreSQL, LLMs",
  "porQue": "Next.js + Node + PostgreSQL + BullMQ es su stack exacto (BullMQ en sus proyectos). Trabajo AI-first con Claude Code/Codex a diario y producto end to end hablando con usuarios (Claw & Soul, Greenhouse H&S).",
  "brechas": "Híbrido en Toronto sin días indicados; el ejercicio técnico puede ser presencial.",
- "proximoPaso": "Aplicar en la página de empleos de SalesJack (EngRadar es solo un radar y redirige allí).",
- "notas": "2026-11-18: run diario. Startup de CRM para el sector de materiales de construcción; ingenieros hablan directo con clientes.",
+ "proximoPaso": "",
+ "notas": "2026-11-18: run diario. Startup de CRM para el sector de materiales de construcción; ingenieros hablan directo con clientes.\n2026-11-19: EngRadar ya no acepta solicitudes; descartada por oferta cerrada.",
  "techReq": [
   "React",
   "Next.js",
@@ -85,7 +85,10 @@
  "cvAdaptada": "No",
  "link": "https://www.linkedin.com/jobs/view/4491483948",
  "createdAt": "2026-11-18T20:30:00Z",
- "updatedAt": "2026-11-18T20:30:00Z",
+ "updatedAt": "2026-11-19T13:30:00Z",
  "prioridad": 1,
- "n": 1
+ "n": 1,
+ "motivoDescarte": [
+  "Oferta cerrada"
+ ]
 }

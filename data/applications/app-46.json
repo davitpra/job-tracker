@@ -1,0 +1,103 @@
+{
+ "anios": "1–4 (preferidos)",
+ "brechas": "No es empleo: contrato independiente por proyecto con tarifa fija y la mayor parte del pago diferida hasta la entrega final. Riesgo de cobro. OIDC 🟡. Exige ciudadanía o residencia permanente.",
+ "busqueda": "nucleo",
+ "clasif": {
+  "filtro": "Dudoso: pago por proyecto, mayormente diferido; monto no indicado",
+  "max": 14,
+  "pct": 100,
+  "prioridad": {
+   "ajustes": [
+    {
+     "t": "contrato",
+     "v": 1
+    },
+    {
+     "t": "<3 días y <50 solicitantes",
+     "v": 1
+    }
+   ],
+   "base": 1,
+   "final": 1
+  },
+  "pts": 14,
+  "requisitos": [
+   {
+    "e": "Núcleo del CV",
+    "n": 2,
+    "r": "TypeScript, React y Next.js (App Router)"
+   },
+   {
+    "e": "Núcleo del CV",
+    "n": 2,
+    "r": "NestJS, REST, PostgreSQL, ORM"
+   },
+   {
+    "e": "WCAG en Delphi",
+    "n": 2,
+    "r": "Figma a código y accesibilidad"
+   },
+   {
+    "e": "Greenhouse H&S",
+    "n": 2,
+    "r": "Auth, OAuth/OIDC y roles"
+   },
+   {
+    "e": "Vitest, Playwright, GitHub Actions",
+    "n": 2,
+    "r": "Tests (Vitest, Playwright) y CI/CD"
+   },
+   {
+    "e": "fal.ai, Claude",
+    "n": 2,
+    "r": "Integrar APIs de LLM"
+   },
+   {
+    "e": "Proyectos propios",
+    "n": 2,
+    "r": "Entregar features solo"
+   }
+  ],
+  "rubrica": "2026-11-04"
+ },
+ "createdAt": "2026-11-19T12:45:00Z",
+ "cvAdaptada": "No",
+ "empresa": "Potenco",
+ "encaje": "Muy alto",
+ "estado": "Evaluar",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4491894144",
+ "linkedinId": "4491894144",
+ "modalidad": "Remoto",
+ "n": 46,
+ "notas": "2026-11-19: run diario. SaaS tipo marketplace con i18n EN/FR y matching.",
+ "porQue": "Stack idéntico al suyo: Next.js App Router + NestJS + PostgreSQL con TypeScript; roles y permisos (Greenhouse H&S); tests con Vitest/Playwright; integración de LLMs (fal.ai en Claw & Soul).",
+ "prioridad": 1,
+ "proximoPaso": "Antes de invertir tiempo, preguntar a info@potenco.ca el monto fijo y el calendario de pagos; aplicar solo si el pago diferido es aceptable.",
+ "publicada": "2026-11-19",
+ "puesto": "Full Stack/Backend Developer (por proyecto, FSBE-042)",
+ "salario": "Tarifa fija por proyecto (no indicada)",
+ "solicitantes": "<25",
+ "stack": "TypeScript, Next.js (App Router), React, NestJS, PostgreSQL, Drizzle, Vitest/Playwright, OAuth/OIDC, LLMs",
+ "techDes": [
+  "Python",
+  "Docker",
+  "AWS"
+ ],
+ "techReq": [
+  "TypeScript",
+  "React",
+  "Next.js",
+  "NestJS",
+  "REST APIs",
+  "PostgreSQL",
+  "Drizzle",
+  "Vitest",
+  "Playwright",
+  "CI/CD",
+  "IA / LLM"
+ ],
+ "tipo": "Contrato",
+ "ubicacion": "Solo Canadá",
+ "updatedAt": "2026-11-19T12:45:00Z"
+}

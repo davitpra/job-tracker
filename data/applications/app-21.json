@@ -3,7 +3,7 @@
  "puesto": "Full Stack Engineer",
  "linkedinId": "4491736702",
  "busqueda": "nucleo",
- "estado": "Evaluar",
+ "estado": "Descartada",
  "encaje": "Medio",
  "tipo": "Permanente",
  "modalidad": "Remoto",
@@ -14,7 +14,7 @@
  "porQue": "Angular en Kruger.",
  "brechas": "Python ❌ (30 % del rol; posible backend principal); el aviso casi no tiene información.",
  "proximoPaso": "Averiguar si el backend es solo Python antes de aplicar.",
- "notas": "2026-11-18: run diario. Aviso de una línea.",
+ "notas": "2026-11-18: run diario. Aviso de una línea.\n2026-11-19: descartada al revisar las pendientes: Python es probablemente el backend principal.",
  "techReq": [
   "Angular",
   "Python"
@@ -54,7 +54,10 @@
  "cvAdaptada": "No",
  "link": "https://www.linkedin.com/jobs/view/4491736702",
  "createdAt": "2026-11-18T20:30:00Z",
- "updatedAt": "2026-11-18T20:30:00Z",
+ "updatedAt": "2026-11-19T15:01:00Z",
  "prioridad": 2,
- "n": 21
+ "n": 21,
+ "motivoDescarte": [
+  "Python como núcleo"
+ ]
 }

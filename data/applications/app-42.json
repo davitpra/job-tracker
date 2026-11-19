@@ -1,0 +1,90 @@
+{
+ "anios": "Intermedio / senior associate",
+ "brechas": "4 días en oficina en Brampton (lejos de London); contrato de 4 meses hasta el 27 mar 2027 con probable extensión.",
+ "busqueda": "nucleo",
+ "clasif": {
+  "max": 10,
+  "pct": 100,
+  "prioridad": {
+   "ajustes": [
+    {
+     "t": "contrato",
+     "v": 1
+    },
+    {
+     "t": "<3 días y <50 solicitantes",
+     "v": 1
+    }
+   ],
+   "base": 1,
+   "final": 1
+  },
+  "pts": 10,
+  "requisitos": [
+   {
+    "e": "Núcleo del CV; Next.js en Delphi",
+    "n": 2,
+    "r": "React y Next.js"
+   },
+   {
+    "e": "NestJS",
+    "n": 2,
+    "r": "Node.js y APIs"
+   },
+   {
+    "e": "Núcleo del CV",
+    "n": 2,
+    "r": "PostgreSQL y SQL"
+   },
+   {
+    "e": "Kruger",
+    "n": 2,
+    "r": "Full stack en apps empresariales"
+   },
+   {
+    "e": "Kruger, Delphi",
+    "n": 2,
+    "r": "Equipos cross-functional"
+   }
+  ],
+  "rubrica": "2026-11-04"
+ },
+ "createdAt": "2026-11-19T12:45:00Z",
+ "cvAdaptada": "No",
+ "empresa": "TalentWorld (cliente retail en Brampton)",
+ "encaje": "Muy alto",
+ "estado": "Por aplicar",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4492205969",
+ "linkedinId": "4492205969",
+ "modalidad": "Híbrido",
+ "moneda": "CAD",
+ "n": 42,
+ "notas": "2026-11-19: run diario. El mismo contrato salió por Raise (4492205773, 75 solicitantes, $56,56/h T4, fin 27 mar 2027) y TekStaff (4492095627, 27 solicitantes, 4,5 meses, 4 días en oficina). No aplicar por dos agencias al mismo puesto.",
+ "periodo": "hora",
+ "porQue": "React + Next.js + Node + PostgreSQL es exactamente su stack; apps end to end con APIs; apps empresariales en Kruger.",
+ "prioridad": 1,
+ "proximoPaso": "Elegir UNA agencia (TalentWorld $50–60/h, Raise $56,56/h o TekStaff) y aplicar solo por esa; escribir al reclutador.",
+ "publicada": "2026-11-18",
+ "puesto": "Full Stack Developer (React / Next.js / Node.js)",
+ "salMax": 60,
+ "salMin": 50,
+ "salario": "CA$50–60/hora (T4)",
+ "solicitantes": "<25",
+ "stack": "React, Next.js, Node.js, PostgreSQL, APIs REST",
+ "techDes": [
+  "TypeScript",
+  "CI/CD"
+ ],
+ "techReq": [
+  "React",
+  "Next.js",
+  "Node.js",
+  "PostgreSQL",
+  "SQL",
+  "REST APIs"
+ ],
+ "tipo": "Contrato",
+ "ubicacion": "Brampton, ON (4 días en oficina)",
+ "updatedAt": "2026-11-19T12:45:00Z"
+}
