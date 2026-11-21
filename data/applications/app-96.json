@@ -1,0 +1,76 @@
+{
+ "anios": "No indica (seasoned)",
+ "brechas": "Título Senior → tope Medio y prioridad −1. A/B testing y análisis de datos 🟡. Modalidad no indicada en Toronto.",
+ "busqueda": "backend",
+ "clasif": {
+  "ajusteEncaje": "Tope Medio por título Senior",
+  "filtro": "Dudoso: Toronto, modalidad no indicada",
+  "max": 6,
+  "pct": 83,
+  "prioridad": {
+   "ajustes": [
+    {
+     "t": "<3 días y <50 solicitantes",
+     "v": 1
+    },
+    {
+     "t": "Senior",
+     "v": -1
+    }
+   ],
+   "base": 2,
+   "final": 2
+  },
+  "pts": 5,
+  "requisitos": [
+   {
+    "e": "Lighthouse 45→90 en Delphi",
+    "n": 2,
+    "r": "Developer experience, rendimiento y onboarding sin fricción"
+   },
+   {
+    "e": "Núcleo del CV",
+    "n": 2,
+    "r": "Full stack experto en JavaScript, Node.js y React"
+   },
+   {
+    "e": "Conversion tracking; sin A/B formal",
+    "n": 1,
+    "r": "Desarrollo guiado por datos y A/B testing"
+   }
+  ],
+  "rubrica": "2026-11-19"
+ },
+ "createdAt": "2026-11-21T14:50:00Z",
+ "cvAdaptada": "No",
+ "empresa": "Okta (Auth0)",
+ "encaje": "Medio",
+ "estado": "Evaluar",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4491954495",
+ "linkedinId": "4491954495",
+ "modalidad": "",
+ "moneda": "CAD",
+ "n": 96,
+ "notas": "2026-11-21: run diario. El 19 nov se descartó otro puesto de Okta (app-66, Java/Go).",
+ "periodo": "año",
+ "porQue": "Full stack en JavaScript con Node.js y React; experiencia de desarrollador y rendimiento (Lighthouse 45→90 en Delphi); seguimiento de conversiones y afiliados en Claw & Soul.",
+ "prioridad": 2,
+ "proximoPaso": "Confirmar la modalidad en la web de Okta; si es híbrido en Toronto, aplicar.",
+ "publicada": "2026-11-20",
+ "puesto": "Senior Software Engineer, Acquisitions and Activation (Auth0)",
+ "salMax": 192500,
+ "salMin": 140000,
+ "salario": "CA$140,000–192,500/año",
+ "solicitantes": "<25",
+ "stack": "Node.js y React; embudo de registro y onboarding, A/B testing, on-call",
+ "techDes": [],
+ "techReq": [
+  "JavaScript",
+  "Node.js",
+  "React"
+ ],
+ "tipo": "Permanente",
+ "ubicacion": "Toronto, ON (modalidad no indicada)",
+ "updatedAt": "2026-11-21T14:50:00Z"
+}

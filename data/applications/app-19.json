@@ -1,84 +1,13 @@
 {
- "empresa": "BeachHead (cliente financiero)",
- "puesto": "Senior React Developer",
- "linkedinId": "4491751297",
- "busqueda": "contratos",
- "estado": "Evaluar",
- "encaje": "Medio",
- "tipo": "Contrato",
- "modalidad": "",
- "ubicacion": "Toronto, ON (modalidad no indicada)",
  "anios": "6–8 (preferidos)",
- "solicitantes": "<25",
- "stack": "React, JavaScript, Azure, Power Apps, IA generativa",
- "porQue": "React y JS avanzados; revisa y valida código generado por IA a diario; Azure (AKS en Kruger).",
  "brechas": "Título Senior → tope Medio y prioridad −1; 6–8 años preferidos (en empresa 3,8) → ❌; Power Apps/Dataverse no; agencia sin modalidad.",
- "proximoPaso": "Escribir al reclutador de BeachHead y preguntar la modalidad.",
- "notas": "2026-11-18: run diario. Implementación nueva de React junto a Power Apps, Power Automate y Dataverse.",
- "techReq": [
-  "React",
-  "JavaScript",
-  "Azure",
-  "IA / LLM"
- ],
- "techDes": [
-  "Power Apps",
-  "Next.js",
-  "Node.js"
- ],
+ "busqueda": "contratos",
  "clasif": {
-  "pts": 14,
+  "ajusteEncaje": "Tope Medio por título Senior",
+  "filtro": "Agencia sin modalidad: preguntar al reclutador",
   "max": 18,
   "pct": 78,
-  "requisitos": [
-   {
-    "r": "6–8 años de React (preferidos)",
-    "n": 0,
-    "e": "~3,8 en empresa"
-   },
-   {
-    "r": "React.js experto",
-    "n": 2,
-    "e": "Núcleo del CV"
-   },
-   {
-    "r": "JavaScript avanzado",
-    "n": 2,
-    "e": "Núcleo del CV"
-   },
-   {
-    "r": "Azure o nube",
-    "n": 1,
-    "e": "Azure AKS en Kruger"
-   },
-   {
-    "r": "Revisar y optimizar código",
-    "n": 2,
-    "e": "Code review en Kruger y Delphi"
-   },
-   {
-    "r": "IA en el desarrollo",
-    "n": 2,
-    "e": "Claude Code, Codex"
-   },
-   {
-    "r": "Resolver problemas",
-    "n": 2,
-    "e": "Proyectos propios"
-   },
-   {
-    "r": "Trabajo independiente",
-    "n": 2,
-    "e": "Proyectos propios"
-   },
-   {
-    "r": "Guiar a otros",
-    "n": 1,
-    "e": "Mentoría a juniors"
-   }
-  ],
   "prioridad": {
-   "base": 2,
    "ajustes": [
     {
      "t": "contrato",
@@ -93,23 +22,94 @@
      "v": -1
     }
    ],
+   "base": 2,
    "final": 1
   },
-  "rubrica": "2026-11-04",
-  "ajusteEncaje": "Tope Medio por título Senior",
-  "filtro": "Agencia sin modalidad: preguntar al reclutador"
+  "pts": 14,
+  "requisitos": [
+   {
+    "e": "~3,8 en empresa",
+    "n": 0,
+    "r": "6–8 años de React (preferidos)"
+   },
+   {
+    "e": "Núcleo del CV",
+    "n": 2,
+    "r": "React.js experto"
+   },
+   {
+    "e": "Núcleo del CV",
+    "n": 2,
+    "r": "JavaScript avanzado"
+   },
+   {
+    "e": "Azure AKS en Kruger",
+    "n": 1,
+    "r": "Azure o nube"
+   },
+   {
+    "e": "Code review en Kruger y Delphi",
+    "n": 2,
+    "r": "Revisar y optimizar código"
+   },
+   {
+    "e": "Claude Code, Codex",
+    "n": 2,
+    "r": "IA en el desarrollo"
+   },
+   {
+    "e": "Proyectos propios",
+    "n": 2,
+    "r": "Resolver problemas"
+   },
+   {
+    "e": "Proyectos propios",
+    "n": 2,
+    "r": "Trabajo independiente"
+   },
+   {
+    "e": "Mentoría a juniors",
+    "n": 1,
+    "r": "Guiar a otros"
+   }
+  ],
+  "rubrica": "2026-11-04"
  },
- "salario": "CA$50–55/hora",
- "salMin": 50,
- "salMax": 55,
- "moneda": "CAD",
- "periodo": "hora",
- "fuente": "LinkedIn (Apify)",
- "publicada": "2026-11-18",
- "cvAdaptada": "No",
- "link": "https://www.linkedin.com/jobs/view/4491751297",
  "createdAt": "2026-11-18T20:30:00Z",
- "updatedAt": "2026-11-18T20:30:00Z",
+ "cvAdaptada": "No",
+ "empresa": "BeachHead (cliente financiero)",
+ "encaje": "Medio",
+ "estado": "Descartada",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4491751297",
+ "linkedinId": "4491751297",
+ "modalidad": "",
+ "moneda": "CAD",
+ "n": 19,
+ "notas": "2026-11-18: run diario. Implementación nueva de React junto a Power Apps, Power Automate y Dataverse.",
+ "periodo": "hora",
+ "porQue": "React y JS avanzados; revisa y valida código generado por IA a diario; Azure (AKS en Kruger).",
  "prioridad": 1,
- "n": 19
+ "proximoPaso": "Escribir al reclutador de BeachHead y preguntar la modalidad.",
+ "publicada": "2026-11-18",
+ "puesto": "Senior React Developer",
+ "salMax": 55,
+ "salMin": 50,
+ "salario": "CA$50–55/hora",
+ "solicitantes": "<25",
+ "stack": "React, JavaScript, Azure, Power Apps, IA generativa",
+ "techDes": [
+  "Power Apps",
+  "Next.js",
+  "Node.js"
+ ],
+ "techReq": [
+  "React",
+  "JavaScript",
+  "Azure",
+  "IA / LLM"
+ ],
+ "tipo": "Contrato",
+ "ubicacion": "Toronto, ON (modalidad no indicada)",
+ "updatedAt": "2026-11-19T15:30:00Z"
 }

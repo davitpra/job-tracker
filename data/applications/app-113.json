@@ -1,0 +1,29 @@
+{
+ "anios": "5+",
+ "busqueda": "backend",
+ "createdAt": "2026-11-21T14:50:00Z",
+ "cvAdaptada": "No",
+ "empresa": "Amazon",
+ "estado": "Descartada",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4492985315",
+ "linkedinId": "4492985315",
+ "modalidad": "",
+ "motivoDescarte": [
+  "Senior o 5+ años"
+ ],
+ "n": 113,
+ "notas": "2026-11-21: run diario. 5+ años programando y 5+ liderando diseño.",
+ "publicada": "2026-11-20",
+ "puesto": "Software Development Engineer III - Advertising, MADS",
+ "salario": "",
+ "solicitantes": "<25",
+ "stack": "Diseño y arquitectura de sistemas de publicidad",
+ "techDes": [],
+ "techReq": [
+  "Microservicios"
+ ],
+ "tipo": "Permanente",
+ "ubicacion": "Toronto, ON",
+ "updatedAt": "2026-11-21T14:50:00Z"
+}

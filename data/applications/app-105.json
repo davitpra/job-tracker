@@ -1,0 +1,31 @@
+{
+ "anios": "No indica",
+ "busqueda": "nucleo",
+ "createdAt": "2026-11-21T14:50:00Z",
+ "cvAdaptada": "No",
+ "empresa": "Cohere",
+ "estado": "Descartada",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4476279754",
+ "linkedinId": "4476279754",
+ "modalidad": "",
+ "motivoDescarte": [
+  "Rol distinto o por debajo del nivel"
+ ],
+ "n": 105,
+ "notas": "2026-11-21: run diario. Exige fluidez real como diseñador en Figma además de código.",
+ "publicada": "2026-11-20",
+ "puesto": "Design Engineer",
+ "salario": "",
+ "solicitantes": "127",
+ "stack": "Design system Waypoint: Figma (variantes, tokens) y paquetes de componentes en npm",
+ "techDes": [],
+ "techReq": [
+  "Figma",
+  "React",
+  "TypeScript"
+ ],
+ "tipo": "Permanente",
+ "ubicacion": "Toronto, ON (también Canadá, 4476281630)",
+ "updatedAt": "2026-11-21T14:50:00Z"
+}

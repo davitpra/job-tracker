@@ -1,0 +1,34 @@
+{
+ "anios": "1.5+",
+ "busqueda": "nucleo",
+ "createdAt": "2026-11-21T14:50:00Z",
+ "cvAdaptada": "No",
+ "empresa": "Affirm",
+ "estado": "Descartada",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4485123050",
+ "linkedinId": "4485123050",
+ "modalidad": "Remoto",
+ "motivoDescarte": [
+  "Python como núcleo"
+ ],
+ "n": 124,
+ "notas": "2026-11-21: run diario. Exige dominio de Python o Kotlin en el backend. Salió en 15 ciudades.",
+ "publicada": "2026-11-21",
+ "puesto": "Software Engineer II, Full Stack (Card Pre-Swipe Experience)",
+ "salario": "",
+ "solicitantes": "31",
+ "stack": "Python o Kotlin en el backend, AWS, MySQL, Kubernetes, React o Vue; experiencias móviles",
+ "techDes": [],
+ "techReq": [
+  "Python",
+  "Kotlin",
+  "AWS",
+  "MySQL",
+  "Kubernetes",
+  "React"
+ ],
+ "tipo": "Permanente",
+ "ubicacion": "Remoto en Canadá",
+ "updatedAt": "2026-11-21T14:50:00Z"
+}

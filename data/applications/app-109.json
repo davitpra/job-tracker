@@ -1,0 +1,35 @@
+{
+ "anios": "No indica",
+ "busqueda": "nucleo",
+ "createdAt": "2026-11-21T14:50:00Z",
+ "cvAdaptada": "No",
+ "empresa": "Magnet Forensics",
+ "estado": "Descartada",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4446358739",
+ "linkedinId": "4446358739",
+ "modalidad": "Híbrido",
+ "motivoDescarte": [
+  "Java/Kotlin, .NET o C#",
+  "200+ solicitantes"
+ ],
+ "n": 109,
+ "notas": "2026-11-21: run diario.",
+ "publicada": "2026-11-21",
+ "puesto": "Software Engineer - Magnet One",
+ "salario": "",
+ "solicitantes": "200+",
+ "stack": "React y C# en el servidor; AWS, Azure DevOps",
+ "techDes": [
+  "Python",
+  "AWS",
+  "TypeScript"
+ ],
+ "techReq": [
+  "React",
+  "C# / .NET"
+ ],
+ "tipo": "Permanente",
+ "ubicacion": "Calgary, AB (híbrido flexible)",
+ "updatedAt": "2026-11-21T14:50:00Z"
+}

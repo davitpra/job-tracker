@@ -1,0 +1,30 @@
+{
+ "anios": "7+",
+ "busqueda": "backend",
+ "createdAt": "2026-11-21T14:50:00Z",
+ "cvAdaptada": "No",
+ "empresa": "Cognizant",
+ "estado": "Descartada",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4492835993",
+ "linkedinId": "4492835993",
+ "modalidad": "",
+ "motivoDescarte": [
+  "Senior o 5+ años"
+ ],
+ "n": 125,
+ "notas": "2026-11-21: run diario.",
+ "publicada": "2026-11-20",
+ "puesto": "Sr. Node.js Developer – ETL & Data Integration",
+ "salario": "",
+ "solicitantes": "<25",
+ "stack": "Node.js, ETL e integración de datos (tarjetas y pagos)",
+ "techDes": [],
+ "techReq": [
+  "Node.js",
+  "SQL"
+ ],
+ "tipo": "Permanente",
+ "ubicacion": "Toronto, ON",
+ "updatedAt": "2026-11-21T14:50:00Z"
+}

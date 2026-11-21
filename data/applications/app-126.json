@@ -1,0 +1,30 @@
+{
+ "anios": "7+",
+ "busqueda": "contratos",
+ "createdAt": "2026-11-21T14:50:00Z",
+ "cvAdaptada": "No",
+ "empresa": "Medcan",
+ "estado": "Descartada",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4493210751",
+ "linkedinId": "4493210751",
+ "modalidad": "",
+ "motivoDescarte": [
+  "Senior o 5+ años"
+ ],
+ "n": 126,
+ "notas": "2026-11-21: run diario. 7+ años y título Lead.",
+ "publicada": "2026-11-20",
+ "puesto": "Lead, Frontend Developer",
+ "salario": "",
+ "solicitantes": "<25",
+ "stack": "React, TypeScript",
+ "techDes": [],
+ "techReq": [
+  "React",
+  "TypeScript"
+ ],
+ "tipo": "Permanente",
+ "ubicacion": "Toronto, ON",
+ "updatedAt": "2026-11-21T14:50:00Z"
+}

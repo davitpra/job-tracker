@@ -1,0 +1,86 @@
+{
+ "anios": "2+",
+ "brechas": "200+ solicitantes (pasa la excepción: Muy alto y publicada ayer) → escribir hoy a alguien de Radar. Rol de backend. Sistemas distribuidos de baja latencia y fraude (deseables) 🟡. Entrevistas exigentes.",
+ "busqueda": "backend",
+ "clasif": {
+  "max": 12,
+  "pct": 100,
+  "prioridad": {
+   "ajustes": [
+    {
+     "t": "200+ solicitantes",
+     "v": -1
+    },
+    {
+     "t": "empresa suma al CV",
+     "v": 1
+    }
+   ],
+   "base": 1,
+   "final": 1
+  },
+  "pts": 12,
+  "requisitos": [
+   {
+    "e": "~3,8 en empresa",
+    "n": 2,
+    "r": "2+ años de ingeniería"
+   },
+   {
+    "e": "NestJS, React en Kruger y proyectos propios",
+    "n": 2,
+    "r": "Código fuerte en producción"
+   },
+   {
+    "e": "Delphi, ClawPuzzle",
+    "n": 2,
+    "r": "Aprender codebases ajenos y hacer trade-offs"
+   },
+   {
+    "e": "Lighthouse 45→90; tasa de éxito por orden en Kruger",
+    "n": 2,
+    "r": "Resolver problemas con datos"
+   },
+   {
+    "e": "Equipos distribuidos",
+    "n": 2,
+    "r": "Colaboración y comunicación"
+   },
+   {
+    "e": "Proyectos 0-to-1",
+    "n": 2,
+    "r": "Ownership y ambigüedad"
+   }
+  ],
+  "rubrica": "2026-11-19"
+ },
+ "createdAt": "2026-11-21T14:50:00Z",
+ "cvAdaptada": "No",
+ "empresa": "Stripe",
+ "encaje": "Muy alto",
+ "estado": "Por aplicar",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4482036292",
+ "linkedinId": "4482036292",
+ "modalidad": "Híbrido",
+ "n": 89,
+ "notas": "2026-11-21: run diario. Otro rol de Stripe (Full Stack, Link) quedó en app-3.",
+ "porQue": "Piden 2+ años y código fuerte en cualquier lenguaje: cumple. Aprende codebases ajenos rápido (migración WordPress→Next.js en Delphi, motor heredado en ClawPuzzle); APIs y conciliación de pagos en Kruger; producto de la idea al lanzamiento con usuarios.",
+ "prioridad": 1,
+ "proximoPaso": "Aplicar en la web de Stripe y escribir hoy a un recruiter o ingeniero de Radar.",
+ "publicada": "2026-11-20",
+ "puesto": "Backend / API Engineer, Radar",
+ "salario": "",
+ "solicitantes": "200+",
+ "stack": "Cualquier lenguaje; APIs y servicios de prevención de fraude (Radar), sistemas en tiempo real",
+ "techDes": [
+  "Microservicios",
+  "IA / LLM"
+ ],
+ "techReq": [
+  "REST APIs"
+ ],
+ "tipo": "Permanente",
+ "ubicacion": "Toronto, ON (50 % en oficina)",
+ "updatedAt": "2026-11-21T14:50:00Z"
+}

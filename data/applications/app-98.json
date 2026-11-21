@@ -1,0 +1,91 @@
+{
+ "anios": "5+",
+ "brechas": "Título Senior y piden 5+ años; en empresa 3,8 → ❌, tope Medio y prioridad −1. Aviso de cartera de talento: el puesto exacto puede no estar abierto hoy.",
+ "busqueda": "backend",
+ "clasif": {
+  "ajusteEncaje": "Tope Medio por título Senior y 5+ años",
+  "max": 14,
+  "pct": 86,
+  "prioridad": {
+   "ajustes": [
+    {
+     "t": "Senior",
+     "v": -1
+    }
+   ],
+   "base": 2,
+   "final": 3
+  },
+  "pts": 12,
+  "requisitos": [
+   {
+    "e": "~3,8 en empresa",
+    "n": 0,
+    "r": "5+ años full stack"
+   },
+   {
+    "e": "Núcleo del CV",
+    "n": 2,
+    "r": "TypeScript, React y Node.js a fondo"
+   },
+   {
+    "e": "PWA de Greenhouse",
+    "n": 2,
+    "r": "Desarrollo mobile-first, responsive e iterativo"
+   },
+   {
+    "e": "Jest, tests de integración en CI",
+    "n": 2,
+    "r": "Código mantenible y testeable"
+   },
+   {
+    "e": "ADRs, trato con usuarios",
+    "n": 2,
+    "r": "Comunicación escrita y verbal"
+   },
+   {
+    "e": "Proyectos 0-to-1",
+    "n": 2,
+    "r": "Avanzar antes de que la spec esté cerrada"
+   },
+   {
+    "e": "Claude Code, Codex",
+    "n": 2,
+    "r": "IA a diario en el desarrollo"
+   }
+  ],
+  "rubrica": "2026-11-19"
+ },
+ "createdAt": "2026-11-21T14:50:00Z",
+ "cvAdaptada": "No",
+ "empresa": "Autodesk (MaintainX)",
+ "encaje": "Medio",
+ "estado": "Por aplicar",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4476849691",
+ "linkedinId": "4476849691",
+ "modalidad": "Híbrido",
+ "n": 98,
+ "notas": "2026-11-21: run diario. También salió la versión de Montreal (4476860357) y un Full-Stack Developer - Core de MaintainX con 200+ (app-115).",
+ "porQue": "Núcleo TypeScript + React + Node.js; código testeable; IA a diario en el flujo. Valoran offline-first y sync (Greenhouse) y sistemas transaccionales (Kruger).",
+ "prioridad": 3,
+ "proximoPaso": "Aplicar solo si sobra tiempo o hay contacto; en el CV, poner primero el sistema offline-first de Greenhouse.",
+ "publicada": "2026-11-21",
+ "puesto": "Senior Full Stack Developer",
+ "salario": "",
+ "solicitantes": "63",
+ "stack": "TypeScript, React, Node.js, MySQL; on-call",
+ "techDes": [
+  "GraphQL",
+  "React Native",
+  "SQL"
+ ],
+ "techReq": [
+  "TypeScript",
+  "React",
+  "Node.js"
+ ],
+ "tipo": "Permanente",
+ "ubicacion": "Toronto, ON (sin mínimo de días en oficina; también Montreal)",
+ "updatedAt": "2026-11-21T14:50:00Z"
+}

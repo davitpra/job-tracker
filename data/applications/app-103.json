@@ -1,0 +1,32 @@
+{
+ "anios": "5+",
+ "busqueda": "backend",
+ "createdAt": "2026-11-21T14:50:00Z",
+ "cvAdaptada": "No",
+ "empresa": "Capco",
+ "estado": "Descartada",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4493225807",
+ "linkedinId": "4493225807",
+ "modalidad": "",
+ "motivoDescarte": [
+  "Java/Kotlin, .NET o C#",
+  "Senior o 5+ años"
+ ],
+ "n": 103,
+ "notas": "2026-11-21: run diario.",
+ "publicada": "2026-11-21",
+ "puesto": "Software Engineer, Implementation & Support",
+ "salario": "",
+ "solicitantes": "<25",
+ "stack": ".NET, APIs REST, DevOps, soporte de producción",
+ "techDes": [],
+ "techReq": [
+  "C# / .NET",
+  "REST APIs",
+  "CI/CD"
+ ],
+ "tipo": "Permanente",
+ "ubicacion": "Toronto, ON",
+ "updatedAt": "2026-11-21T14:50:00Z"
+}

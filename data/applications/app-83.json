@@ -1,0 +1,88 @@
+{
+ "anios": "3+",
+ "brechas": "200+ solicitantes (pasa la excepción: Muy alto y publicada hace 1 día) → escribir hoy a alguien del equipo de ingeniería. ID de aviso viejo: posible republicación.",
+ "busqueda": "backend",
+ "clasif": {
+  "max": 14,
+  "pct": 100,
+  "prioridad": {
+   "ajustes": [
+    {
+     "t": "200+ solicitantes",
+     "v": -1
+    }
+   ],
+   "base": 1,
+   "final": 2
+  },
+  "pts": 14,
+  "requisitos": [
+   {
+    "e": "Diploma Fanshawe + ~3,8 años en empresa",
+    "n": 2,
+    "r": "Título en CS o experiencia equivalente"
+   },
+   {
+    "e": "~3,8 en empresa",
+    "n": 2,
+    "r": "3+ años"
+   },
+   {
+    "e": "TypeScript, JavaScript, SQL; React, NestJS",
+    "n": 2,
+    "r": "Varios lenguajes y tecnologías"
+   },
+   {
+    "e": "Strategy pattern, outbox, modular monolith",
+    "n": 2,
+    "r": "Estructuras de datos, algoritmos y patrones"
+   },
+   {
+    "e": "Jest, Cypress, tests de integración en CI",
+    "n": 2,
+    "r": "Frameworks y metodologías de testing"
+   },
+   {
+    "e": "PostgreSQL, MongoDB",
+    "n": 2,
+    "r": "Bases de datos SQL y/o NoSQL"
+   },
+   {
+    "e": "Independiente desde 2024; equipos en Kruger y Delphi",
+    "n": 2,
+    "r": "Trabajo independiente y en equipo"
+   }
+  ],
+  "rubrica": "2026-11-19"
+ },
+ "createdAt": "2026-11-21T14:50:00Z",
+ "cvAdaptada": "No",
+ "empresa": "Race Roster (ASICS Apps)",
+ "encaje": "Muy alto",
+ "estado": "Por aplicar",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4468377092",
+ "linkedinId": "4468377092",
+ "modalidad": "Remoto",
+ "n": 83,
+ "notas": "2026-11-21: run diario. En octubre salió un Race Roster Senior (remoto u oficina London) en el tracker anterior: revisar si ya aplicó a la empresa.",
+ "porQue": "Puesto de nivel intermedio con 3+ años; sede en London ON (puede ir híbrido u oficina). Full stack con tests unitarios, de integración y E2E (Jest, Cypress, Vitest, Playwright), patrones de diseño y bases SQL/NoSQL; mentoría a juniors y code review.",
+ "prioridad": 2,
+ "proximoPaso": "Aplicar en la web de Race Roster (Rippling) y escribir hoy a alguien de ingeniería de Race Roster en LinkedIn.",
+ "publicada": "2026-11-20",
+ "puesto": "Full Stack Developer (Intermediate Software Developer)",
+ "salario": "",
+ "solicitantes": "200+",
+ "stack": "Frontend y backend de la plataforma de eventos de running; SQL y/o NoSQL; nube deseable",
+ "techDes": [
+  "AWS",
+  "Azure",
+  "GCP"
+ ],
+ "techReq": [
+  "SQL"
+ ],
+ "tipo": "Permanente",
+ "ubicacion": "Remoto en Canadá, híbrido a 75 km de London ON u oficina en London",
+ "updatedAt": "2026-11-21T14:50:00Z"
+}

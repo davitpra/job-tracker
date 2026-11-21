@@ -1,0 +1,365 @@
+{
+ "anios": "5+",
+ "brechas": "Pide 5+ años (en empresa ~3,8) → tope Medio. Azure SQL, Azure DevOps, Craft CMS, PathFactory, Coveo y Google Analytics ❌; coordinación de proveedores 🟡. Azure en Kruger sin confirmar.",
+ "createdAt": "2026-11-19T15:21:00Z",
+ "cvAdaptada": "Sí",
+ "cvVersiones": [
+  {
+   "archivo": "Resume - David Prado - WSPS.pdf",
+   "assetId": "00e0651cc08935037c9d6368e29e6a90",
+   "base": "Resume - David Prado Master EN NUEVO",
+   "cambios": [
+    {
+     "s": "DAVID PRADO",
+     "t": "h"
+    },
+    {
+     "s": "Title: Senior Full-Stack Developer",
+     "t": "-"
+    },
+    {
+     "s": "Title: Web Systems Developer",
+     "t": "+"
+    },
+    {
+     "s": "PROFESSIONAL SUMMARY",
+     "t": "h"
+    },
+    {
+     "s": "Senior Full-Stack Developer with 6+ years of experience, almost 4 of them on company teams. For the last 2, I’ve worked independently: I talk to the users, make the technical decisions and ship to production myself. That covers the architecture, data model, APIs and branded interfaces; I document why each solution is chosen, define specs before writing code, and ensure quality with automated tests. I work with TypeScript, React, Next.js, NestJS and PostgreSQL, plus generative AI pipelines. I’ve digitized manual processes across different domains: health and safety inspections with auditable offline records, meal management at a care residence, and automated image generation for e-commerce. Technical lead for the order module of a logistics platform processing 5,000+ shipments per day.",
+     "t": "-"
+    },
+    {
+     "s": "Web Systems Developer with 6+ years of experience, almost 4 of them on company teams. For the last 2, I’ve worked independently: I talk to the users, make the technical decisions and ship to production myself. I support, modernize and maintain customer-facing websites, content management systems, e-commerce and SaaS integrations with TypeScript, JavaScript, React, Next.js, Node.js and SQL databases (PostgreSQL). I took part in a WordPress to Next.js re-platforming that raised Lighthouse Performance from 45 to 90, and built an OHSA-aligned health and safety inspection platform for an Ontario greenhouse operation. I keep the backlog prioritized, document decisions as ADRs, monitor production and protect quality with automated tests, code reviews and CI/CD. Technical lead for the order module of a logistics platform processing 5,000+ shipments per day.",
+     "t": "+"
+    },
+    {
+     "s": "TECHNICAL SKILLS",
+     "t": "h"
+    },
+    {
+     "s": "**Core stack:** TypeScript, JavaScript, React, Next.js (SSR/SSG), Node.js, NestJS, PostgreSQL",
+     "t": "-"
+    },
+    {
+     "s": "**Frontend:** Vite, React Query / TanStack, PWA, Service Workers (Serwist), IndexedDB (Dexie), Tailwind, HTML5, CSS, Sass, Axios, webpack",
+     "t": "-"
+    },
+    {
+     "s": "**Backend & data:** REST APIs, GraphQL, Express, Prisma, Drizzle, MongoDB, Strapi, Socket.IO, Redis, BullMQ, pg-boss, Row-Level Security",
+     "t": "-"
+    },
+    {
+     "s": "**Architecture:** Offline-first (outbox pattern), modular monolith, monorepos (pnpm), immutable audit trails, Strategy pattern",
+     "t": "-"
+    },
+    {
+     "s": "**AI & e-commerce:** Generative AI integration, fal.ai, vision models, dynamic prompting, Shopify (GraphQL APIs, headless, metaobjects and metafields)",
+     "t": "-"
+    },
+    {
+     "s": "**Testing:** Jest, Cypress, integration testing",
+     "t": "-"
+    },
+    {
+     "s": "**DevOps & cloud:** Docker, Kubernetes, CI/CD, Git, GitHub, Bitbucket, Vercel, Railway, Render, Linux VPS",
+     "t": "-"
+    },
+    {
+     "s": "**Quality & practices:** WCAG, technical SEO, web performance (Lighthouse), Agile/Scrum, ADRs, Jira",
+     "t": "-"
+    },
+    {
+     "s": "**Web & CMS:** TypeScript, JavaScript, React, Next.js (SSR/SSG), HTML5, CSS, Sass, Tailwind, responsive UI/UX (Figma-to-code, Bootstrap, Material UI), CMS (WordPress, Strapi)",
+     "t": "+"
+    },
+    {
+     "s": "**E-commerce & SaaS:** Shopify (GraphQL APIs, webhooks, headless, metaobjects and metafields), SaaS integrations, generative AI APIs (fal.ai)",
+     "t": "+"
+    },
+    {
+     "s": "**Backend, APIs & integrations:** Node.js, NestJS, Express, REST APIs, GraphQL, web services, JSON:API, Socket.IO, Redis, BullMQ, pg-boss",
+     "t": "+"
+    },
+    {
+     "s": "**Databases & SQL:** PostgreSQL, MySQL/MariaDB, MongoDB, SQL querying, Prisma, Drizzle, Postgres full-text search, Row-Level Security",
+     "t": "+"
+    },
+    {
+     "s": "**Cloud, DevOps & CI/CD:** AWS (EC2, S3, CloudFront, Lambda, API Gateway, CloudWatch), Docker, Kubernetes, CI/CD (GitHub Actions, Jenkins), Git, GitHub, Bitbucket, Vercel, Cloudflare, Nginx, Linux VPS",
+     "t": "+"
+    },
+    {
+     "s": "**Monitoring & support:** Sentry, Datadog, CloudWatch, Kibana/ELK logs, health checks and alerts, production troubleshooting",
+     "t": "+"
+    },
+    {
+     "s": "**Security, accessibility & performance:** web accessibility (WCAG), OAuth/OIDC, role-based permissions, audit trails, Dependabot, SonarQube, web performance (Lighthouse), CDN caching, technical SEO",
+     "t": "+"
+    },
+    {
+     "s": "**Delivery & documentation:** Agile/Scrum, Kanban, backlog refinement and sprint planning, Jira, code reviews, ADRs, technical documentation, semantic versioning, SDLC",
+     "t": "+"
+    },
+    {
+     "s": "**Testing:** Jest, Vitest, Cypress, Playwright, integration testing",
+     "t": "+"
+    },
+    {
+     "s": "PROFESSIONAL EXPERIENCE · Independent",
+     "t": "h"
+    },
+    {
+     "s": "Custom web systems and AI-powered products for small businesses and my own ventures, mostly replacing paper-based or manual workflows. Spec-driven delivery with AI coding agents (Claude Code, Codex) used daily: architecture decisions recorded as ADRs, specs before code, and integration tests in CI.",
+     "t": "-"
+    },
+    {
+     "s": "Custom web systems, e-commerce and AI-powered products for small businesses and my own ventures, mostly replacing manual workflows. I gather requirements with the owners, keep an ordered backlog and ADRs, and write specs before code, with integration tests in CI and AI coding agents (Claude Code, Codex) used daily.",
+     "t": "+"
+    },
+    {
+     "s": "Orden de proyectos: Offline Inspection System, Claw & Soul, ClawPuzzle, Meal Ordering System (antes ClawPuzzle iba primero).",
+     "t": "+"
+    },
+    {
+     "s": "Offline Inspection System",
+     "t": "h"
+    },
+    {
+     "s": "- Gathered requirements with Health & Safety and Human Resources to digitize inspections across two sites. Identified the lack of connectivity in the greenhouse as the reason the previous tool was abandoned.",
+     "t": "-"
+    },
+    {
+     "s": "- Gathered requirements with Health & Safety and Human Resources to digitize inspections across two sites. Identified the lack of connectivity in the greenhouse as the reason the previous SaaS tool was abandoned.",
+     "t": "+"
+    },
+    {
+     "s": "- Solved offline sync with the outbox pattern on IndexedDB and Service Workers. Implemented database-level immutability, per-site Row-Level Security, and hash-chained audit logs aligned with OHSA requirements.",
+     "t": "-"
+    },
+    {
+     "s": "- Researched OHSA and WSIB requirements, including JHSC obligations. Implemented database-level immutability, per-site Row-Level Security and hash-chained audit logs, and solved offline sync with the outbox pattern on IndexedDB and Service Workers.",
+     "t": "+"
+    },
+    {
+     "s": "- Documented the architecture in **12 ADRs** and applied spec-driven development (OpenSpec) with integration tests in CI.",
+     "t": "-"
+    },
+    {
+     "s": "- Wrote the technical documentation (**12 ADRs**) and a prioritized **17-item backlog**, applied spec-driven development (OpenSpec) with integration tests in CI, and set up Sentry error monitoring and alerts.",
+     "t": "+"
+    },
+    {
+     "s": "**Stack:** … · Docker · Sentry",
+     "t": "+"
+    },
+    {
+     "s": "Claw & Soul",
+     "t": "h"
+    },
+    {
+     "s": "- Selected for the Fanshawe College Entrepreneurship & Innovation Program. Built end to end an e-commerce platform that turns pet photos into AI art and paint-by-numbers kits, and shaped technical and product decisions with a business partner.",
+     "t": "-"
+    },
+    {
+     "s": "- Built end to end a customer-facing e-commerce platform that turns pet photos into AI art and paint-by-numbers kits, selected for the Fanshawe College Entrepreneurship & Innovation Program.",
+     "t": "+"
+    },
+    {
+     "s": "- Designed an asynchronous AI pipeline with BullMQ/Redis: photo analysis with vision models, dynamic prompting, and generation with fal.ai. Implemented swappable art styles using the Strategy pattern.",
+     "t": "-"
+    },
+    {
+     "s": "- Integrated headless Shopify through its GraphQL APIs, modeling the product catalog, art styles and print formats with metaobjects and metafields.",
+     "t": "-"
+    },
+    {
+     "s": "- Integrated headless Shopify through its GraphQL APIs and webhooks, modeling the product catalog, art styles and print formats with metaobjects and metafields. Deployed the webhook and image-processing integrations on AWS Lambda and API Gateway with AWS SAM.",
+     "t": "+"
+    },
+    {
+     "s": "- Created an in-browser paint-by-numbers generator: color reduction, segmentation, and SVG/PDF export, with a free preview at zero server cost.",
+     "t": "-"
+    },
+    {
+     "s": "- Added Postgres full-text search, an affiliate program with conversion tracking, and S3 presigned uploads served through CloudFront.",
+     "t": "+"
+    },
+    {
+     "s": "**Stack:** … · GraphQL · AWS",
+     "t": "+"
+    },
+    {
+     "s": "ClawPuzzle",
+     "t": "h"
+    },
+    {
+     "s": "- Designed the personalization flow: pet photo upload, style selection, and AI-generated artwork ready for production with themed pieces, connected to the Shopify store through its GraphQL API.",
+     "t": "-"
+    },
+    {
+     "s": "- Adapted an in-house generation engine: redesigned the data model, removed **90+ obsolete files**, and merged two repositories into a monorepo while preserving Git history.",
+     "t": "-"
+    },
+    {
+     "s": "- Modernized an in-house generation engine: redesigned the data model, removed **90+ obsolete files**, and merged two repositories into a monorepo while preserving Git history.",
+     "t": "+"
+    },
+    {
+     "s": "Meal Ordering System",
+     "t": "h"
+    },
+    {
+     "s": "- Identified the need to digitize paper meal orders while working in the residence's dietary department, then designed and built a full-stack web application to replace them.",
+     "t": "-"
+    },
+    {
+     "s": "- Generated per-shift consumption logs and presented the solution to leadership, earning approval from the manager and the regional coordinator.",
+     "t": "-"
+    },
+    {
+     "s": "- Identified the need to digitize paper meal orders while working in the residence's dietary department, then designed and built a full-stack web application to replace them and presented it to leadership, earning approval from the manager and the regional coordinator.",
+     "t": "+"
+    },
+    {
+     "s": "Delphi",
+     "t": "h"
+    },
+    {
+     "s": "- Migrated pages and components from WordPress to Next.js with SSR and SSG, as part of a migration that raised Lighthouse Performance from **45 to 90**, along with technical SEO and accessibility improvements.",
+     "t": "-"
+    },
+    {
+     "s": "- Migrated pages and components from WordPress to Next.js with SSR and SSG, as part of a website re-platforming that raised Lighthouse Performance from **45 to 90**, along with technical SEO and WCAG accessibility improvements.",
+     "t": "+"
+    },
+    {
+     "s": "- Integrated REST APIs with Axios and React Query for the vehicle parts catalog and store locator, optimizing caching and reducing redundant requests.",
+     "t": "-"
+    },
+    {
+     "s": "- Integrated REST APIs with Axios and React Query for the vehicle parts catalog and store locator, tuning CDN caching (Cache-Control) and adding conversion tracking.",
+     "t": "+"
+    },
+    {
+     "s": "- Wrote unit tests with Jest and E2E tests with Cypress to ensure migration stability within a distributed Agile/Scrum team.",
+     "t": "-"
+    },
+    {
+     "s": "- Wrote unit tests with Jest and E2E tests with Cypress, and took part in code reviews and CI/CD with GitHub Actions and SonarQube, within a distributed Agile/Scrum team.",
+     "t": "+"
+    },
+    {
+     "s": "Kruger Corp",
+     "t": "h"
+    },
+    {
+     "s": "- Made architecture decisions and designed the data model for the order and payment flow. Ensured delivery quality through unit testing and production deployment support.",
+     "t": "-"
+    },
+    {
+     "s": "- Made architecture decisions and designed the data model for the order and payment flow, with unit testing, code reviews and CI (GitHub Actions, Jenkins, SonarQube) in a Kanban workflow.",
+     "t": "+"
+    },
+    {
+     "s": "- Supported production deployments on AWS (EC2, S3) and monitored service health with Datadog, Sentry, CloudWatch, Kibana logs, health checks and alerts to troubleshoot production issues.",
+     "t": "+"
+    },
+    {
+     "s": "EDUCATION",
+     "t": "h"
+    },
+    {
+     "s": "- Developed a startup project from concept to prototype with mentorship from industry experts.",
+     "t": "-"
+    },
+    {
+     "s": "### Full Stack Developer with JavaScript · React Front-end Developer | 2019 – 2023",
+     "t": "-"
+    },
+    {
+     "s": "Platzi | Online",
+     "t": "-"
+    }
+   ],
+   "resumen": "Título Web Systems Developer; resumen orientado a soporte y modernización de sitios, CMS, e-commerce y SaaS; skills reagrupadas (Web & CMS, Monitoring & support, Delivery & documentation); Offline Inspection System primero con OHSA/WSIB/JHSC, backlog y Sentry; Claw & Soul con webhooks Shopify en AWS Lambda/API Gateway; Delphi como re-platforming; Kruger con AWS, Datadog, Sentry y CI. Se quitaron Platzi, la viñeta de Fanshawe, el pipeline de IA de Claw & Soul y una viñeta de ClawPuzzle. 2 páginas, ATS 100%.",
+   "subidoEl": "2026-11-19T15:21:00Z"
+  },
+  {
+   "archivo": "Cover Letter - David Prado - WSPS.pdf",
+   "assetId": "27b39b9f4a8826cdf4ce6ad2cd800605",
+   "base": "Plantilla CoverLetter - David.docx",
+   "cambios": [
+    {
+     "s": "Texto de la carta",
+     "t": "h"
+    },
+    {
+     "s": "Dear WSPS Hiring Team,",
+     "t": "+"
+    },
+    {
+     "s": "I'm applying for the Web Systems Developer role. I live in London, Ontario, and your mission is close to the work I've been doing lately.",
+     "t": "+"
+    },
+    {
+     "s": "This fall I built an inspection platform for a two-site greenhouse operation near London. Their health and safety team had dropped their previous tool because it didn't work without signal inside the greenhouses. I gathered requirements with Health & Safety and HR, read through the OHSA, WSIB and JHSC obligations, and shipped an offline-first web app that about 30 people piloted. Every finding gets an owner and is tracked to corrective action, with audit logs nobody can edit. That project taught me safety software only works if people on the floor actually use it.",
+     "t": "+"
+    },
+    {
+     "s": "Most of what the posting describes is work I already do. At Delphi I helped move a WordPress site to Next.js, and Lighthouse Performance went from 45 to 90 along with SEO and accessibility fixes. At Kruger I led the order module of a logistics platform handling 5,000+ shipments a day, so production support, monitoring with Datadog and Sentry, and reading logs when something broke were part of the job. On my own projects I run a headless Shopify store connected through GraphQL APIs and webhooks, keep a prioritized backlog, and write ADRs so the next developer knows why things were built that way.",
+     "t": "+"
+    },
+    {
+     "s": "Some of your stack would be new to me, mainly Azure DevOps, Craft CMS and Coveo. I've worked with PostgreSQL and MySQL for years, plus Jira, CI/CD pipelines and WordPress, so I expect the ramp-up to be short.",
+     "t": "+"
+    },
+    {
+     "s": "I'd like to talk about your website roadmap and how I could help Digital Marketing ship improvements with less friction. Thank you for your time.",
+     "t": "+"
+    }
+   ],
+   "resumen": "Cover letter (no es CV). Título 'David Prado – Web Systems Developer', 1 página, li-human PASS 80. Abre con el sistema de inspecciones OHSA para invernaderos; luego Delphi (re-platforming, Lighthouse 45→90), Kruger (soporte y monitoreo) y Shopify headless; reconoce Azure DevOps, Craft CMS y Coveo como nuevos.",
+   "subidoEl": "2026-11-19T15:21:00Z"
+  }
+ ],
+ "empresa": "Workplace Safety & Prevention Services (WSPS)",
+ "encaje": "Medio",
+ "estado": "Aplicado",
+ "fechaAplicacion": "2026-11-19",
+ "fuente": "Pegada en chat",
+ "modalidad": "Remoto",
+ "moneda": "CAD",
+ "n": 80,
+ "notas": "2026-11-19: aplicado con CV adaptado 'Resume - David Prado - WSPS.pdf' (Web Systems Developer, 2 páginas, ATS 28/28 = 100%) y cover letter (li-human PASS 80). Brechas no agregadas: Azure SQL, Azure DevOps, Craft CMS, PathFactory, Coveo, Google Analytics, vendors. Sin respaldo en job-tracker (acceso al repo denegado en esta sesión).",
+ "periodo": "año",
+ "plataforma": "ATS de WSPS (Employment Opportunities)",
+ "porQue": "Salud y seguridad laboral en Ontario: el sistema de inspecciones OHSA para invernaderos (sector agrícola de WSPS) es casi el mismo dominio. Migración WordPress→Next.js en Delphi (re-platforming), Shopify headless, monitoreo en Kruger, backlog y ADRs.",
+ "prioridad": 2,
+ "proximoPaso": "Revisar respuesta a los 7 y 14 días (26 nov y 3 dic). Cierre de la oferta: 2 dic 2026, 4:00pm ET.",
+ "puesto": "Web Systems Developer",
+ "salMax": 104237.06,
+ "salMin": 87778.57,
+ "salario": "CA$87,778.57–104,237.06/año (banda hasta $131,667.86)",
+ "stack": "Sitio web de WSPS y SaaS: Craft CMS, Shopify, PathFactory, Coveo; Azure SQL, Azure DevOps, APIs e integraciones, CI/CD, Google Analytics; soporte, backlog/sprints y roadmap del sitio",
+ "techDes": [
+  "Shopify",
+  "Craft CMS",
+  "JavaScript",
+  "Azure",
+  "SEO",
+  "UX / UI"
+ ],
+ "techReq": [
+  "Azure SQL",
+  "Azure DevOps",
+  "REST APIs",
+  "SQL",
+  "CI/CD",
+  "Cloud",
+  "Google Analytics"
+ ],
+ "tipo": "Permanente",
+ "ubicacion": "Home office en Ontario o National Capital Region (reuniones presenciales: equipo mensual, división trimestral, Staff Day anual)",
+ "updatedAt": "2026-11-19T15:21:00Z"
+}

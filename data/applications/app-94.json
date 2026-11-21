@@ -1,0 +1,92 @@
+{
+ "anios": "5+",
+ "brechas": "Piden 5+ años; en empresa 3,8 → ❌, tope Medio y prioridad −1. IA en producción con retrieval, tool use/MCP y evaluación 🟡. Relación con decisores senior 🟡. Modalidad no indicada y trabajo en sitio del cliente.",
+ "busqueda": "backend",
+ "clasif": {
+  "ajusteEncaje": "Tope Medio por 5+ años",
+  "filtro": "Dudoso: GTA, modalidad no indicada",
+  "max": 14,
+  "pct": 79,
+  "prioridad": {
+   "ajustes": [
+    {
+     "t": "5+ años",
+     "v": -1
+    },
+    {
+     "t": "contacto",
+     "v": 1
+    }
+   ],
+   "base": 2,
+   "final": 2
+  },
+  "pts": 11,
+  "requisitos": [
+   {
+    "e": "Pipeline de fal.ai; sin retrieval ni MCP",
+    "n": 1,
+    "r": "IA en producción (prompt, retrieval, MCP, evaluación)"
+   },
+   {
+    "e": "~3,8 en empresa",
+    "n": 0,
+    "r": "5+ años en ingeniería o rol técnico de cara al cliente"
+   },
+   {
+    "e": "Requisitos con H&S y RR. HH.",
+    "n": 2,
+    "r": "Liderar sesiones de descubrimiento con clientes"
+   },
+   {
+    "e": "Greenhouse, Horizon Place",
+    "n": 2,
+    "r": "Definir alcance y resultado"
+   },
+   {
+    "e": "Conectividad en Greenhouse",
+    "n": 2,
+    "r": "Reencuadrar el problema"
+   },
+   {
+    "e": "Aprobación del gerente y la coordinadora regional en Horizon Place",
+    "n": 1,
+    "r": "Relación con decisores senior"
+   },
+   {
+    "e": "Trato con clientes",
+    "n": 2,
+    "r": "Comunicación"
+   }
+  ],
+  "rubrica": "2026-11-19"
+ },
+ "contacto": "Brad McLaughlin (Senior Technical Recruiter, Pivotree, linkedin.com/in/bradmclaughlin1971)",
+ "createdAt": "2026-11-21T14:50:00Z",
+ "cvAdaptada": "No",
+ "empresa": "Pivotree",
+ "encaje": "Medio",
+ "estado": "Evaluar",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4491952177",
+ "linkedinId": "4491952177",
+ "modalidad": "",
+ "n": 94,
+ "notas": "2026-11-21: run diario. Brad McLaughlin publicó el aviso.",
+ "porQue": "Comercio digital (Shopify headless en Claw & Soul y ClawPuzzle); descubrimiento con el cliente y reencuadre del problema (en Greenhouse identificó la falta de conectividad como causa del abandono de la herramienta anterior); define alcance y resultado.",
+ "prioridad": 2,
+ "proximoPaso": "Escribir a Brad McLaughlin: modalidad y si consideran ~4 años en empresa; si encaja, aplicar.",
+ "publicada": "2026-11-20",
+ "puesto": "Forward Deployed Engineer - AI Solutions",
+ "salario": "",
+ "solicitantes": "40",
+ "stack": "Agentes y workflows con LLM, retrieval, MCP, integraciones con plataformas de comercio (OMS, PIM, ERP)",
+ "techDes": [],
+ "techReq": [
+  "IA / LLM",
+  "MCP"
+ ],
+ "tipo": "Permanente",
+ "ubicacion": "Greater Toronto Area (en sitio del cliente según el caso; modalidad no indicada)",
+ "updatedAt": "2026-11-21T14:50:00Z"
+}

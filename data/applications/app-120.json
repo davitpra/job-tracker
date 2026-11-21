@@ -1,0 +1,32 @@
+{
+ "anios": "5+",
+ "busqueda": "nucleo",
+ "createdAt": "2026-11-21T14:50:00Z",
+ "cvAdaptada": "No",
+ "empresa": "Manulife",
+ "estado": "Descartada",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4492852480",
+ "linkedinId": "4492852480",
+ "modalidad": "Híbrido",
+ "motivoDescarte": [
+  "Java/Kotlin, .NET o C#",
+  "Senior o 5+ años"
+ ],
+ "n": 120,
+ "notas": "2026-11-21: run diario.",
+ "publicada": "2026-11-20",
+ "puesto": "Senior Full Stack Software Engineer - Capital Markets",
+ "salario": "",
+ "solicitantes": "<25",
+ "stack": "Java, Spring Boot",
+ "techDes": [
+  "Python"
+ ],
+ "techReq": [
+  "Java"
+ ],
+ "tipo": "Permanente",
+ "ubicacion": "Toronto, ON",
+ "updatedAt": "2026-11-21T14:50:00Z"
+}

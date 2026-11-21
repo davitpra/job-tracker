@@ -1,0 +1,39 @@
+{
+ "anios": "6+",
+ "busqueda": "contratos",
+ "createdAt": "2026-11-21T14:50:00Z",
+ "cvAdaptada": "No",
+ "empresa": "TMT IT Solutions",
+ "estado": "Descartada",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4492819996",
+ "linkedinId": "4492819996",
+ "modalidad": "Híbrido",
+ "moneda": "CAD",
+ "motivoDescarte": [
+  "Senior o 5+ años",
+  "Python como núcleo"
+ ],
+ "n": 111,
+ "notas": "2026-11-21: run diario. Mismo perfil que app-104 (GSK).",
+ "periodo": "hora",
+ "publicada": "2026-11-20",
+ "puesto": "AI Engineer (contrato)",
+ "salMax": 75,
+ "salMin": 60,
+ "salario": "CA$60–75/hora",
+ "solicitantes": "41",
+ "stack": "Python (NumPy, Pandas, Boto3), React/Next.js/TypeScript, LangChain, Bedrock, AWS",
+ "techDes": [],
+ "techReq": [
+  "Python",
+  "React",
+  "Next.js",
+  "TypeScript",
+  "IA / LLM",
+  "AWS"
+ ],
+ "tipo": "Contrato",
+ "ubicacion": "Toronto, ON",
+ "updatedAt": "2026-11-21T14:50:00Z"
+}

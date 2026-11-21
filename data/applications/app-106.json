@@ -1,0 +1,36 @@
+{
+ "anios": "No indica",
+ "busqueda": "nucleo",
+ "createdAt": "2026-11-21T14:50:00Z",
+ "cvAdaptada": "No",
+ "empresa": "Hanalytica GmbH (cliente de EE.UU.)",
+ "estado": "Descartada",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4482709091",
+ "linkedinId": "4482709091",
+ "modalidad": "Remoto",
+ "motivoDescarte": [
+  "Java/Kotlin, .NET o C#",
+  "200+ solicitantes"
+ ],
+ "n": 106,
+ "notas": "2026-11-21: run diario.",
+ "publicada": "2026-11-20",
+ "puesto": "Full Stack Developer (Angular / C# / SQL Server)",
+ "salario": "",
+ "solicitantes": "200+",
+ "stack": "Angular, C#/.NET, SQL Server",
+ "techDes": [
+  "Azure DevOps",
+  "Docker"
+ ],
+ "techReq": [
+  "Angular",
+  "C# / .NET",
+  "SQL",
+  "CI/CD"
+ ],
+ "tipo": "Contrato",
+ "ubicacion": "Remoto (onboarding presencial)",
+ "updatedAt": "2026-11-21T14:50:00Z"
+}

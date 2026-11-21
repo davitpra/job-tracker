@@ -1,60 +1,11 @@
 {
- "empresa": "Stripe",
- "puesto": "Full Stack Engineer, Link",
- "linkedinId": "4481790006",
- "busqueda": "backend",
- "estado": "Por aplicar",
- "encaje": "Muy alto",
- "tipo": "Permanente",
- "modalidad": "Híbrido",
- "ubicacion": "Toronto, ON (50 % en oficina)",
  "anios": "2–10+",
- "solicitantes": "200+",
- "stack": "Cualquier lenguaje; gRPC, GraphQL, Docker, Kubernetes, AWS (deseables)",
- "porQue": "Pide 2+ años y código fuerte en cualquier lenguaje: cumple. Perfil generalista full stack (frontend + NestJS/PostgreSQL) que encaja con 'generalist across stacks'.",
  "brechas": "200+ solicitantes (pasa la excepción: Muy alto y publicada hoy) → escribir hoy a alguien del equipo; proceso de entrevistas exigente; sistemas financieros a gran escala (deseable) no los tiene.",
- "proximoPaso": "Aplicar en la web de Stripe y escribir hoy a un recruiter o ingeniero de Link.",
- "notas": "2026-11-18: run diario.",
- "techReq": null,
- "techDes": [
-  "GraphQL",
-  "Docker",
-  "Kubernetes",
-  "AWS"
- ],
+ "busqueda": "backend",
  "clasif": {
-  "pts": 10,
   "max": 10,
   "pct": 100,
-  "requisitos": [
-   {
-    "r": "Años de experiencia",
-    "n": 2,
-    "e": "2–10+ años; tiene ~3,8"
-   },
-   {
-    "r": "Código fuerte en algún lenguaje",
-    "n": 2,
-    "e": "TypeScript"
-   },
-   {
-    "r": "Colaboración",
-    "n": 2,
-    "e": "Equipos en Kruger, Delphi"
-   },
-   {
-    "r": "Autonomía y mentalidad emprendedora",
-    "n": 2,
-    "e": "Proyectos propios (Claw & Soul, Claw Puzzle)"
-   },
-   {
-    "r": "Generalista entre stacks",
-    "n": 2,
-    "e": "Front + back + infra"
-   }
-  ],
   "prioridad": {
-   "base": 1,
    "ajustes": [
     {
      "t": "empresa suma al CV",
@@ -65,24 +16,73 @@
      "v": -1
     }
    ],
+   "base": 1,
    "final": 1
   },
+  "pts": 10,
+  "requisitos": [
+   {
+    "e": "2–10+ años; tiene ~3,8",
+    "n": 2,
+    "r": "Años de experiencia"
+   },
+   {
+    "e": "TypeScript",
+    "n": 2,
+    "r": "Código fuerte en algún lenguaje"
+   },
+   {
+    "e": "Equipos en Kruger, Delphi",
+    "n": 2,
+    "r": "Colaboración"
+   },
+   {
+    "e": "Proyectos propios (Claw & Soul, Claw Puzzle)",
+    "n": 2,
+    "r": "Autonomía y mentalidad emprendedora"
+   },
+   {
+    "e": "Front + back + infra",
+    "n": 2,
+    "r": "Generalista entre stacks"
+   }
+  ],
   "rubrica": "2026-11-04"
  },
- "salario": "CA$135,200–202,800/año",
- "salMin": 135200,
- "salMax": 202800,
- "moneda": "CAD",
- "periodo": "año",
- "fuente": "LinkedIn (Apify)",
- "publicada": "2026-11-18",
- "cvAdaptada": "No",
- "link": "https://www.linkedin.com/jobs/view/4481790006",
  "createdAt": "2026-11-18T20:30:00Z",
- "updatedAt": "2026-11-19T14:29:08.639Z",
- "prioridad": 1,
- "n": 3,
+ "cvAdaptada": "No",
+ "empresa": "Stripe",
+ "encaje": "Muy alto",
+ "estado": "Descartada",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4481790006",
+ "linkedinId": "4481790006",
+ "modalidad": "Híbrido",
+ "moneda": "CAD",
  "motivoDescarte": [
   "Senior o 5+ años"
- ]
+ ],
+ "n": 3,
+ "notas": "2026-11-18: run diario.",
+ "periodo": "año",
+ "porQue": "Pide 2+ años y código fuerte en cualquier lenguaje: cumple. Perfil generalista full stack (frontend + NestJS/PostgreSQL) que encaja con 'generalist across stacks'.",
+ "prioridad": 1,
+ "proximoPaso": "Aplicar en la web de Stripe y escribir hoy a un recruiter o ingeniero de Link.",
+ "publicada": "2026-11-18",
+ "puesto": "Full Stack Engineer, Link",
+ "salMax": 202800,
+ "salMin": 135200,
+ "salario": "CA$135,200–202,800/año",
+ "solicitantes": "200+",
+ "stack": "Cualquier lenguaje; gRPC, GraphQL, Docker, Kubernetes, AWS (deseables)",
+ "techDes": [
+  "GraphQL",
+  "Docker",
+  "Kubernetes",
+  "AWS"
+ ],
+ "techReq": null,
+ "tipo": "Permanente",
+ "ubicacion": "Toronto, ON (50 % en oficina)",
+ "updatedAt": "2026-11-19T15:30:00Z"
 }

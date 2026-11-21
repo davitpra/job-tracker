@@ -1,0 +1,91 @@
+{
+ "anios": "No indica",
+ "brechas": "Título Senior → tope Medio y prioridad −1. Agencia sin modalidad: el otro aviso de Clear Prism del mismo día pide 3–4 días en sitio.",
+ "busqueda": "backend",
+ "clasif": {
+  "ajusteEncaje": "Tope Medio por título Senior",
+  "filtro": "Agencia sin modalidad: preguntar al reclutador",
+  "max": 10,
+  "pct": 100,
+  "prioridad": {
+   "ajustes": [
+    {
+     "t": "contrato",
+     "v": 1
+    },
+    {
+     "t": "<3 días y <50 solicitantes",
+     "v": 1
+    },
+    {
+     "t": "Senior",
+     "v": -1
+    }
+   ],
+   "base": 2,
+   "final": 1
+  },
+  "pts": 10,
+  "requisitos": [
+   {
+    "e": "NestJS en Kruger y Greenhouse",
+    "n": 2,
+    "r": "Node.js backend y arquitectura escalable"
+   },
+   {
+    "e": "Núcleo del CV; AWS en Kruger y Claw & Soul",
+    "n": 2,
+    "r": "React, Next.js, TypeScript y AWS"
+   },
+   {
+    "e": "GitHub Actions, Jest, Cypress; Datadog",
+    "n": 2,
+    "r": "CI/CD, tests y troubleshooting"
+   },
+   {
+    "e": "Claude Code, Codex a diario",
+    "n": 2,
+    "r": "Agentes de código (Claude Code, Cursor, Codex)"
+   },
+   {
+    "e": "12 ADRs",
+    "n": 2,
+    "r": "Explicar decisiones y trade-offs"
+   }
+  ],
+  "rubrica": "2026-11-19"
+ },
+ "createdAt": "2026-11-21T14:50:00Z",
+ "cvAdaptada": "No",
+ "empresa": "Clear Prism (cliente no revelado)",
+ "encaje": "Medio",
+ "estado": "Evaluar",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4492824951",
+ "linkedinId": "4492824951",
+ "modalidad": "",
+ "n": 91,
+ "notas": "2026-11-21: run diario. El cuerpo del aviso dice Senior Full Stack Engineer.",
+ "porQue": "Coincide todo el stack: Node.js con arquitectura y APIs, React/Next.js/TypeScript en AWS, CI/CD y tests; usa Claude Code y Codex a diario y valida lo que generan; e-commerce en Claw & Soul.",
+ "prioridad": 1,
+ "proximoPaso": "Escribir al reclutador de Clear Prism: modalidad, días en sitio y tarifa; si es híbrido en el GTA, aplicar.",
+ "publicada": "2026-11-20",
+ "puesto": "Senior Full Stack Engineer (contrato)",
+ "salario": "",
+ "solicitantes": "<25",
+ "stack": "Node.js, APIs REST, React, Next.js, TypeScript, AWS, CI/CD, agentes de código (Claude Code, Cursor, Codex); ticketing y e-commerce",
+ "techDes": [],
+ "techReq": [
+  "Node.js",
+  "REST APIs",
+  "React",
+  "Next.js",
+  "TypeScript",
+  "AWS",
+  "CI/CD",
+  "IA / LLM"
+ ],
+ "tipo": "Contrato",
+ "ubicacion": "Greater Toronto Area (modalidad no indicada)",
+ "updatedAt": "2026-11-21T14:50:00Z"
+}

@@ -1,77 +1,11 @@
 {
- "empresa": "Intuit",
- "puesto": "Software Developer 1 (DataX, TurboTax)",
- "linkedinId": "4484414902",
- "busqueda": "contratos",
- "estado": "Por aplicar",
- "encaje": "Muy alto",
- "tipo": "Permanente",
- "modalidad": "Híbrido",
- "ubicacion": "Toronto, ON (3 días)",
  "anios": "0–2",
- "solicitantes": "200+",
- "stack": "Python, TypeScript/JavaScript o Java; agentes de IA; UI",
- "porQue": "Pide uno de Python/TS/Java y trabajar front y back: cumple con TS. Construye herramientas y UI para un asistente con agentes de IA, cerca de sus pipelines de IA (fal.ai).",
  "brechas": "Puesto de entrada (0–2 años): por debajo de su nivel y del salario esperable; 200+ solicitantes (pasa la excepción) → escribir hoy a alguien del equipo.",
- "proximoPaso": "Aplicar en la web de Intuit y escribir hoy a alguien del equipo DataX.",
- "notas": "2026-11-18: run diario.",
- "techReq": [
-  "REST APIs"
- ],
- "techDes": [
-  "TypeScript",
-  "Python",
-  "Java",
-  "IA / LLM"
- ],
+ "busqueda": "contratos",
  "clasif": {
-  "pts": 16,
   "max": 16,
   "pct": 100,
-  "requisitos": [
-   {
-    "r": "Años de experiencia",
-    "n": 2,
-    "e": "0–2 años"
-   },
-   {
-    "r": "Fundamentos de ingeniería",
-    "n": 2,
-    "e": "Diploma Fanshawe + experiencia"
-   },
-   {
-    "r": "Python, TS/JS o Java",
-    "n": 2,
-    "e": "TypeScript"
-   },
-   {
-    "r": "APIs REST",
-    "n": 2,
-    "e": "NestJS"
-   },
-   {
-    "r": "SDLC, Git y code review",
-    "n": 2,
-    "e": "Kruger, Delphi"
-   },
-   {
-    "r": "Unit testing y TDD",
-    "n": 2,
-    "e": "Jest, Vitest"
-   },
-   {
-    "r": "Ganas de aprender y ownership",
-    "n": 2,
-    "e": "Proyectos propios"
-   },
-   {
-    "r": "Comunicación",
-    "n": 2,
-    "e": "Trato con clientes"
-   }
-  ],
   "prioridad": {
-   "base": 1,
    "ajustes": [
     {
      "t": "empresa suma al CV",
@@ -82,21 +16,87 @@
      "v": -1
     }
    ],
+   "base": 1,
    "final": 1
   },
+  "pts": 16,
+  "requisitos": [
+   {
+    "e": "0–2 años",
+    "n": 2,
+    "r": "Años de experiencia"
+   },
+   {
+    "e": "Diploma Fanshawe + experiencia",
+    "n": 2,
+    "r": "Fundamentos de ingeniería"
+   },
+   {
+    "e": "TypeScript",
+    "n": 2,
+    "r": "Python, TS/JS o Java"
+   },
+   {
+    "e": "NestJS",
+    "n": 2,
+    "r": "APIs REST"
+   },
+   {
+    "e": "Kruger, Delphi",
+    "n": 2,
+    "r": "SDLC, Git y code review"
+   },
+   {
+    "e": "Jest, Vitest",
+    "n": 2,
+    "r": "Unit testing y TDD"
+   },
+   {
+    "e": "Proyectos propios",
+    "n": 2,
+    "r": "Ganas de aprender y ownership"
+   },
+   {
+    "e": "Trato con clientes",
+    "n": 2,
+    "r": "Comunicación"
+   }
+  ],
   "rubrica": "2026-11-04"
  },
- "salario": "CA$94,000–127,000/año",
- "salMin": 94000,
- "salMax": 127000,
- "moneda": "CAD",
- "periodo": "año",
- "fuente": "LinkedIn (Apify)",
- "publicada": "2026-11-18",
- "cvAdaptada": "No",
- "link": "https://www.linkedin.com/jobs/view/4484414902",
  "createdAt": "2026-11-18T20:30:00Z",
- "updatedAt": "2026-11-18T20:30:00Z",
+ "cvAdaptada": "No",
+ "empresa": "Intuit",
+ "encaje": "Muy alto",
+ "estado": "Descartada",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4484414902",
+ "linkedinId": "4484414902",
+ "modalidad": "Híbrido",
+ "moneda": "CAD",
+ "n": 5,
+ "notas": "2026-11-18: run diario.",
+ "periodo": "año",
+ "porQue": "Pide uno de Python/TS/Java y trabajar front y back: cumple con TS. Construye herramientas y UI para un asistente con agentes de IA, cerca de sus pipelines de IA (fal.ai).",
  "prioridad": 1,
- "n": 5
+ "proximoPaso": "Aplicar en la web de Intuit y escribir hoy a alguien del equipo DataX.",
+ "publicada": "2026-11-18",
+ "puesto": "Software Developer 1 (DataX, TurboTax)",
+ "salMax": 127000,
+ "salMin": 94000,
+ "salario": "CA$94,000–127,000/año",
+ "solicitantes": "200+",
+ "stack": "Python, TypeScript/JavaScript o Java; agentes de IA; UI",
+ "techDes": [
+  "TypeScript",
+  "Python",
+  "Java",
+  "IA / LLM"
+ ],
+ "techReq": [
+  "REST APIs"
+ ],
+ "tipo": "Permanente",
+ "ubicacion": "Toronto, ON (3 días)",
+ "updatedAt": "2026-11-19T15:30:00Z"
 }

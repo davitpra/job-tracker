@@ -1,0 +1,41 @@
+{
+ "anios": "No indica (intermedio / senior associate)",
+ "brechas": "Experiencia en retail (lo más cercano: e-commerce con Shopify en Claw & Soul). 4 días presenciales en Brampton desde London.",
+ "createdAt": "2026-11-19T15:11:00Z",
+ "cvAdaptada": "Sí",
+ "empresa": "TalentWorld (cliente retail no revelado)",
+ "encaje": "Muy alto",
+ "estado": "Aplicado",
+ "fechaAplicacion": "2026-11-19",
+ "fuente": "Pegada en chat",
+ "modalidad": "Híbrido",
+ "moneda": "CAD",
+ "n": 79,
+ "notas": "2026-11-19: aplicado en la web de TalentWorld con CV adaptado 'Resume - David Prado - TalentWorld.pdf' (Full Stack Developer (React / Next.js / Node.js), 1 página, ATS 100%). Brecha: industria retail. Contrato hasta el 27 mar 2027.",
+ "periodo": "hora",
+ "plataforma": "Web de TalentWorld",
+ "porQue": "Su núcleo exacto: React/Next.js, Node.js (NestJS/Express), PostgreSQL y REST APIs; contrato de 4 meses con inicio inmediato y probable extensión.",
+ "prioridad": 1,
+ "proximoPaso": "Revisar respuesta a los 7 y 14 días (26 nov y 3 dic). Tener lista la respuesta sobre traslado/mudanza a Brampton.",
+ "puesto": "Full Stack Developer (React / Next.js / Node.js)",
+ "salMax": 60,
+ "salMin": 50,
+ "salario": "$50–60/h (T4); tarifa IC a pedido",
+ "stack": "React, Next.js, Node.js, PostgreSQL/SQL, REST APIs; deseable TypeScript, cloud y CI/CD",
+ "techDes": [
+  "TypeScript",
+  "CI/CD",
+  "Cloud"
+ ],
+ "techReq": [
+  "React",
+  "Next.js",
+  "Node.js",
+  "PostgreSQL",
+  "SQL",
+  "REST APIs"
+ ],
+ "tipo": "Contrato",
+ "ubicacion": "Brampton, ON (4 días presencial, 1 remoto)",
+ "updatedAt": "2026-11-19T15:11:00Z"
+}

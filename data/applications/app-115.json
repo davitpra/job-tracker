@@ -1,0 +1,40 @@
+{
+ "anios": "5+",
+ "busqueda": "backend",
+ "createdAt": "2026-11-21T14:50:00Z",
+ "cvAdaptada": "No",
+ "empresa": "MaintainX",
+ "estado": "Descartada",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4475462375",
+ "linkedinId": "4475462375",
+ "modalidad": "Híbrido",
+ "moneda": "CAD",
+ "motivoDescarte": [
+  "Senior o 5+ años",
+  "200+ solicitantes"
+ ],
+ "n": 115,
+ "notas": "2026-11-21: run diario. 5+ años → tope Medio, y con 200+ no pasa la excepción. El mismo texto salió como Senior Full Stack (app-98).",
+ "periodo": "año",
+ "publicada": "2026-11-20",
+ "puesto": "Full-Stack Developer - Core",
+ "salMax": 190000,
+ "salMin": 88000,
+ "salario": "CA$88,000–190,000/año",
+ "solicitantes": "200+",
+ "stack": "TypeScript, React, Node.js, MySQL",
+ "techDes": [
+  "GraphQL",
+  "React Native",
+  "SQL"
+ ],
+ "techReq": [
+  "TypeScript",
+  "React",
+  "Node.js"
+ ],
+ "tipo": "Permanente",
+ "ubicacion": "Toronto, ON (sin mínimo en oficina)",
+ "updatedAt": "2026-11-21T14:50:00Z"
+}

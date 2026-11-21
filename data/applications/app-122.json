@@ -1,0 +1,32 @@
+{
+ "anios": "6+",
+ "busqueda": "contratos",
+ "createdAt": "2026-11-21T14:50:00Z",
+ "cvAdaptada": "No",
+ "empresa": "NEOGOV",
+ "estado": "Descartada",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4493225255",
+ "linkedinId": "4493225255",
+ "modalidad": "Remoto",
+ "motivoDescarte": [
+  "Java/Kotlin, .NET o C#",
+  "Senior o 5+ años"
+ ],
+ "n": 122,
+ "notas": "2026-11-21: run diario.",
+ "publicada": "2026-11-20",
+ "puesto": "Senior Software Engineer",
+ "salario": "",
+ "solicitantes": "41",
+ "stack": "C#, Entity Framework, SQL, Angular",
+ "techDes": [],
+ "techReq": [
+  "C# / .NET",
+  "SQL",
+  "Angular"
+ ],
+ "tipo": "Permanente",
+ "ubicacion": "Remoto en EE.UU. y Canadá",
+ "updatedAt": "2026-11-21T14:50:00Z"
+}

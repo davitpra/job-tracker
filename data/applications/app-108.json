@@ -1,0 +1,36 @@
+{
+ "anios": "7+",
+ "busqueda": "nucleo",
+ "createdAt": "2026-11-21T14:50:00Z",
+ "cvAdaptada": "No",
+ "empresa": "McAfee",
+ "estado": "Descartada",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4492593772",
+ "linkedinId": "4492593772",
+ "modalidad": "Híbrido",
+ "motivoDescarte": [
+  "Senior o 5+ años",
+  "Otro stack como núcleo"
+ ],
+ "n": 108,
+ "notas": "2026-11-21: run diario. También volvió a salir McAfee Full-stack Software Engineer - Canada (4492589978), ya descartado en app-20.",
+ "publicada": "2026-11-20",
+ "puesto": "Cloud Software Engineer",
+ "salario": "",
+ "solicitantes": "<25",
+ "stack": "Go, AWS, PostgreSQL, Python/Bash; migración desde .NET",
+ "techDes": [
+  "C# / .NET"
+ ],
+ "techReq": [
+  "Go",
+  "AWS",
+  "PostgreSQL",
+  "Python",
+  "REST APIs"
+ ],
+ "tipo": "Permanente",
+ "ubicacion": "Waterloo, ON (oficina según necesidad)",
+ "updatedAt": "2026-11-21T14:50:00Z"
+}

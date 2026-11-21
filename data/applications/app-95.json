@@ -1,0 +1,140 @@
+{
+ "anios": "5+",
+ "brechas": "Título Senior y piden 5+ años; en empresa 3,8 → ❌, tope Medio y prioridad −1. Lenguajes de backend de ejemplo Java/Kotlin/C#/Go/Python 🟡. Microservicios y liderazgo técnico 🟡.",
+ "busqueda": "backend",
+ "clasif": {
+  "ajusteEncaje": "Tope Medio por título Senior y 5+ años",
+  "max": 30,
+  "pct": 83,
+  "prioridad": {
+   "ajustes": [
+    {
+     "t": "Senior",
+     "v": -1
+    }
+   ],
+   "base": 2,
+   "final": 3
+  },
+  "pts": 25,
+  "requisitos": [
+   {
+    "e": "~3,8 en empresa",
+    "n": 0,
+    "r": "5+ años"
+   },
+   {
+    "e": "Núcleo del CV",
+    "n": 2,
+    "r": "Full stack"
+   },
+   {
+    "e": "Node/TypeScript; Python básico",
+    "n": 1,
+    "r": "Lenguajes de backend (Java, Kotlin, C#, Go, Python)"
+   },
+   {
+    "e": "Núcleo del CV",
+    "n": 2,
+    "r": "JavaScript, Node.js, TypeScript, HTML5, CSS3"
+   },
+   {
+    "e": "React, Angular",
+    "n": 2,
+    "r": "React, Vue o Angular"
+   },
+   {
+    "e": "NestJS, Shopify GraphQL",
+    "n": 2,
+    "r": "APIs REST o GraphQL"
+   },
+   {
+    "e": "PostgreSQL, MySQL, MongoDB",
+    "n": 2,
+    "r": "Relacional y NoSQL"
+   },
+   {
+    "e": "Kruger, Claw & Soul",
+    "n": 2,
+    "r": "AWS"
+   },
+   {
+    "e": "GitHub Actions, Jenkins",
+    "n": 2,
+    "r": "CI/CD"
+   },
+   {
+    "e": "Docker",
+    "n": 2,
+    "r": "Contenedores"
+   },
+   {
+    "e": "CloudWatch, Datadog, Sentry",
+    "n": 2,
+    "r": "Monitoreo y alertas"
+   },
+   {
+    "e": "Modular monolith; servicios en Kruger",
+    "n": 1,
+    "r": "Microservicios"
+   },
+   {
+    "e": "Kruger, Greenhouse",
+    "n": 2,
+    "r": "SDLC completo"
+   },
+   {
+    "e": "Kruger, Delphi",
+    "n": 2,
+    "r": "Colaboración en equipo matricial"
+   },
+   {
+    "e": "Líder técnico del módulo en Kruger",
+    "n": 1,
+    "r": "Liderar y mentorear"
+   }
+  ],
+  "rubrica": "2026-11-19"
+ },
+ "createdAt": "2026-11-21T14:50:00Z",
+ "cvAdaptada": "No",
+ "empresa": "CARFAX",
+ "encaje": "Medio",
+ "estado": "Por aplicar",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4477894059",
+ "linkedinId": "4477894059",
+ "modalidad": "Híbrido",
+ "n": 95,
+ "notas": "2026-11-21: run diario. En octubre aplicó a CARFAX en el tracker anterior: revisar si es otro puesto.",
+ "porQue": "Oficina en London ON (2 días). Trabajo principalmente en TypeScript con React y Node; APIs REST y GraphQL, MySQL y MongoDB, AWS, Docker y CI/CD; monitoreo con CloudWatch y Datadog en Kruger; Claude Code (deseable).",
+ "prioridad": 3,
+ "proximoPaso": "Aplicar solo si sobra tiempo o hay un contacto en CARFAX London.",
+ "publicada": "2026-11-21",
+ "puesto": "Senior Software Engineer",
+ "salario": "",
+ "solicitantes": "172",
+ "stack": "TypeScript principalmente; React/Vue/Angular, Node.js, REST/GraphQL, MySQL/Mongo/DynamoDB, AWS, GitLab CI/CD, Docker, Kubernetes",
+ "techDes": [
+  "Kubernetes",
+  "OAuth / OIDC",
+  "IA / LLM"
+ ],
+ "techReq": [
+  "TypeScript",
+  "JavaScript",
+  "React",
+  "Node.js",
+  "REST APIs",
+  "GraphQL",
+  "MySQL",
+  "MongoDB",
+  "AWS",
+  "CI/CD",
+  "Docker",
+  "Microservicios"
+ ],
+ "tipo": "Permanente",
+ "ubicacion": "London, ON (2 días por semana)",
+ "updatedAt": "2026-11-21T14:50:00Z"
+}

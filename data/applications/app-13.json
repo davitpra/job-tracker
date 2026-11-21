@@ -1,100 +1,12 @@
 {
- "empresa": "Workplace Safety & Prevention Services (WSPS)",
- "puesto": "Web Systems Developer",
- "linkedinId": "4492085959",
- "busqueda": "nucleo",
- "estado": "Por aplicar",
- "encaje": "Medio",
- "tipo": "Permanente",
- "modalidad": "Remoto",
- "ubicacion": "Ontario (reuniones presenciales trimestrales)",
  "anios": "5+",
- "solicitantes": "<25",
- "stack": "Azure SQL, Azure DevOps, Shopify, Craft CMS, Coveo, PathFactory",
- "porQue": "Integraciones Shopify; migración web WordPress→Next.js en Delphi; accesibilidad y rendimiento; plataforma H&S (Greenhouse) cercana al dominio de WSPS.",
  "brechas": "Piden 5+ años; en empresa 3,8 → ❌ y tope Medio; Azure SQL y Azure DevOps 🟡; mucho rol de backlog, roadmap y proveedores.",
- "proximoPaso": "Aplicar en el portal de empleos de WSPS antes del 2 de diciembre.",
- "notas": "2026-11-18: run diario. Cierre: 2026-12-02 16:00 ET. Empresa sin fines de lucro, remote-first, pensión de beneficio definido.",
- "techReq": [
-  "SQL",
-  "Azure",
-  "CI/CD",
-  "REST APIs"
- ],
- "techDes": [
-  "Shopify",
-  "JavaScript",
-  "Craft CMS",
-  "Coveo"
- ],
+ "busqueda": "nucleo",
  "clasif": {
-  "pts": 16,
+  "ajusteEncaje": "Tope Medio por 5+ años",
   "max": 24,
   "pct": 67,
-  "requisitos": [
-   {
-    "r": "5+ años",
-    "n": 0,
-    "e": "~3,8 en empresa"
-   },
-   {
-    "r": "Liderar proyectos técnicos",
-    "n": 1,
-    "e": "Proyectos propios"
-   },
-   {
-    "r": "Sitios, CMS y e-commerce",
-    "n": 2,
-    "e": "Shopify, Delphi"
-   },
-   {
-    "r": "Azure SQL",
-    "n": 1,
-    "e": "SQL sí; Azure SQL no"
-   },
-   {
-    "r": "Azure DevOps",
-    "n": 0,
-    "e": "No figura"
-   },
-   {
-    "r": "Front, back, APIs, nube y CI/CD",
-    "n": 2,
-    "e": "Núcleo del CV"
-   },
-   {
-    "r": "Coordinar proveedores",
-    "n": 1,
-    "e": "Poco"
-   },
-   {
-    "r": "Google Analytics",
-    "n": 1,
-    "e": "Tracking de conversiones en Delphi"
-   },
-   {
-    "r": "Accesibilidad, seguridad y rendimiento",
-    "n": 2,
-    "e": "WCAG en Delphi"
-   },
-   {
-    "r": "Análisis y troubleshooting",
-    "n": 2,
-    "e": "Kruger"
-   },
-   {
-    "r": "Comunicación",
-    "n": 2,
-    "e": "Clientes"
-   },
-   {
-    "r": "Varios proyectos a la vez",
-    "n": 2,
-    "e": "Proyectos propios"
-   }
-  ],
   "prioridad": {
-   "base": 2,
    "ajustes": [
     {
      "t": "<3 días y <50 solicitantes",
@@ -105,22 +17,110 @@
      "v": -1
     }
    ],
+   "base": 2,
    "final": 2
   },
-  "rubrica": "2026-11-04",
-  "ajusteEncaje": "Tope Medio por 5+ años"
+  "pts": 16,
+  "requisitos": [
+   {
+    "e": "~3,8 en empresa",
+    "n": 0,
+    "r": "5+ años"
+   },
+   {
+    "e": "Proyectos propios",
+    "n": 1,
+    "r": "Liderar proyectos técnicos"
+   },
+   {
+    "e": "Shopify, Delphi",
+    "n": 2,
+    "r": "Sitios, CMS y e-commerce"
+   },
+   {
+    "e": "SQL sí; Azure SQL no",
+    "n": 1,
+    "r": "Azure SQL"
+   },
+   {
+    "e": "No figura",
+    "n": 0,
+    "r": "Azure DevOps"
+   },
+   {
+    "e": "Núcleo del CV",
+    "n": 2,
+    "r": "Front, back, APIs, nube y CI/CD"
+   },
+   {
+    "e": "Poco",
+    "n": 1,
+    "r": "Coordinar proveedores"
+   },
+   {
+    "e": "Tracking de conversiones en Delphi",
+    "n": 1,
+    "r": "Google Analytics"
+   },
+   {
+    "e": "WCAG en Delphi",
+    "n": 2,
+    "r": "Accesibilidad, seguridad y rendimiento"
+   },
+   {
+    "e": "Kruger",
+    "n": 2,
+    "r": "Análisis y troubleshooting"
+   },
+   {
+    "e": "Clientes",
+    "n": 2,
+    "r": "Comunicación"
+   },
+   {
+    "e": "Proyectos propios",
+    "n": 2,
+    "r": "Varios proyectos a la vez"
+   }
+  ],
+  "rubrica": "2026-11-04"
  },
- "salario": "CA$87,778–104,237/año",
- "salMin": 87778,
- "salMax": 104237,
- "moneda": "CAD",
- "periodo": "año",
- "fuente": "LinkedIn (Apify)",
- "publicada": "2026-11-18",
- "cvAdaptada": "No",
- "link": "https://www.linkedin.com/jobs/view/4492085959",
  "createdAt": "2026-11-18T20:30:00Z",
- "updatedAt": "2026-11-18T20:30:00Z",
+ "cvAdaptada": "No",
+ "empresa": "Workplace Safety & Prevention Services (WSPS)",
+ "encaje": "Medio",
+ "estado": "Descartada",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4492085959",
+ "linkedinId": "4492085959",
+ "modalidad": "Remoto",
+ "moneda": "CAD",
+ "n": 13,
+ "notas": "2026-11-18: run diario. Cierre: 2026-12-02 16:00 ET. Empresa sin fines de lucro, remote-first, pensión de beneficio definido.",
+ "periodo": "año",
+ "porQue": "Integraciones Shopify; migración web WordPress→Next.js en Delphi; accesibilidad y rendimiento; plataforma H&S (Greenhouse) cercana al dominio de WSPS.",
  "prioridad": 2,
- "n": 13
+ "proximoPaso": "Aplicar en el portal de empleos de WSPS antes del 2 de diciembre.",
+ "publicada": "2026-11-18",
+ "puesto": "Web Systems Developer",
+ "salMax": 104237,
+ "salMin": 87778,
+ "salario": "CA$87,778–104,237/año",
+ "solicitantes": "<25",
+ "stack": "Azure SQL, Azure DevOps, Shopify, Craft CMS, Coveo, PathFactory",
+ "techDes": [
+  "Shopify",
+  "JavaScript",
+  "Craft CMS",
+  "Coveo"
+ ],
+ "techReq": [
+  "SQL",
+  "Azure",
+  "CI/CD",
+  "REST APIs"
+ ],
+ "tipo": "Permanente",
+ "ubicacion": "Ontario (reuniones presenciales trimestrales)",
+ "updatedAt": "2026-11-19T15:30:00Z"
 }

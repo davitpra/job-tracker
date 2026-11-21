@@ -1,0 +1,37 @@
+{
+ "anios": "No indica",
+ "busqueda": "backend",
+ "createdAt": "2026-11-21T14:50:00Z",
+ "cvAdaptada": "No",
+ "empresa": "ContactMonkey",
+ "estado": "Descartada",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4493207690",
+ "linkedinId": "4493207690",
+ "modalidad": "",
+ "motivoDescarte": [
+  "Otro stack como núcleo",
+  "Otra brecha técnica"
+ ],
+ "n": 107,
+ "notas": "2026-11-21: run diario. Rails/Vue, evals de modelos e infraestructura en EKS.",
+ "publicada": "2026-11-20",
+ "puesto": "Applied AI Engineer",
+ "salario": "",
+ "solicitantes": "50",
+ "stack": "Ruby on Rails, Vue.js, Amazon Bedrock, AWS EKS con Terraform, Sidekiq, MySQL, PostgreSQL; evals",
+ "techDes": [],
+ "techReq": [
+  "Ruby / Rails",
+  "Vue",
+  "IA / LLM",
+  "AWS",
+  "Kubernetes",
+  "Terraform",
+  "MySQL",
+  "PostgreSQL"
+ ],
+ "tipo": "Permanente",
+ "ubicacion": "Toronto, ON",
+ "updatedAt": "2026-11-21T14:50:00Z"
+}

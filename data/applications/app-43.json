@@ -73,7 +73,7 @@
  "cvAdaptada": "No",
  "empresa": "Samsara",
  "encaje": "Medio",
- "estado": "Por aplicar",
+ "estado": "Descartada",
  "fuente": "LinkedIn (Apify)",
  "link": "https://www.linkedin.com/jobs/view/4492249044",
  "linkedinId": "4492249044",
@@ -99,5 +99,5 @@
  "techReq": [],
  "tipo": "Permanente",
  "ubicacion": "Toronto o cerca (modelo flexible)",
- "updatedAt": "2026-11-19T12:45:00Z"
+ "updatedAt": "2026-11-19T15:30:00Z"
 }

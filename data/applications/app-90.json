@@ -1,0 +1,116 @@
+{
+ "anios": "3+ (6–10 para Senior)",
+ "brechas": "Modalidad no indicada en Toronto. Exigen experiencia de entrega técnica de cara al cliente (consultoría o FDE) 🟡. Evaluar salidas de IA con rigor 🟡. ~25 % de viajes. 200+ solicitantes (pasa la excepción: Alto y publicada hoy) → escribir hoy a alguien.",
+ "busqueda": "backend",
+ "clasif": {
+  "filtro": "Dudoso: Toronto, modalidad no indicada",
+  "max": 22,
+  "pct": 82,
+  "prioridad": {
+   "ajustes": [
+    {
+     "t": "200+ solicitantes",
+     "v": -1
+    },
+    {
+     "t": "empresa suma al CV",
+     "v": 1
+    }
+   ],
+   "base": 1,
+   "final": 1
+  },
+  "pts": 18,
+  "requisitos": [
+   {
+    "e": "~3,8 en empresa; Kruger",
+    "n": 2,
+    "r": "3+ años con un sistema en producción"
+   },
+   {
+    "e": "Diploma Fanshawe",
+    "n": 1,
+    "r": "Título en CS o similar"
+   },
+   {
+    "e": "Proyectos para clientes; no consultoría formal",
+    "n": 1,
+    "r": "Entrega técnica de cara al cliente (obligatorio)"
+   },
+   {
+    "e": "TypeScript",
+    "n": 2,
+    "r": "Python, JS/TS, Java o Apex"
+   },
+   {
+    "e": "Prompting dinámico en Claw & Soul",
+    "n": 2,
+    "r": "LLMs y prompt engineering"
+   },
+   {
+    "e": "Kruger, Shopify",
+    "n": 2,
+    "r": "Modelado de datos, APIs e integraciones"
+   },
+   {
+    "e": "Presentación a dirección en Horizon Place",
+    "n": 1,
+    "r": "Defenderse con ventas y arquitectos del cliente"
+   },
+   {
+    "e": "Tests en CI; sin evals formales",
+    "n": 1,
+    "r": "Código de calidad y evaluación de salidas de IA"
+   },
+   {
+    "e": "Claude Code, Codex, OpenSpec",
+    "n": 2,
+    "r": "Curiosidad por el panorama de IA"
+   },
+   {
+    "e": "Proyectos propios",
+    "n": 2,
+    "r": "Construir, no solo hablar"
+   },
+   {
+    "e": "Sin restricción indicada",
+    "n": 2,
+    "r": "Viajes ~25 %"
+   }
+  ],
+  "rubrica": "2026-11-19"
+ },
+ "createdAt": "2026-11-21T14:50:00Z",
+ "cvAdaptada": "No",
+ "empresa": "Salesforce",
+ "encaje": "Alto",
+ "estado": "Evaluar",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4460136898",
+ "linkedinId": "4460136898",
+ "modalidad": "",
+ "n": 90,
+ "notas": "2026-11-21: run diario.",
+ "porQue": "Nivel Mid con 3+ años; TypeScript entre los lenguajes aceptados; prompting dinámico en sus pipelines de IA; modelado de datos e integraciones (Shopify, conciliación en Kruger); trabajo directo con clientes.",
+ "prioridad": 1,
+ "proximoPaso": "Confirmar la modalidad en la web de Salesforce; si es híbrido en Toronto, aplicar hoy y escribir a alguien del equipo FDE.",
+ "publicada": "2026-11-21",
+ "puesto": "Forward Deployed Engineer (FDE) (Mid/Senior Level)",
+ "salario": "",
+ "solicitantes": "200+",
+ "stack": "Python, JS/TS, Java o Apex; LLMs y prompts, agentes de Salesforce, modelado de datos e integraciones",
+ "techDes": [
+  "Salesforce",
+  "Apex",
+  "Python",
+  "Java"
+ ],
+ "techReq": [
+  "IA / LLM",
+  "REST APIs",
+  "TypeScript"
+ ],
+ "tipo": "Permanente",
+ "ubicacion": "Toronto, ON (modalidad no indicada; ~25 % de viajes)",
+ "updatedAt": "2026-11-21T14:50:00Z"
+}

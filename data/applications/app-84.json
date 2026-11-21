@@ -1,0 +1,83 @@
+{
+ "anios": "No indica",
+ "brechas": "Tarifa baja para su nivel ($31–41/h). Event-driven 🟡 (colas con BullMQ/pg-boss). Aviso sin stack concreto ni cliente.",
+ "busqueda": "contratos",
+ "clasif": {
+  "max": 10,
+  "pct": 90,
+  "prioridad": {
+   "ajustes": [
+    {
+     "t": "contrato",
+     "v": 1
+    },
+    {
+     "t": "<3 días y <50 solicitantes",
+     "v": 1
+    }
+   ],
+   "base": 1,
+   "final": 1
+  },
+  "pts": 9,
+  "requisitos": [
+   {
+    "e": "OpenSpec, ADRs y specs antes del código en Greenhouse",
+    "n": 2,
+    "r": "Specification-Driven Development"
+   },
+   {
+    "e": "React, Next.js, NestJS",
+    "n": 2,
+    "r": "Frameworks web modernos e integración de APIs"
+   },
+   {
+    "e": "Claude Code, Codex a diario",
+    "n": 2,
+    "r": "Herramientas de IA para programar"
+   },
+   {
+    "e": "BullMQ/Redis, pg-boss; no Kafka",
+    "n": 1,
+    "r": "Arquitectura event-driven"
+   },
+   {
+    "e": "Jest, Cypress, integración en CI",
+    "n": 2,
+    "r": "Testing automatizado"
+   }
+  ],
+  "rubrica": "2026-11-19"
+ },
+ "createdAt": "2026-11-21T14:50:00Z",
+ "cvAdaptada": "No",
+ "empresa": "Mitchell Martin (cliente no revelado)",
+ "encaje": "Muy alto",
+ "estado": "Por aplicar",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4491942036",
+ "linkedinId": "4491942036",
+ "modalidad": "Remoto",
+ "moneda": "CAD",
+ "n": 84,
+ "notas": "2026-11-21: run diario. Agencia: no aplica el Paso 6.",
+ "periodo": "hora",
+ "porQue": "Spec-driven development es su forma de trabajo diaria (OpenSpec, ADRs, specs antes del código) y revisa lo que generan Claude Code y Codex; integra APIs (NestJS, Shopify GraphQL); tests automatizados en CI. Contrato remoto.",
+ "prioridad": 1,
+ "proximoPaso": "Aplicar por LinkedIn y preguntar al reclutador cliente, duración y si la tarifa es negociable.",
+ "publicada": "2026-11-20",
+ "puesto": "Engineer (Specification-Driven Development, contrato)",
+ "salMax": 41,
+ "salMin": 31,
+ "salario": "$31–41/hora",
+ "solicitantes": "<25",
+ "stack": "Spec-driven development, herramientas de IA para generar apps web, integración de APIs, arquitectura event-driven, tests automatizados",
+ "techDes": [],
+ "techReq": [
+  "IA / LLM",
+  "REST APIs"
+ ],
+ "tipo": "Contrato",
+ "ubicacion": "Toronto, ON (remoto)",
+ "updatedAt": "2026-11-21T14:50:00Z"
+}

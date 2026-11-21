@@ -1,0 +1,33 @@
+{
+ "anios": "No indica",
+ "busqueda": "backend",
+ "createdAt": "2026-11-21T14:50:00Z",
+ "cvAdaptada": "No",
+ "empresa": "Clear Prism (cliente no revelado)",
+ "estado": "Descartada",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4492827713",
+ "linkedinId": "4492827713",
+ "modalidad": "Híbrido",
+ "motivoDescarte": [
+  "Java/Kotlin, .NET o C#",
+  "Otra brecha técnica"
+ ],
+ "n": 100,
+ "notas": "2026-11-21: run diario. Exige experiencia fuerte con Azure y el stack de Microsoft. Contrato de 6 meses.",
+ "publicada": "2026-11-20",
+ "puesto": "Forward Deployed Engineer (contrato)",
+ "salario": "",
+ "solicitantes": "<25",
+ "stack": "Microsoft Azure y stack de Microsoft, APIs para e-commerce, IA conversacional",
+ "techDes": [],
+ "techReq": [
+  "Azure",
+  "C# / .NET",
+  "REST APIs",
+  "IA / LLM"
+ ],
+ "tipo": "Contrato",
+ "ubicacion": "Greater Toronto Area (3–4 días en sitio)",
+ "updatedAt": "2026-11-21T14:50:00Z"
+}

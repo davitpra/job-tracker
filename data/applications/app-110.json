@@ -1,0 +1,34 @@
+{
+ "anios": "No indica",
+ "busqueda": "backend",
+ "createdAt": "2026-11-21T14:50:00Z",
+ "cvAdaptada": "No",
+ "empresa": "Deloitte",
+ "estado": "Descartada",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4476904760",
+ "linkedinId": "4476904760",
+ "modalidad": "Híbrido",
+ "motivoDescarte": [
+  "Java/Kotlin, .NET o C#"
+ ],
+ "n": 110,
+ "notas": "2026-11-21: run diario.",
+ "publicada": "2026-11-20",
+ "puesto": "Consultant or Senior Consultant Product Engineering & Development",
+ "salario": "",
+ "solicitantes": "69",
+ "stack": "Angular, TypeScript, Java con Spring Boot",
+ "techDes": [
+  "Microservicios"
+ ],
+ "techReq": [
+  "Angular",
+  "TypeScript",
+  "Java",
+  "REST APIs"
+ ],
+ "tipo": "Permanente",
+ "ubicacion": "Toronto, ON",
+ "updatedAt": "2026-11-21T14:50:00Z"
+}

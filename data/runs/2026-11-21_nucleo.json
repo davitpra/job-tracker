@@ -1,0 +1,13 @@
+{
+ "busqueda": "nucleo",
+ "costoUsd": 0.123,
+ "createdAt": "2026-11-21T14:55:00Z",
+ "dataset": "UmuFgNWqlRv81JNAw",
+ "fecha": "2026-11-21",
+ "limite": 60,
+ "nota": "Llegó al tope, pero 25 de 60 avisos fueron Affirm SWE II (Ads Platform y Card Pre-Swipe) repetidos en ~15 ciudades. Útiles: Affirm Ads (Evaluar por Python/Kotlin) y Okta docs. El resto: Java, .NET, Senior/Staff, Quebec y gigs de Joblet-AI.",
+ "run": "U4QbLFBCLgxwJxpdh",
+ "total": 60,
+ "utiles": 2,
+ "utilesFuente": "tracker"
+}

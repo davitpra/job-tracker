@@ -1,0 +1,97 @@
+{
+ "anios": "1.5+",
+ "brechas": "APIs \"en lenguajes como Python o Kotlin\": el backend de Affirm es Python, posible núcleo 🟡. On-call 🟡.",
+ "busqueda": "nucleo",
+ "clasif": {
+  "filtro": "Dudoso: el backend puede ser Python/Kotlin obligatorio",
+  "max": 16,
+  "pct": 94,
+  "prioridad": {
+   "ajustes": [
+    {
+     "t": "<3 días y <50 solicitantes",
+     "v": 1
+    }
+   ],
+   "base": 1,
+   "final": 1
+  },
+  "pts": 15,
+  "requisitos": [
+   {
+    "e": "~3,8 en empresa",
+    "n": 2,
+    "r": "1.5+ años"
+   },
+   {
+    "e": "Núcleo del CV",
+    "n": 2,
+    "r": "Web apps con React"
+   },
+   {
+    "e": "NestJS; Python básico",
+    "n": 1,
+    "r": "APIs a escala (Python o Kotlin)"
+   },
+   {
+    "e": "Kruger, Greenhouse",
+    "n": 2,
+    "r": "De problema de negocio a solución con varios componentes"
+   },
+   {
+    "e": "Kruger, Delphi",
+    "n": 2,
+    "r": "Codebases grandes, debugging y code review"
+   },
+   {
+    "e": "Programa Fanshawe, proyectos propios",
+    "n": 2,
+    "r": "Ownership del propio crecimiento"
+   },
+   {
+    "e": "ADRs, equipos distribuidos",
+    "n": 2,
+    "r": "Comunicación escrita y verbal"
+   },
+   {
+    "e": "Diploma + experiencia",
+    "n": 2,
+    "r": "Título o experiencia equivalente"
+   }
+  ],
+  "rubrica": "2026-11-19"
+ },
+ "createdAt": "2026-11-21T14:50:00Z",
+ "cvAdaptada": "No",
+ "empresa": "Affirm",
+ "encaje": "Muy alto",
+ "estado": "Evaluar",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4476881205",
+ "linkedinId": "4476881205",
+ "modalidad": "Remoto",
+ "moneda": "CAD",
+ "n": 92,
+ "notas": "2026-11-21: run diario. El mismo aviso salió en 8 ciudades. También salieron SWE I Fullstack (Disputes, 4492877015, puesto de entrada con el mismo requisito) y SWE II Card Pre-Swipe (exige Python o Kotlin: app-124).",
+ "periodo": "año",
+ "porQue": "Pide 1.5+ años; React en producción; APIs con NestJS y PostgreSQL; code review y codebases grandes (Kruger, Delphi). Remoto en Canadá.",
+ "prioridad": 1,
+ "proximoPaso": "Ver en la web de Affirm si aceptan backend en otro lenguaje; si sí, aplicar a esta versión (London ON) y no a las de otras ciudades.",
+ "publicada": "2026-11-21",
+ "puesto": "Software Engineer II, Fullstack (Ads Platform)",
+ "salMax": 183000,
+ "salMin": 133000,
+ "salario": "CA$133,000–183,000/año",
+ "solicitantes": "44",
+ "stack": "React; APIs a escala en lenguajes como Python o Kotlin; on-call",
+ "techDes": [],
+ "techReq": [
+  "React",
+  "REST APIs",
+  "Python",
+  "Kotlin"
+ ],
+ "tipo": "Permanente",
+ "ubicacion": "Remoto en Canadá (AB, BC, MB, NB, NL, NS, ON, PE, SK)",
+ "updatedAt": "2026-11-21T14:50:00Z"
+}

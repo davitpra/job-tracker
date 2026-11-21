@@ -1,20 +1,106 @@
 {
- "empresa": "Manulife",
- "puesto": "Full-Stack Software Engineer - React",
- "linkedinId": "4483667644",
- "busqueda": "backend",
- "estado": "Evaluar",
- "encaje": "Muy alto",
- "tipo": "Permanente",
- "modalidad": "Híbrido",
- "ubicacion": "Waterloo, ON (días no indicados)",
  "anios": "3–5",
+ "brechas": "Híbrido en Waterloo sin días indicados; WCAG 2.1 🟡 (no sabe la versión que usó); 200+ solicitantes (pasa la excepción).",
+ "busqueda": "backend",
+ "clasif": {
+  "filtro": "Dudoso: Waterloo híbrido, días de oficina no indicados",
+  "max": 20,
+  "pct": 95,
+  "prioridad": {
+   "ajustes": [
+    {
+     "t": "200+ solicitantes",
+     "v": -1
+    }
+   ],
+   "base": 1,
+   "final": 2
+  },
+  "pts": 19,
+  "requisitos": [
+   {
+    "e": "3–5 años; ~3,8",
+    "n": 2,
+    "r": "Años de experiencia"
+   },
+   {
+    "e": "Núcleo del CV",
+    "n": 2,
+    "r": "React, Node, Express, JS, HTML, CSS"
+   },
+   {
+    "e": "Jest, Cypress",
+    "n": 2,
+    "r": "Construir y testear frontends"
+   },
+   {
+    "e": "Kruger, Idukay, Delphi",
+    "n": 2,
+    "r": "Componentes React y Redux"
+   },
+   {
+    "e": "Next.js",
+    "n": 2,
+    "r": "SSR con React"
+   },
+   {
+    "e": "Tailwind, styled-components",
+    "n": 2,
+    "r": "CSS fuerte y responsive"
+   },
+   {
+    "e": "Delphi",
+    "n": 2,
+    "r": "Accesibilidad en el ciclo de desarrollo"
+   },
+   {
+    "e": "Versión no confirmada",
+    "n": 1,
+    "r": "WCAG 2.1"
+   },
+   {
+    "e": "Kanban, CI/CD",
+    "n": 2,
+    "r": "Agile, DevOps, APIs y BD"
+   },
+   {
+    "e": "Clientes",
+    "n": 2,
+    "r": "Comunicación"
+   }
+  ],
+  "rubrica": "2026-11-04"
+ },
+ "createdAt": "2026-11-18T20:30:00Z",
+ "cvAdaptada": "No",
+ "empresa": "Manulife",
+ "encaje": "Muy alto",
+ "estado": "Descartada",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4483667644",
+ "linkedinId": "4483667644",
+ "modalidad": "Híbrido",
+ "moneda": "CAD",
+ "n": 15,
+ "notas": "2026-11-18: run diario.",
+ "periodo": "año",
+ "porQue": "React + Redux (Kruger, Idukay, Delphi), Node/Express, SSR con Next.js, WCAG en Delphi, semantic versioning y GitHub Actions.",
+ "prioridad": 2,
+ "proximoPaso": "Averiguar los días de oficina en Waterloo; si son pocos, aplicar en la web de Manulife y escribir a alguien del equipo.",
+ "publicada": "2026-11-18",
+ "puesto": "Full-Stack Software Engineer - React",
+ "salMax": 136100,
+ "salMin": 86100,
+ "salario": "CA$86,100–136,100/año",
  "solicitantes": "200+",
  "stack": "React, Redux, Node.js, Express, SSR, WCAG 2.1",
- "porQue": "React + Redux (Kruger, Idukay, Delphi), Node/Express, SSR con Next.js, WCAG en Delphi, semantic versioning y GitHub Actions.",
- "brechas": "Híbrido en Waterloo sin días indicados; WCAG 2.1 🟡 (no sabe la versión que usó); 200+ solicitantes (pasa la excepción).",
- "proximoPaso": "Averiguar los días de oficina en Waterloo; si son pocos, aplicar en la web de Manulife y escribir a alguien del equipo.",
- "notas": "2026-11-18: run diario.",
+ "techDes": [
+  "Azure",
+  "Kubernetes",
+  "CI/CD",
+  "AEM",
+  "SonarQube"
+ ],
  "techReq": [
   "React",
   "Redux",
@@ -23,93 +109,7 @@
   "JavaScript",
   "HTML / CSS"
  ],
- "techDes": [
-  "Azure",
-  "Kubernetes",
-  "CI/CD",
-  "AEM",
-  "SonarQube"
- ],
- "clasif": {
-  "pts": 19,
-  "max": 20,
-  "pct": 95,
-  "requisitos": [
-   {
-    "r": "Años de experiencia",
-    "n": 2,
-    "e": "3–5 años; ~3,8"
-   },
-   {
-    "r": "React, Node, Express, JS, HTML, CSS",
-    "n": 2,
-    "e": "Núcleo del CV"
-   },
-   {
-    "r": "Construir y testear frontends",
-    "n": 2,
-    "e": "Jest, Cypress"
-   },
-   {
-    "r": "Componentes React y Redux",
-    "n": 2,
-    "e": "Kruger, Idukay, Delphi"
-   },
-   {
-    "r": "SSR con React",
-    "n": 2,
-    "e": "Next.js"
-   },
-   {
-    "r": "CSS fuerte y responsive",
-    "n": 2,
-    "e": "Tailwind, styled-components"
-   },
-   {
-    "r": "Accesibilidad en el ciclo de desarrollo",
-    "n": 2,
-    "e": "Delphi"
-   },
-   {
-    "r": "WCAG 2.1",
-    "n": 1,
-    "e": "Versión no confirmada"
-   },
-   {
-    "r": "Agile, DevOps, APIs y BD",
-    "n": 2,
-    "e": "Kanban, CI/CD"
-   },
-   {
-    "r": "Comunicación",
-    "n": 2,
-    "e": "Clientes"
-   }
-  ],
-  "prioridad": {
-   "base": 1,
-   "ajustes": [
-    {
-     "t": "200+ solicitantes",
-     "v": -1
-    }
-   ],
-   "final": 2
-  },
-  "rubrica": "2026-11-04",
-  "filtro": "Dudoso: Waterloo híbrido, días de oficina no indicados"
- },
- "salario": "CA$86,100–136,100/año",
- "salMin": 86100,
- "salMax": 136100,
- "moneda": "CAD",
- "periodo": "año",
- "fuente": "LinkedIn (Apify)",
- "publicada": "2026-11-18",
- "cvAdaptada": "No",
- "link": "https://www.linkedin.com/jobs/view/4483667644",
- "createdAt": "2026-11-18T20:30:00Z",
- "updatedAt": "2026-11-18T20:30:00Z",
- "prioridad": 2,
- "n": 15
+ "tipo": "Permanente",
+ "ubicacion": "Waterloo, ON (días no indicados)",
+ "updatedAt": "2026-11-19T15:30:00Z"
 }

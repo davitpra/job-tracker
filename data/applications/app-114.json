@@ -1,0 +1,31 @@
+{
+ "anios": "5+",
+ "busqueda": "backend",
+ "createdAt": "2026-11-21T14:50:00Z",
+ "cvAdaptada": "No",
+ "empresa": "GoDaddy",
+ "estado": "Descartada",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4490774834",
+ "linkedinId": "4490774834",
+ "modalidad": "Remoto",
+ "motivoDescarte": [
+  "Senior o 5+ años",
+  "200+ solicitantes"
+ ],
+ "n": 114,
+ "notas": "2026-11-21: run diario. También salió un Staff SDE de GoDaddy (4490793024).",
+ "publicada": "2026-11-20",
+ "puesto": "Software Development Engineer",
+ "salario": "",
+ "solicitantes": "200+",
+ "stack": "Python, TypeScript o similar",
+ "techDes": [],
+ "techReq": [
+  "Python",
+  "TypeScript"
+ ],
+ "tipo": "Permanente",
+ "ubicacion": "Canadá",
+ "updatedAt": "2026-11-21T14:50:00Z"
+}

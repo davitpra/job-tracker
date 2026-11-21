@@ -1,0 +1,36 @@
+{
+ "anios": "3+",
+ "busqueda": "contratos",
+ "createdAt": "2026-11-21T14:50:00Z",
+ "cvAdaptada": "No",
+ "empresa": "Optimize Financial Group",
+ "estado": "Descartada",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4492591530",
+ "linkedinId": "4492591530",
+ "modalidad": "Presencial",
+ "motivoDescarte": [
+  "Híbrido o presencial",
+  "200+ solicitantes"
+ ],
+ "n": 102,
+ "notas": "2026-11-21: run diario. Presencial 5 días.",
+ "publicada": "2026-11-20",
+ "puesto": "Full Stack Web Developer",
+ "salario": "",
+ "solicitantes": "200+",
+ "stack": "Python, JavaScript o Java; React o Angular; SQL/NoSQL",
+ "techDes": [
+  "Python",
+  "Java",
+  "Angular"
+ ],
+ "techReq": [
+  "JavaScript",
+  "React",
+  "SQL"
+ ],
+ "tipo": "Permanente",
+ "ubicacion": "Toronto, ON (lunes a viernes en oficina)",
+ "updatedAt": "2026-11-21T14:50:00Z"
+}

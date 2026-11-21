@@ -1,0 +1,121 @@
+{
+ "anios": "5+ (4+ si es excepcional)",
+ "brechas": "Título Senior y piden 5+ años (4+ excepcional); en empresa 3,8 → ❌, tope Medio y prioridad −1. Sistemas distribuidos y de alto throughput en tiempo real 🟡 (5.000+ envíos/día en Kruger, colas BullMQ). MCP y A2A no figuran en el CV 🟡. GCP y BigQuery 🟡. Rol 80/20 hacia backend. Exigen perfil de LinkedIn con foto identificable.",
+ "clasif": {
+  "ajusteEncaje": "Tope Medio por título Senior y 5+ años",
+  "max": 18,
+  "pct": 83,
+  "prioridad": {
+   "ajustes": [
+    {
+     "t": "contacto",
+     "v": 1
+    },
+    {
+     "t": "residencia",
+     "v": 1
+    },
+    {
+     "t": "Senior",
+     "v": -1
+    }
+   ],
+   "base": 2,
+   "final": 1
+  },
+  "pts": 15,
+  "requisitos": [
+   {
+    "e": "~3,8 en empresa",
+    "n": 0,
+    "r": "5+ años (4+ excepcional)"
+   },
+   {
+    "e": "Claude Code, Codex a diario; spec-driven development",
+    "n": 2,
+    "r": "Mentalidad AI-native con agentes de código"
+   },
+   {
+    "e": "Líder técnico del módulo de órdenes en Kruger; 12 ADRs en Greenhouse",
+    "n": 2,
+    "r": "Fundamentos de ingeniería sólidos"
+   },
+   {
+    "e": "NestJS REST, BullMQ/pg-boss, Row-Level Security",
+    "n": 2,
+    "r": "APIs y servicios backend (REST, event-driven, auth, versionado)"
+   },
+   {
+    "e": "5.000+ envíos/día en Kruger; pipeline asíncrono de IA; no a gran escala",
+    "n": 1,
+    "r": "Sistemas distribuidos, alto throughput o decisiones autónomas"
+   },
+   {
+    "e": "Trabajo independiente desde 2024; cofundador técnico",
+    "n": 2,
+    "r": "Self-starter y ownership"
+   },
+   {
+    "e": "Proyectos 0-to-1 en dominios distintos",
+    "n": 2,
+    "r": "Ambigüedad y aprender rápido"
+   },
+   {
+    "e": "Requisitos con H&S y RR. HH.; trato con clientes",
+    "n": 2,
+    "r": "Comunicación"
+   },
+   {
+    "e": "Code review en Kruger y Delphi",
+    "n": 2,
+    "r": "Enfoque low-ego y abierto a feedback"
+   }
+  ],
+  "rubrica": "2026-11-19"
+ },
+ "contacto": "Ali Prichard (Recruiting @ Apostra, linkedin.com/in/aliprichard)",
+ "createdAt": "2026-11-20T02:15:00Z",
+ "cvAdaptada": "No",
+ "empresa": "Apostra",
+ "encaje": "Medio",
+ "estado": "Entrevista recruiter",
+ "fechaRespuesta": "2026-11-19",
+ "fechaSenal": "2026-11-19",
+ "fuente": "Correo (Rippling)",
+ "link": "https://ats.rippling.com/scope3pbc/jobs/187a53cd-31db-4f27-9201-4deadc56de6f",
+ "modalidad": "Remoto",
+ "moneda": "CAD",
+ "n": 81,
+ "notas": "2026-11-19: correo de Ali Prichard (Recruiting) invitando a un recruiter screen por video de 30 min. Aplicación anterior al reinicio del tracker (18 nov): fecha de aplicación y CV usado sin registrar. La oferta está en el ATS de Rippling bajo scope3pbc. Si ninguna hora sirve, ofrecen fechas tras el Thanksgiving de EE.UU. (semana del 30 nov).\n2026-11-19: agregada la descripción completa. Plataforma de publicidad agéntica: agentes de IA que descubren, negocian y compran inventario de medios; full stack 80/20 hacia backend. Llegó a entrevista pese al tope por Senior: dato para \"¿La rúbrica acierta?\".\n2026-11-20: Ali confirmó el screen para el lunes 23 nov, 9:00–9:30 a.m. MT (11:00 a.m. ET); envía invitación de calendario.",
+ "periodo": "año",
+ "plataforma": "Rippling",
+ "porQue": "Desarrollo AI-first a diario (Claude Code, Codex, spec-driven con ADRs y tests en CI), que es el centro del rol; su núcleo TypeScript/Node + React + PostgreSQL + Redis es el stack de Apostra; perfil de startup y ownership (cofundador técnico de Claw & Soul, desarrollador único de Greenhouse H&S). Cumple la autorización de trabajo en Canadá sin patrocinio.",
+ "prioridad": 1,
+ "proximoPaso": "Recruiter screen con Ali Prichard: lunes 23 nov, 9:00–9:30 a.m. MT = 11:00–11:30 a.m. ET (video, 30 min). Confirmar que llegó la invitación y preparar historias (IA en el flujo, MCP, alto volumen, años, salario).",
+ "puesto": "Senior Software Engineer",
+ "salMax": 200000,
+ "salMin": 150000,
+ "salario": "CA$150,000–200,000/año (US$150K–190K)",
+ "senal": "Respondió",
+ "stack": "TypeScript/Node.js, REST y servicios event-driven, React, servidores MCP y A2A, PostgreSQL, BigQuery, Redis, GCP, AWS",
+ "techDes": [
+  "React",
+  "PostgreSQL",
+  "Redis",
+  "BigQuery",
+  "GCP",
+  "AWS",
+  "MCP"
+ ],
+ "techReq": [
+  "TypeScript",
+  "Node.js",
+  "REST APIs",
+  "Kafka / colas",
+  "Microservicios",
+  "IA / LLM"
+ ],
+ "tipo": "Permanente",
+ "ubicacion": "Remoto en EE.UU. o Canadá (sin patrocinio de visa)",
+ "updatedAt": "2026-11-20T22:58:00Z"
+}

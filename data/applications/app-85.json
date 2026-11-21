@@ -1,0 +1,109 @@
+{
+ "anios": "3+",
+ "brechas": "LLM en producción con agentes, tool calling o RAG 🟡 (sus pipelines usan visión y prompting dinámico, no agentes). Zapier/Make, Airtable y Salesforce no figuran (deseables). Rol de automatización interna, no de producto.",
+ "busqueda": "backend",
+ "clasif": {
+  "max": 18,
+  "pct": 94,
+  "prioridad": {
+   "ajustes": [
+    {
+     "t": "residencia",
+     "v": 1
+    }
+   ],
+   "base": 1,
+   "final": 1
+  },
+  "pts": 17,
+  "requisitos": [
+   {
+    "e": "~3,8 en empresa",
+    "n": 2,
+    "r": "3+ años en ingeniería o similar"
+   },
+   {
+    "e": "Pipeline de IA de Claw & Soul; sin agentes ni RAG",
+    "n": 1,
+    "r": "Apps con LLM en producción (agentes, tool calling, RAG)"
+   },
+   {
+    "e": "Claude Code, Codex",
+    "n": 2,
+    "r": "Herramientas de IA agénticas para programar"
+   },
+   {
+    "e": "TypeScript/JavaScript",
+    "n": 2,
+    "r": "Python y/o JavaScript"
+   },
+   {
+    "e": "PostgreSQL; modelo de datos en Kruger",
+    "n": 2,
+    "r": "SQL y calidad de datos"
+   },
+   {
+    "e": "Módulo de reportes en Idukay; registros por turno en Horizon Place",
+    "n": 2,
+    "r": "Dashboards, reportes o pipelines de datos"
+   },
+   {
+    "e": "Webhooks de Shopify, APIs de NestJS",
+    "n": 2,
+    "r": "REST, webhooks, JSON e integraciones"
+   },
+   {
+    "e": "H&S y RR. HH. en Greenhouse; cocina en Horizon Place",
+    "n": 2,
+    "r": "Trabajo con equipos no técnicos"
+   },
+   {
+    "e": "Proyectos 0-to-1 propios",
+    "n": 2,
+    "r": "Ambigüedad y poco proceso"
+   }
+  ],
+  "rubrica": "2026-11-19"
+ },
+ "createdAt": "2026-11-21T14:50:00Z",
+ "cvAdaptada": "No",
+ "empresa": "Trexo Robotics",
+ "encaje": "Muy alto",
+ "estado": "Por aplicar",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4492947842",
+ "linkedinId": "4492947842",
+ "modalidad": "Híbrido",
+ "moneda": "CAD",
+ "n": 85,
+ "notas": "2026-11-21: run diario. Robots para la marcha de niños con parálisis cerebral; rol nuevo.",
+ "periodo": "año",
+ "porQue": "Primer puesto de herramientas internas: diagnostica cuellos de botella con los equipos y los automatiza end to end, como hizo en Greenhouse (requisitos con H&S y RR. HH.) y Horizon Place. Pipelines de IA en producción (fal.ai, visión, prompting dinámico), integraciones con webhooks y APIs (Shopify), reportes y métricas (módulo de reportes en Idukay). Claude Code y Codex a diario. Exige poder trabajar en Canadá sin patrocinio: lo cumple.",
+ "prioridad": 1,
+ "proximoPaso": "Aplicar en la web de Trexo; en el CV, poner primero Greenhouse y Horizon Place (procesos manuales digitalizados) y el pipeline de IA.",
+ "publicada": "2026-11-20",
+ "puesto": "AI Engineer",
+ "salMax": 135000,
+ "salMin": 100000,
+ "salario": "CA$100,000–135,000/año",
+ "solicitantes": "79",
+ "stack": "LLMs, agentes, Python y/o JavaScript, SQL, dashboards, Zapier/Make, Airtable, Salesforce; herramientas internas",
+ "techDes": [
+  "Python",
+  "MCP",
+  "LangChain",
+  "n8n",
+  "Salesforce",
+  "Airtable",
+  "Zapier"
+ ],
+ "techReq": [
+  "IA / LLM",
+  "JavaScript",
+  "SQL",
+  "REST APIs"
+ ],
+ "tipo": "Permanente",
+ "ubicacion": "Mississauga, ON (3 días en oficina)",
+ "updatedAt": "2026-11-21T14:50:00Z"
+}

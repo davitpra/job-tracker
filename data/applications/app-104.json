@@ -1,0 +1,36 @@
+{
+ "anios": "6+",
+ "busqueda": "backend",
+ "createdAt": "2026-11-21T14:50:00Z",
+ "cvAdaptada": "No",
+ "empresa": "GSK Solutions (cliente no revelado)",
+ "estado": "Descartada",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4492582901",
+ "linkedinId": "4492582901",
+ "modalidad": "Híbrido",
+ "motivoDescarte": [
+  "Senior o 5+ años",
+  "Python como núcleo"
+ ],
+ "n": 104,
+ "notas": "2026-11-21: run diario. 6+ años y 1–2 liderando iniciativas de IA. TMT IT Solutions publicó un aviso casi igual (app-111).",
+ "publicada": "2026-11-20",
+ "puesto": "AI Engineer (contrato)",
+ "salario": "",
+ "solicitantes": "31",
+ "stack": "Python, React, Next.js, AWS (EKS, Lambda, Fargate), LLMs, agentes, MCP, RAG",
+ "techDes": [],
+ "techReq": [
+  "Python",
+  "React",
+  "Next.js",
+  "TypeScript",
+  "AWS",
+  "IA / LLM",
+  "MCP"
+ ],
+ "tipo": "Contrato",
+ "ubicacion": "Toronto, ON (4 días en el cliente)",
+ "updatedAt": "2026-11-21T14:50:00Z"
+}

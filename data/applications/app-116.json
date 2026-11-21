@@ -1,0 +1,33 @@
+{
+ "anios": "2+",
+ "busqueda": "backend",
+ "createdAt": "2026-11-21T14:50:00Z",
+ "cvAdaptada": "No",
+ "empresa": "Guidewire Software",
+ "estado": "Descartada",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4432287852",
+ "linkedinId": "4432287852",
+ "modalidad": "",
+ "motivoDescarte": [
+  "Java/Kotlin, .NET o C#",
+  "200+ solicitantes"
+ ],
+ "n": 116,
+ "notas": "2026-11-21: run diario.",
+ "publicada": "2026-11-21",
+ "puesto": "SBT Content Software Engineer II",
+ "salario": "",
+ "solicitantes": "200+",
+ "stack": "Core Java, Spring; JS/TS o Python; microservicios en la nube",
+ "techDes": [
+  "IA / LLM"
+ ],
+ "techReq": [
+  "Java",
+  "Microservicios"
+ ],
+ "tipo": "Permanente",
+ "ubicacion": "Toronto, ON",
+ "updatedAt": "2026-11-21T14:50:00Z"
+}

@@ -1,0 +1,30 @@
+{
+ "anios": "5+",
+ "busqueda": "nucleo",
+ "createdAt": "2026-11-21T14:50:00Z",
+ "cvAdaptada": "No",
+ "empresa": "Morningstar",
+ "estado": "Descartada",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4493213156",
+ "linkedinId": "4493213156",
+ "modalidad": "Híbrido",
+ "motivoDescarte": [
+  "Java/Kotlin, .NET o C#",
+  "Senior o 5+ años"
+ ],
+ "n": 121,
+ "notas": "2026-11-21: run diario.",
+ "publicada": "2026-11-20",
+ "puesto": "Senior Software Engineer",
+ "salario": "",
+ "solicitantes": "27",
+ "stack": "C#, sistemas distribuidos",
+ "techDes": [],
+ "techReq": [
+  "C# / .NET"
+ ],
+ "tipo": "Permanente",
+ "ubicacion": "Toronto, ON (4 días en oficina)",
+ "updatedAt": "2026-11-21T14:50:00Z"
+}

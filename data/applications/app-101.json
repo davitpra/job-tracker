@@ -1,0 +1,39 @@
+{
+ "anios": "6+",
+ "busqueda": "contratos",
+ "createdAt": "2026-11-21T14:50:00Z",
+ "cvAdaptada": "No",
+ "empresa": "TEEMA (cliente no revelado)",
+ "estado": "Descartada",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4492822234",
+ "linkedinId": "4492822234",
+ "modalidad": "",
+ "moneda": "CAD",
+ "motivoDescarte": [
+  "Java/Kotlin, .NET o C#",
+  "Senior o 5+ años"
+ ],
+ "n": 101,
+ "notas": "2026-11-21: run diario. 6+ años y 3+ de Java/Spring; ejercicio en vivo de Java.",
+ "periodo": "año",
+ "publicada": "2026-11-20",
+ "puesto": "Full Stack AI Developer",
+ "salMax": 140000,
+ "salMin": 120000,
+ "salario": "CA$120,000–140,000/año",
+ "solicitantes": "105",
+ "stack": "Java/Spring, React/TypeScript, AWS CDK, Bedrock/SageMaker",
+ "techDes": [],
+ "techReq": [
+  "Java",
+  "React",
+  "TypeScript",
+  "AWS",
+  "Microservicios",
+  "IA / LLM"
+ ],
+ "tipo": "Permanente",
+ "ubicacion": "Canadá (horario PST)",
+ "updatedAt": "2026-11-21T14:50:00Z"
+}

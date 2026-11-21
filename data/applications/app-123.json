@@ -1,0 +1,34 @@
+{
+ "anios": "No indica",
+ "busqueda": "backend",
+ "createdAt": "2026-11-21T14:50:00Z",
+ "cvAdaptada": "No",
+ "empresa": "NLB Services (cliente retail en Brampton)",
+ "estado": "Descartada",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4492831038",
+ "linkedinId": "4492831038",
+ "modalidad": "Híbrido",
+ "motivoDescarte": [
+  "Duplicada o ya aplicaste en la empresa"
+ ],
+ "n": 123,
+ "notas": "2026-11-21: run diario. Mismo contrato que app-79 (aplicado por TalentWorld el 19 nov); no aplicar por otra agencia.",
+ "publicada": "2026-11-20",
+ "puesto": "Full Stack Developer (React / Next.js / Node.js)",
+ "salario": "",
+ "solicitantes": "46",
+ "stack": "React, Next.js, Node.js, PostgreSQL",
+ "techDes": [],
+ "techReq": [
+  "React",
+  "Next.js",
+  "Node.js",
+  "PostgreSQL",
+  "SQL",
+  "REST APIs"
+ ],
+ "tipo": "Contrato",
+ "ubicacion": "Brampton, ON",
+ "updatedAt": "2026-11-21T14:50:00Z"
+}

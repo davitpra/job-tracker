@@ -1,0 +1,34 @@
+{
+ "anios": "No indica",
+ "busqueda": "backend",
+ "createdAt": "2026-11-21T14:50:00Z",
+ "cvAdaptada": "No",
+ "empresa": "Tailscale",
+ "estado": "Descartada",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4448064655",
+ "linkedinId": "4448064655",
+ "modalidad": "Remoto",
+ "motivoDescarte": [
+  "Otro stack como núcleo",
+  "200+ solicitantes"
+ ],
+ "n": 117,
+ "notas": "2026-11-21: run diario.",
+ "publicada": "2026-11-20",
+ "puesto": "Software Engineer, Strategic Projects",
+ "salario": "",
+ "solicitantes": "200+",
+ "stack": "Go obligatorio; prototipos de gateways MCP, proxies de LLM",
+ "techDes": [
+  "Python",
+  "Rust",
+  "TypeScript"
+ ],
+ "techReq": [
+  "Go"
+ ],
+ "tipo": "Permanente",
+ "ubicacion": "Canadá",
+ "updatedAt": "2026-11-21T14:50:00Z"
+}

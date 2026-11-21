@@ -1,101 +1,101 @@
 {
- "empresa": "Vantage",
- "puesto": "Full Stack Engineer",
- "linkedinId": "4461525228",
- "busqueda": "backend",
- "estado": "Por aplicar",
- "encaje": "Muy alto",
- "tipo": "Permanente",
- "modalidad": "Remoto",
- "ubicacion": "Remote-first (sede Toronto)",
  "anios": "3+",
- "solicitantes": "200+",
- "stack": "JavaScript, React, Python/Django, TypeScript, Redux",
- "porQue": "3+ años full stack en SaaS; React y Redux (Kruger, Idukay, Delphi); Jest; monitoreo con Datadog, Sentry y Kibana; CI/CD y nube.",
  "brechas": "Grandes volúmenes de datos 🟡; Python/Django solo deseable; 200+ solicitantes (pasa la excepción) → escribir hoy a alguien del equipo.",
- "proximoPaso": "Aplicar en la web de Vantage y escribir hoy a alguien de Product Development.",
- "notas": "2026-11-18: run diario. Plataforma de retail media (AdTech).",
- "techReq": [
-  "JavaScript",
-  "React",
-  "Jest",
-  "CI/CD"
- ],
- "techDes": [
-  "Python",
-  "Django",
-  "TypeScript",
-  "Redux"
- ],
+ "busqueda": "backend",
  "clasif": {
-  "pts": 15,
   "max": 16,
   "pct": 94,
-  "requisitos": [
-   {
-    "r": "Años de experiencia",
-    "n": 2,
-    "e": "3+ años; ~3,8"
-   },
-   {
-    "r": "JavaScript y React",
-    "n": 2,
-    "e": "Núcleo del CV"
-   },
-   {
-    "r": "Tests unitarios e integración",
-    "n": 2,
-    "e": "Jest, Vitest"
-   },
-   {
-    "r": "Grandes volúmenes de datos",
-    "n": 1,
-    "e": "PostgreSQL full-text; no a gran escala"
-   },
-   {
-    "r": "Monitoreo, debugging y logs",
-    "n": 2,
-    "e": "Datadog, Sentry, Kibana"
-   },
-   {
-    "r": "CI/CD",
-    "n": 2,
-    "e": "GitHub Actions, Jenkins"
-   },
-   {
-    "r": "Nube (AWS/GCP/Azure)",
-    "n": 2,
-    "e": "AWS, Azure AKS"
-   },
-   {
-    "r": "Colaboración con producto",
-    "n": 2,
-    "e": "Kruger, Delphi"
-   }
-  ],
   "prioridad": {
-   "base": 1,
    "ajustes": [
     {
      "t": "200+ solicitantes",
      "v": -1
     }
    ],
+   "base": 1,
    "final": 2
   },
+  "pts": 15,
+  "requisitos": [
+   {
+    "e": "3+ años; ~3,8",
+    "n": 2,
+    "r": "Años de experiencia"
+   },
+   {
+    "e": "Núcleo del CV",
+    "n": 2,
+    "r": "JavaScript y React"
+   },
+   {
+    "e": "Jest, Vitest",
+    "n": 2,
+    "r": "Tests unitarios e integración"
+   },
+   {
+    "e": "PostgreSQL full-text; no a gran escala",
+    "n": 1,
+    "r": "Grandes volúmenes de datos"
+   },
+   {
+    "e": "Datadog, Sentry, Kibana",
+    "n": 2,
+    "r": "Monitoreo, debugging y logs"
+   },
+   {
+    "e": "GitHub Actions, Jenkins",
+    "n": 2,
+    "r": "CI/CD"
+   },
+   {
+    "e": "AWS, Azure AKS",
+    "n": 2,
+    "r": "Nube (AWS/GCP/Azure)"
+   },
+   {
+    "e": "Kruger, Delphi",
+    "n": 2,
+    "r": "Colaboración con producto"
+   }
+  ],
   "rubrica": "2026-11-04"
  },
- "salario": "CA$115K–145K/año",
- "salMin": 115000,
- "salMax": 145000,
- "moneda": "CAD",
- "periodo": "año",
- "fuente": "LinkedIn (Apify)",
- "publicada": "2026-11-18",
- "cvAdaptada": "No",
- "link": "https://www.linkedin.com/jobs/view/4461525228",
  "createdAt": "2026-11-18T20:30:00Z",
- "updatedAt": "2026-11-18T20:30:00Z",
+ "cvAdaptada": "No",
+ "empresa": "Vantage",
+ "encaje": "Muy alto",
+ "estado": "Descartada",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4461525228",
+ "linkedinId": "4461525228",
+ "modalidad": "Remoto",
+ "moneda": "CAD",
+ "n": 9,
+ "notas": "2026-11-18: run diario. Plataforma de retail media (AdTech).",
+ "periodo": "año",
+ "porQue": "3+ años full stack en SaaS; React y Redux (Kruger, Idukay, Delphi); Jest; monitoreo con Datadog, Sentry y Kibana; CI/CD y nube.",
  "prioridad": 2,
- "n": 9
+ "proximoPaso": "Aplicar en la web de Vantage y escribir hoy a alguien de Product Development.",
+ "publicada": "2026-11-18",
+ "puesto": "Full Stack Engineer",
+ "salMax": 145000,
+ "salMin": 115000,
+ "salario": "CA$115K–145K/año",
+ "solicitantes": "200+",
+ "stack": "JavaScript, React, Python/Django, TypeScript, Redux",
+ "techDes": [
+  "Python",
+  "Django",
+  "TypeScript",
+  "Redux"
+ ],
+ "techReq": [
+  "JavaScript",
+  "React",
+  "Jest",
+  "CI/CD"
+ ],
+ "tipo": "Permanente",
+ "ubicacion": "Remote-first (sede Toronto)",
+ "updatedAt": "2026-11-19T15:30:00Z"
 }

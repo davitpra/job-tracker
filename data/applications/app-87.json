@@ -1,0 +1,109 @@
+{
+ "anios": "3–5+",
+ "brechas": "Piden 3–5+ años; en empresa 3,8 → 🟡. LLM con retrieval y evaluación 🟡. IaC y observabilidad 🟡 (AWS SAM, Datadog, Sentry). Rol muy backend (>70 %). El aviso incluye también un Lead (5–8+ años): aplicar al Backend Engineer.",
+ "busqueda": "backend",
+ "clasif": {
+  "max": 22,
+  "pct": 86,
+  "prioridad": {
+   "ajustes": [],
+   "base": 1,
+   "final": 1
+  },
+  "pts": 19,
+  "requisitos": [
+   {
+    "e": "~3,8 en empresa",
+    "n": 1,
+    "r": "3–5+ años con backend en producción"
+   },
+   {
+    "e": "Kruger, Greenhouse",
+    "n": 2,
+    "r": "Fundamentos: diseño, debugging, tests"
+   },
+   {
+    "e": "Órdenes y pagos en Kruger (5.000+ envíos/día)",
+    "n": 2,
+    "r": "Servicios en producción para flujos críticos"
+   },
+   {
+    "e": "TypeScript con NestJS",
+    "n": 2,
+    "r": "Lenguaje de backend moderno (incluye TypeScript)"
+   },
+   {
+    "e": "NestJS, BullMQ, PostgreSQL, MongoDB",
+    "n": 2,
+    "r": "APIs, SOA, event-driven, SQL y NoSQL"
+   },
+   {
+    "e": "Conciliación contra entrega en Kruger; audit logs en Greenhouse",
+    "n": 2,
+    "r": "Correctitud, idempotencia, conciliación y auditoría"
+   },
+   {
+    "e": "AWS en Kruger y Claw & Soul",
+    "n": 2,
+    "r": "AWS, GCP o Azure"
+   },
+   {
+    "e": "PostgreSQL, Drizzle, Prisma",
+    "n": 2,
+    "r": "SQL, modelado y migraciones"
+   },
+   {
+    "e": "Pipeline de fal.ai; sin retrieval ni evaluación",
+    "n": 1,
+    "r": "Capacidades con LLMs (retrieval, evaluación, tools)"
+   },
+   {
+    "e": "GitHub Actions, AWS SAM, Datadog, Sentry",
+    "n": 1,
+    "r": "CI/CD, IaC, observabilidad e incidentes"
+   },
+   {
+    "e": "ADRs, trato con clientes",
+    "n": 2,
+    "r": "Criterio y comunicación"
+   }
+  ],
+  "rubrica": "2026-11-19"
+ },
+ "createdAt": "2026-11-21T14:50:00Z",
+ "cvAdaptada": "No",
+ "empresa": "Lakeview Loan Servicing",
+ "encaje": "Alto",
+ "estado": "Por aplicar",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4492958254",
+ "linkedinId": "4492958254",
+ "modalidad": "Remoto",
+ "moneda": "USD",
+ "n": 87,
+ "notas": "2026-11-21: run diario. Equipo AI Platform Backend Engineering.",
+ "periodo": "año",
+ "porQue": "Sistemas transaccionales con conciliación y auditoría: cobros y conciliación contra entrega en Kruger, logs de auditoría encadenados con hash e inmutabilidad en Greenhouse. Acepta TypeScript; APIs, colas asíncronas (BullMQ, pg-boss), PostgreSQL con migraciones, AWS y CI/CD.",
+ "prioridad": 1,
+ "proximoPaso": "Aplicar por LinkedIn o en la web de Lakeview al puesto Backend Engineer (no al Lead).",
+ "publicada": "2026-11-20",
+ "puesto": "Backend Engineer (AI Platform)",
+ "salMax": 240000,
+ "salMin": 140000,
+ "salario": "US$140,000–240,000/año + bono",
+ "solicitantes": "104",
+ "stack": "Servicios backend y APIs para préstamos; event-driven, SQL y NoSQL, AWS/GCP/Azure; capacidades con LLMs (retrieval, evaluación, tools)",
+ "techDes": [],
+ "techReq": [
+  "REST APIs",
+  "Microservicios",
+  "SQL",
+  "Kafka / colas",
+  "AWS",
+  "IA / LLM",
+  "CI/CD"
+ ],
+ "tipo": "Permanente",
+ "ubicacion": "Toronto, ON / Nueva York / remoto",
+ "updatedAt": "2026-11-21T14:50:00Z"
+}

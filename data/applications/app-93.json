@@ -1,0 +1,99 @@
+{
+ "anios": "4+",
+ "brechas": "Vancouver sin modalidad: fuera de Ontario solo vale remoto. Piden 4+ años; en empresa 3,8 → 🟡. Título en CS (tiene diploma) 🟡. Backend en Ruby on Rails (deseable).",
+ "busqueda": "backend",
+ "clasif": {
+  "filtro": "Dudoso: Vancouver, no dice si es remoto",
+  "max": 20,
+  "pct": 90,
+  "prioridad": {
+   "ajustes": [],
+   "base": 1,
+   "final": 1
+  },
+  "pts": 18,
+  "requisitos": [
+   {
+    "e": "Diploma Fanshawe",
+    "n": 1,
+    "r": "Título en CS"
+   },
+   {
+    "e": "~3,8 en empresa",
+    "n": 1,
+    "r": "4+ años full stack"
+   },
+   {
+    "e": "Strategy, modular monolith, ADRs",
+    "n": 2,
+    "r": "Patrones y arquitectura limpia"
+   },
+   {
+    "e": "Núcleo del CV",
+    "n": 2,
+    "r": "React responsive"
+   },
+   {
+    "e": "NestJS, PostgreSQL, Shopify GraphQL",
+    "n": 2,
+    "r": "Backend, modelos de datos y APIs GraphQL/REST"
+   },
+   {
+    "e": "Claude Code, Codex",
+    "n": 2,
+    "r": "Herramientas de IA y workflows agénticos"
+   },
+   {
+    "e": "Jest, Cypress, AWS, GitHub Actions",
+    "n": 2,
+    "r": "Tests, nube y CI/CD"
+   },
+   {
+    "e": "H&S y RR. HH. en Greenhouse",
+    "n": 2,
+    "r": "Comunicar a técnicos y no técnicos"
+   },
+   {
+    "e": "Scrum, Kanban",
+    "n": 2,
+    "r": "Agile"
+   }
+  ],
+  "rubrica": "2026-11-19"
+ },
+ "createdAt": "2026-11-21T14:50:00Z",
+ "cvAdaptada": "No",
+ "empresa": "Envisio",
+ "encaje": "Muy alto",
+ "estado": "Evaluar",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4492809683",
+ "linkedinId": "4492809683",
+ "modalidad": "",
+ "n": 93,
+ "notas": "2026-11-21: run diario.",
+ "porQue": "Software de planificación para gobiernos locales. React, APIs GraphQL y REST con bases SQL/NoSQL, patrones y arquitectura limpia, agentes de IA a diario, tests y CI/CD; accesibilidad (deseable) en Delphi.",
+ "prioridad": 1,
+ "proximoPaso": "Confirmar si aceptan remoto desde Ontario; si sí, aplicar (sirve también para la mudanza a BC).",
+ "publicada": "2026-11-20",
+ "puesto": "Software Engineer/Senior Software Engineer (Full Stack)",
+ "salario": "",
+ "solicitantes": "109",
+ "stack": "React, backend con SQL/NoSQL y APIs GraphQL/REST, herramientas de IA; Ruby on Rails deseable; AWS, Heroku",
+ "techDes": [
+  "Ruby / Rails",
+  "AWS",
+  "Heroku"
+ ],
+ "techReq": [
+  "React",
+  "GraphQL",
+  "REST APIs",
+  "SQL",
+  "CI/CD",
+  "IA / LLM"
+ ],
+ "tipo": "Permanente",
+ "ubicacion": "Vancouver, BC (modalidad no indicada; horario PST)",
+ "updatedAt": "2026-11-21T14:50:00Z"
+}

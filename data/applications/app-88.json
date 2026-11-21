@@ -1,0 +1,89 @@
+{
+ "anios": "3+",
+ "brechas": "200+ solicitantes (pasa la excepción: Muy alto y publicada hoy) → escribir hoy a alguien del equipo. ID de aviso viejo: posible republicación. Orquestación de agentes 🟡.",
+ "busqueda": "backend",
+ "clasif": {
+  "max": 12,
+  "pct": 100,
+  "prioridad": {
+   "ajustes": [
+    {
+     "t": "200+ solicitantes",
+     "v": -1
+    }
+   ],
+   "base": 1,
+   "final": 2
+  },
+  "pts": 12,
+  "requisitos": [
+   {
+    "e": "~3,8 en empresa",
+    "n": 2,
+    "r": "3+ años en un rol de producto"
+   },
+   {
+    "e": "Diploma Fanshawe + experiencia",
+    "n": 2,
+    "r": "Título en CS/Ingeniería y experiencia"
+   },
+   {
+    "e": "Núcleo del CV",
+    "n": 2,
+    "r": "TypeScript, React, Next.js y Node.js"
+   },
+   {
+    "e": "Kruger (Datadog, Sentry, Kibana)",
+    "n": 2,
+    "r": "APIs, flujos de datos y debugging en vivo"
+   },
+   {
+    "e": "Pipelines de IA en Claw & Soul y ClawPuzzle",
+    "n": 2,
+    "r": "Interés en IA conversacional o de voz"
+   },
+   {
+    "e": "Trato directo con usuarios en sus proyectos",
+    "n": 2,
+    "r": "Atención al cliente y bias for action"
+   }
+  ],
+  "rubrica": "2026-11-19"
+ },
+ "createdAt": "2026-11-21T14:50:00Z",
+ "cvAdaptada": "No",
+ "empresa": "11x",
+ "encaje": "Muy alto",
+ "estado": "Por aplicar",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4477448694",
+ "linkedinId": "4477448694",
+ "modalidad": "Remoto",
+ "moneda": "CAD",
+ "n": 88,
+ "notas": "2026-11-21: run diario. En octubre dos avisos de 11x ya estaban en el tracker anterior: revisar si ya aplicó a la empresa.",
+ "periodo": "año",
+ "porQue": "Su stack exacto (TypeScript, React, Next.js, Node.js) con 3+ años; productos end to end con usuarios no técnicos (Greenhouse, Horizon Place); pipelines de IA en producción (fal.ai) y debugging en vivo (Kruger).",
+ "prioridad": 2,
+ "proximoPaso": "Aplicar en la web de 11x y escribir hoy a alguien del equipo de FDE.",
+ "publicada": "2026-11-21",
+ "puesto": "Forward Deployed Engineer [REMOTE - Canada]",
+ "salMax": 180000,
+ "salMin": 150000,
+ "salario": "CA$150,000–180,000/año",
+ "solicitantes": "200+",
+ "stack": "TypeScript, React, Next.js, Node.js; sistemas full stack para agentes de IA",
+ "techDes": [
+  "IA / LLM"
+ ],
+ "techReq": [
+  "TypeScript",
+  "React",
+  "Next.js",
+  "Node.js",
+  "REST APIs"
+ ],
+ "tipo": "Permanente",
+ "ubicacion": "Remoto en EE.UU. o Canadá",
+ "updatedAt": "2026-11-21T14:50:00Z"
+}

@@ -1,0 +1,112 @@
+{
+ "anios": "4+",
+ "brechas": "Piden 4 años mínimo; en empresa 3,8 → 🟡. Stack actual Ruby on Rails + MySQL (Ruby \"highly desired\", no lo tiene) y más Python a futuro. Optimización con grandes volúmenes 🟡 (5.000+ envíos/día en Kruger).",
+ "busqueda": "backend",
+ "clasif": {
+  "max": 20,
+  "pct": 90,
+  "prioridad": {
+   "ajustes": [
+    {
+     "t": "español",
+     "v": 1
+    },
+    {
+     "t": "<3 días y <50 solicitantes",
+     "v": 1
+    }
+   ],
+   "base": 1,
+   "final": 1
+  },
+  "pts": 18,
+  "requisitos": [
+   {
+    "e": "~3,8 en empresa",
+    "n": 1,
+    "r": "4+ años en desarrollo profesional"
+   },
+   {
+    "e": "Diploma Fanshawe",
+    "n": 2,
+    "r": "Título o diploma"
+   },
+   {
+    "e": "Mentoría a juniors; code review en Kruger y Delphi",
+    "n": 2,
+    "r": "Mentoría a co-ops, juniors y pares"
+   },
+   {
+    "e": "Scrum en Delphi, Kanban en Kruger",
+    "n": 2,
+    "r": "Agile"
+   },
+   {
+    "e": "PostgreSQL, MySQL/MariaDB",
+    "n": 2,
+    "r": "Soluciones con bases relacionales"
+   },
+   {
+    "e": "Modelo de datos y consultas en Kruger",
+    "n": 2,
+    "r": "SQL y optimización"
+   },
+   {
+    "e": "Núcleo del CV",
+    "n": 2,
+    "r": "HTML5, CSS3, JavaScript"
+   },
+   {
+    "e": "Requisitos con H&S y RR. HH. en Greenhouse",
+    "n": 2,
+    "r": "Comunicar detalles técnicos y requisitos"
+   },
+   {
+    "e": "Git, GitHub, Bitbucket",
+    "n": 2,
+    "r": "Control de versiones"
+   },
+   {
+    "e": "5.000+ envíos/día en Kruger; no big data",
+    "n": 1,
+    "r": "Código eficiente para grandes volúmenes"
+   }
+  ],
+  "rubrica": "2026-11-19"
+ },
+ "createdAt": "2026-11-21T14:50:00Z",
+ "cvAdaptada": "No",
+ "empresa": "Info-Tech Research Group (Infotech)",
+ "encaje": "Muy alto",
+ "estado": "Por aplicar",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4493227593",
+ "linkedinId": "4493227593",
+ "modalidad": "Remoto",
+ "n": 82,
+ "notas": "2026-11-21: run diario. Info-Tech ya había aparecido en el tracker anterior (octubre): revisar si aplicó entonces.",
+ "porQue": "Oficina en London ON y remoto en Canadá. Bases relacionales y SQL (PostgreSQL, Row-Level Security, modelo de datos de órdenes y pagos en Kruger); HTML/CSS/JS en todo el CV; mentoría a juniors y code review; Agile/Scrum. Valoran mucho el español (bilingüe francés, español o alemán \"strongly preferred\").",
+ "prioridad": 1,
+ "proximoPaso": "Aplicar por LinkedIn o en la web de Info-Tech; en el CV y la carta, mencionar el español nativo y que vive en London.",
+ "publicada": "2026-11-21",
+ "puesto": "Intermediate Full-Stack Software Developer - Remote/Hybrid (Canada)",
+ "salario": "",
+ "solicitantes": "31",
+ "stack": "Ruby on Rails, MySQL, JavaScript, Azure/OpenAI; más Python a futuro para la arquitectura de IA",
+ "techDes": [
+  "Ruby / Rails",
+  "Salesforce",
+  "AWS",
+  "Python",
+  "Azure",
+  "IA / LLM"
+ ],
+ "techReq": [
+  "SQL",
+  "HTML / CSS",
+  "JavaScript"
+ ],
+ "tipo": "Permanente",
+ "ubicacion": "Canadá: remoto, híbrido u oficina en London ON o Toronto",
+ "updatedAt": "2026-11-21T14:50:00Z"
+}

@@ -1,0 +1,95 @@
+{
+ "anios": "4+",
+ "brechas": "Piden 4 años; en empresa 3,8 → 🟡. Debugging en sistemas distribuidos 🟡. MCP y tool schemas para agentes (deseables) no figuran en el CV. Rol de backend.",
+ "busqueda": "backend",
+ "clasif": {
+  "max": 14,
+  "pct": 86,
+  "prioridad": {
+   "ajustes": [
+    {
+     "t": "<3 días y <50 solicitantes",
+     "v": 1
+    },
+    {
+     "t": "empresa suma al CV",
+     "v": 1
+    }
+   ],
+   "base": 1,
+   "final": 1
+  },
+  "pts": 12,
+  "requisitos": [
+   {
+    "e": "~3,8 en empresa",
+    "n": 1,
+    "r": "4+ años con servicios en producción"
+   },
+   {
+    "e": "TypeScript con NestJS",
+    "n": 2,
+    "r": "Lenguaje de backend (Python, Go, Java o TypeScript)"
+   },
+   {
+    "e": "APIs REST con NestJS en Kruger y Greenhouse",
+    "n": 2,
+    "r": "Diseño de APIs: versionado, errores, compatibilidad"
+   },
+   {
+    "e": "OAuth/OIDC, roles, Row-Level Security",
+    "n": 2,
+    "r": "Autenticación y autorización"
+   },
+   {
+    "e": "Tests en CI; distribuido solo parcial",
+    "n": 1,
+    "r": "Tests, entrega continua y debugging distribuido"
+   },
+   {
+    "e": "12 ADRs, specs",
+    "n": 2,
+    "r": "Comunicación técnica"
+   },
+   {
+    "e": "Proyectos propios y equipos",
+    "n": 2,
+    "r": "Colaboración y estimación realista"
+   }
+  ],
+  "rubrica": "2026-11-19"
+ },
+ "createdAt": "2026-11-21T14:50:00Z",
+ "cvAdaptada": "No",
+ "empresa": "MongoDB",
+ "encaje": "Alto",
+ "estado": "Por aplicar",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4493239699",
+ "linkedinId": "4493239699",
+ "modalidad": "Remoto",
+ "n": 86,
+ "notas": "2026-11-21: run diario.",
+ "porQue": "Acepta TypeScript como lenguaje de backend; diseño de APIs con NestJS (contratos, errores); auth y permisos (OAuth/OIDC, Row-Level Security por sitio en Greenhouse); tests y CI; usa agentes de IA a diario.",
+ "prioridad": 1,
+ "proximoPaso": "Aplicar en la web de MongoDB; en el CV, destacar auth, permisos y contratos de API.",
+ "publicada": "2026-11-21",
+ "puesto": "Software Engineer 3 (Agentic Integrations, AMP)",
+ "salario": "",
+ "solicitantes": "40",
+ "stack": "Integraciones para agentes de IA (tool definitions, API clients), auth y contexto de tenant, observabilidad; Python, Go, Java o TypeScript",
+ "techDes": [
+  "MCP",
+  "IA / LLM",
+  "MongoDB"
+ ],
+ "techReq": [
+  "TypeScript",
+  "REST APIs",
+  "OAuth / OIDC",
+  "CI/CD"
+ ],
+ "tipo": "Permanente",
+ "ubicacion": "Remoto en Canadá",
+ "updatedAt": "2026-11-21T14:50:00Z"
+}

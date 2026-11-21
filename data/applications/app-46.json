@@ -60,20 +60,22 @@
   ],
   "rubrica": "2026-11-04"
  },
+ "contacto": "info@potenco.ca",
  "createdAt": "2026-11-19T12:45:00Z",
- "cvAdaptada": "No",
+ "cvAdaptada": "Sí",
  "empresa": "Potenco",
  "encaje": "Muy alto",
- "estado": "Evaluar",
+ "estado": "Aplicado",
+ "fechaAplicacion": "2026-11-19",
  "fuente": "LinkedIn (Apify)",
  "link": "https://www.linkedin.com/jobs/view/4491894144",
  "linkedinId": "4491894144",
  "modalidad": "Remoto",
  "n": 46,
- "notas": "2026-11-19: run diario. SaaS tipo marketplace con i18n EN/FR y matching.",
+ "notas": "2026-11-19: run diario. SaaS tipo marketplace con i18n EN/FR y matching. 2026-11-19: aplicado con CV adaptado (Full Stack Developer, enfoque backend, 2 páginas, ATS 34/34). 2026-11-19: enviado correo a info@potenco.ca con detalles adicionales (Claw & Soul, Greenhouses, Kruger) y preguntas sobre tarifa, etapas de pago, retención hasta la aceptación, duración y criterios de aceptación (li-human PASS 78,4).",
  "porQue": "Stack idéntico al suyo: Next.js App Router + NestJS + PostgreSQL con TypeScript; roles y permisos (Greenhouse H&S); tests con Vitest/Playwright; integración de LLMs (fal.ai en Claw & Soul).",
  "prioridad": 1,
- "proximoPaso": "Antes de invertir tiempo, preguntar a info@potenco.ca el monto fijo y el calendario de pagos; aplicar solo si el pago diferido es aceptable.",
+ "proximoPaso": "Esperar respuesta al correo (monto fijo, etapas de pago, duración, aceptación). Si no hay noticias, seguimiento a info@potenco.ca el día 7 (26 nov); revisar de nuevo el día 14 (3 dic).",
  "publicada": "2026-11-19",
  "puesto": "Full Stack/Backend Developer (por proyecto, FSBE-042)",
  "salario": "Tarifa fija por proyecto (no indicada)",
@@ -99,5 +101,5 @@
  ],
  "tipo": "Contrato",
  "ubicacion": "Solo Canadá",
- "updatedAt": "2026-11-19T12:45:00Z"
+ "updatedAt": "2026-11-19T15:29:00Z"
 }

@@ -1,63 +1,11 @@
 {
- "empresa": "Cohere",
- "puesto": "Web Developer",
- "linkedinId": "4483805815",
- "busqueda": "nucleo",
- "estado": "Por aplicar",
- "encaje": "Muy alto",
- "tipo": "Permanente",
- "modalidad": "Remoto",
- "ubicacion": "Canadá (remote-friendly; oficinas Toronto/Montreal)",
  "anios": "2+",
- "solicitantes": "200+",
- "stack": "Next.js, TypeScript, Tailwind, Sanity",
- "porQue": "2+ años de React/TS en producción; Next.js en Delphi (migración desde WordPress para marketing) y en sus proyectos; Tailwind; usa IA para programar a diario.",
  "brechas": "200+ solicitantes (pasa la excepción) → escribir hoy a alguien del equipo Web; Sanity (CMS headless) no lo ha usado.",
- "proximoPaso": "Aplicar en la web de Cohere y escribir hoy a alguien del equipo Web.",
- "notas": "2026-11-18: run diario. El mismo aviso salió con 5 IDs (Toronto, Vancouver, Ottawa, Montreal, Canadá). En octubre un 'Cohere Web Developer' quedó descartado en el tracker anterior: revisar si ya aplicó.",
- "techReq": [
-  "React",
-  "TypeScript",
-  "Next.js",
-  "Tailwind"
- ],
- "techDes": [
-  "Sanity",
-  "Vercel"
- ],
+ "busqueda": "nucleo",
  "clasif": {
-  "pts": 10,
   "max": 10,
   "pct": 100,
-  "requisitos": [
-   {
-    "r": "2+ años React/TS en producción",
-    "n": 2,
-    "e": "~3,8 años"
-   },
-   {
-    "r": "Next.js y CMS headless",
-    "n": 2,
-    "e": "Next.js en Delphi; listo para Sanity"
-   },
-   {
-    "r": "Trabajo con diseño y marketing",
-    "n": 2,
-    "e": "Delphi (sitio de marketing)"
-   },
-   {
-    "r": "Probar herramientas nuevas",
-    "n": 2,
-    "e": "Claude Code, Codex, OpenCode"
-   },
-   {
-    "r": "Foco en el usuario",
-    "n": 2,
-    "e": "Producto propio"
-   }
-  ],
   "prioridad": {
-   "base": 1,
    "ajustes": [
     {
      "t": "empresa suma al CV",
@@ -68,21 +16,73 @@
      "v": -1
     }
    ],
+   "base": 1,
    "final": 1
   },
+  "pts": 10,
+  "requisitos": [
+   {
+    "e": "~3,8 años",
+    "n": 2,
+    "r": "2+ años React/TS en producción"
+   },
+   {
+    "e": "Next.js en Delphi; listo para Sanity",
+    "n": 2,
+    "r": "Next.js y CMS headless"
+   },
+   {
+    "e": "Delphi (sitio de marketing)",
+    "n": 2,
+    "r": "Trabajo con diseño y marketing"
+   },
+   {
+    "e": "Claude Code, Codex, OpenCode",
+    "n": 2,
+    "r": "Probar herramientas nuevas"
+   },
+   {
+    "e": "Producto propio",
+    "n": 2,
+    "r": "Foco en el usuario"
+   }
+  ],
   "rubrica": "2026-11-04"
  },
- "salario": "CA$180K–250K/año",
- "salMin": 180000,
- "salMax": 250000,
- "moneda": "CAD",
- "periodo": "año",
- "fuente": "LinkedIn (Apify)",
- "publicada": "2026-11-18",
- "cvAdaptada": "No",
- "link": "https://www.linkedin.com/jobs/view/4483805815",
  "createdAt": "2026-11-18T20:30:00Z",
- "updatedAt": "2026-11-18T20:30:00Z",
+ "cvAdaptada": "No",
+ "empresa": "Cohere",
+ "encaje": "Muy alto",
+ "estado": "Descartada",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4483805815",
+ "linkedinId": "4483805815",
+ "modalidad": "Remoto",
+ "moneda": "CAD",
+ "n": 4,
+ "notas": "2026-11-18: run diario. El mismo aviso salió con 5 IDs (Toronto, Vancouver, Ottawa, Montreal, Canadá). En octubre un 'Cohere Web Developer' quedó descartado en el tracker anterior: revisar si ya aplicó.",
+ "periodo": "año",
+ "porQue": "2+ años de React/TS en producción; Next.js en Delphi (migración desde WordPress para marketing) y en sus proyectos; Tailwind; usa IA para programar a diario.",
  "prioridad": 1,
- "n": 4
+ "proximoPaso": "Aplicar en la web de Cohere y escribir hoy a alguien del equipo Web.",
+ "publicada": "2026-11-18",
+ "puesto": "Web Developer",
+ "salMax": 250000,
+ "salMin": 180000,
+ "salario": "CA$180K–250K/año",
+ "solicitantes": "200+",
+ "stack": "Next.js, TypeScript, Tailwind, Sanity",
+ "techDes": [
+  "Sanity",
+  "Vercel"
+ ],
+ "techReq": [
+  "React",
+  "TypeScript",
+  "Next.js",
+  "Tailwind"
+ ],
+ "tipo": "Permanente",
+ "ubicacion": "Canadá (remote-friendly; oficinas Toronto/Montreal)",
+ "updatedAt": "2026-11-19T15:30:00Z"
 }

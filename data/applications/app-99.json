@@ -1,0 +1,105 @@
+{
+ "anios": "5+",
+ "brechas": "Título Senior y piden 5+ años de backend SaaS a escala → ❌, tope Medio y prioridad −1. Sistemas de autorización propios, permisos jerárquicos, SAML/SCIM, multi-tenant y migraciones en sistemas de alto tráfico 🟡. Rol muy backend. Modalidad no indicada.",
+ "busqueda": "backend",
+ "clasif": {
+  "ajusteEncaje": "Tope Medio por título Senior y 5+ años",
+  "filtro": "Dudoso: Canadá, no dice si es remoto",
+  "max": 16,
+  "pct": 56,
+  "prioridad": {
+   "ajustes": [
+    {
+     "t": "<3 días y <50 solicitantes",
+     "v": 1
+    },
+    {
+     "t": "Senior",
+     "v": -1
+    }
+   ],
+   "base": 2,
+   "final": 2
+  },
+  "pts": 9,
+  "requisitos": [
+   {
+    "e": "~3,8 en empresa",
+    "n": 0,
+    "r": "5+ años de backend SaaS a escala"
+   },
+   {
+    "e": "Roles y RLS en Greenhouse",
+    "n": 1,
+    "r": "Construir sistemas de autorización (RBAC/ReBAC/ABAC)"
+   },
+   {
+    "e": "Por sitio y área; no un árbol completo",
+    "n": 1,
+    "r": "Permisos jerárquicos o heredados"
+   },
+   {
+    "e": "NestJS, PostgreSQL, Redis",
+    "n": 2,
+    "r": "Backend moderno y diseño de APIs y modelos de datos"
+   },
+   {
+    "e": "OAuth/OIDC; sin SAML ni SCIM",
+    "n": 1,
+    "r": "OAuth 2.0, OIDC, SAML, JWT, MFA, SCIM"
+   },
+   {
+    "e": "RLS por sitio",
+    "n": 1,
+    "r": "Multi-tenant con aislamiento estricto"
+   },
+   {
+    "e": "Kruger; no alto tráfico",
+    "n": 1,
+    "r": "Migraciones en sistemas en vivo de alto tráfico"
+   },
+   {
+    "e": "Inmutabilidad y audit logs",
+    "n": 2,
+    "r": "Mentalidad de seguridad"
+   }
+  ],
+  "rubrica": "2026-11-19"
+ },
+ "createdAt": "2026-11-21T14:50:00Z",
+ "cvAdaptada": "No",
+ "empresa": "ClickUp",
+ "encaje": "Medio",
+ "estado": "Evaluar",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4492599521",
+ "linkedinId": "4492599521",
+ "modalidad": "",
+ "moneda": "",
+ "n": 99,
+ "notas": "2026-11-21: run diario.",
+ "periodo": "año",
+ "porQue": "Su stack exacto: TypeScript, Node.js, NestJS, PostgreSQL y Redis. Permisos por rol y Row-Level Security por sitio en Greenhouse; mentalidad de seguridad (inmutabilidad, deny-by-default).",
+ "prioridad": 2,
+ "proximoPaso": "Confirmar si es remoto en Canadá; aplicar solo si hay tiempo o contacto.",
+ "publicada": "2026-11-20",
+ "puesto": "Senior Backend Engineer, Identity and Access Management",
+ "salMax": 210000,
+ "salMin": 160000,
+ "salario": "$160,000–210,000/año",
+ "solicitantes": "39",
+ "stack": "TypeScript, Node.js, NestJS, PostgreSQL, Redis, Kafka; autorización (RBAC/ReBAC), OAuth/OIDC, SAML, SCIM, multi-tenant",
+ "techDes": [],
+ "techReq": [
+  "TypeScript",
+  "Node.js",
+  "NestJS",
+  "PostgreSQL",
+  "Redis",
+  "Kafka / colas",
+  "OAuth / OIDC"
+ ],
+ "tipo": "Permanente",
+ "ubicacion": "Canadá (modalidad no indicada)",
+ "updatedAt": "2026-11-21T14:50:00Z"
+}
