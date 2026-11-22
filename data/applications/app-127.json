@@ -1,0 +1,125 @@
+{
+ "anios": "4+",
+ "brechas": "Piden 4 años (en empresa ~3,8) → 🟡. Optimización de SQL 🟡 (sin confirmar). Código para grandes volúmenes 🟡 (Kruger 5,000+ envíos/día). Ruby on Rails ❌ (muy deseado), Salesforce ❌, Azure sin confirmar, OpenAI ❌, MVC sin confirmar.",
+ "clasif": {
+  "max": 24,
+  "pct": 88,
+  "prioridad": {
+   "ajustes": [
+    {
+     "t": "español",
+     "v": 1
+    }
+   ],
+   "base": 1,
+   "final": 1
+  },
+  "pts": 21,
+  "requisitos": [
+   {
+    "e": "Diploma de Fanshawe College",
+    "n": 2,
+    "r": "Título o diploma"
+   },
+   {
+    "e": "~3,8 años en empresa (Idukay, Kruger, Delphi)",
+    "n": 1,
+    "r": "4+ años en desarrollo profesional"
+   },
+   {
+    "e": "Mentor de juniors; líder técnico en Kruger con code reviews",
+    "n": 2,
+    "r": "Mentoría y guía técnica a juniors y pares"
+   },
+   {
+    "e": "Agile/Scrum en Delphi, Kanban en Kruger",
+    "n": 2,
+    "r": "Agile"
+   },
+   {
+    "e": "Modelos de datos en PostgreSQL (Kruger, invernaderos); MySQL/MariaDB",
+    "n": 2,
+    "r": "Soluciones con bases de datos relacionales"
+   },
+   {
+    "e": "Escribe SQL; optimización sin confirmar",
+    "n": 1,
+    "r": "Escritura y optimización de SQL"
+   },
+   {
+    "e": "Delphi, todos los proyectos",
+    "n": 2,
+    "r": "HTML5, CSS3, JavaScript"
+   },
+   {
+    "e": "Requisitos con H&S y RR.HH.; 12 ADRs",
+    "n": 2,
+    "r": "Comunicar detalles técnicos y crear requisitos funcionales"
+   },
+   {
+    "e": "Git, GitHub, Bitbucket",
+    "n": 2,
+    "r": "Control de versiones"
+   },
+   {
+    "e": "Entregas como único desarrollador en sus proyectos independientes",
+    "n": 2,
+    "r": "Enfocarse en prioridades y entregar según requisitos"
+   },
+   {
+    "e": "Kruger 5,000+ envíos diarios; sin optimización explícita",
+    "n": 1,
+    "r": "Mejorar eficiencia del código con grandes volúmenes de datos"
+   },
+   {
+    "e": "Desarrollo web full-stack avanzado; MVC sin confirmar",
+    "n": 2,
+    "r": "Desarrollo web avanzado (MVC) o Python avanzado"
+   }
+  ],
+  "rubrica": "2026-11-19"
+ },
+ "contacto": "",
+ "createdAt": "2026-11-22T03:20:00Z",
+ "cvAdaptada": "Sí",
+ "empresa": "Info-Tech Research Group",
+ "encaje": "Alto",
+ "estado": "Aplicado",
+ "fechaAplicacion": "2026-11-21",
+ "fuente": "Pegada en chat",
+ "link": "",
+ "modalidad": "Remoto",
+ "moneda": "",
+ "n": 127,
+ "notas": "2026-11-21: aplicado en la web de la empresa (UKG Pro) con CV adaptado 'Resume - David Prado - Info-Tech.pdf' (Intermediate Software Developer, 2 páginas, ATS 17/17 = 100%) y cover letter (li-human PASS 92). Brechas no agregadas: Ruby on Rails, Salesforce, optimización de SQL, francés/alemán. Expectativa salarial sugerida por Claude: $95K (o $90K–$105K); no confirmó qué puso.",
+ "periodo": "",
+ "plataforma": "UKG Pro (UltiPro), web de Info-Tech",
+ "porQue": "Construir productos de A.I. (ya hizo pipelines de IA generativa en Claw & Soul). Bases relacionales y SQL (PostgreSQL, MySQL), HTML5/CSS3/JavaScript, requisitos funcionales con usuarios (inspecciones para invernaderos) y liderazgo técnico con code reviews en Kruger (5,000+ envíos diarios). Valoran mucho el español (bilingüe nativo). Oficina en London ON, donde vive.",
+ "portal": "https://recruiting.ultipro.ca/INF5000IFTC/JobBoard/2526a5be-e33e-4de9-90ae-3b23d42b9441/Candidate/ViewPresence",
+ "prioridad": 1,
+ "proximoPaso": "Revisar el portal a los 7 y 14 días (28 nov y 5 dic). Buscar a alguien del equipo de desarrollo de IA en LinkedIn para escribirle.",
+ "publicada": "",
+ "puesto": "Intermediate Software Developer",
+ "salario": "No indica",
+ "stack": "Ruby on Rails, MySQL, JavaScript, Azure/OpenAI; Python en la futura arquitectura de IA; productos de IA",
+ "techDes": [
+  "Ruby on Rails",
+  "Salesforce",
+  "AWS",
+  "Python",
+  "Azure",
+  "OpenAI"
+ ],
+ "techReq": [
+  "SQL",
+  "MySQL",
+  "HTML5",
+  "CSS3",
+  "JavaScript",
+  "Git",
+  "Agile"
+ ],
+ "tipo": "Permanente",
+ "ubicacion": "Remoto en Canadá, o híbrido/oficina en London ON o Toronto",
+ "updatedAt": "2026-11-22T03:20:00Z"
+}

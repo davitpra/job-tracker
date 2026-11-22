@@ -1,0 +1,31 @@
+# required
+Software Developer
+web software applications | web applications
+relational database
+SQL
+HTML5 | HTML 5
+CSS3
+JavaScript
+functional requirements
+source control | Git
+high volumes | 5,000+
+mentorship | mentored | mentoring
+technical guidance
+junior developers
+code reviews
+Agile
+design patterns | design pattern
+MySQL
+# preferred
+Python
+AI | A.I.
+OpenAI | Azure
+AWS
+Retrospectives
+MVC
+Ruby
+# gaps
+Ruby on Rails
+Salesforce
+SQL optimization
+French | German
