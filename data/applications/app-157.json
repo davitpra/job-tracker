@@ -1,0 +1,131 @@
+{
+ "anios": "No indica",
+ "brechas": "Administración IT ❌: Microsoft 365 (Entra ID, Intune, Defender) y Google Workspace, configurar equipos. AWS 🟡: usó EC2, S3, Lambda; RDS e IAM sin confirmar. Priorizar desarrollo frente a soporte IT 🟡 (sin experiencia de soporte). LLM APIs sin confirmar (en Claw & Soul: modelos de visión y fal.ai). Vue y C# no, pero son opcionales (\"or similar\"). CompTIA (deseable) no.",
+ "clasif": {
+  "filtro": "Híbrido en St. Marys (alrededores de London): válido",
+  "max": 22,
+  "pct": 82,
+  "prioridad": {
+   "ajustes": [
+    {
+     "t": "contrato",
+     "v": 1
+    }
+   ],
+   "base": 1,
+   "final": 1
+  },
+  "pts": 18,
+  "requisitos": [
+   {
+    "e": "React/Next.js en Delphi, Kruger y proyectos independientes",
+    "n": 2,
+    "r": "Front end: HTML, CSS, JavaScript y framework moderno (React, Vue)"
+   },
+   {
+    "e": "Node.js/NestJS + PostgreSQL en Kruger y proyectos independientes",
+    "n": 2,
+    "r": "Back end (Node.js, Python, C# o similar)"
+   },
+   {
+    "e": "Pipeline de IA en Claw & Soul: modelos de visión, prompting dinámico, fal.ai",
+    "n": 2,
+    "r": "Implementar o integrar IA (LLM APIs, ML, automatización)"
+   },
+   {
+    "e": "Jest, Cypress (Delphi), integration tests en CI, Vitest/Playwright",
+    "n": 2,
+    "r": "Tests automatizados (unit, integration, E2E)"
+   },
+   {
+    "e": "REST APIs en Delphi; modelo de datos en Kruger",
+    "n": 2,
+    "r": "Trabajar con un back-end developer: APIs y modelos de datos"
+   },
+   {
+    "e": "Sin experiencia de administración IT",
+    "n": 0,
+    "r": "IT general: Microsoft 365 (Entra ID, Intune, Defender) y Google Workspace"
+   },
+   {
+    "e": "Code reviews en Idukay, Kruger y Delphi; GitHub Actions",
+    "n": 2,
+    "r": "Git y GitHub: code review y CI/CD"
+   },
+   {
+    "e": "EC2 y S3 en Kruger; Lambda en Claw & Soul; RDS e IAM sin confirmar",
+    "n": 1,
+    "r": "AWS (EC2, S3, RDS, IAM)"
+   },
+   {
+    "e": "Requisitos con H&S y RR.HH.; presentó a la dirección de la residencia",
+    "n": 2,
+    "r": "Comunicación con personal no técnico"
+   },
+   {
+    "e": "Gestiona prioridades como único dev; sin experiencia de soporte",
+    "n": 1,
+    "r": "Priorizar desarrollo frente a pedidos de soporte IT"
+   },
+   {
+    "e": "Vive en London, ~40 min",
+    "n": 2,
+    "r": "Trabajar en la planta de St. Marys los días presenciales"
+   }
+  ],
+  "rubrica": "2026-11-19"
+ },
+ "contacto": "",
+ "createdAt": "2026-11-23T18:10:00Z",
+ "cvAdaptada": "Sí",
+ "empresa": "All-Equip",
+ "encaje": "Alto",
+ "estado": "Aplicado",
+ "fechaAplicacion": "2026-11-23",
+ "fuente": "Pegada en chat",
+ "link": "",
+ "modalidad": "Híbrido",
+ "moneda": "CAD",
+ "n": 157,
+ "notas": "2026-11-23: aplicado por correo a hr@aleq.ca con CV adaptado 'Resume - David Prado - All-Equip.pdf' (Full-Stack Developer, 1 página, ATS 24/24 = 100%) y cover letter (li-human PASS 80; reconoce que la administración de M365/Google Workspace sería lo más nuevo). Contrato de 6 meses con posible extensión. Brechas no agregadas: Vue, C#, LLM APIs, M365/Entra ID/Intune/Defender, Google Workspace, RDS, IAM, CompTIA.",
+ "periodo": "año",
+ "plataforma": "Correo a hr@aleq.ca",
+ "porQue": "Plataforma interna desde cero para operaciones (calidad, servicio, inventario): igual que el sistema de inspecciones offline para invernaderos (requisitos con H&S y RR.HH., ~30 usuarios, hallazgos hasta acción correctiva) y el sistema de pedidos de comida. Front end en React/TypeScript con back end Node.js/NestJS/PostgreSQL; integración de IA en Claw & Soul (modelos de visión, fal.ai, AWS Lambda); tests Jest/Cypress/Playwright y GitHub CI/CD. Vive en London, cerca de St. Marys.",
+ "portal": "",
+ "prioridad": 1,
+ "proximoPaso": "Revisar Outlook por respuesta a los 7 y 14 días (30 nov y 7 dic). Buscar en LinkedIn a alguien de All-Equip (dueños o el back-end developer) para escribirle.",
+ "publicada": "",
+ "puesto": "Full-Stack Developer & IT Support",
+ "salMax": 95000,
+ "salMin": 55000,
+ "salario": "$55,000–$95,000/año + beneficios",
+ "stack": "Front end (HTML, CSS, JavaScript, React/Vue) + back end (Node.js, Python o C#); plataforma interna tipo ERP (CRM, CPQ, inventario, manufactura, calidad, Andon, finanzas, RR.HH.); IA; tests automatizados; GitHub CI/CD; AWS; soporte IT (Microsoft 365, Google Workspace)",
+ "techDes": [
+  "CompTIA A+",
+  "Network+"
+ ],
+ "techReq": [
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "React",
+  "Vue",
+  "Node.js",
+  "Python",
+  "C#",
+  "IA / LLM",
+  "Testing",
+  "Git",
+  "GitHub",
+  "CI/CD",
+  "AWS",
+  "Microsoft 365",
+  "Entra ID",
+  "Intune",
+  "Defender",
+  "Google Workspace"
+ ],
+ "tipo": "Contrato",
+ "ubicacion": "St. Marys, ON (presencial o híbrido; ~40 min de London)",
+ "updatedAt": "2026-11-23T18:10:00Z"
+}

@@ -1,0 +1,12 @@
+Hello,
+
+I'm applying for the Full-Stack Developer & IT Support position in St. Marys. My resume and cover letter are attached.
+
+I'm a full-stack developer working mainly in React, TypeScript, Node.js and PostgreSQL. For the last two years I've built internal systems that replace paper and manual work, including an offline inspection app piloted by about 30 people at two Ontario greenhouse sites. Before that, I was technical lead for the order module of a logistics platform handling 5,000+ shipments a day.
+
+I live in London, about 40 minutes away, so on-site days are no problem. Happy to talk whenever suits you.
+
+Best regards,
+David Prado
++1 (519) 872-5274
+davitprado.com
