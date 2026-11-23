@@ -1,0 +1,116 @@
+{
+ "anios": "3+",
+ "brechas": "Grunt/Gulp 🟡 (usa Vite y webpack). Contribuciones open source ❌. Gestión de personas 🟡 (líder técnico y mentoría). Modalidad no indicada. RemitBee ya salió en octubre en el tracker anterior: revisar si aplicó.",
+ "busqueda": "backend",
+ "clasif": {
+  "filtro": "Dudoso: Mississauga, modalidad no indicada",
+  "max": 22,
+  "pct": 82,
+  "prioridad": {
+   "ajustes": [
+    {
+     "t": "<3 días y <50 solicitantes",
+     "v": 1
+    },
+    {
+     "t": "contacto",
+     "v": 1
+    }
+   ],
+   "base": 1,
+   "final": 1
+  },
+  "pts": 18,
+  "requisitos": [
+   {
+    "e": "NestJS en Kruger y Greenhouse",
+    "n": 2,
+    "r": "3+ años de backend con Node.js y TypeScript (o Python)"
+   },
+   {
+    "e": "Vite y webpack; sin Grunt ni Gulp",
+    "n": 1,
+    "r": "Task runners (Grunt o Gulp)"
+   },
+   {
+    "e": "PostgreSQL, MySQL/MariaDB",
+    "n": 2,
+    "r": "MySQL y/o PostgreSQL"
+   },
+   {
+    "e": "Jest, integración en CI, versionado semántico",
+    "n": 2,
+    "r": "TDD, tests de integración, versiones, releases y estimación"
+   },
+   {
+    "e": "NestJS, Shopify GraphQL",
+    "n": 2,
+    "r": "APIs REST y GraphQL"
+   },
+   {
+    "e": "GitHub, Bitbucket",
+    "n": 2,
+    "r": "Git"
+   },
+   {
+    "e": "12 ADRs, tests en CI",
+    "n": 2,
+    "r": "Calidad: tests y documentación"
+   },
+   {
+    "e": "Kruger, Greenhouse",
+    "n": 2,
+    "r": "Todo el SDLC"
+   },
+   {
+    "e": "No figura en el CV",
+    "n": 0,
+    "r": "Contribuciones open source"
+   },
+   {
+    "e": "Líder técnico en Kruger; mentoría a juniors",
+    "n": 1,
+    "r": "Gestionar miembros del equipo"
+   },
+   {
+    "e": "Equipos y clientes",
+    "n": 2,
+    "r": "Comunicación"
+   }
+  ],
+  "rubrica": "2026-11-19"
+ },
+ "contacto": "Sharmila S (Senior People Operations Specialist, publicó el aviso: in.linkedin.com/in/sharmila-s-b6100a212)",
+ "createdAt": "2026-11-23T17:30:00Z",
+ "cvAdaptada": "No",
+ "empresa": "RemitBee",
+ "encaje": "Alto",
+ "estado": "Evaluar",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4494006679",
+ "linkedinId": "4494006679",
+ "modalidad": "",
+ "n": 131,
+ "notas": "2026-11-23: run diario.",
+ "porQue": "3+ años de backend con Node.js y TypeScript (NestJS en Kruger y Greenhouse); MySQL y PostgreSQL; APIs REST y GraphQL (Shopify); tests de integración en CI, versionado semántico y ADRs. Fintech en el GTA.",
+ "prioridad": 1,
+ "proximoPaso": "Confirmar la modalidad con Sharmila S o en la web de RemitBee; si es híbrido, aplicar.",
+ "publicada": "2026-11-23",
+ "puesto": "Back End Developer",
+ "salario": "",
+ "solicitantes": "32",
+ "stack": "Node.js y TypeScript (o Python), MySQL/PostgreSQL, REST y GraphQL, Grunt/Gulp, TDD; fintech de remesas",
+ "techDes": [],
+ "techReq": [
+  "Node.js",
+  "TypeScript",
+  "MySQL",
+  "PostgreSQL",
+  "REST APIs",
+  "GraphQL",
+  "Grunt / Gulp"
+ ],
+ "tipo": "Permanente",
+ "ubicacion": "Mississauga, ON (modalidad no indicada; horario flexible)",
+ "updatedAt": "2026-11-23T17:30:00Z"
+}

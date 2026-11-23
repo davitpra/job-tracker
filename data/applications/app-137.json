@@ -1,0 +1,47 @@
+{
+ "anios": "3+",
+ "busqueda": "nucleo",
+ "createdAt": "2026-11-23T17:35:00Z",
+ "cvAdaptada": "No",
+ "empresa": "Canada Life",
+ "estado": "Descartada",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4494032001",
+ "linkedinId": "4494032001",
+ "modalidad": "",
+ "moneda": "CAD",
+ "motivoDescarte": [
+  "Python como núcleo",
+  "Otra brecha técnica"
+ ],
+ "n": 137,
+ "notas": "2026-11-23: run diario. Se puede elegir la oficina de London. Exige Python fuerte en el backend y Azure/Databricks en la nube. Salió en 3 ciudades (4494032000 London, 4494012845 Winnipeg).",
+ "periodo": "año",
+ "publicada": "2026-11-23",
+ "puesto": "AI Developer",
+ "salMax": 135200,
+ "salMin": 85200,
+ "salario": "CA$85,200–135,200/año",
+ "solicitantes": "<25",
+ "stack": "Python en el backend, React, Azure y Databricks, RAG, agentes, procesamiento de documentos",
+ "techDes": [
+  "Azure OpenAI",
+  "LangChain",
+  "LangGraph",
+  "MCP",
+  "Kubernetes",
+  "CI/CD"
+ ],
+ "techReq": [
+  "Python",
+  "React",
+  "REST APIs",
+  "Azure",
+  "Databricks",
+  "IA / LLM",
+  "Docker"
+ ],
+ "tipo": "Permanente",
+ "ubicacion": "Toronto, London o Winnipeg (oficina a elegir)",
+ "updatedAt": "2026-11-23T17:35:00Z"
+}

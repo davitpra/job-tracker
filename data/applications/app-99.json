@@ -77,7 +77,7 @@
  "modalidad": "",
  "moneda": "",
  "n": 99,
- "notas": "2026-11-21: run diario.",
+ "notas": "2026-11-21: run diario.\n2026-11-23: volvió a salir por Jobgether con el mismo texto (4493576415, remoto en Canadá, 25 solicitantes). Confirma que es remoto; si aplica, hacerlo directo en ClickUp y no por Jobgether.",
  "periodo": "año",
  "porQue": "Su stack exacto: TypeScript, Node.js, NestJS, PostgreSQL y Redis. Permisos por rol y Row-Level Security por sitio en Greenhouse; mentalidad de seguridad (inmutabilidad, deny-by-default).",
  "prioridad": 2,
@@ -101,5 +101,5 @@
  ],
  "tipo": "Permanente",
  "ubicacion": "Canadá (modalidad no indicada)",
- "updatedAt": "2026-11-21T14:50:00Z"
+ "updatedAt": "2026-11-23T17:40:00Z"
 }

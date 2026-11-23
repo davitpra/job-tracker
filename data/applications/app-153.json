@@ -1,0 +1,40 @@
+{
+ "anios": "8",
+ "busqueda": "backend",
+ "createdAt": "2026-11-23T17:35:00Z",
+ "cvAdaptada": "No",
+ "empresa": "Akamai Technologies",
+ "estado": "Descartada",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4493608420",
+ "linkedinId": "4493608420",
+ "modalidad": "",
+ "moneda": "CAD",
+ "motivoDescarte": [
+  "Python como núcleo",
+  "Senior o 5+ años"
+ ],
+ "n": 153,
+ "notas": "2026-11-23: run diario.",
+ "periodo": "año",
+ "publicada": "2026-11-23",
+ "puesto": "Senior II Software Engineer",
+ "salMax": 216600,
+ "salMin": 120400,
+ "salario": "CA$120,400–216,600/año",
+ "solicitantes": "33",
+ "stack": "Python/Flask/SQLAlchemy, MySQL, Redis, Celery; redes (TCP/IP, BGP, DNS)",
+ "techDes": [
+  "Grafana"
+ ],
+ "techReq": [
+  "Python",
+  "Flask",
+  "MySQL",
+  "Redis",
+  "Kubernetes"
+ ],
+ "tipo": "Permanente",
+ "ubicacion": "Ottawa, ON",
+ "updatedAt": "2026-11-23T17:35:00Z"
+}

@@ -1,0 +1,41 @@
+{
+ "anios": "8–10",
+ "busqueda": "contratos",
+ "createdAt": "2026-11-23T17:35:00Z",
+ "cvAdaptada": "No",
+ "empresa": "TechDoQuest (cliente BFSI)",
+ "estado": "Descartada",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4492623352",
+ "linkedinId": "4492623352",
+ "modalidad": "Híbrido",
+ "motivoDescarte": [
+  "Senior o 5+ años",
+  "Java/Kotlin, .NET o C#"
+ ],
+ "n": 139,
+ "notas": "2026-11-23: run diario. El mismo puesto lo publicaron Yochana (4493784929, 4494006639), J&M Group (4493653539) y VySystems (4492622599).",
+ "publicada": "2026-11-23",
+ "puesto": "Senior UI / Angular Full Stack Engineer",
+ "salario": "",
+ "solicitantes": "<25",
+ "stack": "Angular, TypeScript, Java full stack, Node.js como BFF; banca",
+ "techDes": [
+  "React",
+  "Redux",
+  "Ionic"
+ ],
+ "techReq": [
+  "Angular",
+  "TypeScript",
+  "JavaScript",
+  "HTML / CSS",
+  "Java",
+  "REST APIs",
+  "GraphQL",
+  "Node.js"
+ ],
+ "tipo": "Contrato",
+ "ubicacion": "Toronto, ON (3 días en el cliente)",
+ "updatedAt": "2026-11-23T17:35:00Z"
+}

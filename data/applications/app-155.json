@@ -1,0 +1,48 @@
+{
+ "anios": "7+",
+ "busqueda": "contratos",
+ "createdAt": "2026-11-23T17:35:00Z",
+ "cvAdaptada": "No",
+ "empresa": "S&P Global",
+ "estado": "Descartada",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4485444519",
+ "linkedinId": "4485444519",
+ "modalidad": "Híbrido",
+ "moneda": "CAD",
+ "motivoDescarte": [
+  "Senior o 5+ años"
+ ],
+ "n": 155,
+ "notas": "2026-11-23: run diario. Stack muy cercano, pero piden 7+ años.",
+ "periodo": "año",
+ "publicada": "2026-11-23",
+ "puesto": "Software Engineer – Full-Stack (React, TypeScript, Java)",
+ "salMax": 152375,
+ "salMin": 102375,
+ "salario": "CA$102,375–152,375/año",
+ "solicitantes": "177",
+ "stack": "React, TypeScript, Node.js/Express o Java, PostgreSQL; riesgo financiero",
+ "techDes": [
+  "Docker",
+  "AWS",
+  "Kubernetes",
+  "IA / LLM"
+ ],
+ "techReq": [
+  "React",
+  "TypeScript",
+  "JavaScript",
+  "Node.js",
+  "Express",
+  "Java",
+  "REST APIs",
+  "PostgreSQL",
+  "SQL",
+  "Jest",
+  "CI/CD"
+ ],
+ "tipo": "Permanente",
+ "ubicacion": "Toronto, ON (2 días en oficina)",
+ "updatedAt": "2026-11-23T17:35:00Z"
+}

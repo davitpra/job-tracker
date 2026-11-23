@@ -1,0 +1,117 @@
+{
+ "anios": "5+",
+ "brechas": "Título Senior y piden 5+ años; en empresa 3,8 → ❌, tope Medio y prioridad −1. Terraform/Pulumi ❌ y Kubernetes 🟡 (AKS en Kruger). Go preferido. Servicios cloud a gran escala 🟡.",
+ "busqueda": "contratos",
+ "clasif": {
+  "ajusteEncaje": "Tope Medio por título Senior y 5+ años",
+  "max": 20,
+  "pct": 80,
+  "prioridad": {
+   "ajustes": [
+    {
+     "t": "<3 días y <50 solicitantes",
+     "v": 1
+    },
+    {
+     "t": "Senior",
+     "v": -1
+    }
+   ],
+   "base": 2,
+   "final": 2
+  },
+  "pts": 16,
+  "requisitos": [
+   {
+    "e": "~3,8 en empresa",
+    "n": 0,
+    "r": "5+ años"
+   },
+   {
+    "e": "NestJS en Kruger; Datadog, Sentry",
+    "n": 2,
+    "r": "Servicios backend y APIs escalables y observables"
+   },
+   {
+    "e": "Kruger en AWS; no a gran escala",
+    "n": 1,
+    "r": "Servicios cloud grandes, full stack"
+   },
+   {
+    "e": "AWS SAM; AKS en Kruger; sin Terraform",
+    "n": 1,
+    "r": "IaC (Terraform, Pulumi) y Kubernetes"
+   },
+   {
+    "e": "Node.js con NestJS",
+    "n": 2,
+    "r": "Go, Node.js u otro lenguaje moderno"
+   },
+   {
+    "e": "Núcleo del CV",
+    "n": 2,
+    "r": "React, TypeScript y JavaScript"
+   },
+   {
+    "e": "PostgreSQL, MySQL/MariaDB",
+    "n": 2,
+    "r": "Postgres o MySQL"
+   },
+   {
+    "e": "APIs REST con NestJS",
+    "n": 2,
+    "r": "Diseño de APIs HTTP"
+   },
+   {
+    "e": "Kruger",
+    "n": 2,
+    "r": "Git y Jenkins"
+   },
+   {
+    "e": "Claude Code, Codex a diario",
+    "n": 2,
+    "r": "IA en el desarrollo y prompt engineering"
+   }
+  ],
+  "rubrica": "2026-11-19"
+ },
+ "createdAt": "2026-11-23T17:30:00Z",
+ "cvAdaptada": "No",
+ "empresa": "Tanium",
+ "encaje": "Medio",
+ "estado": "Por aplicar",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4494021068",
+ "linkedinId": "4494021068",
+ "modalidad": "Remoto",
+ "n": 134,
+ "notas": "2026-11-23: run diario. Gestión de endpoints; GraphQL para partners (Salesforce).",
+ "porQue": "Remoto en Canadá. Full stack con Node.js, React y TypeScript; APIs HTTP y PostgreSQL/MySQL; Jenkins y Git en Kruger; tests automatizados; Claude Code y Codex a diario.",
+ "prioridad": 2,
+ "proximoPaso": "Aplicar en la web de Tanium solo si sobra tiempo o hay contacto.",
+ "publicada": "2026-11-23",
+ "puesto": "Senior Software Engineer - Full-stack Cloud Operations",
+ "salario": "$154,000–236,000/año (rango de EE.UU.)",
+ "solicitantes": "30",
+ "stack": "Go (preferido) o Node.js, React, TypeScript, PostgreSQL/MySQL, GraphQL, Terraform/Pulumi, Kubernetes, Jenkins; servicio de datos de endpoints y series de tiempo",
+ "techDes": [
+  "GraphQL"
+ ],
+ "techReq": [
+  "Go",
+  "Node.js",
+  "React",
+  "TypeScript",
+  "JavaScript",
+  "PostgreSQL",
+  "SQL",
+  "REST APIs",
+  "Terraform",
+  "Kubernetes",
+  "CI/CD",
+  "IA / LLM"
+ ],
+ "tipo": "Permanente",
+ "ubicacion": "Remoto en Canadá",
+ "updatedAt": "2026-11-23T17:30:00Z"
+}

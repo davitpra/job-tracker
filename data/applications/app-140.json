@@ -1,0 +1,37 @@
+{
+ "anios": "10+",
+ "busqueda": "contratos",
+ "createdAt": "2026-11-23T17:35:00Z",
+ "cvAdaptada": "No",
+ "empresa": "I8IS - Infiniti Software Solutions (Gobierno de Ontario)",
+ "estado": "Descartada",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4493784910",
+ "linkedinId": "4493784910",
+ "modalidad": "Presencial",
+ "motivoDescarte": [
+  "Híbrido o presencial",
+  "Senior o 5+ años"
+ ],
+ "n": 140,
+ "notas": "2026-11-23: run diario. Presencial 5 días y 10+ años.",
+ "publicada": "2026-11-23",
+ "puesto": "Software Developer - NextJS, TypeScript, React - Senior",
+ "salario": "",
+ "solicitantes": "27",
+ "stack": "Next.js, TypeScript, React, RxJS; MS Dynamics CRM y MuleSoft; portal público de registros y permisos",
+ "techDes": [],
+ "techReq": [
+  "Next.js",
+  "TypeScript",
+  "React",
+  "JavaScript",
+  "HTML / CSS",
+  "RxJS",
+  "REST APIs",
+  "Microservicios"
+ ],
+ "tipo": "Permanente",
+ "ubicacion": "Toronto, ON (en oficina de lunes a viernes)",
+ "updatedAt": "2026-11-23T17:35:00Z"
+}

@@ -1,0 +1,39 @@
+{
+ "anios": "2–5",
+ "busqueda": "contratos",
+ "createdAt": "2026-11-23T17:35:00Z",
+ "cvAdaptada": "No",
+ "empresa": "Survalent",
+ "estado": "Descartada",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4493791656",
+ "linkedinId": "4493791656",
+ "modalidad": "Híbrido",
+ "moneda": "CAD",
+ "motivoDescarte": [
+  "Java/Kotlin, .NET o C#"
+ ],
+ "n": 151,
+ "notas": "2026-11-23: run diario. PWA offline-first con IndexedDB (deseable), muy parecida a Greenhouse, pero el backend ASP.NET Core es obligatorio.",
+ "periodo": "año",
+ "publicada": "2026-11-23",
+ "puesto": "Software Developer (.NET/React), Progressive Web Application (PWA)",
+ "salMax": 130000,
+ "salMin": 95000,
+ "salario": "CA$95,000–130,000/año",
+ "solicitantes": "62",
+ "stack": "React + ASP.NET Core Web API, SQL Server/PostgreSQL; PWA offline-first con mapas para utilities",
+ "techDes": [
+  "PWA",
+  "IndexedDB"
+ ],
+ "techReq": [
+  "React",
+  "C# / .NET",
+  "SQL",
+  "PostgreSQL"
+ ],
+ "tipo": "Permanente",
+ "ubicacion": "Mississauga, ON",
+ "updatedAt": "2026-11-23T17:35:00Z"
+}

@@ -1,0 +1,130 @@
+{
+ "anios": "3–6",
+ "brechas": "Exigen vivir en el GTA y trabajar híbrido: vive en London (dijo que puede mudarse). RAG, embeddings y bases vectoriales 🟡. Microservicios 🟡. Título en CS 🟡 (tiene diploma). 193 solicitantes.",
+ "busqueda": "contratos",
+ "clasif": {
+  "filtro": "Dudoso: exigen vivir en el GTA para el híbrido (vive en London)",
+  "max": 26,
+  "pct": 92,
+  "prioridad": {
+   "ajustes": [],
+   "base": 1,
+   "final": 1
+  },
+  "pts": 24,
+  "requisitos": [
+   {
+    "e": "Diploma Fanshawe",
+    "n": 1,
+    "r": "Título en CS o similar"
+   },
+   {
+    "e": "~3,8 en empresa",
+    "n": 2,
+    "r": "3–6 años full stack"
+   },
+   {
+    "e": "Núcleo del CV",
+    "n": 2,
+    "r": "React, JavaScript y TypeScript"
+   },
+   {
+    "e": "NestJS en Kruger y Greenhouse",
+    "n": 2,
+    "r": "Backend con Node.js y/o Python"
+   },
+   {
+    "e": "APIs REST con NestJS; modular monolith, no microservicios",
+    "n": 1,
+    "r": "APIs REST y microservicios"
+   },
+   {
+    "e": "PostgreSQL, MongoDB",
+    "n": 2,
+    "r": "SQL y NoSQL"
+   },
+   {
+    "e": "Pipeline de fal.ai en Claw & Soul",
+    "n": 2,
+    "r": "Integrar LLMs o IA generativa en apps"
+   },
+   {
+    "e": "Prompting dinámico en Claw & Soul",
+    "n": 2,
+    "r": "APIs de IA, prompts y salidas estructuradas"
+   },
+   {
+    "e": "GitHub Actions, Jenkins",
+    "n": 2,
+    "r": "Git y CI/CD"
+   },
+   {
+    "e": "Kruger, Claw & Soul",
+    "n": 2,
+    "r": "AWS o nube similar"
+   },
+   {
+    "e": "Kruger (Datadog, Sentry, Kibana)",
+    "n": 2,
+    "r": "Debugging y resolución de problemas"
+   },
+   {
+    "e": "Desarrollador único de Greenhouse",
+    "n": 2,
+    "r": "Entregar features solo"
+   },
+   {
+    "e": "Equipos distribuidos en Delphi",
+    "n": 2,
+    "r": "Comunicación con equipos cross-functional"
+   }
+  ],
+  "rubrica": "2026-11-19"
+ },
+ "createdAt": "2026-11-23T17:30:00Z",
+ "cvAdaptada": "No",
+ "empresa": "Digy4",
+ "encaje": "Muy alto",
+ "estado": "Evaluar",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4493525978",
+ "linkedinId": "4493525978",
+ "modalidad": "Híbrido",
+ "n": 130,
+ "notas": "2026-11-23: run diario. SaaS canadiense de inteligencia de riesgos con IA (Ask RITA, Risk Center). Se aplica por email.",
+ "porQue": "Puesto de nivel intermedio (3–6 años) con su stack: React, TypeScript y Node.js, APIs REST, SQL y NoSQL, AWS. IA generativa en producción (pipeline de fal.ai con visión y prompting dinámico); features end to end en solitario (Greenhouse); background jobs con BullMQ y pg-boss; roles y permisos con Row-Level Security.",
+ "prioridad": 1,
+ "proximoPaso": "Decidir si aplica pese al requisito de vivir en el GTA; si sí, enviar CV a contactus@digy4.com (asunto: Application – Full Stack AI Engineer – GTA) y aclarar cómo cubre el híbrido.",
+ "publicada": "2026-11-22",
+ "puesto": "Full Stack Software Engineer – AI (Mid Level)",
+ "salario": "",
+ "solicitantes": "193",
+ "stack": "React, TypeScript, Node.js o Python, REST y microservicios, SQL/NoSQL, LLMs, RAG, embeddings, AWS; integraciones con Jira, GitHub, Azure DevOps y ServiceNow",
+ "techDes": [
+  "LangChain",
+  "LangGraph",
+  "Python",
+  "PostgreSQL",
+  "Redis",
+  "Docker",
+  "Kubernetes",
+  "MCP",
+  "OAuth / OIDC"
+ ],
+ "techReq": [
+  "React",
+  "JavaScript",
+  "TypeScript",
+  "Node.js",
+  "REST APIs",
+  "Microservicios",
+  "SQL",
+  "MongoDB",
+  "IA / LLM",
+  "CI/CD",
+  "AWS"
+ ],
+ "tipo": "Permanente",
+ "ubicacion": "Greater Toronto Area (híbrido; exigen vivir en el GTA)",
+ "updatedAt": "2026-11-23T17:30:00Z"
+}

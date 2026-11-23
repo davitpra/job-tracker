@@ -1,0 +1,41 @@
+{
+ "anios": "5+",
+ "busqueda": "backend",
+ "createdAt": "2026-11-23T17:35:00Z",
+ "cvAdaptada": "No",
+ "empresa": "Thomson Reuters",
+ "estado": "Descartada",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4485445513",
+ "linkedinId": "4485445513",
+ "modalidad": "Híbrido",
+ "moneda": "CAD",
+ "motivoDescarte": [
+  "Python como núcleo",
+  "Senior o 5+ años"
+ ],
+ "n": 147,
+ "notas": "2026-11-23: run diario.",
+ "periodo": "año",
+ "publicada": "2026-11-23",
+ "puesto": "Senior Software Engineer – AI, Tax and Audit, FDE",
+ "salMax": 145000,
+ "salMin": 100000,
+ "salario": "CA$100,000–145,000/año",
+ "solicitantes": "64",
+ "stack": "Python, RAG, agentes (LangChain, LangGraph), IaC, evaluación de IA; impuestos y auditoría",
+ "techDes": [
+  "MCP",
+  "Datadog"
+ ],
+ "techReq": [
+  "Python",
+  "REST APIs",
+  "IA / LLM",
+  "CI/CD",
+  "Terraform"
+ ],
+ "tipo": "Permanente",
+ "ubicacion": "Toronto, ON",
+ "updatedAt": "2026-11-23T17:35:00Z"
+}

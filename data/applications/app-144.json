@@ -1,0 +1,36 @@
+{
+ "anios": "7+",
+ "busqueda": "nucleo",
+ "createdAt": "2026-11-23T17:35:00Z",
+ "cvAdaptada": "No",
+ "empresa": "Jobgether (cliente no revelado)",
+ "estado": "Descartada",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4493576629",
+ "linkedinId": "4493576629",
+ "modalidad": "Remoto",
+ "motivoDescarte": [
+  "Senior o 5+ años",
+  "Móvil nativo"
+ ],
+ "n": 144,
+ "notas": "2026-11-23: run diario.",
+ "publicada": "2026-11-23",
+ "puesto": "Senior Software Engineer, Lifecycle",
+ "salario": "",
+ "solicitantes": "40",
+ "stack": "Apps móviles (Android preferido) y servicios cloud; LLMs y flujos agénticos; onboarding y growth",
+ "techDes": [
+  "Java",
+  "Kubernetes",
+  "AWS"
+ ],
+ "techReq": [
+  "iOS / Android nativo",
+  "IA / LLM",
+  "MCP"
+ ],
+ "tipo": "Permanente",
+ "ubicacion": "Canadá",
+ "updatedAt": "2026-11-23T17:35:00Z"
+}

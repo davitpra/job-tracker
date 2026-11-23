@@ -1,0 +1,31 @@
+{
+ "anios": "2–4",
+ "busqueda": "contratos",
+ "createdAt": "2026-11-23T17:35:00Z",
+ "cvAdaptada": "No",
+ "empresa": "The SeventhHire (cliente no revelado)",
+ "estado": "Descartada",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4492619622",
+ "linkedinId": "4492619622",
+ "modalidad": "",
+ "motivoDescarte": [
+  "Python como núcleo"
+ ],
+ "n": 138,
+ "notas": "2026-11-23: run diario. Startup de IA para compras del gobierno.",
+ "publicada": "2026-11-23",
+ "puesto": "Full Stack Engineer (Founding Engineer, Product & AI)",
+ "salario": "",
+ "solicitantes": "98",
+ "stack": "Python, SQL, nube y framework web; agentes de IA y modelos self-hosted para compras públicas",
+ "techDes": [],
+ "techReq": [
+  "Python",
+  "SQL",
+  "IA / LLM"
+ ],
+ "tipo": "Permanente",
+ "ubicacion": "Toronto, ON",
+ "updatedAt": "2026-11-23T17:35:00Z"
+}

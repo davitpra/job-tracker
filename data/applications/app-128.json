@@ -1,0 +1,114 @@
+{
+ "anios": "No indica",
+ "brechas": "Soporte IT y administración de Microsoft 365 (Entra ID, Intune, Defender) y Google Workspace ❌. RDS e IAM de AWS no figuran (usa EC2, S3 y Lambda). Contrato de 6 meses con posible extensión; rango salarial amplio ($55–95K).",
+ "busqueda": "contratos",
+ "clasif": {
+  "max": 20,
+  "pct": 90,
+  "prioridad": {
+   "ajustes": [
+    {
+     "t": "contrato",
+     "v": 1
+    },
+    {
+     "t": "<3 días y <50 solicitantes",
+     "v": 1
+    }
+   ],
+   "base": 1,
+   "final": 1
+  },
+  "pts": 18,
+  "requisitos": [
+   {
+    "e": "React en todo el CV; Tailwind, HTML5, CSS",
+    "n": 2,
+    "r": "Front-end con HTML, CSS, JS y un framework moderno"
+   },
+   {
+    "e": "NestJS y Express",
+    "n": 2,
+    "r": "Back-end (Node.js, Python, C# o similar)"
+   },
+   {
+    "e": "Pipeline de fal.ai con visión y prompting dinámico en Claw & Soul",
+    "n": 2,
+    "r": "Integrar IA (APIs de LLM, automatización)"
+   },
+   {
+    "e": "Jest, Cypress, integración en CI",
+    "n": 2,
+    "r": "Tests automatizados"
+   },
+   {
+    "e": "Equipos en Kruger y Delphi",
+    "n": 2,
+    "r": "Trabajar con un back-end developer: APIs y modelos de datos"
+   },
+   {
+    "e": "No figura en el CV",
+    "n": 0,
+    "r": "IT: Microsoft 365 (Entra ID, Intune, Defender) y Google Workspace"
+   },
+   {
+    "e": "GitHub Actions; code reviews en Kruger y Delphi",
+    "n": 2,
+    "r": "Git, GitHub, code review y CI/CD"
+   },
+   {
+    "e": "EC2 y S3 en Kruger; Lambda en Claw & Soul",
+    "n": 2,
+    "r": "AWS (EC2, S3, RDS, IAM)"
+   },
+   {
+    "e": "Requisitos con H&S y RR. HH. en Greenhouse; cocina en Horizon Place",
+    "n": 2,
+    "r": "Explicar temas técnicos a no técnicos"
+   },
+   {
+    "e": "Tests en CI, SonarQube",
+    "n": 2,
+    "r": "Calidad y atención al detalle"
+   }
+  ],
+  "rubrica": "2026-11-19"
+ },
+ "createdAt": "2026-11-23T17:30:00Z",
+ "cvAdaptada": "No",
+ "empresa": "Platinum Trailers (All-Equip)",
+ "encaje": "Muy alto",
+ "estado": "Por aplicar",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4493657874",
+ "linkedinId": "4493657874",
+ "modalidad": "Híbrido",
+ "moneda": "CAD",
+ "n": 128,
+ "notas": "2026-11-23: run diario. Fabricante familiar de tráilers y reparación de equipo pesado; la plataforma la construye junto a un back-end developer.",
+ "periodo": "año",
+ "porQue": "A ~30 min de London (St. Marys), híbrido. Plataforma interna desde cero que reemplaza procesos manuales, como hizo en Greenhouse y Horizon Place; React + NestJS, tests en CI e IA en producción (fal.ai). Requisitos y capacitación con usuarios no técnicos.",
+ "prioridad": 1,
+ "proximoPaso": "Enviar CV adaptado a hr@aleq.ca (se aplica por email). En el correo, decir que vive en London y puede ir a St. Marys los días en oficina.",
+ "publicada": "2026-11-23",
+ "puesto": "Full-Stack Developer & IT Support (contrato)",
+ "salMax": 95000,
+ "salMin": 55000,
+ "salario": "CA$55,000–95,000/año",
+ "solicitantes": "<25",
+ "stack": "Plataforma interna tipo ERP desde cero (CRM, CPQ, inventario, manufactura, calidad, finanzas, RR. HH.): front-end con React o similar, back-end Node/Python/C#, IA con LLMs, tests, GitHub, AWS; soporte IT con Microsoft 365 (Entra ID, Intune, Defender) y Google Workspace",
+ "techDes": [],
+ "techReq": [
+  "HTML / CSS",
+  "JavaScript",
+  "React",
+  "Node.js",
+  "IA / LLM",
+  "CI/CD",
+  "AWS",
+  "Microsoft 365"
+ ],
+ "tipo": "Contrato",
+ "ubicacion": "St. Marys, ON (híbrido u oficina; ~30 min de London)",
+ "updatedAt": "2026-11-23T17:30:00Z"
+}

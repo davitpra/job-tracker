@@ -1,0 +1,37 @@
+{
+ "anios": "3–5+",
+ "busqueda": "backend",
+ "createdAt": "2026-11-23T17:35:00Z",
+ "cvAdaptada": "No",
+ "empresa": "Lumenalta",
+ "estado": "Descartada",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4493642411",
+ "linkedinId": "4493642411",
+ "modalidad": "Remoto",
+ "moneda": "CAD",
+ "motivoDescarte": [
+  "Python como núcleo",
+  "Otra brecha técnica"
+ ],
+ "n": 146,
+ "notas": "2026-11-23: run diario. Entrenar y desplegar modelos de ML.",
+ "periodo": "año",
+ "publicada": "2026-11-23",
+ "puesto": "Senior AI Engineer",
+ "salMax": 200000,
+ "salMin": 70000,
+ "salario": "CA$70,000–200,000/año",
+ "solicitantes": "<25",
+ "stack": "Python, TensorFlow/PyTorch, Airflow, Spark, Kafka, n8n o LangGraph; automatización para bancos",
+ "techDes": [],
+ "techReq": [
+  "Python",
+  "Machine learning",
+  "Kafka / colas",
+  "IA / LLM"
+ ],
+ "tipo": "Permanente",
+ "ubicacion": "Remoto (husos horarios de EE.UU.)",
+ "updatedAt": "2026-11-23T17:35:00Z"
+}

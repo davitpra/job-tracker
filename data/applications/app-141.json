@@ -1,0 +1,39 @@
+{
+ "anios": "3–5",
+ "busqueda": "nucleo",
+ "createdAt": "2026-11-23T17:35:00Z",
+ "cvAdaptada": "No",
+ "empresa": "Pontosense",
+ "estado": "Descartada",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4493799304",
+ "linkedinId": "4493799304",
+ "modalidad": "Híbrido",
+ "moneda": "CAD",
+ "motivoDescarte": [
+  "Otra brecha técnica"
+ ],
+ "n": 141,
+ "notas": "2026-11-23: run diario. Exige apps React Native en producción en las tiendas. También salió en Toronto (4493784770).",
+ "periodo": "año",
+ "publicada": "2026-11-23",
+ "puesto": "Product Engineer, Mobile & UX",
+ "salMax": 120000,
+ "salMin": 90000,
+ "salario": "CA$90,000–120,000/año",
+ "solicitantes": "<25",
+ "stack": "React Native y TypeScript (apps publicadas en App Store y Google Play), UX/UI desde Figma; sensores de radar para adultos mayores",
+ "techDes": [
+  "iOS / Android nativo",
+  "CI/CD",
+  "IA / LLM"
+ ],
+ "techReq": [
+  "React Native",
+  "TypeScript",
+  "Figma"
+ ],
+ "tipo": "Permanente",
+ "ubicacion": "Toronto o Waterloo, ON (híbrido)",
+ "updatedAt": "2026-11-23T17:35:00Z"
+}

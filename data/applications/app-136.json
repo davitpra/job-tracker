@@ -1,0 +1,96 @@
+{
+ "anios": "5+ (7 preferidos)",
+ "brechas": "Título Senior y piden 5 años; en empresa 3,8 → ❌, tope Medio y prioridad −1. SAML 🟡. Kingston queda a ~4 h de London: depende de cuántos días pidan. Publicada hace 7 días; cierra el 1 dic.",
+ "busqueda": "contratos",
+ "clasif": {
+  "ajusteEncaje": "Tope Medio por título Senior y 5+ años",
+  "filtro": "Dudoso: Kingston, frecuencia presencial no indicada",
+  "max": 12,
+  "pct": 75,
+  "prioridad": {
+   "ajustes": [
+    {
+     "t": "Senior",
+     "v": -1
+    }
+   ],
+   "base": 2,
+   "final": 3
+  },
+  "pts": 9,
+  "requisitos": [
+   {
+    "e": "Diploma Fanshawe",
+    "n": 2,
+    "r": "Título o diploma en CS"
+   },
+   {
+    "e": "~3,8 en empresa",
+    "n": 0,
+    "r": "5 años de desarrollo"
+   },
+   {
+    "e": "Kruger (pagos), Shopify, SRI",
+    "n": 2,
+    "r": "Apps web grandes con React o Angular e integración con varios backends"
+   },
+   {
+    "e": "OAuth/OIDC; sin SAML",
+    "n": 1,
+    "r": "OAuth 2.0 y OIDC; familiaridad con SAML"
+   },
+   {
+    "e": "AWS y Docker; AKS en Kruger",
+    "n": 2,
+    "r": "Deploy en Azure o AWS con contenedores"
+   },
+   {
+    "e": "GitHub Actions, Jenkins, SonarQube, Dependabot",
+    "n": 2,
+    "r": "CI/CD con builds, deploys y escaneo de seguridad"
+   }
+  ],
+  "rubrica": "2026-11-19"
+ },
+ "createdAt": "2026-11-23T17:30:00Z",
+ "cvAdaptada": "No",
+ "empresa": "City of Kingston",
+ "encaje": "Medio",
+ "estado": "Evaluar",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4490901461",
+ "linkedinId": "4490901461",
+ "modalidad": "Híbrido",
+ "moneda": "CAD",
+ "n": 136,
+ "notas": "2026-11-23: run diario. Reemplazo; pensión OMERS. Cierre: 2026-12-01.",
+ "periodo": "año",
+ "porQue": "Sector público municipal; apps web con React y Angular integradas a varios backends (pagos en Kruger, Shopify, SRI); OAuth/OIDC; AWS y Docker; CI/CD con SonarQube y Dependabot; WCAG. Ofrecen ayuda de reubicación.",
+ "prioridad": 3,
+ "proximoPaso": "Preguntar cuántos días de oficina piden; aplicar solo si es poca presencia o si le interesa mudarse.",
+ "publicada": "2026-11-16",
+ "puesto": "Senior Full-Stack Developer",
+ "salMax": 117115,
+ "salMin": 93699.63,
+ "salario": "CA$93,699.63–117,115/año",
+ "solicitantes": "144",
+ "stack": "React o Angular, integraciones REST y event-driven (pagos, licencias), OAuth 2.0/OIDC/SAML, Azure Entra ID, Azure o AWS con contenedores, CI/CD con escaneo de seguridad, WCAG",
+ "techDes": [
+  "SQL",
+  "MongoDB"
+ ],
+ "techReq": [
+  "React",
+  "Angular",
+  "REST APIs",
+  "OAuth / OIDC",
+  "SAML",
+  "Azure",
+  "AWS",
+  "Docker",
+  "CI/CD"
+ ],
+ "tipo": "Permanente",
+ "ubicacion": "Kingston, ON (híbrido; oficina según necesidad)",
+ "updatedAt": "2026-11-23T17:30:00Z"
+}

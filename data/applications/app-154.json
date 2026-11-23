@@ -1,0 +1,44 @@
+{
+ "anios": "6+",
+ "busqueda": "contratos",
+ "createdAt": "2026-11-23T17:35:00Z",
+ "cvAdaptada": "No",
+ "empresa": "Equinix",
+ "estado": "Descartada",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4492621986",
+ "linkedinId": "4492621986",
+ "modalidad": "",
+ "moneda": "CAD",
+ "motivoDescarte": [
+  "Senior o 5+ años"
+ ],
+ "n": 154,
+ "notas": "2026-11-23: run diario. El título dice Scholar pero el cuerpo describe nivel Staff con 6+ años. Rol FDE interno muy cercano a su perfil de agentes.",
+ "periodo": "año",
+ "publicada": "2026-11-23",
+ "puesto": "Software Development Engineer Scholar",
+ "salMax": 212000,
+ "salMin": 142000,
+ "salario": "CA$142,000–212,000/año",
+ "solicitantes": "<25",
+ "stack": "Agentes con LLM (MCP, A2A), Python o TypeScript, React/Next.js, APIs y event-driven, SQL; evals; integración con Jira y GitHub",
+ "techDes": [
+  "MCP",
+  "LangGraph",
+  "n8n"
+ ],
+ "techReq": [
+  "Python",
+  "TypeScript",
+  "React",
+  "Next.js",
+  "Microservicios",
+  "SQL",
+  "IA / LLM",
+  "CI/CD"
+ ],
+ "tipo": "Permanente",
+ "ubicacion": "Toronto, ON",
+ "updatedAt": "2026-11-23T17:35:00Z"
+}

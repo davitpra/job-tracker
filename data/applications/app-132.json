@@ -1,0 +1,87 @@
+{
+ "anios": "No indica",
+ "brechas": "Apache Spark y big data ❌. RAG, búsqueda semántica e IA de voz 🟡. Salario bajo para su nivel (CA$60–70K). Modalidad no indicada en Oakville. PolicyAdvisor ya salió en octubre en el tracker anterior.",
+ "busqueda": "contratos",
+ "clasif": {
+  "filtro": "Dudoso: Oakville, modalidad no indicada",
+  "max": 10,
+  "pct": 80,
+  "prioridad": {
+   "ajustes": [
+    {
+     "t": "contacto",
+     "v": 1
+    }
+   ],
+   "base": 1,
+   "final": 1
+  },
+  "pts": 8,
+  "requisitos": [
+   {
+    "e": "Claw & Soul y ClawPuzzle en producción",
+    "n": 2,
+    "r": "Experiencia como developer con proyectos de IA"
+   },
+   {
+    "e": "Núcleo del CV",
+    "n": 2,
+    "r": "JavaScript con React, Next.js y Node.js"
+   },
+   {
+    "e": "No figura en el CV",
+    "n": 0,
+    "r": "Big data con Apache Spark"
+   },
+   {
+    "e": "Kruger, Claw & Soul",
+    "n": 2,
+    "r": "AWS"
+   },
+   {
+    "e": "Modelo de datos en Kruger y Greenhouse",
+    "n": 2,
+    "r": "Diseño de bases de datos"
+   }
+  ],
+  "rubrica": "2026-11-19"
+ },
+ "contacto": "Nargis Ahmed (publicó el aviso: ca.linkedin.com/in/nargisahmed)",
+ "createdAt": "2026-11-23T17:30:00Z",
+ "cvAdaptada": "No",
+ "empresa": "PolicyAdvisor",
+ "encaje": "Alto",
+ "estado": "Evaluar",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4494019028",
+ "linkedinId": "4494019028",
+ "modalidad": "",
+ "moneda": "CAD",
+ "n": 132,
+ "notas": "2026-11-23: run diario. El aviso repite responsabilidades y es poco concreto.",
+ "periodo": "año",
+ "porQue": "Su stack (React, Next.js, Node.js, AWS) en una insurtech con IA; pipelines de IA en producción (Claw & Soul, ClawPuzzle); diseño de bases de datos (modelo de órdenes y pagos en Kruger).",
+ "prioridad": 1,
+ "proximoPaso": "Confirmar la modalidad con Nargis Ahmed; si es híbrido, decidir si el salario le sirve y aplicar.",
+ "publicada": "2026-11-23",
+ "puesto": "Software Developer",
+ "salMax": 70000,
+ "salMin": 60000,
+ "salario": "CA$60,000–70,000/año",
+ "solicitantes": "55",
+ "stack": "JavaScript, React, Next.js, Node.js, AWS; RAG, búsqueda semántica e IA de voz; Apache Spark; insurtech",
+ "techDes": [],
+ "techReq": [
+  "JavaScript",
+  "React",
+  "Next.js",
+  "Node.js",
+  "AWS",
+  "IA / LLM",
+  "Apache Spark",
+  "SQL"
+ ],
+ "tipo": "Permanente",
+ "ubicacion": "Oakville, ON (modalidad no indicada)",
+ "updatedAt": "2026-11-23T17:30:00Z"
+}

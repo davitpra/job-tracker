@@ -1,0 +1,32 @@
+{
+ "anios": "5+",
+ "busqueda": "backend",
+ "createdAt": "2026-11-23T17:35:00Z",
+ "cvAdaptada": "No",
+ "empresa": "Be Additive Corporation",
+ "estado": "Descartada",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4494007521",
+ "linkedinId": "4494007521",
+ "modalidad": "Remoto",
+ "motivoDescarte": [
+  "Rol distinto o por debajo del nivel",
+  "Senior o 5+ años"
+ ],
+ "n": 156,
+ "notas": "2026-11-23: run diario. Gig de evaluación de datos para IA.",
+ "publicada": "2026-11-23",
+ "puesto": "Senior Software Engineer - Python/Typescript",
+ "salario": "",
+ "solicitantes": "<25",
+ "stack": "Rúbricas y datos de preferencia para entrenar IA; TypeScript, Go o JavaScript",
+ "techDes": [],
+ "techReq": [
+  "TypeScript",
+  "Go",
+  "JavaScript"
+ ],
+ "tipo": "Contrato",
+ "ubicacion": "Canadá",
+ "updatedAt": "2026-11-23T17:35:00Z"
+}

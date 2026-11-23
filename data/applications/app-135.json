@@ -1,0 +1,145 @@
+{
+ "anios": "5+",
+ "brechas": "Título Senior y piden 5+ años; en empresa 3,8 → ❌, tope Medio y prioridad −1. Python con LangChain/LangGraph ❌. UX bilingüe inglés/francés 🟡 (no piden hablar francés). AWS cloud-native 🟡. On-call.",
+ "busqueda": "contratos",
+ "clasif": {
+  "ajusteEncaje": "Tope Medio por título Senior y 5+ años",
+  "max": 30,
+  "pct": 77,
+  "prioridad": {
+   "ajustes": [
+    {
+     "t": "<3 días y <50 solicitantes",
+     "v": 1
+    },
+    {
+     "t": "Senior",
+     "v": -1
+    }
+   ],
+   "base": 2,
+   "final": 2
+  },
+  "pts": 23,
+  "requisitos": [
+   {
+    "e": "Diploma Fanshawe",
+    "n": 2,
+    "r": "Diploma o equivalente"
+   },
+   {
+    "e": "~3,8 en empresa",
+    "n": 0,
+    "r": "5+ años con mucho front-end"
+   },
+   {
+    "e": "Scrum en Delphi, Kanban en Kruger",
+    "n": 2,
+    "r": "Agile"
+   },
+   {
+    "e": "Claude Code, Codex a diario",
+    "n": 2,
+    "r": "Herramientas de IA (Copilot, Claude Code) en flujo AI-first"
+   },
+   {
+    "e": "Specs y tests en CI",
+    "n": 2,
+    "r": "Revisar y validar código generado por IA"
+   },
+   {
+    "e": "SonarQube, Jest, code reviews",
+    "n": 2,
+    "r": "Calidad: code review, tests, análisis estático"
+   },
+   {
+    "e": "Núcleo del CV",
+    "n": 2,
+    "r": "JavaScript y TypeScript con React"
+   },
+   {
+    "e": "EC2, S3, Lambda; no a fondo",
+    "n": 1,
+    "r": "Apps cloud-native en AWS"
+   },
+   {
+    "e": "Python básico; sin LangChain",
+    "n": 0,
+    "r": "Python y frameworks de LLM (LangChain, LangGraph)"
+   },
+   {
+    "e": "WCAG en Delphi; multilingüe no figura",
+    "n": 1,
+    "r": "Accesibilidad (WCAG), responsive y multilingüe"
+   },
+   {
+    "e": "Lighthouse 45→90 en Delphi",
+    "n": 2,
+    "r": "Rendimiento front-end y tests automatizados"
+   },
+   {
+    "e": "Kruger (5.000+ envíos/día)",
+    "n": 2,
+    "r": "Apps de cara al cliente en producción"
+   },
+   {
+    "e": "GitHub Actions",
+    "n": 2,
+    "r": "Git, GitHub y CI/CD"
+   },
+   {
+    "e": "ADRs, backlog priorizado",
+    "n": 2,
+    "r": "Comunicación y planificación"
+   },
+   {
+    "e": "Mentoría a juniors; líder técnico en Kruger",
+    "n": 1,
+    "r": "Liderazgo y coaching"
+   }
+  ],
+  "rubrica": "2026-11-19"
+ },
+ "createdAt": "2026-11-23T17:30:00Z",
+ "cvAdaptada": "No",
+ "empresa": "Wawanesa Insurance",
+ "encaje": "Medio",
+ "estado": "Por aplicar",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4493681347",
+ "linkedinId": "4493681347",
+ "modalidad": "Híbrido",
+ "moneda": "CAD",
+ "n": 135,
+ "notas": "2026-11-23: run diario. Iniciativa nueva Direct to Member (D2M).",
+ "periodo": "año",
+ "porQue": "Híbrido 2 días en North York o Kitchener. Front-end con React y TypeScript; desarrollo AI-first con Claude Code y revisión del código generado; rendimiento (Lighthouse 45→90 en Delphi), WCAG, tests y SonarQube.",
+ "prioridad": 2,
+ "proximoPaso": "Aplicar en la web de Wawanesa eligiendo Kitchener o North York como oficina.",
+ "publicada": "2026-11-23",
+ "puesto": "Senior Application Developer - Digital Experiences",
+ "salMax": 125000,
+ "salMin": 90000,
+ "salario": "CA$90,000–125,000/año",
+ "solicitantes": "<25",
+ "stack": "JavaScript, TypeScript, React, AWS cloud-native, Python con LangChain/LangGraph; design system bilingüe (inglés/francés), WCAG; desarrollo AI-first",
+ "techDes": [
+  "Figma",
+  "Jira",
+  "MuleSoft",
+  "Guidewire"
+ ],
+ "techReq": [
+  "JavaScript",
+  "TypeScript",
+  "React",
+  "AWS",
+  "Python",
+  "LangChain",
+  "CI/CD",
+  "IA / LLM"
+ ],
+ "tipo": "Permanente",
+ "ubicacion": "Híbrido 2 días/semana en una oficina de Wawanesa (en Ontario: North York o Kitchener)",
+ "updatedAt": "2026-11-23T17:30:00Z"
+}

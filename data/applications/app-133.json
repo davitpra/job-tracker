@@ -1,0 +1,118 @@
+{
+ "anios": "5+",
+ "brechas": "Título Senior y piden 5+ años; en empresa 3,8 → ❌, tope Medio y prioridad −1. C# en el backend 🟡 (piden \"C# y/o TypeScript\"). Título en CS 🟡. Inglés experto para liderar a gerentes 🟡. SAML, SCIM y React Native (deseables) no figuran. Aviso de cartera de talento: el puesto exacto puede no estar abierto hoy. On-call.",
+ "busqueda": "nucleo",
+ "clasif": {
+  "ajusteEncaje": "Tope Medio por título Senior y 5+ años",
+  "filtro": "Dudoso: Toronto, modalidad no indicada",
+  "max": 18,
+  "pct": 78,
+  "prioridad": {
+   "ajustes": [
+    {
+     "t": "<3 días y <50 solicitantes",
+     "v": 1
+    },
+    {
+     "t": "Senior",
+     "v": -1
+    }
+   ],
+   "base": 2,
+   "final": 2
+  },
+  "pts": 14,
+  "requisitos": [
+   {
+    "e": "~3,8 en empresa",
+    "n": 0,
+    "r": "5+ años full stack"
+   },
+   {
+    "e": "Diploma Fanshawe",
+    "n": 1,
+    "r": "Título en CS"
+   },
+   {
+    "e": "TypeScript en todo el CV",
+    "n": 2,
+    "r": "C# y/o TypeScript en producción"
+   },
+   {
+    "e": "Núcleo del CV; OAuth/OIDC",
+    "n": 2,
+    "r": "React, Node.js y autenticación web moderna"
+   },
+   {
+    "e": "Roles y Row-Level Security en Greenhouse",
+    "n": 2,
+    "r": "Interés en IAM (auth, permisos, provisión)"
+   },
+   {
+    "e": "NestJS, Shopify GraphQL",
+    "n": 2,
+    "r": "Diseñar y consumir APIs REST o GraphQL"
+   },
+   {
+    "e": "Jest, Cypress, tests en CI",
+    "n": 2,
+    "r": "Código mantenible y testeable"
+   },
+   {
+    "e": "Equipos en Kruger y Delphi",
+    "n": 2,
+    "r": "Comunicación y colaboración"
+   },
+   {
+    "e": "Inglés profesional",
+    "n": 1,
+    "r": "Inglés experto para liderar a gerentes de ingeniería"
+   }
+  ],
+  "rubrica": "2026-11-19"
+ },
+ "createdAt": "2026-11-23T17:30:00Z",
+ "cvAdaptada": "No",
+ "empresa": "Autodesk (MaintainX)",
+ "encaje": "Medio",
+ "estado": "Evaluar",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4493588789",
+ "linkedinId": "4493588789",
+ "modalidad": "",
+ "moneda": "CAD",
+ "n": 133,
+ "notas": "2026-11-23: run diario. Salió 3 veces: Toronto (4493588789 y 4493592628) y Montreal (4493705141). Mismo equipo de MaintainX que app-98.",
+ "periodo": "año",
+ "porQue": "TypeScript con React y Node.js; APIs REST y GraphQL; permisos por rol y Row-Level Security en Greenhouse, OAuth/OIDC; Datadog y Docker (deseables). El aviso en francés dice que el puesto es para nivel intermedio y senior.",
+ "prioridad": 2,
+ "proximoPaso": "Confirmar la modalidad en Toronto en la web de Autodesk; aplicar solo si hay tiempo o contacto (el aviso en francés también lo abre a nivel intermedio).",
+ "publicada": "2026-11-23",
+ "puesto": "Senior Full Stack Developer - IAM",
+ "salMax": 157300,
+ "salMin": 107000,
+ "salario": "CA$107,000–157,300/año",
+ "solicitantes": "29",
+ "stack": "TypeScript y C#, React, React Native, Node.js, GraphQL; autenticación, autorización y provisión de usuarios (IAM); on-call",
+ "techDes": [
+  "OAuth / OIDC",
+  "SAML",
+  "React Native",
+  "Docker",
+  "Kubernetes",
+  "Datadog",
+  "AWS",
+  "CI/CD"
+ ],
+ "techReq": [
+  "TypeScript",
+  "C# / .NET",
+  "React",
+  "Node.js",
+  "REST APIs",
+  "GraphQL"
+ ],
+ "tipo": "Permanente",
+ "ubicacion": "Toronto, ON (modalidad no indicada; también Montreal)",
+ "updatedAt": "2026-11-23T17:30:00Z"
+}

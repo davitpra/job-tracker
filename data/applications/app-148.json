@@ -1,0 +1,38 @@
+{
+ "anios": "No indica (senior)",
+ "busqueda": "nucleo",
+ "createdAt": "2026-11-23T17:35:00Z",
+ "cvAdaptada": "No",
+ "empresa": "Clover Health (Counterpart Health)",
+ "estado": "Descartada",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4493591723",
+ "linkedinId": "4493591723",
+ "modalidad": "Remoto",
+ "motivoDescarte": [
+  "Senior o 5+ años",
+  "Otra brecha técnica"
+ ],
+ "n": 148,
+ "notas": "2026-11-23: run diario. Exige haber sido dueño de un sistema agéntico en producción con clientes externos y evals; aclara que demos o herramientas internas no cuentan.",
+ "publicada": "2026-11-23",
+ "puesto": "Senior Software Developer, Agentic AI - Canada",
+ "salario": "",
+ "solicitantes": "150",
+ "stack": "Sistemas agénticos en producción (RAG, tool calling, evaluación), Python y TS/JS, SQL, GCP o AWS; salud (HIPAA)",
+ "techDes": [
+  "LangGraph",
+  "pgvector"
+ ],
+ "techReq": [
+  "IA / LLM",
+  "Python",
+  "TypeScript",
+  "SQL",
+  "GCP",
+  "AWS"
+ ],
+ "tipo": "Permanente",
+ "ubicacion": "Remoto en Canadá",
+ "updatedAt": "2026-11-23T17:35:00Z"
+}

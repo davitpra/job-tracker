@@ -1,0 +1,107 @@
+{
+ "anios": "Diploma o 3+",
+ "brechas": "RAG, evaluación de modelos y uso responsable de IA 🟡. Data warehouse y data lake 🟡. Puesto sindicalizado. Frecuencia presencial no indicada (Pickering queda a ~2,5 h de London). Verificación de antecedentes.",
+ "busqueda": "contratos",
+ "clasif": {
+  "max": 16,
+  "pct": 88,
+  "prioridad": {
+   "ajustes": [
+    {
+     "t": "<3 días y <50 solicitantes",
+     "v": 1
+    }
+   ],
+   "base": 1,
+   "final": 1
+  },
+  "pts": 14,
+  "requisitos": [
+   {
+    "e": "Diploma Fanshawe; ~3,8 años en empresa",
+    "n": 2,
+    "r": "Diploma o 3+ años de desarrollo"
+   },
+   {
+    "e": "Pipeline de fal.ai en producción; sin RAG ni evaluación formal",
+    "n": 1,
+    "r": "IA/ML en apps (RAG, LLM), evaluación básica y uso responsable"
+   },
+   {
+    "e": "Strategy pattern, ADRs, Jest, GitHub Actions",
+    "n": 2,
+    "r": "Patrones, estructuras de datos, CI/CD, versiones, documentación y tests"
+   },
+   {
+    "e": "Requisitos con H&S y RR. HH. en Greenhouse",
+    "n": 2,
+    "r": "Traducir requisitos de negocio a soluciones"
+   },
+   {
+    "e": "React, Angular (Kruger), TypeScript, APIs REST",
+    "n": 2,
+    "r": "Uno o más de Python, Java, Angular, React, JS/TS, REST"
+   },
+   {
+    "e": "PostgreSQL y SQL; sin data warehouse ni data lake",
+    "n": 1,
+    "r": "Bases de datos, SQL, data warehouse y data lake"
+   },
+   {
+    "e": "Equipos en Kruger y Delphi",
+    "n": 2,
+    "r": "Comunicación en equipo"
+   },
+   {
+    "e": "12 ADRs, specs antes del código",
+    "n": 2,
+    "r": "Pensamiento estructurado"
+   }
+  ],
+  "rubrica": "2026-11-19"
+ },
+ "createdAt": "2026-11-23T17:30:00Z",
+ "cvAdaptada": "No",
+ "empresa": "Municipal Property Assessment Corporation (MPAC)",
+ "encaje": "Alto",
+ "estado": "Por aplicar",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4492637313",
+ "linkedinId": "4492637313",
+ "modalidad": "Híbrido",
+ "moneda": "CAD",
+ "n": 129,
+ "notas": "2026-11-23: run diario. Requisition 3258, vacante existente. Cierre: 2026-12-07.",
+ "periodo": "año",
+ "porQue": "Oficina en Pickering (GTA) con híbrido flexible; sector público de Ontario. Acepta React, Angular y TypeScript; IA integrada en apps (fal.ai, prompting dinámico); traduce requisitos de negocio a sistemas (Greenhouse, Horizon Place); tests, CI/CD y ADRs. Solo piden diploma o 3+ años.",
+ "prioridad": 1,
+ "proximoPaso": "Aplicar en el ATS de MPAC (solo aceptan por ahí) antes del 7 dic; preguntar cuántos días de oficina en Pickering.",
+ "publicada": "2026-11-23",
+ "puesto": "Systems Developer (AI Focus)",
+ "salMax": 97618.99,
+ "salMin": 82354.79,
+ "salario": "CA$82,354.79–97,618.99/año",
+ "solicitantes": "<25",
+ "stack": "Python, Java, Groovy, Angular, React, JS/TS, REST; PostgreSQL, AWS, Kubernetes; IA/ML en apps (RAG, flujos con LLM), data warehouse y data lake",
+ "techDes": [
+  "PostgreSQL",
+  "AWS",
+  "Kubernetes",
+  "Python",
+  "Java"
+ ],
+ "techReq": [
+  "IA / LLM",
+  "SQL",
+  "CI/CD",
+  "REST APIs",
+  "React",
+  "Angular",
+  "TypeScript",
+  "JavaScript",
+  "HTML / CSS"
+ ],
+ "tipo": "Permanente",
+ "ubicacion": "Pickering, ON (híbrido flexible)",
+ "updatedAt": "2026-11-23T17:30:00Z"
+}

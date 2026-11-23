@@ -1,0 +1,40 @@
+{
+ "anios": "7+",
+ "busqueda": "nucleo",
+ "createdAt": "2026-11-23T17:35:00Z",
+ "cvAdaptada": "No",
+ "empresa": "Jobgether (cliente retail no revelado)",
+ "estado": "Descartada",
+ "fuente": "LinkedIn (Apify)",
+ "link": "https://www.linkedin.com/jobs/view/4493723837",
+ "linkedinId": "4493723837",
+ "modalidad": "Remoto",
+ "moneda": "CAD",
+ "motivoDescarte": [
+  "Senior o 5+ años"
+ ],
+ "n": 145,
+ "notas": "2026-11-23: run diario. 7+ años y título Lead.",
+ "periodo": "año",
+ "publicada": "2026-11-23",
+ "puesto": "Frontend Engineering Lead",
+ "salMax": 215000,
+ "salMin": 170000,
+ "salario": "CA$170,000–215,000/año",
+ "solicitantes": "49",
+ "stack": "JavaScript, TypeScript, React; 3D y visión por computadora para diseño de interiores",
+ "techDes": [
+  "GCP",
+  "WebGL",
+  "CI/CD"
+ ],
+ "techReq": [
+  "JavaScript",
+  "TypeScript",
+  "React",
+  "HTML / CSS"
+ ],
+ "tipo": "Permanente",
+ "ubicacion": "Remoto en Canadá",
+ "updatedAt": "2026-11-23T17:35:00Z"
+}
