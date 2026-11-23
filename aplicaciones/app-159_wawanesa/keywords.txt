@@ -1,0 +1,44 @@
+# required
+AI-first
+AI-assisted development
+Claude Code
+JavaScript
+TypeScript
+React
+AWS
+cloud-native
+Python
+WCAG
+accessible | accessibility
+responsive
+multilingual | bilingual
+English/French
+front-end performance optimization | performance optimization
+automated testing
+peer reviews | code reviews
+static analysis
+clean code
+Git
+GitHub
+CI/CD
+agile
+design system
+reusable UI components
+APIs
+customer-facing
+production
+mentor | mentored
+technical specifications
+documentation
+# preferred
+Jira
+Figma
+prompt engineering
+# gaps
+GitHub Copilot
+LangChain
+LangGraph
+Confluence
+Guidewire
+MuleSoft
+on-call

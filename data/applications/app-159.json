@@ -1,0 +1,459 @@
+{
+ "anios": "5+",
+ "brechas": "Piden 5+ años con fuerte front-end; en empresa 3,8 → ❌ y tope Medio (prioridad −1). Python + LangChain/LangGraph ❌ (Python básico; pipeline de IA sin frameworks). AWS 🟡 (EC2/S3/CloudWatch en Kruger, Lambda/SAM en Claw & Soul; no a fondo). GitHub Copilot, Confluence, Guidewire, MuleSoft y on-call sin experiencia. Título del puesto no venía en el texto pegado: se asumió Senior Application Developer.",
+ "clasif": {
+  "ajusteEncaje": "Tope Medio por 5+ años obligatorios",
+  "max": 30,
+  "pct": 83,
+  "prioridad": {
+   "ajustes": [
+    {
+     "t": "Senior / 5+ años",
+     "v": -1
+    }
+   ],
+   "base": 2,
+   "final": 3
+  },
+  "pts": 25,
+  "requisitos": [
+   {
+    "e": "Diploma de Fanshawe",
+    "n": 2,
+    "r": "Título o diploma en desarrollo de software, o experiencia equivalente"
+   },
+   {
+    "e": "~3,8 años en empresa (Idukay, Kruger, Delphi)",
+    "n": 0,
+    "r": "5+ años de desarrollo con fuerte front-end"
+   },
+   {
+    "e": "Scrum en Delphi, Kanban en Kruger",
+    "n": 2,
+    "r": "Equipo agile con mentalidad de mejora continua"
+   },
+   {
+    "e": "Claude Code y Codex a diario; Copilot no",
+    "n": 2,
+    "r": "Herramientas de desarrollo con IA (Copilot, Claude Code) en flujo AI-first"
+   },
+   {
+    "e": "Specs antes del código, tests en CI y revisión de cada diff",
+    "n": 2,
+    "r": "Revisar, testear y refinar código generado por IA"
+   },
+   {
+    "e": "Code reviews en Idukay, Kruger y Delphi; SonarQube, ESLint; Jest/Cypress",
+    "n": 2,
+    "r": "Calidad de código: peer reviews, tests automatizados, análisis estático, clean code"
+   },
+   {
+    "e": "React/TS en Delphi, Kruger y proyectos independientes",
+    "n": 2,
+    "r": "JavaScript y TypeScript, aplicaciones con React"
+   },
+   {
+    "e": "EC2, S3, CloudWatch en Kruger; Lambda/API Gateway/SAM en Claw & Soul",
+    "n": 1,
+    "r": "Aplicaciones cloud-native en AWS (fuerte)"
+   },
+   {
+    "e": "Python básico; pipeline de IA con fal.ai sin LangChain",
+    "n": 0,
+    "r": "Python y frameworks de LLM (LangChain, LangGraph)"
+   },
+   {
+    "e": "WCAG en Delphi; i18n EN/FR; responsive",
+    "n": 2,
+    "r": "Web accesible (WCAG), responsive y multilingüe"
+   },
+   {
+    "e": "Lighthouse 45 → 90 en Delphi; Jest, Cypress, Vitest, Playwright",
+    "n": 2,
+    "r": "Optimización de rendimiento front-end y tests automatizados"
+   },
+   {
+    "e": "Urbano en Kruger (5,000+ envíos diarios); sitio de Delphi",
+    "n": 2,
+    "r": "Aplicaciones de alta disponibilidad para clientes en producción"
+   },
+   {
+    "e": "GitHub Actions en Kruger, Delphi y proyectos propios",
+    "n": 2,
+    "r": "Git, GitHub workflows y CI/CD"
+   },
+   {
+    "e": "Requisitos con H&S y RR.HH.; 12 ADRs; único dev",
+    "n": 2,
+    "r": "Comunicación, planificación y priorización"
+   },
+   {
+    "e": "Líder técnico del módulo de órdenes en Kruger; mentoría a juniors",
+    "n": 2,
+    "r": "Liderazgo y coaching del equipo"
+   }
+  ],
+  "rubrica": "2026-11-19"
+ },
+ "contacto": "",
+ "createdAt": "2026-11-23T18:55:00Z",
+ "cvAdaptada": "Sí",
+ "cvVersiones": [
+  {
+   "archivo": "Resume - David Prado - Wawanesa.pdf",
+   "assetId": "d6bf8a63cb9a8d106e8fe63094e3540b",
+   "base": "Resume - David Prado Master EN NUEVO",
+   "cambios": [
+    {
+     "s": "DAVID PRADO",
+     "t": "h"
+    },
+    {
+     "s": "Title: Senior Full-Stack Developer",
+     "t": "-"
+    },
+    {
+     "s": "Title: Senior Application Developer",
+     "t": "+"
+    },
+    {
+     "s": "PROFESSIONAL SUMMARY",
+     "t": "h"
+    },
+    {
+     "s": "Senior Full-Stack Developer with 6+ years of experience, almost 4 of them on company teams. For the last 2, I’ve worked independently: I talk to the users, make the technical decisions and ship to production myself. That covers the architecture, data model, APIs and branded interfaces; I document why each solution is chosen, define specs before writing code, and ensure quality with automated tests. I work with TypeScript, React, Next.js, NestJS and PostgreSQL, plus generative AI pipelines. I’ve digitized manual processes across different domains: health and safety inspections with auditable offline records, meal management at a care residence, and automated image generation for e-commerce. Technical lead for the order module of a logistics platform processing 5,000+ shipments per day.",
+     "t": "-"
+    },
+    {
+     "s": "Senior Application Developer with 6+ years of experience, almost 4 of them on company teams. For the last 2, I’ve worked independently: I talk to the users, make the technical decisions and ship to production myself. My focus is customer-facing digital experiences built with TypeScript and React: responsive, accessible (WCAG) interfaces, reusable UI components, bilingual English/French front ends, and integration with backend services and APIs on AWS. I define specs before writing code and own code quality through peer reviews, automated testing and static analysis in CI/CD. I use Claude Code and Codex daily, with specs and tests keeping the output reviewable. I’ve mentored junior developers and led the order module of a logistics platform processing 5,000+ shipments per day.",
+     "t": "+"
+    },
+    {
+     "s": "TECHNICAL SKILLS",
+     "t": "h"
+    },
+    {
+     "s": "**Core stack:** TypeScript, JavaScript, React, Next.js (SSR/SSG), Node.js, NestJS, PostgreSQL",
+     "t": "-"
+    },
+    {
+     "s": "**Frontend:** Vite, React Query / TanStack, PWA, Service Workers (Serwist), IndexedDB (Dexie), Tailwind, HTML5, CSS, Sass, Axios, webpack",
+     "t": "-"
+    },
+    {
+     "s": "**Backend & data:** REST APIs, GraphQL, Express, Prisma, Drizzle, MongoDB, Strapi, Socket.IO, Redis, BullMQ, pg-boss, Row-Level Security",
+     "t": "-"
+    },
+    {
+     "s": "**Architecture:** Offline-first (outbox pattern), modular monolith, monorepos (pnpm), immutable audit trails, Strategy pattern",
+     "t": "-"
+    },
+    {
+     "s": "**AI & e-commerce:** Generative AI integration, fal.ai, vision models, dynamic prompting, Shopify (GraphQL APIs, headless, metaobjects and metafields)",
+     "t": "-"
+    },
+    {
+     "s": "**AI-assisted development:** Claude Code, Codex, agentic coding workflows, spec-driven development",
+     "t": "-"
+    },
+    {
+     "s": "**Testing:** Jest, Cypress, integration testing",
+     "t": "-"
+    },
+    {
+     "s": "**DevOps & cloud:** Docker, Kubernetes, CI/CD, Git, GitHub, Bitbucket, Vercel, Railway, Render, Linux VPS",
+     "t": "-"
+    },
+    {
+     "s": "**Quality & practices:** WCAG, technical SEO, web performance (Lighthouse), Agile/Scrum, ADRs, Jira",
+     "t": "-"
+    },
+    {
+     "s": "**Front-end:** TypeScript, JavaScript, React, Next.js (SSR/SSG, App Router), Redux, React Query / TanStack, Vite, HTML5, CSS, Sass, Tailwind, styled-components, PWA, Angular",
+     "t": "+"
+    },
+    {
+     "s": "**Accessibility & UX:** WCAG, responsive design, multilingual / bilingual (English/French) internationalization (i18n), design system work and reusable UI components (Material UI, Bootstrap), Figma-to-code, front-end performance optimization (Lighthouse)",
+     "t": "+"
+    },
+    {
+     "s": "**AWS & cloud-native:** AWS (EC2, S3, Lambda, API Gateway, AWS SAM, CloudFront, CloudWatch), serverless, Docker, Vercel",
+     "t": "+"
+    },
+    {
+     "s": "**Backend & APIs:** Node.js, NestJS, REST APIs, GraphQL, Express, PostgreSQL, Prisma, Drizzle, Redis, BullMQ, Shopify APIs, Python (basic)",
+     "t": "+"
+    },
+    {
+     "s": "**AI-first development:** Claude Code, Codex, AI-assisted development tools, agentic coding workflows, spec-driven development, prompt engineering (dynamic prompting), generative AI integration (fal.ai, vision models)",
+     "t": "+"
+    },
+    {
+     "s": "**Testing & code quality:** automated testing, Jest, Vitest, Cypress, Playwright, integration testing, test coverage in CI, peer code reviews, static analysis (SonarQube, ESLint, Prettier), clean code",
+     "t": "+"
+    },
+    {
+     "s": "**CI/CD & source control:** Git, GitHub, GitHub Actions, GitHub workflows, CI/CD, Jenkins, semantic versioning, Dependabot, Sentry, Datadog",
+     "t": "+"
+    },
+    {
+     "s": "**Practices:** Agile/Scrum, Kanban, technical specifications, ADRs, documentation, Jira",
+     "t": "+"
+    },
+    {
+     "s": "Full-Stack Developer (Independent) | Mar 2024 – Present",
+     "t": "h"
+    },
+    {
+     "s": "Custom web systems and AI-powered products for small businesses and my own ventures, mostly replacing paper-based or manual workflows. Spec-driven delivery with AI coding agents (Claude Code, Codex) used daily: architecture decisions recorded as ADRs, specs before code, and integration tests in CI.",
+     "t": "-"
+    },
+    {
+     "s": "ClawPuzzle · AI personalization platform for Puzzle Salvaje, Ecuador | Aug 2026 – Oct 2026",
+     "t": "-"
+    },
+    {
+     "s": "- Built the technology for Puzzle Salvaje, a custom puzzle business with **5+ years** of operation and **thousands of units sold** in Ecuador, to launch a new line of AI-personalized wooden puzzles.",
+     "t": "-"
+    },
+    {
+     "s": "- Designed the personalization flow: pet photo upload, style selection, and AI-generated artwork ready for production with themed pieces, connected to the Shopify store through its GraphQL API.",
+     "t": "-"
+    },
+    {
+     "s": "- Adapted an in-house generation engine: redesigned the data model, removed **90+ obsolete files**, and merged two repositories into a monorepo while preserving Git history.",
+     "t": "-"
+    },
+    {
+     "s": "**Stack:** Next.js · React · TypeScript · NestJS · PostgreSQL · Prisma · fal.ai · Shopify · GraphQL",
+     "t": "-"
+    },
+    {
+     "s": "Custom web systems and AI-powered products for small businesses and my own ventures, mostly replacing paper-based or manual workflows. AI-first workflow with AI coding agents (Claude Code, Codex) used daily: specs before code, architecture decisions recorded as ADRs, and generated code reviewed and covered by integration tests in CI before it ships.",
+     "t": "+"
+    },
+    {
+     "s": "Claw & Soul · AI Pet Art E-commerce · Technical Co-Founder | Apr 2025 – Present",
+     "t": "+"
+    },
+    {
+     "s": "- Built end to end, with a business partner, a customer-facing e-commerce platform that turns pet photos into AI art and paint-by-numbers kits (Fanshawe College Entrepreneurship & Innovation Program).",
+     "t": "+"
+    },
+    {
+     "s": "- Built cloud-native pieces on AWS with AWS SAM: Lambda and API Gateway for Shopify webhooks, image processing and fal.ai calls, plus S3 presigned uploads served through CloudFront.",
+     "t": "+"
+    },
+    {
+     "s": "- Designed an asynchronous AI pipeline with BullMQ/Redis: photo analysis with vision models, dynamic prompting, and generation with fal.ai. Implemented swappable art styles using the Strategy pattern.",
+     "t": "+"
+    },
+    {
+     "s": "- Integrated headless Shopify through its GraphQL APIs, modeling the product catalog, art styles and print formats with metaobjects and metafields.",
+     "t": "+"
+    },
+    {
+     "s": "**Stack:** Next.js · React · TypeScript · NestJS · PostgreSQL · BullMQ/Redis · AWS Lambda · S3 · CloudFront · fal.ai · Shopify · GraphQL",
+     "t": "+"
+    },
+    {
+     "s": "Offline Inspection System · Ontario Greenhouses, London, ON | Aug 2026 – Oct 2026",
+     "t": "h"
+    },
+    {
+     "s": "- Solved offline sync with the outbox pattern on IndexedDB and Service Workers. Implemented database-level immutability, per-site Row-Level Security, and hash-chained audit logs aligned with OHSA requirements.",
+     "t": "-"
+    },
+    {
+     "s": "- Documented the architecture in **12 ADRs** and applied spec-driven development (OpenSpec) with integration tests in CI.",
+     "t": "-"
+    },
+    {
+     "s": "**Stack:** TypeScript · React · Vite · TanStack · NestJS · PostgreSQL · Drizzle · pg-boss · Dexie · Serwist · Docker",
+     "t": "-"
+    },
+    {
+     "s": "Claw & Soul · AI Pet Art E-commerce — Technical Co-Founder | Apr 2025 – Present",
+     "t": "-"
+    },
+    {
+     "s": "- Selected for the Fanshawe College Entrepreneurship & Innovation Program. Built end to end an e-commerce platform that turns pet photos into AI art and paint-by-numbers kits, and shaped technical and product decisions with a business partner.",
+     "t": "-"
+    },
+    {
+     "s": "- Designed an asynchronous AI pipeline with BullMQ/Redis: photo analysis with vision models, dynamic prompting, and generation with fal.ai. Implemented swappable art styles using the Strategy pattern.",
+     "t": "-"
+    },
+    {
+     "s": "- Integrated headless Shopify through its GraphQL APIs, modeling the product catalog, art styles and print formats with metaobjects and metafields.",
+     "t": "-"
+    },
+    {
+     "s": "- Created an in-browser paint-by-numbers generator: color reduction, segmentation, and SVG/PDF export, with a free preview at zero server cost.",
+     "t": "-"
+    },
+    {
+     "s": "**Stack:** Next.js · React · TypeScript · NestJS · PostgreSQL · BullMQ/Redis · fal.ai · Shopify · GraphQL",
+     "t": "-"
+    },
+    {
+     "s": "- Solved offline sync with the outbox pattern on IndexedDB and Service Workers. Implemented database-level immutability, per-site Row-Level Security, and hash-chained audit logs aligned with OHSA.",
+     "t": "+"
+    },
+    {
+     "s": "- Documented the architecture in **12 ADRs**, applied spec-driven development (OpenSpec) with integration tests in CI, and set up Sentry error tracking with alerts.",
+     "t": "+"
+    },
+    {
+     "s": "**Stack:** TypeScript · React · Vite · TanStack · NestJS · PostgreSQL · Drizzle · pg-boss · Dexie · Serwist · Docker · Sentry",
+     "t": "+"
+    },
+    {
+     "s": "ClawPuzzle · AI personalization platform for Puzzle Salvaje, Ecuador | Aug 2026 – Oct 2026",
+     "t": "+"
+    },
+    {
+     "s": "- Built the technology for Puzzle Salvaje, a custom puzzle business with **5+ years** of operation and **thousands of units sold** in Ecuador, to launch a new line of AI-personalized wooden puzzles.",
+     "t": "+"
+    },
+    {
+     "s": "- Designed the customer-facing personalization flow: pet photo upload, style selection, and AI-generated artwork ready for production with themed pieces, connected to the Shopify store through its GraphQL API.",
+     "t": "+"
+    },
+    {
+     "s": "**Stack:** Next.js · React · TypeScript · NestJS · PostgreSQL · Prisma · fal.ai · Shopify · GraphQL",
+     "t": "+"
+    },
+    {
+     "s": "Meal Ordering System · Horizon Place care residence, London, ON | Mar 2024 – Aug 2024",
+     "t": "h"
+    },
+    {
+     "s": "- Identified the need to digitize paper meal orders while working in the residence's dietary department, then designed and built a full-stack web application to replace them.",
+     "t": "-"
+    },
+    {
+     "s": "- Piloted the app with **60+ residents**, **14 tables**, and **two shifts**. Eliminated errors by displaying allergies, diets, and preferences in real time, saving **10–20 minutes per service**.",
+     "t": "-"
+    },
+    {
+     "s": "- Generated per-shift consumption logs and presented the solution to leadership, earning approval from the manager and the regional coordinator.",
+     "t": "-"
+    },
+    {
+     "s": "- Designed and built a full-stack web application to replace paper meal orders, piloted with **60+ residents**, **14 tables**, and **two shifts**. Eliminated errors by displaying allergies, diets, and preferences in real time, saving **10–20 minutes per service**.",
+     "t": "+"
+    },
+    {
+     "s": "Frontend Software Engineer (Contract) | Nov 2024 – Feb 2025",
+     "t": "h"
+    },
+    {
+     "s": "- Migrated pages and components from WordPress to Next.js with SSR and SSG, as part of a migration that raised Lighthouse Performance from **45 to 90**, along with technical SEO and accessibility improvements.",
+     "t": "-"
+    },
+    {
+     "s": "- Integrated REST APIs with Axios and React Query for the vehicle parts catalog and store locator, optimizing caching and reducing redundant requests.",
+     "t": "-"
+    },
+    {
+     "s": "- Wrote unit tests with Jest and E2E tests with Cypress to ensure migration stability within a distributed Agile/Scrum team.",
+     "t": "-"
+    },
+    {
+     "s": "- Migrated customer-facing pages and components from WordPress to Next.js with SSR and SSG, as part of a migration that raised Lighthouse Performance from **45 to 90**, through front-end performance optimization, CDN caching (Cache-Control), technical SEO and WCAG accessibility improvements.",
+     "t": "+"
+    },
+    {
+     "s": "- Integrated REST APIs with Axios, Redux and React Query for the vehicle parts catalog and store locator, optimizing caching and reducing redundant requests.",
+     "t": "+"
+    },
+    {
+     "s": "- Wrote unit tests with Jest and E2E tests with Cypress, took part in peer code reviews, and shipped through GitHub Actions CI/CD with SonarQube static analysis and semantic versioning, within a distributed Agile/Scrum team.",
+     "t": "+"
+    },
+    {
+     "s": "Senior Software Developer | Jan 2022 – Aug 2023",
+     "t": "h"
+    },
+    {
+     "s": "- Made architecture decisions and designed the data model for the order and payment flow. Ensured delivery quality through unit testing and production deployment support.",
+     "t": "-"
+    },
+    {
+     "s": "- Supported a highly available production platform on AWS (EC2, S3, CloudWatch): deployment support, health checks and alerts, and monitoring with Datadog and Sentry.",
+     "t": "+"
+    },
+    {
+     "s": "- Made architecture decisions and designed the data model for the order and payment flow. Kept delivery quality through peer code reviews, unit testing, test coverage in CI (GitHub Actions, Jenkins) and SonarQube.",
+     "t": "+"
+    },
+    {
+     "s": "Software Developer | Jan 2020 – Oct 2021",
+     "t": "h"
+    },
+    {
+     "s": "- Built the reporting module end to end, with backend and React frontend, for **~50 students and 8 courses**: progress, grades, and pass rates per course for instructors and administrators, plus a progress map for students. Tested critical logic with Jest.",
+     "t": "-"
+    },
+    {
+     "s": "- Built the reporting module end to end, with backend and React frontend, for **~50 students and 8 courses**: progress, grades, and pass rates per course for instructors and administrators, plus a progress map for students. Tested critical logic with Jest and took part in code reviews.",
+     "t": "+"
+    }
+   ],
+   "resumen": "Título Senior Application Developer; resumen centrado en front-end para clientes, WCAG, EN/FR, AWS y AI-first; skills reagrupadas (accesibilidad, AWS, testing y calidad); Claw & Soul primero con bullet de AWS SAM/Lambda; Delphi y Kruger con code reviews, CI/CD, SonarQube y soporte a producción en AWS; recortes para 2 páginas.",
+   "subidoEl": "2026-11-23T18:55:00Z"
+  }
+ ],
+ "empresa": "Wawanesa Mutual Insurance",
+ "encaje": "Medio",
+ "estado": "Aplicado",
+ "fechaAplicacion": "2026-11-23",
+ "fuente": "Pegada en chat",
+ "link": "",
+ "modalidad": "Híbrido",
+ "moneda": "CAD",
+ "n": 159,
+ "notas": "2026-11-23: aplicado con CV adaptado 'Resume - David Prado - Wawanesa.pdf' (Senior Application Developer, 2 páginas, ATS 31/31 = 100%) y cover letter (li-human PASS 78). Job ID 10535, iniciativa Direct to Member (D2M). Respuestas del formulario preparadas en chat: salario sugerido $105,000–$115,000 base (confirmar cuál usó); experiencia AI-first (Claw & Soul); enfoque de testing; entorno tipo start-up (inspecciones de invernaderos). Brechas no agregadas: GitHub Copilot, LangChain, LangGraph, Confluence, Guidewire, MuleSoft, on-call.",
+ "periodo": "año",
+ "plataforma": "Web de Wawanesa (formulario con preguntas)",
+ "porQue": "Front-end para clientes con React/TypeScript: migración de Delphi a Next.js (Lighthouse 45 → 90, WCAG, caché en CDN) e i18n EN/FR. Desarrollo AI-first diario con Claude Code y Codex, con specs, tests en CI y revisión antes del merge. AWS en Kruger (EC2, S3, CloudWatch; producción con 5,000+ envíos diarios) y serverless en Claw & Soul (Lambda, API Gateway, SAM, CloudFront); mentoría a juniors.",
+ "portal": "",
+ "prioridad": 3,
+ "proximoPaso": "Revisar Outlook y el portal de Wawanesa a los 7 y 14 días (30 nov y 7 dic). Buscar en LinkedIn a alguien del equipo D2M de Wawanesa para escribirle.",
+ "publicada": "",
+ "puesto": "Senior Application Developer (Direct to Member)",
+ "salMax": 125000,
+ "salMin": 90000,
+ "salario": "$90,000–$125,000/año + bono anual, pensión y beneficios",
+ "solicitantes": "",
+ "stack": "Front-end para clientes (React, JavaScript, TypeScript), design system compartido, bilingüe EN/FR, WCAG, rendimiento y tests automatizados; AWS cloud-native; desarrollo AI-first (GitHub Copilot, Claude Code) y revisión de código generado; Python y LangChain/LangGraph; Git, GitHub, CI/CD; Agile; Jira, Confluence, Figma (deseables); Guidewire y MuleSoft (deseables)",
+ "techDes": [
+  "Jira",
+  "Confluence",
+  "Figma",
+  "Prompt engineering",
+  "Guidewire",
+  "MuleSoft"
+ ],
+ "techReq": [
+  "React",
+  "JavaScript",
+  "TypeScript",
+  "AWS",
+  "Python",
+  "LangChain",
+  "LangGraph",
+  "IA / LLM",
+  "WCAG",
+  "i18n",
+  "Testing",
+  "Git",
+  "GitHub",
+  "CI/CD",
+  "Agile"
+ ],
+ "tipo": "Permanente",
+ "ubicacion": "Híbrido, 2 días/semana (o 15 h) en una oficina de Wawanesa: Toronto (North York), Kitchener, Ottawa y otras ciudades de Canadá",
+ "updatedAt": "2026-11-23T18:55:00Z"
+}
