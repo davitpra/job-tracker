@@ -1,0 +1,42 @@
+# required
+Systems Developer
+AI/ML | AI
+model inference
+intelligent automation
+LLM-assisted workflows | LLM
+design patterns
+continuous integration/continuous delivery | CI/CD
+version control
+documentation
+automated testing
+business requirements
+Python
+Angular
+React
+PostgreSQL
+Amazon Web Services | AWS
+Kubernetes
+JavaScript
+TypeScript
+HTML | HTML5
+CSS
+RESTful APIs
+SQL
+unit test | unit tests | unit testing
+security
+scalable
+Agile
+# preferred
+prototypes | proof-of-concept | prototype
+incidents
+cloud
+code reviews
+# gaps
+Java
+Groovy
+retrieval-augmented generation | RAG
+datawarehouse | data warehouse
+datalake | data lake
+data structure and algorithms
+bias
+guardrails

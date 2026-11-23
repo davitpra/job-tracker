@@ -1,0 +1,114 @@
+{
+ "anios": "3+ (o diploma/título)",
+ "brechas": "RAG, evaluación de modelos y guardrails/sesgo ❌ (no en el CV). Java y Groovy ❌ (son opciones, no obligatorios). Data warehouse y data lake 🟡 (SQL y PostgreSQL sí). Estructuras de datos y algoritmos sin evidencia explícita. Pickering queda a ~3 h de London; días presenciales no indicados. Puesto sindicalizado.",
+ "clasif": {
+  "filtro": "Híbrido en Pickering (GTA): válido; días presenciales no indicados",
+  "max": 16,
+  "pct": 88,
+  "prioridad": {
+   "ajustes": [],
+   "base": 1,
+   "final": 1
+  },
+  "pts": 14,
+  "requisitos": [
+   {
+    "e": "Diploma de Fanshawe; ~3,8 años en empresa",
+    "n": 2,
+    "r": "Diploma o título en CS/desarrollo, o 3+ años"
+   },
+   {
+    "e": "Pipeline de inferencia en Claw & Soul; sin RAG, evaluación ni guardrails",
+    "n": 1,
+    "r": "Construir o integrar IA/ML (inferencia, automatización, RAG, LLM) con evaluación y uso responsable"
+   },
+   {
+    "e": "Strategy/outbox, GitHub Actions y Jenkins, Git, 12 ADRs, Jest/Cypress; DS&A sin evidencia explícita",
+    "n": 2,
+    "r": "Patrones de diseño, estructuras de datos y algoritmos, CI/CD, control de versiones, documentación, tests automatizados"
+   },
+   {
+    "e": "Inspecciones con H&S y RR.HH.; sistema de pedidos de comida",
+    "n": 2,
+    "r": "Traducir requisitos de negocio a soluciones IT"
+   },
+   {
+    "e": "React, Angular, TypeScript, PostgreSQL, AWS y Kubernetes en Kruger y proyectos",
+    "n": 2,
+    "r": "Una o más: Python, Java, Groovy, Angular, React, JS/TS, HTML/CSS, REST (+ PostgreSQL, AWS, Kubernetes)"
+   },
+   {
+    "e": "PostgreSQL/SQL sí; data warehouse y data lake no",
+    "n": 1,
+    "r": "Bases de datos, SQL, data warehouse y data lake"
+   },
+   {
+    "e": "Equipos distribuidos en Delphi y Kruger; trato directo con usuarios",
+    "n": 2,
+    "r": "Comunicación en equipo y ganas de aprender"
+   },
+   {
+    "e": "ADRs y desarrollo guiado por specs",
+    "n": 2,
+    "r": "Pensamiento estructurado"
+   }
+  ],
+  "rubrica": "2026-11-19"
+ },
+ "contacto": "",
+ "createdAt": "2026-11-23T18:25:00Z",
+ "cvAdaptada": "Sí",
+ "empresa": "MPAC (Municipal Property Assessment Corporation)",
+ "encaje": "Alto",
+ "estado": "Aplicado",
+ "fechaAplicacion": "2026-11-23",
+ "fuente": "Pegada en chat",
+ "link": "https://www.linkedin.com/jobs/view/4492637313/",
+ "linkedinId": "4492637313",
+ "modalidad": "Híbrido",
+ "moneda": "CAD",
+ "n": 158,
+ "notas": "2026-11-23: aplicado con CV adaptado 'Resume - David Prado - MPAC.pdf' (Systems Developer (AI Focus), 1 página, ATS 27/27 = 100%) y cover letter (li-human PASS 80). Requisition 3258. Brechas no agregadas: Java, Groovy, RAG, data warehouse/data lake, DS&A, evaluación de modelos y guardrails.",
+ "periodo": "año",
+ "plataforma": "ATS de MPAC (web de la empresa)",
+ "porQue": "Integración de IA en producción en Claw & Soul (modelos de visión, prompting dinámico, inferencia con fal.ai, AWS Lambda) y uso diario de Claude Code/Codex. Traduce requisitos de negocio a sistemas seguros: inspecciones offline con H&S y RR.HH. (~30 usuarios, Row-Level Security, logs de auditoría encadenados). Stack que piden: React, Angular, TypeScript, PostgreSQL y AWS en Kruger; diploma de Fanshawe cubre el requisito de formación.",
+ "portal": "",
+ "prioridad": 1,
+ "proximoPaso": "Revisar el portal de MPAC y Outlook a los 7 y 14 días (30 nov y 7 dic). Buscar en LinkedIn a alguien del equipo de IT de MPAC para escribirle. Cierra el 7 dic.",
+ "publicada": "2026-11-23",
+ "puesto": "Systems Developer (AI Focus)",
+ "salMax": 97619,
+ "salMin": 82355,
+ "salario": "$82,354.79–$97,618.99/año",
+ "stack": "Integración de IA/ML (inferencia, automatización inteligente, RAG, flujos con LLM, evaluación y uso responsable); Python, Java, Groovy, Angular, React, JavaScript, TypeScript, HTML/CSS, REST APIs; PostgreSQL, AWS, Kubernetes; SQL, data warehouse y data lake; CI/CD, testing, patrones de diseño; Agile",
+ "techDes": [
+  "Certificaciones",
+  "Agile"
+ ],
+ "techReq": [
+  "IA / LLM",
+  "RAG",
+  "Python",
+  "Java",
+  "Groovy",
+  "Angular",
+  "React",
+  "JavaScript",
+  "TypeScript",
+  "HTML",
+  "CSS",
+  "REST APIs",
+  "PostgreSQL",
+  "AWS",
+  "Kubernetes",
+  "SQL",
+  "Data warehouse",
+  "Data lake",
+  "CI/CD",
+  "Testing",
+  "Git"
+ ],
+ "tipo": "Permanente",
+ "ubicacion": "Pickering, ON (GTA; híbrido, días presenciales no indicados)",
+ "updatedAt": "2026-11-23T18:25:00Z"
+}
